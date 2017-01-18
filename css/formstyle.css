@@ -369,10 +369,22 @@ h6 {
     background: rgba($color4,.5);
 }*/
 /* line 45, ../sass/partials/_typography.scss */
+h1, h2, h3, h4, h5, h6 {
+  text-align: center;
+  color: #1f5f93;
+  line-height: 1.3em;
+}
+
+/* line 50, ../sass/partials/_typography.scss */
 legend {
   font-weight: bold;
   line-height: 2em;
   padding-right: 1em;
+}
+
+/* line 57, ../sass/partials/_typography.scss */
+fieldset p {
+  font-size: 1.3em;
 }
 
 /** {
@@ -410,13 +422,6 @@ body {
 }
 
 /* line 43, ../sass/formstyle.scss */
-h1, h2, h3, h4, h5, h6 {
-  text-align: center;
-  color: #1f5f93;
-  line-height: 1.3em;
-}
-
-/* line 48, ../sass/formstyle.scss */
 .column_3 {
   -webkit-column-count: 3;
   /* Chrome, Safari, Opera */
@@ -431,68 +436,68 @@ h1, h2, h3, h4, h5, h6 {
   column-rule: thin dotted #999;
 }
 
-/* line 60, ../sass/formstyle.scss */
+/* line 55, ../sass/formstyle.scss */
 div.todey_date {
   text-align: right;
 }
-/* line 64, ../sass/formstyle.scss */
+/* line 59, ../sass/formstyle.scss */
 div.todey_date label {
   margin-right: 0.9em;
 }
 
-/* line 72, ../sass/formstyle.scss */
+/* line 67, ../sass/formstyle.scss */
 label:not(.radio) {
   width: 40%;
   float: left;
 }
 
-/* line 79, ../sass/formstyle.scss */
+/* line 74, ../sass/formstyle.scss */
 .row [class^="right"] {
   float: left;
   width: 60%;
 }
-/* line 84, ../sass/formstyle.scss */
+/* line 79, ../sass/formstyle.scss */
 .row label.maxim {
   width: 60%;
 }
-/* line 87, ../sass/formstyle.scss */
+/* line 82, ../sass/formstyle.scss */
 .row .right-minim {
   width: 40%;
 }
-/* line 90, ../sass/formstyle.scss */
+/* line 85, ../sass/formstyle.scss */
 .row label.small {
   width: 22%;
 }
-/* line 93, ../sass/formstyle.scss */
+/* line 88, ../sass/formstyle.scss */
 .row .right-board {
   width: 78%;
 }
-/* line 96, ../sass/formstyle.scss */
+/* line 91, ../sass/formstyle.scss */
 .row .full {
   float: left;
   width: 100%;
 }
-/* line 100, ../sass/formstyle.scss */
+/* line 95, ../sass/formstyle.scss */
 .row [class^="columnForm"] {
   margin-right: 1.5em;
   float: left;
 }
-/* line 105, ../sass/formstyle.scss */
+/* line 100, ../sass/formstyle.scss */
 .row .columnForm-name {
   margin-right: 0.3em;
 }
-/* line 108, ../sass/formstyle.scss */
+/* line 103, ../sass/formstyle.scss */
 .row .right_signature {
   border-bottom: 1px solid #bfbfbf;
 }
 
-/* line 116, ../sass/formstyle.scss */
+/* line 111, ../sass/formstyle.scss */
 input {
   height: 20px;
   font-size: 1em;
 }
 
-/* line 120, ../sass/formstyle.scss */
+/* line 115, ../sass/formstyle.scss */
 input:not([type="submit"]), textarea, select {
   border: 1px solid #bfbfbf;
   padding: 0.1em;
@@ -503,12 +508,12 @@ input:not([type="submit"]), textarea, select {
   box-shadow: 2px 2px 5px rgba(43, 43, 43, 0.1);
 }
 
-/* line 130, ../sass/formstyle.scss */
+/* line 125, ../sass/formstyle.scss */
 input.input_row {
   margin-left: 1em;
 }
 
-/* line 133, ../sass/formstyle.scss */
+/* line 128, ../sass/formstyle.scss */
 input[type="number"] {
   width: 4em;
 }
@@ -523,7 +528,7 @@ input[type="number"] {
         //@include nth-omega(4n);
     }
 }*/
-/* line 146, ../sass/formstyle.scss */
+/* line 141, ../sass/formstyle.scss */
 .submit {
   *zoom: 1;
   max-width: 61em;
@@ -540,7 +545,7 @@ input[type="number"] {
   clear: both;
 }
 
-/* line 150, ../sass/formstyle.scss */
+/* line 145, ../sass/formstyle.scss */
 input[type="submit"] {
   width: 23.72881%;
   float: right;
@@ -559,7 +564,7 @@ input[type="submit"] {
   text-shadow: 0px 1px black;
   border: 1px solid #bfbfbf;
 }
-/* line 165, ../sass/formstyle.scss */
+/* line 160, ../sass/formstyle.scss */
 input[type="submit"]:hover {
   background-color: #205b8c;
   box-shadow: 3px 3px 3px rgba(68, 68, 68, 0.7);

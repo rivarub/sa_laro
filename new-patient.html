@@ -672,7 +672,7 @@ and open the template in the editor.
                         <hgroup>
                             <h1>MEDICAL & MENTAL HEALTH HISTORY</h1>
                         </hgroup>
-                        <p>Have you ever had any of the following (check all that apply):</p>
+                        <p class="larger">Have you ever had any of the following (check all that apply):</p>
                         <div class="row">
                             <div class="full">
                                 <div class="columnForm">
@@ -768,9 +768,42 @@ and open the template in the editor.
                                         <input type="checkbox" name="any_following" value="cataracts" id="cataracts">
                                         <label class="radio" for="cataracts">Cataracts</label>   
                                     </div>
+                                    <div class="pt">
+                                        <input type="checkbox" name="any_following" value="hepatitis" id="hepatitis">
+                                        <label class="radio" for="hepatitis">Hepatitis (Liver Disease)</label>   
+                                    </div>
+                                    <div class="pt">
+                                        <input type="checkbox" name="any_following" value="anemia" id="anemia">
+                                        <label class="radio" for="anemia">Anemia</label>   
+                                    </div>
+                                    <div class="pt">
+                                        <input type="checkbox" name="any_following" value="mononucleosis" id="mononucleosis">
+                                        <label class="radio" for="mononucleosis">Mononucleosis</label>   
+                                    </div>
+                                    <div class="pt">
+                                        <input type="checkbox" name="any_following" value="arthritis" id="arthritis">
+                                        <label class="radio" for="arthritis">Arthritis</label>   
+                                    </div>
+                                    <div class="pt">
+                                        <input type="checkbox" name="any_following" value="kidney_infections" id="kidney_infections">
+                                        <label class="radio" for="kidney_infections">Kidney infections</label>
+                                    </div>
+                                    <div class="pt">
+                                        <input type="checkbox" name="any_following" value="allergies" id="allergies">
+                                        <label class="radio" for="allergies">Allergies</label>
+                                    </div>
+                                    <div class="pt">
+                                        <input type="checkbox" name="any_following" value="skin_rash" id="skin_rash">
+                                        <label class="radio" for="skin_rash">Skin rash</label>
+                                    </div>
+                                    <div class="pt">
+                                        <input type="checkbox" name="any_following" value="other_list" id="other_list">
+                                        <label class="radio" for="other_list">Other (list)<input class="input_row" type="text" name="any_followinge_other" id="any_followinge_other"></label>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+                        <p class="larger">Please list current or past medications you have taken for the treatment of any medical problem.</p>
                     </fieldset>
 
                     <!--                            SUBMIT-->
