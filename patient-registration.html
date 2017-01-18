@@ -1,22 +1,19 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
 <html>
     <head>
         <title>Patient-Registration.pages</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="css/formstyle.css">
-        <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+         <script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
         <script src="js/modernizr.2.6.2.min.js"></script>
+        <script src="js/catchHTML.js"></script>
     </head>
     <body>
         <div class="container">
             <div class="content">
-                <form id="patient_registration" method="post" action="#">
+                <form id="patient_registration" method="post" action="form2pdf.php">
                     <hgroup>
                         <h1>Patient Registration</h1>
                     </hgroup>
@@ -151,7 +148,9 @@ and open the template in the editor.
                         <textarea name="about_our_program" id="about_our_program" rows="4" cols="45"></textarea>                   
                     </div>
                     <div class="submit">
-                        <input type="submit" value="Send">
+                        <input type="hidden" name="url" value="patient-registration.html">
+                        <input type="hidden" id="html" name="html">
+                        <input type="submit" value="send" onclick="send();">
                     </div>
                 </form>
             </div>
