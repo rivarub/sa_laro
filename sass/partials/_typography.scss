@@ -42,9 +42,19 @@ h6 { @include adjust-font-size-to(0.889rem);}
 /*p {
     background: rgba($color4,.5);
 }*/
+h1,h2,h3,h4,h5,h6 {
+    text-align: center;
+    color: $color2;
+    line-height: $Lh2;
+}
 legend {
     font-weight: bold;
     //font-size: 0.7em;
     line-height: 2em;
-    padding-right: 1em;
+    padding-right: 1em;    
+}
+fieldset {
+    p.larger {
+        font-size: $p_larger;
+    }
 }
