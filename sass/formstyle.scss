@@ -1,0 +1,181 @@
+
+//    Created on : 14 січ 2017, 0:31:33
+
+@import "compass";
+@import "partials/variables";
+@import "partials/mixins";
+@import "partials/normalize";
+@import "partials/typography";
+@import "susy";
+@import "susyone";
+
+/** {
+    @include bs; //за замовченням border-box
+}*/
+/*form {
+   @include bs(content-box);
+}*/
+
+body {    
+    background: $color3 url(../images/pageglare.png) no-repeat scroll 0 0;
+    //line-height: $Lh1;    
+}
+[class^="container"] {    
+    cursor: auto;
+    margin: 50px auto 0;    
+    max-width: 1000px;   
+    background-color: $color1;
+}
+.content {
+    //@include container;
+    //@include susy-grid-background;
+    width: 97.5%;
+    margin: auto; 
+    padding: 0.7em 0 0.7em;
+    /*    @media (min-width: 769px) {
+            @include rhythm-margins(2);
+        }  //не працює */
+    p {
+        text-align: justify;
+        color: $color4;
+    }
+}
+h1,h2,h3,h4,h5,h6 {
+    text-align: center;
+    color: $color2;
+    line-height: $Lh2;
+}
+.column_3 {
+    -webkit-column-count: 3; /* Chrome, Safari, Opera */
+    -moz-column-count: 3; /* Firefox */
+    column-count: 3;
+    -webkit-column-gap: 2em;
+    -moz-column-gap: 2em;
+    column-gap: 2em;
+    -webkit-column-rule: thin dotted #999;
+    -moz-column-rule: thin dotted #999;
+    column-rule: thin dotted #999;
+}
+//FORM
+div.todey_date {
+    text-align: right;
+    //@include container;
+    //@include susy-grid-background;
+    label {
+        margin-right: 0.9em;
+        //width: 60%;
+        //clear: both;
+        //@include span-columns(4 omega,12);        
+        //width: 50em;
+    }
+}
+label:not(.radio){
+    //display: block;
+    width: 40%;
+    float: left;
+}
+
+.row {      
+    [class^="right"] {        
+        float: left;
+        width: 60%; //блок лишається у позиції справа
+        //min-width: 60%; //блок переміщується під попередній ()           
+    }
+    label.maxim {
+        width: 60%;
+    }
+    .right-minim {
+        width: 40%;
+    }
+    label.small {
+        width: 22%;
+    }
+    .right-board {
+        width: 78%;
+    }
+    .full {
+        float: left;
+        width: 100%;
+    }
+    [class^="columnForm"] {
+        //width: 49%;                
+        margin-right: 1.5em;
+        float: left;
+    }
+    .columnForm-name {
+        margin-right: 0.3em;
+    }
+    .right_signature {
+        border-bottom: 1px solid #bfbfbf;
+    }
+    .columnForm:first-child {
+        //width: 49%;
+        //margin-right: 0.9em;
+    }               
+}
+input {
+    height: 20px;
+    font-size: 1em;
+}
+input:not([type="submit"]), textarea, select {
+    border: 1px solid #bfbfbf;
+    padding: 0.1em;
+    //font-size: 1.1em;
+    line-height: 1.2em;
+    background: #ffffff;
+    background: linear-gradient(top, #ffffff 0%,#ededed 8%,#ffffff 100%);
+    border-radius: 3px;
+    box-shadow: 2px 2px 5px hsla(0, 0%, 16.6667%, 0.1);
+}
+input.input_row {
+    margin-left: 1em;
+}
+input[type="number"] {
+    width: 4em;
+}
+/*@include with-grid-settings() {
+    .submit {
+        @include container;
+        @include susy-grid-background;
+    }
+    .submit input[type="submit"] {
+        @include span-columns(2 omega,12);
+        //@include nth-omega(4n);
+    }
+}*/
+.submit {
+    @include container;
+    //@include susy-grid-background;
+}
+input[type="submit"] {
+    @include span-columns(3 omega,12);
+    height: 1.6em;
+    width: 5em;
+    font-size: 1.3em;
+    background-color: $color3;
+    border-radius: 5px;
+    color: white;
+    margin-bottom: 10px;
+    //background: linear-gradient(top, rgb(241,92,96) 0%, rgb(176,28,32) 100%);
+    margin-top: 10px;
+    box-shadow: 3px 3px 3px hsla(0, 0%, 26.6667%, 0.5);
+    text-shadow: 0px 1px black;
+    border: 1px solid #bfbfbf;
+    //@include button-links;
+    &:hover {
+        background-color: darken($color3,10%);
+        box-shadow: 3px 3px 3px hsla(0, 0%, 26.6667%, 0.7);
+    }
+}
+/*@include with-grid-settings(28,3em,0.5em,0) {
+        div.name {
+            @include container;
+            @include susy-grid-background;
+        }
+        input.name {
+            @include span-columns(4);
+            //@include prefix (1,24);
+            @include nth-omega;
+        }
+    }*/
+

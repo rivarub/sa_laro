@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Patient-Registration.pages</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/formstyle.css">
+        <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet"> 
+        <script src="js/modernizr.2.6.2.min.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="content">
+                <form id="patient_registration" method="post" action="#">
+                    <hgroup>
+                        <h1>Patient Registration</h1>
+                    </hgroup>
+                    <div class="row">
+                        <div class="left">
+                            <label for="first-name">Patient Name:</label>
+                        </div>
+                        <div class="right">
+                            <div class="columnForm-name">
+                                <div class="pt">
+                                    <input class="name" type="text" name="name-first" id="name-first" placeholder="First" required>
+                                </div>
+                            </div>
+                            <div class="columnForm-name">
+                                <div class="pt">
+                                    <input class="name" type="text" name="name-middle" id="name-middle" placeholder="Middle">
+                                </div>
+                            </div>                                
+                            <div class="columnForm-name">
+                                <div class="pt">
+                                    <input class="name" type="text" name="name-last" id="name-last" placeholder="Last" required>
+                                </div>
+                            </div>
+                        </div>
+                    </div>     
+                    <div>
+                        <label for="gender">Gender:</label>
+                        <select name="gender" id="gender">
+                            <option value="male">Male</option>  
+                            <option value="female">Female</option>
+                            <option value="other">Other</option>
+                        </select>      
+                    </div>
+                    <div>
+                        <label for="birth-date">Date of Birth</label>
+                        <input type="date" name="birth-date" id="birth-date" placeholder="dd/mm/yyyy" required>                   
+                    </div>                    
+                    <div class="row">
+                        <div class="left">
+                            <label for="guardian-name-first">Legal guardian:</label>
+                        </div>
+                        <div class="right">
+                            <div class="columnForm-name">
+                                <div class="pt">
+                                    <input class="name" type="text" name="guardian-name-first" id="guardian-name-first" type="text" placeholder="First" required>
+                                </div>
+                            </div>
+                            <div class="columnForm-name">
+                                <div class="pt">
+                                    <input class="name" type="text" name="guardian-name-middle" id="guardian-name-middle"  placeholder="Middle">
+                                </div>
+                            </div>                                
+                            <div class="columnForm-name">
+                                <div class="pt">
+                                    <input class="name" type="text" name="guardian-name-last" id="guardian-name-last" placeholder="Last" required>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <label for="guardian-relation">Relation:</label>
+                        <input name="guardian-relation" id="guardian-relation" type="text">                   
+                    </div> 
+                    <div>
+                        <label for="address">Address:</label>
+                        <textarea  name="address" id="address" rows="4" cols="45"></textarea>                   
+                    </div>
+                    <div class="row">
+                        <div class="left">
+                            <label for="phone-primary">Phone number:</label>
+                        </div>
+                        <div class="right">
+                            <div class="columnForm-name">
+                                <div class="pt">
+                                    <input type="tel" name="phone-primary" id="phone-primary" placeholder="primary" required>
+                                </div>                            
+                            </div>
+                            <div class="columnForm-name">
+                                <div class="pt">    
+                                    <input type="tel" name="phone-secondary" id="phone-secondary" placeholder="secondary" required>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <label for="email">Email address:</label>
+                        <input type="email" name="email" id="email">                    
+                    </div>
+                    <div>
+                        <label for="insurance_name">Insurance name:</label>
+                        <input type="text" name="insurance_name" id="insurance_name">                    
+                    </div>
+                    <div class="row">
+                        <div class="left">
+                            <label for="member_id">Member ID and group #:</label>
+                        </div>
+                        <div class="right">
+                            <div class="columnForm-name">
+                                <div class="pt">
+                                    <input type="text" name="member_id" id="member_id">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="left">
+                            <label for="subscriber-name">Subscriber name and date of birth:</label>
+                        </div>
+                        <div class="right">
+                            <div class="columnForm-name">
+                                <div class="pt">
+                                    <input type="text" name="subscriber-name" id="subscriber-name" placeholder="name">
+                                </div>
+                            </div>
+                            <div class="columnForm-name">
+                                <div class="pt">
+                                    <input type="text" name="subscriber-date-birth" id="subscriber-date-birth" placeholder="date">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <label for="insurance_claims">Insurance claims address and phone number: (found on back of card)</label>
+                        <textarea name="insurance_claims" id="insurance_claims" rows="4" cols="45"></textarea>                   
+                    </div>
+                    <div>
+                        <label for="concerns_bring">Please tell us very briefly what concerns bring you to our office:</label>
+                        <textarea name="concerns_bring" id="concerns_bring" rows="4" cols="45"></textarea>                   
+                    </div>
+                    <div>
+                        <label for="about_our_program">How did you hear about our program?</label>
+                        <textarea name="about_our_program" id="about_our_program" rows="4" cols="45"></textarea>                   
+                    </div>
+                    <div class="submit">
+                        <input type="submit" value="Send">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

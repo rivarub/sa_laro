@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>New patient</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/formstyle.css">
+        <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet"> 
+        <script src="js/modernizr.2.6.2.min.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="content">
+                <form id="new-patient" metod="post" action="#">
+                    <fieldset id="demographic">
+                        <hgroup>
+                            <h1>DEMOGRAPHIC INVENTORY</h1>
+                        </hgroup>
+                        <div class="todey_date">                                                       
+                            <div class="todey_date_row">
+                                <label class="radio" for="todey_date">Today’s Date</label>
+                                <input type="date" name="today_date" placeholder="dd/mm/yyyy" id="today_date">
+                            </div>
+                        </div>
+                        <!--                        FIELDSET 1-->
+                        <fieldset>
+                            <legend>1. Race/Ethnicity</legend>
+                            <div class="row">                                
+                                <div class="left">
+                                    <label class="small" for="ethnicity">Ethnicity</label>
+                                </div>                                
+                                <div class="right-board">
+                                    <!--div class="first"-->
+                                    <div class="columnForm">
+                                        <div class="pt">
+                                            <input type="radio" name="ethnicity" value="Hispanic" id="Hispanic">
+                                            <label class="radio" for="Hispanic">Hispanic</label>
+                                        </div>
+                                        <div class="pt">
+                                            <input type="radio" name="ethnicity" value="Non_Hispanic" id="Non_Hispanic">
+                                            <label class="radio" for="Non_Hispanic">Non-Hispanic</label>
+                                        </div>                                        
+                                    </div>                                    
+                                </div>
+                            </div>
+                            <!--                            <div class="row">
+                                                            <div class="left">
+                                                                <label for="ethnicity">Ethnicity</label>
+                                                            </div>
+                                                            <div class="right">
+                                                                <div class="columnForm">
+                                                                    <div class="pt">
+                                                                        <input type="radio" name="ethnicity" value="hispanic" id="ethnicity">
+                                                                        <label class="radio" for="Hispanic">Hispanic</label>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="columnForm">
+                                                                    <div class="pt">
+                                                                        <input type="radio" name="ethnicity" value="non-Hispanic" id="ethnicity">
+                                                                        <label class="radio" for="Non-Hispanic">Non-Hispanic</label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>-->
+                            <div class="row">                                
+                                <div class="left">
+                                    <label class="small" for="race">Race</label>
+                                </div>                                
+                                <div class="right-board">                                    
+                                    <div class="columnForm">
+                                        <div class="pt">
+                                            <input type="radio" name="race" value="American_Indian_or_Alaskan_Native" id="American_Indian_or_Alaskan_Native">
+                                            <label class="radio" for="American_Indian_or_Alaskan_Native">American Indian or Alaskan Native</label>
+                                        </div>
+                                        <div class="pt">
+                                            <input type="radio" name="race" value="Black_or_African_American" id="Black_or_African_American">
+                                            <label class="radio" for="Black_or_African_American">Black or African American</label>
+                                        </div>
+                                        <div class="pt">
+                                            <input type="radio" name="race" value="Native_Hawaiian_or_Other_Pacifi_Islander" id="Native_Hawaiian_or_Other_Pacifi_Islander">
+                                            <label class="radio" for="Native_Hawaiian_or_Other_Pacifi_Islander">Native Hawaiian or Other Pacific Islander</label>
+                                        </div>  
+                                    </div>
+                                    <div class="columnForm">
+                                        <div class="pt">
+                                            <input type="radio" name="race" value="Asian" id="Asian">
+                                            <label class="radio" for="Asian">Asian</label>
+                                        </div>
+                                        <div class="pt">
+                                            <input type="radio" name="race" value="White" id="White">
+                                            <label class="radio" for="White">White</label>
+                                        </div>
+                                        <div class="pt">
+                                            <input type="radio" name="race" value="Other" id="Other">
+                                            <label class="radio" for="Other">Other: <input class="input_row" type="text" name="race_other" id="race_other"></label>
+                                        </div>  
+                                    </div>                                    
+                                </div>
+                            </div>
+                        </fieldset>
+                        <!--                        FIELDSET 2-->
+                        <fieldset>
+                            <legend>2. Current marital status (Check one):</legend>
+                            <div class="row">
+                                <div class="full">
+                                    <div class="columnForm">
+                                        <div class="pt">
+                                            <input type="radio" name="marital" value="Single_never_married" id="Single_never_married">
+                                            <label class="radio" for="Single_never_married">Single, never married</label>
+                                        </div>
+                                        <div class="pt">
+                                            <input type="radio" name="marital" value="Cohabiting_with_partner" id="Cohabiting_with_partner">
+                                            <label class="radio" for="Cohabiting_with_partner">Cohabiting with partner</label>
+                                        </div>                                        
+                                    </div>
+                                    <div class="columnForm">
+                                        <div class="pt">
+                                            <input type="radio" name="marital" value="Single_never_married" id="Single_never_married">
+                                            <label class="radio" for="Single_never_married">Single, never married</label>
+                                        </div>
+                                        <div class="pt">
+                                            <input type="radio" name="marital" value="Cohabiting_with_partner" id="Cohabiting_with_partner">
+                                            <label class="radio" for="Cohabiting_with_partner">Cohabiting with partner</label>
+                                        </div>                                        
+                                    </div>
+                                    <div class="columnForm">
+                                        <div class="pt">
+                                            <input type="radio" name="marital" value="Married_living_together" id="Married_living_together">
+                                            <label class="radio" for="Married_living_together">Married, living together</label>
+                                        </div>
+                                        <div class="pt">
+                                            <input type="radio" name="marital" value="Married_not_living_together" id="Married_not_living_together">
+                                            <label class="radio" for="Married_not_living_together">Married, not living together</label>
+                                        </div>                                        
+                                    </div>
+                                    <div class="columnForm">
+                                        <div class="pt">
+                                            <input type="radio" name="marital" value="Separatedr" id="Separatedr">
+                                            <label class="radio" for="Separated">Separated</label>
+                                        </div>
+                                        <div class="pt">
+                                            <input type="radio" name="marital" value="Divorced" id="Divorced">
+                                            <label class="radio" for="Divorced">Divorced</label>
+                                        </div>                                        
+                                    </div>
+                                    <div class="columnForm">
+                                        <div class="pt">
+                                            <input type="radio" name="marital" value="Widowed" id="Widowed">
+                                            <label class="radio" for="Widowed">Widowed</label>
+                                        </div>                                
+                                    </div>
+                                </div>
+                            </div>
+                        </fieldset>
+                        <!--                        FIELDSET 3-->
+                        <fieldset>
+                            <legend>3. If you are married or cohabitating with partner, how long has this been?</legend>
+                            <div class="row">
+                                <div class="full">
+                                    <div class="columnForm">
+                                        <div class="pt">
+                                            <input type="number" name="married_years" min="1" max="100" id="married_years">
+                                            <label class="radio" for="married_years">Years</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="columnForm">
+                                    <div class="pt">
+                                        <input type="number" name="married_months" min="1" max="12" id="married_months">
+                                        <label class="radio" for="married_months">Months</label>
+                                    </div>                             
+                                </div>
+                            </div>                            
+                        </fieldset>
+                        <!--                        FIELDSET 4-5 -->
+                        <div></div>
+                        <fieldset>
+                            <!--                            <legend>4. Number of previous marriages?              5. How many children do you have?</legend>-->
+                            <div class="row">
+                                <div class="full">
+                                    <div class="columnForm">
+                                        <legend>4. Number of previous marriages?</legend>
+                                        <div class="pt">
+                                            <input type="number" name="married_number" id="married_number">
+                                            <!--                                        <label class="radio" for="married_years"> Years</label>-->
+                                        </div>                               
+                                    </div>
+                                    <div class="columnForm">
+                                        <legend>5. How many children do you have?</legend>
+                                        <div class="pt">
+                                            <input type="number" name="children_number" id="children_number">
+                                            <!--                                        <label class="radio" for="married_months"> Months</label>-->
+                                        </div>                             
+                                    </div>
+                                </div>
+                            </div>                            
+                        </fieldset>                        
+                        <!--                        FIELDSET 6-->
+                        <fieldset>
+                            <legend>6. TOTAL number of persons including yourself in your household? <input class="input_row" type="number" name="number_persons_household" id="number_persons_household"></legend>                                                      
+                        </fieldset>
+                        <!--                        FIELDSET 7-->
+                        <fieldset>
+                            <legend>7. How many years of formal education have you completed? <input class="input_row" type="number" name="years_education" id="years_education"></legend>                                                      
+                        </fieldset>
+                        <!--                        FIELDSET 8-->
+                        <fieldset>
+                            <legend>8. Highest degree obtained: (Check only one)</legend>
+                            <div class="row">
+                                <div class="full">
+                                    <div class="columnForm">
+                                        <div class="pt">
+                                            <input type="radio" name="degree" value="High_school_graduate" id="High_school_graduate">
+                                            <label class="radio" for="High_school_graduate">High school graduate</label>
+                                        </div>
+                                        <div class="pt">
+                                            <input type="radio" name="degree" value="G_E_D" id="G_E_D">
+                                            <label class="radio" for="G_E_D">G.E.D.</label>
+                                        </div>
+                                        <div class="pt">
+                                            <input type="radio" name="degree" value="Junior_college" id="Junior_college">
+                                            <label class="radio" for="Junior_college">Junior college degree or technical school diploma</label>
+                                        </div>
+                                        <div class="pt">
+                                            <input type="radio" name="degree" value="4_year" id="4_year">
+                                            <label class="radio" for="4_year">4 year college degree</label>
+                                        </div>
+                                    </div>
+                                    <div class="columnForm">
+                                        <div class="pt">
+                                            <input type="radio" name="degree" value="MBA_MA_MS_MPH" id="MBA_MA_MS_MPH">
+                                            <label class="radio" for="MBA_MA_MS_MPH">M.B.A./M.A./M.S./M.P.H.</label>
+                                        </div>
+                                        <div class="pt">
+                                            <input type="radio" name="degree" value="JD_LLB" id="JD_LLB">
+                                            <label class="radio" for="JD_LLB">J.D./LL.B.</label>
+                                        </div>
+                                        <div class="pt">
+                                            <input type="radio" name="degree" value="MD" id="MD">
+                                            <label class="radio" for="MD">M.D.</label>
+                                        </div>
+                                        <div class="pt">
+                                            <input type="radio" name="degree" value="PhD" id="PhD">
+                                            <label class="radio" for="PhD">Ph.D.</label>
+                                        </div>
+                                        <div class="pt">
+                                            <input type="radio" name="degree" value="Other" id="Other">
+                                            <label class="radio" for="Other">Other: <input class="input_row" type="text" name="degree_other" id="degree_other"></label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>                            
+                        </fieldset>
+                        <!--                        FIELDSET 9-->
+                        <fieldset>
+                            <legend>9. What best describes your current employment status? (Check one from each category a, b, & c) </legend>
+                            <div class="row">
+                                <div class="full">
+                                    <div class="columnForm">
+                                        <legend>a. Employment Status</legend>
+                                        <div class="pt">                                        
+                                            <input type="radio" name="a_employment_status" value="Unemployed_not_looking_for_employment" id="Unemployed_not_looking_for_employment">
+                                            <label class="radio" for="Unemployed_not_looking_for_employment">Unemployed, not looking for employment</label>
+                                        </div>
+                                        <div class="pt">                                        
+                                            <input type="radio" name="a_employment_status" value="Unemployed_looking_for_employment" id="Unemployed_looking_for_employment">
+                                            <label class="radio" for="Unemployed_looking_for_employment">Unemployed, looking for employment</label>
+                                        </div>
+                                        <div class="pt">                                        
+                                            <input type="radio" name="a_employment_status" value="Full-time_employed" id="Full-time_employed">
+                                            <label class="radio" for="Full-time_employed">Full-time employed</label>
+                                        </div>
+                                        <div class="pt">                                        
+                                            <input type="radio" name="a_employment_status" value="Part-time_employed" id="Part-time_employed">
+                                            <label class="radio" for="Part-time_employed">Part-time employed</label>
+                                        </div>
+                                        <div class="pt">
+                                            <input type="radio" name="a_employment_status" value="Retired_not_working" id="Retired_not_working">
+                                            <label class="radio" for="Retired_not_working">Retired, not working</label>
+                                        </div>
+                                        <div class="pt">
+                                            <input type="radio" name="a_employment_status" value="Self-employed_for_pay" id="Self-employed_for_pay">
+                                            <label class="radio" for="Self-employed_for_pay">Self-employed for pay</label>
+                                        </div>
+                                    </div>
+                                    <div class="columnForm">
+                                        <legend>b. Student Status</legend>
+                                        <div class="pt">
+                                            <input type="radio" name="b_studentStatus" value="Part-time" id="Part-time">
+                                            <label class="radio" for="Part-time">Part-time</label>
+                                        </div>
+                                        <div class="pt">
+                                            <input type="radio" name="b_studentStatus" value="Full-time" id="Full-time">
+                                            <label class="radio" for="Full-time">Full-time</label>
+                                        </div>
+                                        <div class="pt">
+                                            <input type="radio" name="b_studentStatus" value="Not_a_student" id="Not_a_student">
+                                            <label class="radio" for="Not_a_student">Not a student</label>
+                                        </div>
+                                    </div>
+                                    <div class="columnForm">
+                                        <legend>c. Volunteer Status</legend>
+                                        <div class="pt">
+                                            <input type="radio" name="c_VolunteerStatus" value="Volunteer_Part-time" id="Volunteer_Part-time">
+                                            <label class="radio" for="Volunteer_Part-time">Volunteer Part-time</label>
+                                        </div>
+                                        <div class="pt">
+                                            <input type="radio" name="c_VolunteerStatus" value="Volunteer_Full-time" id="Volunteer_Full-time">
+                                            <label class="radio" for="Volunteer_Full-time">Volunteer Full-time</label>
+                                        </div>
+                                        <div class="pt">
+                                            <input type="radio" name="c_VolunteerStatus" value="No_Volunteer_Work" id="No_Volunteer_Work">
+                                            <label class="radio" for="No_Volunteer_Work">No Volunteer Work</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>                            
+                        </fieldset>
+                        <!--                        FIELDSET 10-->
+                        <fieldset>
+                            <legend>10. Type of occupation? (Check only one)</legend>
+                            <div class="row">
+                                <div class="columnForm">
+                                    <div class="pt">
+                                        <input type="radio" name="type_of_occupation" value="Professional_specialty" id="Professional_specialty">
+                                        <label class="radio" for="Professional_specialty">Professional specialty</label>
+                                    </div>
+                                    <div class="pt">
+                                        <input type="radio" name="type_of_occupation" value="Technical_and_related_support" id="Technical_and_related_support">
+                                        <label class="radio" for="Technical_and_related_support">Technical and related support</label>
+                                    </div>
+                                    <div class="pt">
+                                        <input type="radio" name="type_of_occupation" value="Sales" id="Sales">
+                                        <label class="radio" for="Sales">Sales</label>
+                                    </div>
+                                    <div class="pt">
+                                        <input type="radio" name="type_of_occupation" value="administrative_support_including_clerical" id="administrative_support_including_clerical">
+                                        <label class="radio" for="administrative_support_including_clerical">Administrative support, including clerical</label>
+                                    </div>
+                                    <div class="pt">
+                                        <input type="radio" name="type_of_occupation" value="private_household" id="private_household">
+                                        <label class="radio" for="private_household">Private Household</label>
+                                    </div>
+                                    <div class="pt">
+                                        <input type="radio" name="type_of_occupation" value="protective_service" id="protective_service">
+                                        <label class="radio" for="protective_service">Protective Service</label>
+                                    </div>                                    
+                                </div>
+                                <div class="columnForm">
+                                    <div class="pt">
+                                        <input type="radio" name="type_of_occupation" value="service_except_private_households_protective" id="service_except_private_households_protective">
+                                        <label class="radio" for="service_except_private_households_protective">Service, except private households & protective</label>
+                                    </div>
+                                    <div class="pt">
+                                        <input type="radio" name="type_of_occupation" value="precision_production_craft_and_repair" id="precision_production_craft_and_repair">
+                                        <label class="radio" for="precision_production_craft_and_repair">Precision production, craft and repair</label>
+                                    </div>
+                                    <div class="pt">
+                                        <input type="radio" name="type_of_occupation" value="machine_operators_assemblers_and_inspectors" id="machine_operators_assemblers_and_inspectors">
+                                        <label class="radio" for="machine_operators_assemblers_and_inspectors">Machine operators, assemblers and inspectors</label>
+                                    </div>
+                                    <div class="pt">
+                                        <input type="radio" name="type_of_occupation" value="transportation_and_material_moving_occupations" id="transportation_and_material_moving_occupations">
+                                        <label class="radio" for="transportation_and_material_moving_occupations">Transportation and material moving occupations</label>
+                                    </div>
+                                    <div class="pt">
+                                        <input type="radio" name="type_of_occupation" value="handlers_equipment_cleaners_helpers_and_laborers" id="handlers_equipment_cleaners_helpers_and_laborers">
+                                        <label class="radio" for="handlers_equipment_cleaners_helpers_and_laborers">Handlers, equipment cleaners, helpers and laborers</label>
+                                    </div>
+                                    <div class="pt">
+                                        <input type="radio" name="type_of_occupation" value="farming_forestry_and_fishing" id="farming_forestry_and_fishing">
+                                        <label class="radio" for="farming_forestry_and_fishing">Farming, forestry and fishing</label>
+                                    </div>                                    
+                                </div>
+                            </div>                            
+                        </fieldset>
+
+                        <!--                        FIELDSET 11  12 13 -->                        
+                        <fieldset>
+                            <legend>Spousal Information</legend>
+                            <div class="row">
+                                <div class="left">
+                                    <label class="maxim">
+                                        <legend  for="years_education_spouse">11. How many years of formal education has your spouse completed?</legend>
+                                    </label>
+                                </div>
+                                <div class="right-minim">
+                                    <div class="columnForm">
+                                        <div class="pt">
+                                            <input type="number" name="years_education_spouse" id="years_education_spouse">
+                                        </div>                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <legend  for="highest_degree_spouse">12. Highest degree your spouse has obtained: (Check only one)</legend>
+                            <div class="row">
+                                <div class="full">
+                                    <div class="columnForm">
+                                        <div class="pt">
+                                            <input type="radio" name="highest_degree_spouse" value="high_school_graduate" id="high_school_graduate">
+                                            <label class="radio" for="high_school_graduate">High school graduate</label>
+                                        </div>
+                                        <div class="pt">
+                                            <input type="radio" name="highest_degree_spouse" value="G_E_D" id="G_E_D">
+                                            <label class="radio" for="G_E_D">G.E.D.</label>
+                                        </div>
+                                        <div class="pt">
+                                            <input type="radio" name="highest_degree_spouse" value="junior_college_degree_or" id="junior_college_degree_or">
+                                            <label class="radio" for="junior_college_degree_or">Junior college degree or technical school diploma</label>
+                                        </div>
+                                        <div class="pt">
+                                            <input type="radio" name="highest_degree_spouse" value="4_year_college_degree" id="4_year_college_degree">
+                                            <label class="radio" for="4_year_college_degree">4 year college degree</label>
+                                        </div>
+                                    </div>
+                                    <div class="columnForm">
+                                        <div class="pt">
+                                            <input type="radio" name="highest_degree_spouse" value="MBA_MA_MS_MPH" id="MBA_MA_MS_MPH">
+                                            <label class="radio" for="MBA_MA_MS_MPH">M.B.A./M.A./M.S./M.P.H.</label>
+                                        </div>
+                                        <div class="pt">
+                                            <input type="radio" name="highest_degree_spouse" value="JD_LLB" id="JD_LLB">
+                                            <label class="radio" for="JD_LLB">J.D./LL.B.</label>
+                                        </div>
+                                        <div class="pt">
+                                            <input type="radio" name="highest_degree_spouse" value="MD" id="MD">
+                                            <label class="radio" for="MD">M.D.</label>
+                                        </div>
+                                        <div class="pt">
+                                            <input type="radio" name="highest_degree_spouse" value="PhD" id="PhD">
+                                            <label class="radio" for="PhD">Ph.D.</label>
+                                        </div>
+                                        <div class="pt">
+                                            <input type="radio" name="highest_degree_spouse" value="Other" id="Other">
+                                            <label class="radio" for="Other">Other:<input class="input_row" type="text" name="highest_degree_spouse_other" id="highest_degree_spouse_other"></label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>                            
+                            <legend for="a_employment_status_spouse">13. What best describes your spouse’s current employment status? (Check one from each a, b, & c)</legend>
+                            <div class="row">
+                                <div class="full">
+                                    <div class="columnForm">
+                                        <legend>a. Employment Status</legend>
+                                        <div class="pt">                                        
+                                            <input type="radio" name="a_employment_status_spouse" value="unemployed_not_looking_for_employment_spouse" id="unemployed_not_looking_for_employment_spouse">
+                                            <label class="radio" for="unemployed_not_looking_for_employment_spouse">Unemployed, not looking for employment</label>
+                                        </div>
+                                        <div class="pt">                                        
+                                            <input type="radio" name="a_employment_status_spouse" value="unemployed_looking_for_employment_spouse" id="unemployed_looking_for_employment_spouse">
+                                            <label class="radio" for="unemployed_looking_for_employment_spouse">Unemployed, looking for employment</label>
+                                        </div>
+                                        <div class="pt">                                        
+                                            <input type="radio" name="a_employment_status_spouse" value="full-time_employed_spouse" id="full-time_employed_spouse">
+                                            <label class="radio" for="full-time_employed_spouse">Full-time employed</label>
+                                        </div>
+                                        <div class="pt">                                        
+                                            <input type="radio" name="a_employment_status_spouse" value="part-time_employed_spouse" id="part-time_employed_spouse">
+                                            <label class="radio" for="part-time_employed_spouse">Part-time employed</label>
+                                        </div>
+                                        <div class="pt">
+                                            <input type="radio" name="a_employment_status_spouse" value="retired_not_working_spouse" id="retired_not_working_spouse">
+                                            <label class="radio" for="retired_not_working_spouse">Retired, not working</label>
+                                        </div>
+                                        <div class="pt">
+                                            <input type="radio" name="a_employment_status_spouse" value="self-employed_for_pay_spouse" id="self-employed_for_pay_spouse">
+                                            <label class="radio" for="self-employed_for_pay_spouse">Self-employed for pay</label>
+                                        </div>
+                                    </div>
+                                    <div class="columnForm">
+                                        <legend>b. Student Status</legend>
+                                        <div class="pt">
+                                            <input type="radio" name="b_student_status_spouse" value="part-time_spouse" id="part-time_spouse">
+                                            <label class="radio" for="part-time_spouse">Part-time</label>
+                                        </div>
+                                        <div class="pt">
+                                            <input type="radio" name="b_student_status_spouse" value="full-time_spouse" id="full-time_spouse">
+                                            <label class="radio" for="full-time_spouse">Full-time</label>
+                                        </div>
+                                        <div class="pt">
+                                            <input type="radio" name="b_student_status_spouse" value="not_a_student_spouse" id="not_a_student_spouse">
+                                            <label class="radio" for="not_a_student_spouse">Not a student</label>
+                                        </div>
+                                    </div>
+                                    <div class="columnForm">
+                                        <legend>c. Volunteer Status</legend>
+                                        <div class="pt">
+                                            <input type="radio" name="c_volunteer_status_spouse" value="Volunteer_Part-time_spouse" id="Volunteer_Part-time_spouse">
+                                            <label class="radio" for="Volunteer_Part-time_spouse">Volunteer Part-time</label>                                    </div>
+                                        <div class="pt">
+                                            <input type="radio" name="c_volunteer_status_spouse" value="Volunteer_Full-time_spouse" id="Volunteer_Full-time_spouse">
+                                            <label class="radio" for="Volunteer_Full-time_spouse">Volunteer Full-time</label>
+                                        </div>
+                                        <div class="pt">
+                                            <input type="radio" name="c_volunteer_status_spouse" value="No_Volunteer_Work_spouse" id="No_Volunteer_Work_spouse">
+                                            <label class="radio" for="No_Volunteer_Work_spouse">No Volunteer Work</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <legend for="type_of_occupation">14. Spouse’s type of occupation? (Check only one)</legend>
+                            <div class="row">
+                                <div class="full">
+                                    <div class="columnForm">
+                                        <div class="pt">
+                                            <input type="radio" name="spous_type_of_occupation" value="spous_Professional_specialty" id="spous_Professional_specialty">
+                                            <label class="radio" for="spous_Professional_specialty">Professional specialty</label>
+                                        </div>
+                                        <div class="pt">
+                                            <input type="radio" name="spous_type_of_occupation" value="spous_Technical_and_related_support" id="spous_Technical_and_related_support">
+                                            <label class="radio" for="spous_Technical_and_related_support">Technical and related support</label>
+                                        </div>
+                                        <div class="pt">
+                                            <input type="radio" name="spous_type_of_occupation" value="spous_Sales" id="spous_Sales">
+                                            <label class="radio" for="spous_Sales">Sales</label>
+                                        </div>
+                                        <div class="pt">
+                                            <input type="radio" name="spous_type_of_occupation" value="spous_administrative_support_including_clerical" id="spous_administrative_support_including_clerical">
+                                            <label class="radio" for="spous_administrative_support_including_clerical">Administrative support, including clerical</label>
+                                        </div>
+                                        <div class="pt">
+                                            <input type="radio" name="spous_type_of_occupation" value="spous_private_household" id="spous_private_household">
+                                            <label class="radio" for="spous_private_household">Private Household</label>
+                                        </div>
+                                        <div class="pt">
+                                            <input type="radio" name="spous_type_of_occupation" value="spous_protective_service" id="spous_protective_service">
+                                            <label class="radio" for="spous_protective_service">Protective Service</label>
+                                        </div>                                    
+                                    </div>
+                                    <div class="columnForm">
+                                        <div class="pt">
+                                            <input type="radio" name="spous_type_of_occupation" value="spous_service_except_private_households_protective" id="spous_service_except_private_households_protective">
+                                            <label class="radio" for="spous_service_except_private_households_protective">Service, except private households & protective</label>
+                                        </div>
+                                        <div class="pt">
+                                            <input type="radio" name="spous_type_of_occupation" value="spous_precision_production_craft_and_repair" id="spous_precision_production_craft_and_repair">
+                                            <label class="radio" for="spous_precision_production_craft_and_repair">Precision production, craft and repair</label>
+                                        </div>
+                                        <div class="pt">
+                                            <input type="radio" name="spous_type_of_occupation" value="spous_machine_operators_assemblers_and_inspectors" id="spous_machine_operators_assemblers_and_inspectors">
+                                            <label class="radio" for="spous_machine_operators_assemblers_and_inspectors">Machine operators, assemblers and inspectors</label>
+                                        </div>
+                                        <div class="pt">
+                                            <input type="radio" name="spous_type_of_occupation" value="spous_transportation_and_material_moving_occupations" id="spous_transportation_and_material_moving_occupations">
+                                            <label class="radio" for="spous_transportation_and_material_moving_occupations">Transportation and material moving occupations</label>
+                                        </div>
+                                        <div class="pt">
+                                            <input type="radio" name="spous_type_of_occupation" value="spous_handlers_equipment_cleaners_helpers_and_laborers" id="spous_handlers_equipment_cleaners_helpers_and_laborers">
+                                            <label class="radio" for="spous_handlers_equipment_cleaners_helpers_and_laborers">Handlers, equipment cleaners, helpers and laborers</label>
+                                        </div>
+                                        <div class="pt">
+                                            <input type="radio" name="spous_type_of_occupation" value="spous_farming_forestry_and_fishing" id="spous_farming_forestry_and_fishing">
+                                            <label class="radio" for="spous_farming_forestry_and_fishing">Farming, forestry and fishing</label>
+                                        </div>                                    
+                                    </div>
+                                </div>
+                            </div>                            
+                        </fieldset>
+                        <fieldset>
+                            <legend for="income">Household: income</legend>
+                            <div class="row">
+                                <div class="full">
+                                    <div class="columnForm">
+                                        <div class="pt">
+                                            <input type="radio" name="income" value="income_0_24999" id="income_0_24999">
+                                            <label class="radio" for="income_0_24999">0 - $24,999</label>
+                                        </div>
+                                        <div class="pt">
+                                            <input type="radio" name="income" value="income_25000_49999" id="income_25000_49999">
+                                            <label class="radio" for="income_25000_49999">$25,000-$49,999</label>
+                                        </div>
+                                    </div>
+                                    <div class="columnForm">
+                                        <div class="pt">
+                                            <input type="radio" name="income" value="income_50000_74999" id="income_50000_74999">
+                                            <label class="radio" for="income_50000_74999">$50,000-$74,999</label>
+                                        </div>
+                                        <div class="pt">
+                                            <input type="radio" name="income" value="income_75000_99999" id="income_75000_99999">
+                                            <label class="radio" for="income_75000_99999">$75,000-$99,999</label>
+                                        </div>
+                                    </div>
+                                    <div class="columnForm">
+                                        <div class="pt">
+                                            <input type="radio" name="income" value="income_100,000_" id="income_100,000_">
+                                            <label class="radio" for="income_100,000_">$100,000+</label>
+                                        </div>
+                                    </div>
+                                    <div class="columnForm">
+                                        <div class="pt">
+                                            <label class="radio" for="zip_Code">Zip Code :</label>
+                                            <input class="input_row" type="text" name="income" id="zip_Code">                                           
+                                        </div>
+                                    </div>
+                                </div>                                    
+                            </div>
+
+                            <div class="row">
+                                <div class="full">
+                                    <div class="columnForm">
+                                        <legend for="current_residence">Current residence :</legend>
+                                        <div class="columnForm">
+                                            <div class="pt">
+                                                <input type="radio" name="current_residence" value="detached_house" id="detached_house">
+                                                <label class="radio" for="detached_house">Detached house</label>
+                                            </div>
+                                            <div class="pt">
+                                                <input type="radio" name="current_residence" value="rooming_house_hotel" id="rooming_house_hotel">
+                                                <label class="radio" for="rooming_house_hotel">Rooming house or hotel</label>
+                                            </div>
+                                            <div class="pt">
+                                                <input type="radio" name="current_residence" value="rowhouse_townhouse" id="rowhouse_townhouse">
+                                                <label class="radio" for="rowhouse_townhouse">Rowhouse or townhouse</label>
+                                            </div>
+                                            <div class="pt">
+                                                <input type="radio" name="current_residence" value="mobile_home" id="mobile_home">
+                                                <label class="radio" for="mobile_home">Mobile home</label>
+                                            </div>
+                                            <div class="pt">
+                                                <input type="radio" name="current_residence" value="apartment_condominium" id="apartment_condominium">
+                                                <label class="radio" for="apartment_condominium">Apartment or condominium</label>
+                                            </div>
+                                        </div> 
+                                        <div class="columnForm">
+                                            <div class="pt">
+                                                <input type="radio" name="current_residence" value="retirement_complex_senior_housing" id="retirement_complex_senior_housing">
+                                                <label class="radio" for="retirement_complex_senior_housing">Retirement complex or senior housing</label>
+                                            </div>
+                                            <div class="pt">
+                                                <input type="radio" name="current_residence" value="healthcare_facility_nursing_home" id="healthcare_facility_nursing_home">
+                                                <label class="radio" for="healthcare_facility_nursing_home">Healthcare facility or nursing home</label>
+                                            </div>
+                                            <div class="pt">
+                                                <input type="radio" name="current_residence" value="homeless" id="homeless">
+                                                <label class="radio" for="homeless">Homeless</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="columnForm">
+                                        <legend for="income">What is the major mode of<br>transportation that you use?<br>(check one)</legend>
+                                        <div class="columnForm">
+                                            <div class="pt">
+                                                <input type="radio" name="transportation" value="bus_rail_system" id="bus_rail_system">
+                                                <label class="radio" for="bus_rail_system">Bus/rail system</label>
+                                            </div>
+                                            <div class="pt">
+                                                <input type="radio" name="transportation" value="car" id="car">
+                                                <label class="radio" for="car">Car</label>
+                                            </div>
+                                        </div>
+                                        <div class="columnForm">
+                                            <div class="pt">
+                                                <input type="radio" name="transportation" value="train" id="train">
+                                                <label class="radio" for="train">Train</label>
+                                            </div>
+                                            <div class="pt">
+                                                <input type="radio" name="transportation" value="walk" id="walk">
+                                                <label class="radio" for="walk">Walk</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>                                    
+                            </div>
+                        </fieldset>
+                    </fieldset>
+                    <fieldset id="medical_mental_health_history">
+                        <hgroup>
+                            <h1>MEDICAL & MENTAL HEALTH HISTORY</h1>
+                        </hgroup>
+                        <p>Have you ever had any of the following (check all that apply):</p>
+                        <div class="row">
+                            <div class="full">
+                                <div class="columnForm">
+                                    <div class="pt">
+                                        <input type="checkbox" name="any_following" value="chest_pain" id="chest_pain">
+                                        <label class="radio" for="chest_pain">Chest pain/pressure/tightening</label> 
+                                    </div>
+                                    <div class="pt">
+                                        <input type="checkbox" name="any_following" value="high_blood" id="high_blood">
+                                        <label class="radio" for="high_blood">High Blood Pressure</label> 
+                                    </div>
+                                    <div class="pt">
+                                        <input type="checkbox" name="any_following" value="heart_attack" id="heart_attack">
+                                        <label class="radio" for="heart_attack">Heart attack</label>
+                                    </div>
+                                    <div class="pt">
+                                        <input type="checkbox" name="any_following" value="stroke" id="stroke">
+                                        <label class="radio" for="stroke">Stroke</label>
+                                    </div>
+                                    <div class="pt">
+                                        <input type="checkbox" name="any_following" value="headaches" id="headaches">
+                                        <label class="radio" for="headaches">Headaches</label>
+                                    </div>
+                                    <div class="pt">
+                                        <input type="checkbox" name="any_following" value="head_injury" id="head_injury">
+                                        <label class="radio" for="head_injury">Head injury</label>
+                                    </div>
+                                    <div class="pt">
+                                        <input type="checkbox" name="any_following" value="paralysis" id="paralysis">
+                                        <label class="radio" for="paralysis">Paralysis</label>
+                                    </div>
+                                    <div class="pt">
+                                        <input type="checkbox" name="any_following" value="seizures" id="seizures">
+                                        <label class="radio" for="seizures">Seizures or Convulsions</label>
+                                    </div>
+                                    <div class="pt">
+                                        <input type="checkbox" name="any_following" value="memory_loss" id="memory_loss">
+                                        <label class="radio" for="memory_loss">Memory loss</label>
+                                    </div>
+                                    <div class="pt">
+                                        <input type="checkbox" name="any_following" value="dizzy_spells" id="dizzy_spells">
+                                        <label class="radio" for="dizzy_spells">Dizzy Spells</label>   
+                                    </div>
+                                </div>
+                                <div class="columnForm">
+                                    <div class="pt">
+                                        <input type="checkbox" name="any_following" value="difficulty" id="difficulty">
+                                        <label class="radio" for="difficulty">Difficulty hearing</label>   
+                                    </div>
+                                    <div class="pt">
+                                        <input type="checkbox" name="any_following" value="asthma" id="asthma">
+                                        <label class="radio" for="asthma">Asthma</label>   
+                                    </div>
+                                    <div class="pt">
+                                        <input type="checkbox" name="any_following" value="shortness_of_breath" id="shortness_of_breath">
+                                        <label class="radio" for="shortness_of_breath">Shortness of breath</label>   
+                                    </div>
+                                    <div class="pt">
+                                        <input type="checkbox" name="any_following" value="tb_ung_disorder" id="tb_ung_disorder">
+                                        <label class="radio" for="tb_ung_disorder">TB / Lung disorder</label>   
+                                    </div>
+                                    <div class="pt">
+                                        <input type="checkbox" name="any_following" value="history_cancer" id="history_cancer">
+                                        <label class="radio" for="history_cancer">History of cancer or tumors</label>   
+                                    </div>
+                                    <div class="pt">
+                                        <input type="checkbox" name="any_following" value="ulcers" id="ulcers">
+                                        <label class="radio" for="ulcers">Ulcers</label>   
+                                    </div>
+                                    <div class="pt">
+                                        <input type="checkbox" name="any_following" value="colitis" id="ulcers">
+                                        <label class="radio" for="colitis">Colitis</label>   
+                                    </div>
+                                    <div class="pt">
+                                        <input type="checkbox" name="any_following" value="digestive_problems" id="digestive_problems">
+                                        <label class="radio" for="digestive_problems">Digestive problems</label>   
+                                    </div>
+                                    <div class="pt">
+                                        <input type="checkbox" name="any_following" value="diabetes" id="diabetes">
+                                        <label class="radio" for="diabetes">Diabetes</label>   
+                                    </div>
+                                    <div class="pt">
+                                        <input type="checkbox" name="any_following" value="thyroid_problems" id="thyroid_problems">
+                                        <label class="radio" for="thyroid_problems">Thyroid problems</label>   
+                                    </div>
+                                </div>
+                                <div class="columnForm">
+                                    <div class="pt">
+                                        <input type="checkbox" name="any_following" value="glaucoma" id="glaucoma">
+                                        <label class="radio" for="glaucoma">Glaucoma</label>   
+                                    </div>
+                                    <div class="pt">
+                                        <input type="checkbox" name="any_following" value="cataracts" id="cataracts">
+                                        <label class="radio" for="cataracts">Cataracts</label>   
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <!--                            SUBMIT-->
+                    <div class="submit">
+                        <input type="submit" value="Send">
+                    </div>                    
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

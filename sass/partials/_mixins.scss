@@ -1,0 +1,30 @@
+// Mixin for box-sizing
+// ====================================================================
+
+@mixin bs($bs-type: $defined-bs-type) {
+	-webkit-box-sizing: $bs-type;
+	-moz-box-sizing: $bs-type;
+	box-sizing: $bs-type;
+}
+//mixins with defaults
+@mixin bs($bs-type: border-box) {
+-webkit-box-sizing: $bs-type;
+-moz-box-sizing: $bs-type;
+box-sizing: $bs-type;
+}
+
+// Mixin for creating pill shaped buttons
+// ====================================================================
+
+@mixin button-links($color3: darken($color3,10%),$button-hover: darken($color3,15%)) {
+	border: 1px solid darken($color3,16%);
+	padding: .3em .6em;
+	margin-left: .7em;
+	@include border-radius(3px);
+	@include text-shadow(0 1px 2px $color2);
+	color: darken($color3,10%);
+	background-color: $color3;
+	&:hover {
+		background-color: $button-hover;
+	}
+} // змінила змінні
