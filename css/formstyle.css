@@ -284,11 +284,6 @@ table {
   border-spacing: 0;
 }
 
-/*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-*/
 /* 
     Created on : 15 ╤Б╤Ц╤З 2017, 17:16:43
     Author     : Irusya
@@ -299,19 +294,45 @@ html {
   line-height: 1.5em;
 }
 
-/*h1,h2,h3,h4,h5,h6,p,div,label,input,select,trxtarea {
-    @include margin-trailer;
-}*/
-/*body {
-    font-family: Cabin,Arial,"Arial Unicode MS",Helvetica,sans-serif;
-}*/
-/* line 26, ../sass/partials/_typography.scss */
+/* line 14, ../sass/partials/_typography.scss */
 div {
   margin-bottom: 12px;
   margin-bottom: 0.75rem;
 }
 
-/* line 29, ../sass/partials/_typography.scss */
+/* line 17, ../sass/partials/_typography.scss */
+h1, h2, h3, h4, h5, h6, p {
+  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
+  /*    @media (min-width: 769px) {
+              @include rhythm-margins(2);
+      } //╨┤╨╛╨┤╨░╤Ф ╨▓╨║╨░╨╖╨░╨╜╤Г ╨║╤Ц╨╗╤М╨║╤Ц╤Б╤В╤М ╤А╤П╨┤╨║╤Ц╨▓ ╨╖╨▓╨╡╤А╤Е╤Г ╤Ц ╨╖╨╜╨╕╨╖╤Г ╨┐╤А╨╕ ╨┐╨╡╨▓╨╜╤Ц╨╣ ╤И╨╕╤А╨╕╨╜╤Ц ╨▓╤М╤О╨┐╨╛╤А╤В╨░*/
+}
+
+/* line 23, ../sass/partials/_typography.scss */
+:not(form) {
+  /*    p::first-line {
+      background-color: yellow;
+  }*/
+}
+/* line 24, ../sass/partials/_typography.scss */
+:not(form) h1, :not(form) h2, :not(form) h3, :not(form) h4, :not(form) h5, :not(form) h6 {
+  margin-bottom: 0.2em;
+}
+/* line 27, ../sass/partials/_typography.scss */
+:not(form) p {
+  margin-top: 0;
+}
+
+/* line 36, ../sass/partials/_typography.scss */
+p.indent {
+  text-indent: 2.5em;
+}
+
+/*body {
+    font-family: Cabin,Arial,"Arial Unicode MS",Helvetica,sans-serif;
+}*/
+/* line 42, ../sass/partials/_typography.scss */
 h1 {
   font-size: 26px;
   font-size: 1.602rem;
@@ -319,7 +340,7 @@ h1 {
   line-height: 3rem;
 }
 
-/* line 30, ../sass/partials/_typography.scss */
+/* line 43, ../sass/partials/_typography.scss */
 h2 {
   font-size: 23px;
   font-size: 1.424rem;
@@ -327,7 +348,7 @@ h2 {
   line-height: 3rem;
 }
 
-/* line 31, ../sass/partials/_typography.scss */
+/* line 44, ../sass/partials/_typography.scss */
 h3 {
   font-size: 20px;
   font-size: 1.266rem;
@@ -335,7 +356,7 @@ h3 {
   line-height: 3rem;
 }
 
-/* line 32, ../sass/partials/_typography.scss */
+/* line 45, ../sass/partials/_typography.scss */
 h4 {
   font-size: 18px;
   font-size: 1.125rem;
@@ -343,7 +364,7 @@ h4 {
   line-height: 1.5rem;
 }
 
-/* line 33, ../sass/partials/_typography.scss */
+/* line 46, ../sass/partials/_typography.scss */
 h5 {
   font-size: 16px;
   font-size: 1rem;
@@ -351,7 +372,7 @@ h5 {
   line-height: 1.5rem;
 }
 
-/* line 34, ../sass/partials/_typography.scss */
+/* line 47, ../sass/partials/_typography.scss */
 h6 {
   font-size: 14px;
   font-size: 0.889rem;
@@ -368,23 +389,34 @@ h6 {
 /*p {
     background: rgba($color4,.5);
 }*/
-/* line 45, ../sass/partials/_typography.scss */
+/* line 58, ../sass/partials/_typography.scss */
 h1, h2, h3, h4, h5, h6 {
   text-align: center;
   color: #1f5f93;
   line-height: 1.3em;
 }
 
-/* line 50, ../sass/partials/_typography.scss */
+/* line 63, ../sass/partials/_typography.scss */
 legend {
   font-weight: bold;
   line-height: 2em;
   padding-right: 1em;
 }
 
-/* line 57, ../sass/partials/_typography.scss */
-fieldset p {
+/* line 72, ../sass/partials/_typography.scss */
+.lager_legend {
+  font-weight: normal;
   font-size: 1.3em;
+}
+
+/* line 77, ../sass/partials/_typography.scss */
+fieldset [class*="larger"] {
+  font-size: 1.3em;
+}
+
+/* line 81, ../sass/partials/_typography.scss */
+.underline {
+  text-decoration: underline;
 }
 
 /** {
@@ -411,17 +443,17 @@ body {
   width: 97.5%;
   margin: auto;
   padding: 0.7em 0 0.7em;
-  /*    @media (min-width: 769px) {
-          @include rhythm-margins(2);
-      }  //╨╜╨╡ ╨┐╤А╨░╤Ж╤О╤Ф */
+  /*        @media (min-width: 769px) {
+              @include rhythm-margins(2); //╨┤╨╛╨┤╨░╤Ф ╨▓╨║╨░╨╖╨░╨╜╤Г ╨║╤Ц╨╗╤М╨║╤Ц╤Б╤В╤М ╤А╤П╨┤╨║╤Ц╨▓ ╨╖╨╜╨╕╨╖╤Г - ╤В╤Г╤В ╨╜╨╡ ╨┐╤А╨░╤Ж╤О╤Ф ╤З╨╛╨╝╤Г╤Б╤М
+          }  */
 }
-/* line 38, ../sass/formstyle.scss */
+/* line 39, ../sass/formstyle.scss */
 .content p {
   text-align: justify;
   color: #242c2e;
 }
 
-/* line 43, ../sass/formstyle.scss */
+/* line 44, ../sass/formstyle.scss */
 .column_3 {
   -webkit-column-count: 3;
   /* Chrome, Safari, Opera */
@@ -436,37 +468,39 @@ body {
   column-rule: thin dotted #999;
 }
 
-/* line 55, ../sass/formstyle.scss */
+/* line 56, ../sass/formstyle.scss */
 div.todey_date {
   text-align: right;
 }
-/* line 59, ../sass/formstyle.scss */
+/* line 60, ../sass/formstyle.scss */
 div.todey_date label {
   margin-right: 0.9em;
 }
 
-/* line 67, ../sass/formstyle.scss */
-label:not(.radio) {
+/* line 68, ../sass/formstyle.scss */
+label:not([class^="radio"]) {
   width: 40%;
   float: left;
 }
 
-/* line 74, ../sass/formstyle.scss */
+/* line 73, ../sass/formstyle.scss */
+label[class*="maxim"] {
+  width: 60%;
+}
+
+/* line 76, ../sass/formstyle.scss */
+label.small {
+  width: 22%;
+}
+
+/* line 80, ../sass/formstyle.scss */
 .row [class^="right"] {
   float: left;
   width: 60%;
 }
-/* line 79, ../sass/formstyle.scss */
-.row label.maxim {
-  width: 60%;
-}
-/* line 82, ../sass/formstyle.scss */
+/* line 85, ../sass/formstyle.scss */
 .row .right-minim {
   width: 40%;
-}
-/* line 85, ../sass/formstyle.scss */
-.row label.small {
-  width: 22%;
 }
 /* line 88, ../sass/formstyle.scss */
 .row .right-board {
@@ -486,18 +520,14 @@ label:not(.radio) {
 .row .columnForm-name {
   margin-right: 0.3em;
 }
-/* line 103, ../sass/formstyle.scss */
-.row .right_signature {
-  border-bottom: 1px solid #bfbfbf;
-}
 
-/* line 111, ../sass/formstyle.scss */
+/* line 108, ../sass/formstyle.scss */
 input {
   height: 20px;
   font-size: 1em;
 }
 
-/* line 115, ../sass/formstyle.scss */
+/* line 112, ../sass/formstyle.scss */
 input:not([type="submit"]), textarea, select {
   border: 1px solid #bfbfbf;
   padding: 0.1em;
@@ -508,12 +538,18 @@ input:not([type="submit"]), textarea, select {
   box-shadow: 2px 2px 5px rgba(43, 43, 43, 0.1);
 }
 
-/* line 125, ../sass/formstyle.scss */
-input.input_row {
+/* line 122, ../sass/formstyle.scss */
+.input_row {
   margin-left: 1em;
 }
 
-/* line 128, ../sass/formstyle.scss */
+/* line 125, ../sass/formstyle.scss */
+[class*="tab_input_row"] {
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+}
+
+/* line 129, ../sass/formstyle.scss */
 input[type="number"] {
   width: 4em;
 }
@@ -528,7 +564,58 @@ input[type="number"] {
         //@include nth-omega(4n);
     }
 }*/
-/* line 141, ../sass/formstyle.scss */
+/* line 142, ../sass/formstyle.scss */
+table {
+  /*    .label_left {
+         
+      }*/
+  /*    td,th [id^="medical_problem"] {
+          width: 30%;        
+      }
+      input[type="text"] {
+          width: 90%;            
+      }
+      td,th [id^="medication"] {
+          width: 28%;        
+      }
+      input[type="text"] {
+          width: 90%;            
+      }*/
+  /*    td,th [id^="currently"] {
+          width: 22%;        
+      }
+      input[type="text"] {
+          width: 90%;            
+      }     */
+}
+/* line 148, ../sass/formstyle.scss */
+table table {
+  /*        tr {
+              text-align: center;
+          }*/
+}
+/* line 150, ../sass/formstyle.scss */
+table table td, table table th {
+  border: none;
+}
+/* line 157, ../sass/formstyle.scss */
+table td, table th {
+  border: thin dotted gray;
+}
+/* line 161, ../sass/formstyle.scss */
+table td:not([class*="label_left"]), table th:not([class*="label_left"]) {
+  text-align: center;
+}
+/* line 179, ../sass/formstyle.scss */
+table td[id*="date"], table th[id*="date"] {
+  width: 10%;
+}
+/* line 182, ../sass/formstyle.scss */
+table input[type="date"] {
+  width: 90%;
+}
+
+/* line 192, ../sass/formstyle.scss */
 .submit {
   *zoom: 1;
   max-width: 61em;
@@ -545,7 +632,7 @@ input[type="number"] {
   clear: both;
 }
 
-/* line 145, ../sass/formstyle.scss */
+/* line 196, ../sass/formstyle.scss */
 input[type="submit"] {
   width: 23.72881%;
   float: right;
@@ -564,7 +651,7 @@ input[type="submit"] {
   text-shadow: 0px 1px black;
   border: 1px solid #bfbfbf;
 }
-/* line 160, ../sass/formstyle.scss */
+/* line 211, ../sass/formstyle.scss */
 input[type="submit"]:hover {
   background-color: #205b8c;
   box-shadow: 3px 3px 3px rgba(68, 68, 68, 0.7);

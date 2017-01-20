@@ -165,15 +165,16 @@ and open the template in the editor.
                                     <div class="columnForm">
                                         <div class="pt">
                                             <input type="number" name="married_years" min="1" max="100" id="married_years">
-                                            <label class="radio" for="married_years">Years</label>
+                                            <label class="radio_tab_input_row" for="married_years">Years</label>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="columnForm">
-                                    <div class="pt">
-                                        <input type="number" name="married_months" min="1" max="12" id="married_months">
-                                        <label class="radio" for="married_months">Months</label>
-                                    </div>                             
+
+                                    <div class="columnForm">
+                                        <div class="pt">
+                                            <input type="number" name="married_months" min="1" max="12" id="married_months">
+                                            <label class="radio_tab_input_row" for="married_months">Months</label>
+                                        </div>                             
+                                    </div>
                                 </div>
                             </div>                            
                         </fieldset>
@@ -672,139 +673,755 @@ and open the template in the editor.
                         <hgroup>
                             <h1>MEDICAL & MENTAL HEALTH HISTORY</h1>
                         </hgroup>
-                        <p class="larger">Have you ever had any of the following (check all that apply):</p>
-                        <div class="row">
-                            <div class="full">
-                                <div class="columnForm">
-                                    <div class="pt">
-                                        <input type="checkbox" name="any_following" value="chest_pain" id="chest_pain">
-                                        <label class="radio" for="chest_pain">Chest pain/pressure/tightening</label> 
+                        <fieldset>
+                            <legend class="lager_legend">Have you ever had any of the following (check all that apply):</legend>
+                            <!--                        <p><label class="radio_larger">Have you ever had any of the following (check all that apply):</label></p>-->
+                            <div class="row">
+                                <div class="full">
+                                    <div class="columnForm">
+                                        <div class="pt">
+                                            <input type="checkbox" name="any_following" value="chest_pain" id="chest_pain">
+                                            <label class="radio" for="chest_pain">Chest pain/pressure/tightening</label> 
+                                        </div>
+                                        <div class="pt">
+                                            <input type="checkbox" name="any_following" value="high_blood" id="high_blood">
+                                            <label class="radio" for="high_blood">High Blood Pressure</label> 
+                                        </div>
+                                        <div class="pt">
+                                            <input type="checkbox" name="any_following" value="heart_attack" id="heart_attack">
+                                            <label class="radio" for="heart_attack">Heart attack</label>
+                                        </div>
+                                        <div class="pt">
+                                            <input type="checkbox" name="any_following" value="stroke" id="stroke">
+                                            <label class="radio" for="stroke">Stroke</label>
+                                        </div>
+                                        <div class="pt">
+                                            <input type="checkbox" name="any_following" value="headaches" id="headaches">
+                                            <label class="radio" for="headaches">Headaches</label>
+                                        </div>
+                                        <div class="pt">
+                                            <input type="checkbox" name="any_following" value="head_injury" id="head_injury">
+                                            <label class="radio" for="head_injury">Head injury</label>
+                                        </div>
+                                        <div class="pt">
+                                            <input type="checkbox" name="any_following" value="paralysis" id="paralysis">
+                                            <label class="radio" for="paralysis">Paralysis</label>
+                                        </div>
+                                        <div class="pt">
+                                            <input type="checkbox" name="any_following" value="seizures" id="seizures">
+                                            <label class="radio" for="seizures">Seizures or Convulsions</label>
+                                        </div>
+                                        <div class="pt">
+                                            <input type="checkbox" name="any_following" value="memory_loss" id="memory_loss">
+                                            <label class="radio" for="memory_loss">Memory loss</label>
+                                        </div>
+                                        <div class="pt">
+                                            <input type="checkbox" name="any_following" value="dizzy_spells" id="dizzy_spells">
+                                            <label class="radio" for="dizzy_spells">Dizzy Spells</label>   
+                                        </div>
                                     </div>
-                                    <div class="pt">
-                                        <input type="checkbox" name="any_following" value="high_blood" id="high_blood">
-                                        <label class="radio" for="high_blood">High Blood Pressure</label> 
+                                    <div class="columnForm">
+                                        <div class="pt">
+                                            <input type="checkbox" name="any_following" value="difficulty" id="difficulty">
+                                            <label class="radio" for="difficulty">Difficulty hearing</label>   
+                                        </div>
+                                        <div class="pt">
+                                            <input type="checkbox" name="any_following" value="asthma" id="asthma">
+                                            <label class="radio" for="asthma">Asthma</label>   
+                                        </div>
+                                        <div class="pt">
+                                            <input type="checkbox" name="any_following" value="shortness_of_breath" id="shortness_of_breath">
+                                            <label class="radio" for="shortness_of_breath">Shortness of breath</label>   
+                                        </div>
+                                        <div class="pt">
+                                            <input type="checkbox" name="any_following" value="tb_ung_disorder" id="tb_ung_disorder">
+                                            <label class="radio" for="tb_ung_disorder">TB / Lung disorder</label>   
+                                        </div>
+                                        <div class="pt">
+                                            <input type="checkbox" name="any_following" value="history_cancer" id="history_cancer">
+                                            <label class="radio" for="history_cancer">History of cancer or tumors</label>   
+                                        </div>
+                                        <div class="pt">
+                                            <input type="checkbox" name="any_following" value="ulcers" id="ulcers">
+                                            <label class="radio" for="ulcers">Ulcers</label>   
+                                        </div>
+                                        <div class="pt">
+                                            <input type="checkbox" name="any_following" value="colitis" id="ulcers">
+                                            <label class="radio" for="colitis">Colitis</label>   
+                                        </div>
+                                        <div class="pt">
+                                            <input type="checkbox" name="any_following" value="digestive_problems" id="digestive_problems">
+                                            <label class="radio" for="digestive_problems">Digestive problems</label>   
+                                        </div>
+                                        <div class="pt">
+                                            <input type="checkbox" name="any_following" value="diabetes" id="diabetes">
+                                            <label class="radio" for="diabetes">Diabetes</label>   
+                                        </div>
+                                        <div class="pt">
+                                            <input type="checkbox" name="any_following" value="thyroid_problems" id="thyroid_problems">
+                                            <label class="radio" for="thyroid_problems">Thyroid problems</label>   
+                                        </div>
                                     </div>
-                                    <div class="pt">
-                                        <input type="checkbox" name="any_following" value="heart_attack" id="heart_attack">
-                                        <label class="radio" for="heart_attack">Heart attack</label>
-                                    </div>
-                                    <div class="pt">
-                                        <input type="checkbox" name="any_following" value="stroke" id="stroke">
-                                        <label class="radio" for="stroke">Stroke</label>
-                                    </div>
-                                    <div class="pt">
-                                        <input type="checkbox" name="any_following" value="headaches" id="headaches">
-                                        <label class="radio" for="headaches">Headaches</label>
-                                    </div>
-                                    <div class="pt">
-                                        <input type="checkbox" name="any_following" value="head_injury" id="head_injury">
-                                        <label class="radio" for="head_injury">Head injury</label>
-                                    </div>
-                                    <div class="pt">
-                                        <input type="checkbox" name="any_following" value="paralysis" id="paralysis">
-                                        <label class="radio" for="paralysis">Paralysis</label>
-                                    </div>
-                                    <div class="pt">
-                                        <input type="checkbox" name="any_following" value="seizures" id="seizures">
-                                        <label class="radio" for="seizures">Seizures or Convulsions</label>
-                                    </div>
-                                    <div class="pt">
-                                        <input type="checkbox" name="any_following" value="memory_loss" id="memory_loss">
-                                        <label class="radio" for="memory_loss">Memory loss</label>
-                                    </div>
-                                    <div class="pt">
-                                        <input type="checkbox" name="any_following" value="dizzy_spells" id="dizzy_spells">
-                                        <label class="radio" for="dizzy_spells">Dizzy Spells</label>   
-                                    </div>
-                                </div>
-                                <div class="columnForm">
-                                    <div class="pt">
-                                        <input type="checkbox" name="any_following" value="difficulty" id="difficulty">
-                                        <label class="radio" for="difficulty">Difficulty hearing</label>   
-                                    </div>
-                                    <div class="pt">
-                                        <input type="checkbox" name="any_following" value="asthma" id="asthma">
-                                        <label class="radio" for="asthma">Asthma</label>   
-                                    </div>
-                                    <div class="pt">
-                                        <input type="checkbox" name="any_following" value="shortness_of_breath" id="shortness_of_breath">
-                                        <label class="radio" for="shortness_of_breath">Shortness of breath</label>   
-                                    </div>
-                                    <div class="pt">
-                                        <input type="checkbox" name="any_following" value="tb_ung_disorder" id="tb_ung_disorder">
-                                        <label class="radio" for="tb_ung_disorder">TB / Lung disorder</label>   
-                                    </div>
-                                    <div class="pt">
-                                        <input type="checkbox" name="any_following" value="history_cancer" id="history_cancer">
-                                        <label class="radio" for="history_cancer">History of cancer or tumors</label>   
-                                    </div>
-                                    <div class="pt">
-                                        <input type="checkbox" name="any_following" value="ulcers" id="ulcers">
-                                        <label class="radio" for="ulcers">Ulcers</label>   
-                                    </div>
-                                    <div class="pt">
-                                        <input type="checkbox" name="any_following" value="colitis" id="ulcers">
-                                        <label class="radio" for="colitis">Colitis</label>   
-                                    </div>
-                                    <div class="pt">
-                                        <input type="checkbox" name="any_following" value="digestive_problems" id="digestive_problems">
-                                        <label class="radio" for="digestive_problems">Digestive problems</label>   
-                                    </div>
-                                    <div class="pt">
-                                        <input type="checkbox" name="any_following" value="diabetes" id="diabetes">
-                                        <label class="radio" for="diabetes">Diabetes</label>   
-                                    </div>
-                                    <div class="pt">
-                                        <input type="checkbox" name="any_following" value="thyroid_problems" id="thyroid_problems">
-                                        <label class="radio" for="thyroid_problems">Thyroid problems</label>   
-                                    </div>
-                                </div>
-                                <div class="columnForm">
-                                    <div class="pt">
-                                        <input type="checkbox" name="any_following" value="glaucoma" id="glaucoma">
-                                        <label class="radio" for="glaucoma">Glaucoma</label>   
-                                    </div>
-                                    <div class="pt">
-                                        <input type="checkbox" name="any_following" value="cataracts" id="cataracts">
-                                        <label class="radio" for="cataracts">Cataracts</label>   
-                                    </div>
-                                    <div class="pt">
-                                        <input type="checkbox" name="any_following" value="hepatitis" id="hepatitis">
-                                        <label class="radio" for="hepatitis">Hepatitis (Liver Disease)</label>   
-                                    </div>
-                                    <div class="pt">
-                                        <input type="checkbox" name="any_following" value="anemia" id="anemia">
-                                        <label class="radio" for="anemia">Anemia</label>   
-                                    </div>
-                                    <div class="pt">
-                                        <input type="checkbox" name="any_following" value="mononucleosis" id="mononucleosis">
-                                        <label class="radio" for="mononucleosis">Mononucleosis</label>   
-                                    </div>
-                                    <div class="pt">
-                                        <input type="checkbox" name="any_following" value="arthritis" id="arthritis">
-                                        <label class="radio" for="arthritis">Arthritis</label>   
-                                    </div>
-                                    <div class="pt">
-                                        <input type="checkbox" name="any_following" value="kidney_infections" id="kidney_infections">
-                                        <label class="radio" for="kidney_infections">Kidney infections</label>
-                                    </div>
-                                    <div class="pt">
-                                        <input type="checkbox" name="any_following" value="allergies" id="allergies">
-                                        <label class="radio" for="allergies">Allergies</label>
-                                    </div>
-                                    <div class="pt">
-                                        <input type="checkbox" name="any_following" value="skin_rash" id="skin_rash">
-                                        <label class="radio" for="skin_rash">Skin rash</label>
-                                    </div>
-                                    <div class="pt">
-                                        <input type="checkbox" name="any_following" value="other_list" id="other_list">
-                                        <label class="radio" for="other_list">Other (list)<input class="input_row" type="text" name="any_followinge_other" id="any_followinge_other"></label>
+                                    <div class="columnForm">
+                                        <div class="pt">
+                                            <input type="checkbox" name="any_following" value="glaucoma" id="glaucoma">
+                                            <label class="radio" for="glaucoma">Glaucoma</label>   
+                                        </div>
+                                        <div class="pt">
+                                            <input type="checkbox" name="any_following" value="cataracts" id="cataracts">
+                                            <label class="radio" for="cataracts">Cataracts</label>   
+                                        </div>
+                                        <div class="pt">
+                                            <input type="checkbox" name="any_following" value="hepatitis" id="hepatitis">
+                                            <label class="radio" for="hepatitis">Hepatitis (Liver Disease)</label>   
+                                        </div>
+                                        <div class="pt">
+                                            <input type="checkbox" name="any_following" value="anemia" id="anemia">
+                                            <label class="radio" for="anemia">Anemia</label>   
+                                        </div>
+                                        <div class="pt">
+                                            <input type="checkbox" name="any_following" value="mononucleosis" id="mononucleosis">
+                                            <label class="radio" for="mononucleosis">Mononucleosis</label>   
+                                        </div>
+                                        <div class="pt">
+                                            <input type="checkbox" name="any_following" value="arthritis" id="arthritis">
+                                            <label class="radio" for="arthritis">Arthritis</label>   
+                                        </div>
+                                        <div class="pt">
+                                            <input type="checkbox" name="any_following" value="kidney_infections" id="kidney_infections">
+                                            <label class="radio" for="kidney_infections">Kidney infections</label>
+                                        </div>
+                                        <div class="pt">
+                                            <input type="checkbox" name="any_following" value="allergies" id="allergies">
+                                            <label class="radio" for="allergies">Allergies</label>
+                                        </div>
+                                        <div class="pt">
+                                            <input type="checkbox" name="any_following" value="skin_rash" id="skin_rash">
+                                            <label class="radio" for="skin_rash">Skin rash</label>
+                                        </div>
+                                        <div class="pt">
+                                            <input type="checkbox" name="any_following" value="other_list" id="other_list">
+                                            <label class="radio" for="other_list">Other (list)<input class="input_row" type="text" name="any_followinge_other" id="any_followinge_other"></label>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <p class="larger">Please list current or past medications you have taken for the treatment of any medical problem.</p>
+                        </fieldset>
+                        <fieldset>
+                            <legend class="lager_legend">Please list <strong>current or past </strong>medications you have taken for the treatment of any medical problem.</legend>
+                            <div class="row">
+                                <!--                            <p><label class="radio_larger">Please list <strong>current or past </strong>medications you have taken for the treatment of any medical problem.</label></p>-->
+                                <div class="full">
+                                    <table>
+                                        <tr>
+                                            <td>Medical Problem</td>
+                                            <td>Medication (name/dose)</td>
+                                            <td>Start Date</td>
+                                            <td>Stop Date</td>
+                                            <td>Currently Taking?</td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="text" name="medical_problem_1" id="medical_problem_1"></td>
+                                            <td><input type="text" name="medication_1" id="medication_1"></td>
+                                            <td><input type="date" name="start_date_1" id="start_date_1"></td>
+                                            <td><input type="date" name="stop_date_1" id="stop_date_1"></td>                                
+                                            <td><input type="text" name="currently_taking_1" id="currently_taking_1"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="text" name="medical_problem_2" id="medical_problem_2"></td>
+                                            <td><input type="text" name="medication_2" id="medication_2"></td>
+                                            <td><input type="date" name="start_date_2" id="start_date_2"></td>
+                                            <td><input type="date" name="stop_date_2" id="stop_date_2"></td>                                
+                                            <td><input type="text" name="currently_taking_2" id="currently_taking_2"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="text" name="medical_problem_3" id="medical_problem_3"></td>
+                                            <td><input type="text" name="medication_3" id="medication_3"></td>
+                                            <td><input type="date" name="start_date_3" id="start_date_3"></td>
+                                            <td><input type="date" name="stop_date_3" id="stop_date_3"></td>                                
+                                            <td><input type="text" name="currently_taking_3" id="currently_taking_3"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="text" name="medical_problem_4" id="medical_problem_4"></td>
+                                            <td><input type="text" name="medication_4" id="medication_4"></td>
+                                            <td><input type="date" name="start_date_4" id="start_date_4"></td>
+                                            <td><input type="date" name="stop_date_4" id="stop_date_4"></td>                                
+                                            <td><input type="text" name="currently_taking_4" id="currently_taking_4"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="text" name="medical_problem_5" id="medical_problem_5"></td>
+                                            <td><input type="text" name="medication_5" id="medication_5"></td>
+                                            <td><input type="date" name="start_date_5" id="start_date_5"></td>
+                                            <td><input type="date" name="stop_date_5" id="stop_date_5"></td>                                
+                                            <td><input type="text" name="currently_taking_5" id="currently_taking_5"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="text" name="medical_problem_6" id="medical_problem_6"></td>
+                                            <td><input type="text" name="medication_6" id="medication_6"></td>
+                                            <td><input type="date" name="start_date_6" id="start_date_6"></td>
+                                            <td><input type="date" name="stop_date_6" id="stop_date_6"></td>                                
+                                            <td><input type="text" name="currently_taking_6" id="currently_taking_6"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="text" name="medical_problem_7" id="medical_problem_7"></td>
+                                            <td><input type="text" name="medication_7" id="medication_7"></td>
+                                            <td><input type="date" name="start_date_7" id="start_date_7"></td>
+                                            <td><input type="date" name="stop_date_7" id="stop_date_7"></td>                                
+                                            <td><input type="text" name="currently_taking_7" id="currently_taking_7"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="text" name="medical_problem_8" id="medical_problem_8"></td>
+                                            <td><input type="text" name="medication_8" id="medication_8"></td>
+                                            <td><input type="date" name="start_date_8" id="start_date_8"></td>
+                                            <td><input type="date" name="stop_date_8" id="stop_date_8"></td>                                
+                                            <td><input type="text" name="currently_taking_8" id="currently_taking_8"></td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </fieldset>
+                        <!--                        <div class="row">                            
+                                                    <div class="left">
+                                                        <label class="larger" for="birth_control">What kind of birth control are you using?</label>
+                                                    </div>
+                                                    <div class="right-minim">                                
+                                                            <div class="pt">
+                                                                <input class="input_row" type="text" name="birth_control" id="birth_control">
+                                                            </div>                                
+                                                    </div>                            
+                                                </div>
+                                                <div class="row">                            
+                                                    <div class="left">
+                                                        <label class="larger" for="alcohol">How much alcohol, including beer, do you drink per week?</label>
+                                                    </div>
+                                                    <div class="right-minim">
+                                                        <input class="input_row" type="text" name="alcohol" id="alcohol">
+                                                    </div>                            
+                                                </div>-->
+
+                        <fieldset>
+                            <legend class="lager_legend">What kind of birth control are you using? <input class="input_row" type="text" name="birth_control" id="birth_control"></legend>                                                     
+                        </fieldset>
+                        <fieldset>
+                            <legend class="lager_legend">How much alcohol, including beer, do you drink per week? <input class="input_row" type="text" name="alcohol" id="alcohol"></legend>                                                      
+                        </fieldset>
+
+                        <!--                        <div>
+                                                    <label for="birth_control_copy">? What kind of birth control are you using?</label>
+                                                    <input type="text" name="birth_control_copy" id="birth_control_copy">                   
+                                                </div>
+                                                <div>
+                                                    <label for="alcohol_copy">? How much alcohol, including beer, do you drink per week?</label>
+                                                    <input type="text" name="alcohol_copy" id="alcohol_copy">                   
+                                                </div>-->
+
+                        <!--                        COPY-->
+                        <!--                                                <div class="line">
+                                                                            <p class="larger" for=birth_control">What kind of birth control are you using?</p>
+                                                                            <input type="text" name="birth_control" id="birth_control" required>                   
+                                                                        </div>
+                                                
+                                                                        <div class="line">
+                                                                            <p class="larger" for=alcohol">How much alcohol, including beer, do you drink per week?</p>
+                                                                            <input type="text" name="alcohol" id="alcohol" required>                   
+                                                                        </div>-->
+                        <!--END COPY-->
+                        <fieldset>
+                            <legend class="lager_legend"><strong>Mental Health History</strong></legend>
+                            <legend class="lager_legend">Have you ever had a problem with any of the following (check all that apply):</legend>
+                            <div class="row">
+                                <div class="full">
+                                    <div class="columnForm">
+                                        <div class="pt">
+                                            <input type="checkbox" name="psychologic_problem" value="depression" id="depression">
+                                            <label class="radio" for="depression">Depression</label> 
+                                        </div>
+                                        <div class="pt">
+                                            <input type="checkbox" name="psychologic_problem" value="anxiety" id="anxiety">
+                                            <label class="radio" for="anxiety">Anxiety</label> 
+                                        </div>
+                                        <div class="pt">
+                                            <input type="checkbox" name="psychologic_problem" value="panic_attacks" id="panic_attacks">
+                                            <label class="radio" for="panic_attacks">Panic Attacks</label> 
+                                        </div>
+                                        <div class="pt">
+                                            <input type="checkbox" name="psychologic_problem" value="post_traumatic_stress" id="post_traumatic_stress">
+                                            <label class="radio" for="post_traumatic_stress">Post Traumatic Stress</label> 
+                                        </div>                                        
+                                    </div>
+                                    <div class="columnForm">
+                                        <div class="pt">
+                                            <input type="checkbox" name="psychologic_problem" value="bipolar__disorder" id="bipolar__disorder">
+                                            <label class="radio" for="bipolar__disorder">Bipolar (Manic / Depressive) Disorder</label> 
+                                        </div>
+                                        <div class="pt">
+                                            <input type="checkbox" name="psychologic_problem" value="schizophrenia" id="schizophrenia">
+                                            <label class="radio" for="schizophrenia">Schizophrenia</label> 
+                                        </div>
+                                        <div class="pt">
+                                            <input type="checkbox" name="psychologic_problem" value="alcohol_problems" id="alcohol_problems">
+                                            <label class="radio" for="alcohol_problems">Alcohol Problems (including AA)</label> 
+                                        </div>
+                                        <div class="pt">
+                                            <input type="checkbox" name="psychologic_problem" value="drug_problems" id="drug_problems">
+                                            <label class="radio" for="drug_problems">Drug Problems</label> 
+                                        </div>
+                                        <div class="pt">
+                                            <input type="checkbox" name="psychologic_problem" value="other_list_psychologic" id="other_list_psychologic">
+                                            <label class="radio" for="other_list_psychologic">Other (list)<input class="input_row" type="text" name="psychologic_problem_other" id="psychologic_problem_other"></label> 
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </fieldset>
+                        <fieldset>
+                            <legend class="lager_legend">Please list <strong>current or past </strong>medications you have taken for the treatment of any mental health problem.</legend>
+                            <div class="row">
+                                <div class="full">
+                                    <table>
+                                        <tr>
+                                            <td>Problem (e.g. Depression, Anxiety)</td>
+                                            <td>Medication (name and highest dose)</td>
+                                            <td>Start Date</td>
+                                            <td>Stop Date</td>
+                                            <td>Why stopped (e.g. felt better, didn’t help)</td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="text" name="mental_problem_1" id="mental_problem_1"></td>
+                                            <td><input type="text" name="mental_medication_1" id="mental_medication_1"></td>
+                                            <td><input type="date" name="mental_start_date_1" id="mental_start_date_1"></td>
+                                            <td><input type="date" name="mental_stop_date_1" id="mental_stop_date_1"></td>                                
+                                            <td><input type="text" name="mental_stopped_1" id="mental_stopped_1"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="text" name="mental_problem_2" id="mental_problem_2"></td>
+                                            <td><input type="text" name="mental_medication_2" id="mental_medication_2"></td>
+                                            <td><input type="date" name="mental_start_date_2" id="mental_start_date_2"></td>
+                                            <td><input type="date" name="mental_stop_date_2" id="mental_stop_date_2"></td>                                
+                                            <td><input type="text" name="mental_stopped_2" id="mental_stopped_2"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="text" name="mental_problem_3" id="mental_problem_3"></td>
+                                            <td><input type="text" name="mental_medication_3" id="mental_medication_3"></td>
+                                            <td><input type="date" name="mental_start_date_3" id="mental_start_date_3"></td>
+                                            <td><input type="date" name="mental_stop_date_3" id="mental_stop_date_3"></td>                                
+                                            <td><input type="text" name="mental_stopped_3" id="mental_stopped_3"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="text" name="mental_problem_4" id="mental_problem_4"></td>
+                                            <td><input type="text" name="mental_medication_4" id="mental_medication_4"></td>
+                                            <td><input type="date" name="mental_start_date_4" id="mental_start_date_4"></td>
+                                            <td><input type="date" name="mental_stop_date_4" id="mental_stop_date_4"></td>                                
+                                            <td><input type="text" name="mental_stopped_4" id="mental_stopped_4"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="text" name="mental_problem_5" id="mental_problem_5"></td>
+                                            <td><input type="text" name="mental_medication_5" id="mental_medication_5"></td>
+                                            <td><input type="date" name="mental_start_date_5" id="mental_start_date_5"></td>
+                                            <td><input type="date" name="mental_stop_date_5" id="mental_stop_date_5"></td>                                
+                                            <td><input type="text" name="mental_stopped_5" id="mental_stopped_5"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="text" name="mental_problem_6" id="mental_problem_6"></td>
+                                            <td><input type="text" name="mental_medication_6" id="mental_medication_6"></td>
+                                            <td><input type="date" name="mental_start_date_6" id="mental_start_date_6"></td>
+                                            <td><input type="date" name="mental_stop_date_6" id="mental_stop_date_6"></td>                                
+                                            <td><input type="text" name="mental_stopped_6" id="mental_stopped_6"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="text" name="mental_problem_7" id="mental_problem_7"></td>
+                                            <td><input type="text" name="mental_medication_7" id="mental_medication_7"></td>
+                                            <td><input type="date" name="mental_start_date_7" id="mental_start_date_7"></td>
+                                            <td><input type="date" name="mental_stop_date_7" id="mental_stop_date_7"></td>                                
+                                            <td><input type="text" name="mental_stopped_7" id="mental_stopped_7"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="text" name="mental_problem_8" id="mental_problem_8"></td>
+                                            <td><input type="text" name="mental_medication_8" id="mental_medication_8"></td>
+                                            <td><input type="date" name="mental_start_date_8" id="mental_start_date_8"></td>
+                                            <td><input type="date" name="mental_stop_date_8" id="mental_stop_date_8"></td>                                
+                                            <td><input type="text" name="mental_stopped_8" id="mental_stopped_8"></td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </fieldset>
+                        <fieldset>
+                            <legend class="lager_legend">Has anyone in your family ever been treated for any of the following (check all that apply):</legend>
+                            <div class="row">
+                                <div class="full">
+                                    <table>
+                                        <tr>
+                                            <td></td>
+                                            <td><label class="radio_tab_input_row">Mother</label></td>
+                                            <td><label class="radio_tab_input_row">Father</label></td>
+                                            <td><label class="radio_tab_input_row">Aunt</label></td>
+                                            <td><label class="radio_tab_input_row">Uncle</label></td>
+                                            <td><label class="radio_tab_input_row">Brother</label></td>
+                                            <td><label class="radio_tab_input_row">Sister</label></td>
+                                            <td><label class="radio_tab_input_row">Children</label></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="label_left_"><label class="radio_tab_input_row">Depression</label></td>
+                                            <td><input type="checkbox" name="mother_depression" id="mother_depression"></td>
+                                            <td><input type="checkbox" name="father_depression" id="father_depression"></td>
+                                            <td><input type="checkbox" name="aunt_depression" id="aunt_depression"></td>
+                                            <td><input type="checkbox" name="uncle_depression" id="uncle_depression"></td>
+                                            <td><input type="checkbox" name="brother_depression" id="brother_depression"></td>
+                                            <td><input type="checkbox" name="sister_depression" id="sister_depression"></td>
+                                            <td><input type="checkbox" name="children_depression" id="children_depression"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="label_left"><label class="radio_tab_input_row">Anxiety</label></td>
+                                            <td><input type="checkbox" name="mother_Anxiety" id="mother_Anxiety"></td>
+                                            <td><input type="checkbox" name="father_Anxiety" id="father_Anxiety"></td>
+                                            <td><input type="checkbox" name="aunt_Anxiety" id="aunt_Anxiety"></td>
+                                            <td><input type="checkbox" name="uncle_Anxiety" id="uncle_Anxiety"></td>
+                                            <td><input type="checkbox" name="brother_Anxiety" id="brother_Anxiety"></td>
+                                            <td><input type="checkbox" name="sister_Anxiety" id="sister_Anxiety"></td>
+                                            <td><input type="checkbox" name="children_Anxiety" id="children_Anxiety"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="label_left"><label class="radio_tab_input_row">Panic Attacks</label></td>
+                                            <td><input type="checkbox" name="mother_Panic_attacks" id="mother_Panic_attacks"></td>
+                                            <td><input type="checkbox" name="father_Panic_attacks" id="father_Panic_attacks"></td>
+                                            <td><input type="checkbox" name="aunt_Panic_attacks" id="aunt_Panic_attacks"></td>
+                                            <td><input type="checkbox" name="uncle_Panic_attacks" id="uncle_Panic_attacks"></td>
+                                            <td><input type="checkbox" name="brother_Panic_attacks" id="brother_Panic_attacks"></td>
+                                            <td><input type="checkbox" name="sister_Panic_attacks" id="sister_Panic_attacks"></td>
+                                            <td><input type="checkbox" name="children_Panic_attacks" id="children_Panic_attacks"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="label_left"><label class="radio_tab_input_row">Post Traumatic Stress</label></td>
+                                            <td><input type="checkbox" name="mother_Post_Traumatic" id="mother_Post_Traumatic"></td>
+                                            <td><input type="checkbox" name="father_Post_Traumatic" id="father_Post_Traumatic"></td>
+                                            <td><input type="checkbox" name="aunt_Post_Traumatic" id="aunt_Post_Traumatic"></td>
+                                            <td><input type="checkbox" name="uncle_Post_Traumatic" id="uncle_Post_Traumatic"></td>
+                                            <td><input type="checkbox" name="brother_Post_Traumatic" id="brother_Post_Traumatic"></td>
+                                            <td><input type="checkbox" name="sister_Post_Traumatic" id="sister_Post_Traumatic"></td>
+                                            <td><input type="checkbox" name="children_Post_Traumatic" id="children_Post_Traumatic"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="label_left"><label class="radio_tab_input_row">Bipolar (Manic / Depressive) Disorder</label></td>
+                                            <td><input type="checkbox" name="mother_Bipolar" id="mother_Bipolar"></td>
+                                            <td><input type="checkbox" name="father_Bipolar" id="father_Bipolar"></td>
+                                            <td><input type="checkbox" name="aunt_Bipolar" id="aunt_Bipolar"></td>
+                                            <td><input type="checkbox" name="uncle_Bipolar" id="uncle_Bipolar"></td>
+                                            <td><input type="checkbox" name="brother_Bipolar" id="brother_Bipolar"></td>
+                                            <td><input type="checkbox" name="sister_Bipolar" id="sister_Bipolar"></td>
+                                            <td><input type="checkbox" name="children_Bipolar" id="children_Bipolar"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="label_left"><label class="radio_tab_input_row">Schizophrenia</label></td>
+                                            <td><input type="checkbox" name="mother_Schizophrenia" id="mother_Schizophrenia"></td>
+                                            <td><input type="checkbox" name="father_Schizophrenia" id="father_Schizophrenia"></td>
+                                            <td><input type="checkbox" name="aunt_Schizophrenia" id="aunt_Schizophrenia"></td>
+                                            <td><input type="checkbox" name="uncle_Schizophrenia" id="uncle_Schizophrenia"></td>
+                                            <td><input type="checkbox" name="brother_Schizophrenia" id="brother_Schizophrenia"></td>
+                                            <td><input type="checkbox" name="sister_Schizophrenia" id="sister_Schizophrenia"></td>
+                                            <td><input type="checkbox" name="children_Schizophrenia" id="children_Schizophrenia"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="label_left"><label class="radio_tab_input_row">Alcohol Problems (including AA)</label></td>
+                                            <td><input type="checkbox" name="mother_Alcohol" id="mother_Alcohol"></td>
+                                            <td><input type="checkbox" name="father_Alcohol" id="father_Alcohol"></td>
+                                            <td><input type="checkbox" name="aunt_Alcohol" id="aunt_Alcohol"></td>
+                                            <td><input type="checkbox" name="uncle_Alcohol" id="uncle_Alcohol"></td>
+                                            <td><input type="checkbox" name="brother_Alcohol" id="brother_Alcohol"></td>
+                                            <td><input type="checkbox" name="sister_Alcohol" id="sister_Alcohol"></td>
+                                            <td><input type="checkbox" name="children_Alcohol" id="children_Alcohol"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="label_left"><label class="radio_tab_input_row">Drug Problems</label></td>
+                                            <td><input type="checkbox" name="mother_Drug" id="mother_Drug"></td>
+                                            <td><input type="checkbox" name="father_Drug" id="father_Drug"></td>
+                                            <td><input type="checkbox" name="aunt_Drug" id="aunt_Drug"></td>                                
+                                            <td><input type="checkbox" name="uncle_Drug" id="uncle_Drug"></td>
+                                            <td><input type="checkbox" name="brother_Drug" id="brother_Drug"></td>
+                                            <td><input type="checkbox" name="sister_Drug" id="sister_Drug"></td>
+                                            <td><input type="checkbox" name="children_Drug" id="children_Drug"></td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </fieldset>
+                        <fieldset>
+                            <legend class="lager_legend">Are you currently seeing a counselor or therapist?<input class="input_row" type="text" name="currently_counselor_therapist" id="currently_counselor_therapist"></legend>                                                      
+                        </fieldset>
+                        <fieldset>
+                            <legend class="lager_legend">Are you having problems concentrating or problems remembering things?<input class="input_row" type="text" name="problems_concentrating" id="problems_concentrating"></legend>                                                      
+                        </fieldset>
+                        <fieldset>
+                            <legend class="lager_legend"><strong>Additional Medications</strong></legend>
+                            <p class="lager_legend">Please list any medications you are taking that <span class="underline">have not been</span> listed above, including birth control pills, any over the counter medications and herbal remedies (i.e. decongestants, St. John's Wart, vitamins).</p>
+                            <div class="row">
+                                <div class="full">
+                                    <table>
+                                        <tr>
+                                            <td>Medication (name/dose)</td>                                                                                        
+                                            <td>Start Date</td>
+                                            <td>Stop Date</td>
+                                            <td>Physician</td>
+                                        </tr>
+                                        <tr>                                            
+                                            <td><input type="text" name="not_listed_above_medication_1" id="not_listed_above_medication_1"></td>
+                                            <td><input type="date" name="not_listed_above_start_date_1" id="not_listed_above_start_date_1"></td>
+                                            <td><input type="date" name="not_listed_above_stop_date_1" id="not_listed_above_stop_date_1"></td>
+                                            <td><input type="text" name="not_listed_above_physician_1" id="not_listed_above_physician_1"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="text" name="not_listed_above_medication_2" id="not_listed_above_medication_2"></td>
+                                            <td><input type="date" name="not_listed_above_start_date_2" id="not_listed_above_start_date_2"></td>
+                                            <td><input type="date" name="not_listed_above_stop_date_2" id="not_listed_above_stop_date_2"></td>
+                                            <td><input type="text" name="not_listed_above_physician_2" id="not_listed_above_physician_2"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="text" name="not_listed_above_medication_3" id="not_listed_above_medication_3"></td>
+                                            <td><input type="date" name="not_listed_above_start_date_3" id="not_listed_above_start_date_3"></td>
+                                            <td><input type="date" name="not_listed_above_stop_date_3" id="not_listed_above_stop_date_3"></td>
+                                            <td><input type="text" name="not_listed_above_physician_3" id="not_listed_above_physician_3"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="text" name="not_listed_above_medication_4" id="not_listed_above_medication_4"></td>
+                                            <td><input type="date" name="not_listed_above_start_date_4" id="not_listed_above_start_date_4"></td>
+                                            <td><input type="date" name="not_listed_above_stop_date_4" id="not_listed_above_stop_date_4"></td>
+                                            <td><input type="text" name="not_listed_above_physician_4" id="not_listed_above_physician_4"></td>
+                                        </tr>                                        
+                                    </table>
+                                </div>
+                            </div>
+                        </fieldset>
+                        <fieldset>
+                            <legend class="lager_legend"><strong>Medication Allergies</strong></legend>                           
+                            <div class="row">
+                                <div class="full">
+                                    <table>
+                                        <tr>
+                                            <td>Medication (name/dose)</td>
+                                            <td>Type of Reaction</td>
+                                        </tr>
+                                        <tr>                                            
+                                            <td><input type="text" name="allergies_medication_1" id="allergies_medication_1"></td>
+                                            <td><input type="text" name="allergies_reaction_1" id="allergies_reaction_1"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="text" name="allergies_medication_2" id="allergies_medication_2"></td>
+                                            <td><input type="text" name="allergies_reaction_2" id="allergies_reaction_2"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="text" name="allergies_medication_3" id="allergies_medication_3"></td>
+                                            <td><input type="text" name="allergies_reaction_3" id="allergies_reaction_3"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="text" name="allergies_medication_4" id="allergies_medication_4"></td>
+                                            <td><input type="text" name="allergies_reaction_4" id="allergies_reaction_4"></td>
+                                        </tr>                                        
+                                    </table>
+                                </div>
+                            </div>
+                        </fieldset>
+                        <fieldset>
+                            <legend class="lager_legend"><strong>Physical Activity</strong></legend>                           
+                            <div class="row">
+                                <div class="full">
+                                    <table>
+                                        <tr>
+                                            <td><label class="radio_tab_input_row">Yes</label></td>
+                                            <td><label class="radio_tab_input_row">No</label></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>                                            
+                                            <td><input type="radio" name="physical_activity_1" id="physical_activity_yes_1"></td>
+                                            <td><input type="radio" name="physical_activity_1" id="physical_activity_no_1"></td>
+                                            <td class="label_left">Has your doctor ever said that you have a heart condition and that you should only do physical activity recommended by a doctor?</td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="radio" name="physical_activity_2" id="physical_activity_yes_2"></td>
+                                            <td><input type="radio" name="physical_activity_2" id="physical_activity_no_2"></td>
+                                            <td class="label_left">Do you feel pain in your chest when you do physical activity?</td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="radio" name="physical_activity_3" id="physical_activity_yes_3"></td>
+                                            <td><input type="radio" name="physical_activity_3" id="physical_activity_no_3"></td>
+                                            <td class="label_left">In the past month, have you had chest pain when you were doing physical activity?</td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="radio" name="physical_activity_4" id="physical_activity_yes_4"></td>
+                                            <td><input type="radio" name="physical_activity_4" id="physical_activity_no_4"></td>
+                                            <td class="label_left">Do you lose you balance because of dizziness or do you ever lose consciousness?</td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="radio" name="physical_activity_5" id="physical_activity_yes_5"></td>
+                                            <td><input type="radio" name="physical_activity_5" id="physical_activity_no_5"></td>
+                                            <td class="label_left">Do you have a bone or joint problem (for example, back, knee or hip) that could be made worse by a change in your physical activity?</td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="radio" name="physical_activity_6" id="physical_activity_yes_6"></td>
+                                            <td><input type="radio" name="physical_activity_6" id="physical_activity_no_6"></td>
+                                            <td class="label_left">Is you doctor currently prescribing drugs (for example, water pills) for your blood pressure or heart condition?</td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="radio" name="physical_activity_7" id="physical_activity_yes_7"></td>
+                                            <td><input type="radio" name="physical_activity_7" id="physical_activity_no_7"></td>
+                                            <td class="label_left">Do you know of <span class="underline">any other reason</span> why you should not do physical activity?</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </fieldset>
+                        <fieldset>
+                            <legend class="lager_legend">How much do you exercise each week?<!--input class="input_row" type="textarea" name="exercise_each_week" id="exercise_each_week"--><textarea class="input_row" name="exercise_each_week" id="exercise_each_week" rows="2" cols="45"></textarea></legend>
+                        </fieldset>
+                        <fieldset>
+                            <legend class="lager_legend"><strong>Have you taken any of the anti-depressant medications listed below?</strong></legend>
+                            <legend class="lager_legend"><strong>Have you taken any of the anti-depressant medications listed below?</strong></legend>
+                            <p class="lager_legend"><strong><em>If yes, please indicated: 1) What dosage did you take? 2) How many weeks did you take
+                                        the medication? 3) Did it result in 50% reduction of depressive symptoms? 4) Did you have any troubling side effects that made it difficult to take the medication?</em></strong></p>
+                            <div class="row">
+                                <div class="full">
+                                    <table>
+                                        <tr>
+                                            <td class="label_left"><label class="radio_tab_input_row">Anti-Depressant Medication</label></td>
+                                            <td><label class="radio_tab_input_row">Dose Taken</label></td>
+                                            <td><label class="radio_tab_input_row">Weeks Taken</label></td>
+                                            <td><label class="radio_tab_input_row">50% Reduction in Symptoms</label></td>
+                                            <td><label class="radio_tab_input_row">Troubling Side Effects</label></td>                                            
+                                        </tr>
+                                        <tr>
+                                            <td class="label_left"><label class="radio_tab_input_row">Citalopram or CELEXA</label></td>                                        
+                                            <td>
+                                                <table>
+                                                    <tr>
+                                                        <td><input class="tab_input_row" type="number" name="dose_citalopram" id="dose_citalopram"></td>
+                                                        <td><label class="tab_input_row" for="dose_citalopram">mg</label></td>
+                                                    </tr>                                                    
+                                                </table>
+                                            </td>                                                
+                                            <td><input class="tab_input_row" type="number" name="weeks_citalopram" id="weeks_citalopram"></td>
+                                            <td>
+                                                <table>
+                                                    <tr>
+                                                        <td><input class="radio_tab_input_row" type="checkbox" name="reduction_symptoms_citalopram_yes" id="reduction_symptoms_citalopram_yes"></td>
+                                                        <td><label class="radio_tab_input_row" for="reduction_symptoms_citalopram_yes">Yes</label></td>
+                                                        <td><input class="radio_tab_input_row" type="checkbox" name="reduction_symptoms_citalopram_no" id="reduction_symptoms_citalopram_no"></td>
+                                                        <td><label class="radio_tab_input_row" for="reduction_symptoms_citalopram_no">No</label></td>
+                                                    </tr>                                                    
+                                                </table>
+                                            </td>
+                                            <td>
+                                                <table>
+                                                    <tr>
+                                                        <td><input class="radio_tab_input_row" type="checkbox" name="troubling_side_effects_citalopram_yes" id="rtroubling_side_effects_citalopram_yes"></td>
+                                                        <td><label class="radio_tab_input_row" for="troubling_side_effects_citalopram_yes">Yes</label></td>
+                                                        <td><input class="radio_tab_input_row" type="checkbox" name="troubling_side_effects_citalopram_no" id="troubling_side_effects_citalopram_no"></td>
+                                                        <td><label class="radio_tab_input_row" for="troubling_side_effects_citalopram_no">No</label></td>
+                                                    </tr>                                                    
+                                                </table>
+                                            </td>                                            
+                                        </tr>                                        
+                                        <tr>
+                                            <td class="label_left"><label class="radio_tab_input_row">Fluoxetine or PROZAC</label></td>                                        
+                                            <td>
+                                                <table>
+                                                    <tr>
+                                                        <td><input class="tab_input_row" type="number" name="dose_fluoxetine" id="dose_fluoxetine"></td>
+                                                        <td><label class="tab_input_row" for="dose_fluoxetine">mg</label></td></td>
+                                                    </tr>                                                    
+                                                </table>
+                                            </td>                                                
+                                            <td><input class="tab_input_row" type="number" name="weeks_fluoxetine" id="weeks_fluoxetine"></td>
+                                            <td>
+                                                <table>
+                                                    <tr>
+                                                        <td><input class="radio_tab_input_row" type="checkbox" name="reduction_symptoms_fluoxetine_yes" id="reduction_symptoms_fluoxetine_yes"></td>
+                                                        <td><label class="radio_tab_input_row" for="reduction_symptoms_fluoxetine_yes">Yes</label></td>
+                                                        <td><input class="radio_tab_input_row" type="checkbox" name="reduction_symptoms_fluoxetine_no" id="reduction_symptoms_fluoxetine_no"></td>
+                                                        <td><label class="radio_tab_input_row" for="reduction_symptoms_fluoxetine_no">No</label></td>
+                                                    </tr>                                                    
+                                                </table>
+                                            </td>
+                                            <td>
+                                                <table>
+                                                    <tr>
+                                                        <td><input class="radio_tab_input_row" type="checkbox" name="troubling_side_effects_fluoxetine_yes" id="rtroubling_side_effects_fluoxetine_yes"></td>
+                                                        <td><label class="radio_tab_input_row" for="troubling_side_effects__fluoxetine_yes">Yes</label></td>
+                                                        <td><input class="radio_tab_input_row" type="checkbox" name="troubling_side_effects_fluoxetine_no" id="troubling_side_effects_fluoxetine_no"></td>
+                                                        <td><label class="radio_tab_input_row" for="troubling_side_effects_fluoxetine_no">No</label></td>
+                                                    </tr>                                                    
+                                                </table>
+                                            </td>                                            
+                                        </tr>
+                                        <tr>
+                                            <td class="label_left"><label class="radio_tab_input_row">Paroxetine or PAXIL</label></td>                                        
+                                            <td>
+                                                <table>
+                                                    <tr>
+                                                        <td><input class="tab_input_row" type="number" name="dose_paroxetine" id="dose_paroxetine"></td>
+                                                        <td><label class="tab_input_row" for="dose_paroxetine">mg</label></td>
+                                                    </tr>                                                    
+                                                </table>
+                                            </td>                                                
+                                            <td><input class="tab_input_row" type="number" name="weeks_paroxetine" id="weeks_paroxetine"></td>
+                                            <td>
+                                                <table>
+                                                    <tr>
+                                                        <td><input class="radio_tab_input_row" type="checkbox" name="reduction_symptoms_paroxetine_yes" id="reduction_symptoms_paroxetine_yes"></td>
+                                                        <td><label class="radio_tab_input_row" for="reduction_symptoms_paroxetine_yes">Yes</label></td>
+                                                        <td><input class="radio_tab_input_row" type="checkbox" name="reduction_symptoms_paroxetine_no" id="reduction_symptoms_paroxetine_no"></td>
+                                                        <td><label class="radio_tab_input_row" for="reduction_symptoms_paroxetine_no">No</label></td>
+                                                    </tr>                                                    
+                                                </table>
+                                            </td>
+                                            <td>
+                                                <table>
+                                                    <tr>
+                                                        <td><input class="radio_tab_input_row" type="checkbox" name="troubling_side_effects_paroxetine_yes" id="rtroubling_side_effects_paroxetine_yes"></td>
+                                                        <td><label class="radio_tab_input_row" for="troubling_side_effects_paroxetine_yes">Yes</label></td>
+                                                        <td><input class="radio_tab_input_row" type="checkbox" name="troubling_side_effects_paroxetine_no" id="troubling_side_effects_fluoxetine_no"></td>
+                                                        <td><label class="radio_tab_input_row" for="troubling_side_effects_paroxetine_no">No</label></td>
+                                                    </tr>                                                    
+                                                </table>
+                                            </td>                                            
+                                        </tr>
+                                        <tr>
+                                            <td class="label_left"><label class="radio_tab_input_row">Escitalopram or LEXAPRO</label></td>                                        
+                                            <td>
+                                                <table>
+                                                    <tr>
+                                                        <td><input class="tab_input_row" type="number" name="dose_escitalopram" id="dose_escitalopram"></td>
+                                                        <td><label class="tab_input_row" for="dose_escitalopram">mg</label></td>                                                    </tr>                                                    
+                                                </table>
+                                            </td>                                                
+                                            <td><input class="tab_input_row" type="number" name="weeks_escitalopram" id="weeks_escitalopram"></td>
+                                            <td>
+                                                <table>
+                                                    <tr>
+                                                        <td><input class="radio_tab_input_row" type="checkbox" name="reduction_symptoms_escitalopram_yes" id="reduction_symptoms_escitalopram_yes"></td>
+                                                        <td><label class="radio_tab_input_row" for="reduction_symptoms_escitalopram_yes">Yes</label></td>
+                                                        <td><input class="radio_tab_input_row" type="checkbox" name="reduction_symptoms_escitalopram_no" id="reduction_symptoms_escitalopram_no"></td>
+                                                        <td><label class="radio_tab_input_row" for="reduction_symptoms_escitalopram_no">No</label></td>
+                                                    </tr>                                                    
+                                                </table>
+                                            </td>
+                                            <td>
+                                                <table>
+                                                    <tr>
+                                                        <td><input class="radio_tab_input_row" type="checkbox" name="troubling_side_effects_escitalopram_yes" id="rtroubling_side_effects_escitalopram_yes"></td>
+                                                        <td><label class="radio_tab_input_row" for="troubling_side_effects_escitalopram_yes">Yes</label></td>
+                                                        <td><input class="radio_tab_input_row" type="checkbox" name="troubling_side_effects_escitalopram_no" id="troubling_side_effects_escitalopram_no"></td>
+                                                        <td><label class="radio_tab_input_row" for="troubling_side_effects_escitalopram_no">No</label></td>
+                                                    </tr>                                                    
+                                                </table>
+                                            </td>                                            
+                                        </tr>
+                                        
+                                    </table>
+                                </div>
+                            </div>
+                        </fieldset>
+
                     </fieldset>
+
 
                     <!--                            SUBMIT-->
                     <div class="submit">

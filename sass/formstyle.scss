@@ -29,12 +29,13 @@ body {
 .content {
     //@include container;
     //@include susy-grid-background;
+    //@include debug-vertical-alignment;
     width: 97.5%;
     margin: auto; 
     padding: 0.7em 0 0.7em;
-    /*    @media (min-width: 769px) {
-            @include rhythm-margins(2);
-        }  //не працює */
+/*        @media (min-width: 769px) {
+            @include rhythm-margins(2); //додає вказану кількість рядків знизу - тут не працює чомусь
+        }  */
     p {
         text-align: justify;
         color: $color4;
@@ -64,26 +65,25 @@ div.todey_date {
         //width: 50em;
     }
 }
-label:not(.radio){
+label:not([class^="radio"]) {
     //display: block;
     width: 40%;
     float: left;
 }
-
+label[class*="maxim"] {
+    width: 60%;
+}
+label.small {
+    width: 22%;
+}
 .row {      
     [class^="right"] {        
         float: left;
         width: 60%; //блок лишається у позиції справа
         //min-width: 60%; //блок переміщується під попередній ()           
     }
-    label.maxim {
-        width: 60%;
-    }
     .right-minim {
         width: 40%;
-    }
-    label.small {
-        width: 22%;
     }
     .right-board {
         width: 78%;
@@ -99,10 +99,7 @@ label:not(.radio){
     }
     .columnForm-name {
         margin-right: 0.3em;
-    }
-    .right_signature {
-        border-bottom: 1px solid #bfbfbf;
-    }
+    }    
     .columnForm:first-child {
         //width: 49%;
         //margin-right: 0.9em;
@@ -122,8 +119,12 @@ input:not([type="submit"]), textarea, select {
     border-radius: 3px;
     box-shadow: 2px 2px 5px hsla(0, 0%, 16.6667%, 0.1);
 }
-input.input_row {
+.input_row {
     margin-left: 1em;
+}
+[class*="tab_input_row"] {
+    margin-left: 0.5em;
+    margin-right: 0.5em;
 }
 input[type="number"] {
     width: 4em;
@@ -138,6 +139,56 @@ input[type="number"] {
         //@include nth-omega(4n);
     }
 }*/
+table {
+    //margin-left: 20px;
+    //margin-right: 20px;
+    //border: thin solid gray;
+    //caption-side: bottom;
+    //border-collapse: collapse;
+    table {
+        //float: right;
+        td, th {
+            border: none;
+        }
+/*        tr {
+            text-align: center;
+        }*/
+    }
+    td, th {
+        border: thin dotted gray;
+        //padding: 5px;                
+    }
+    td:not([class*="label_left"]), th:not([class*="label_left"]) {
+        text-align: center;
+    }
+/*    .label_left {
+       
+    }*/
+    /*    td,th [id^="medical_problem"] {
+            width: 30%;        
+        }
+        input[type="text"] {
+            width: 90%;            
+        }
+        td,th [id^="medication"] {
+            width: 28%;        
+        }
+        input[type="text"] {
+            width: 90%;            
+        }*/
+    td[id*="date"],th[id*="date"] {
+        width: 10%;        
+    }
+    input[type="date"] {
+        width: 90%;            
+    }
+    /*    td,th [id^="currently"] {
+            width: 22%;        
+        }
+        input[type="text"] {
+            width: 90%;            
+        }     */
+}
 .submit {
     @include container;
     //@include susy-grid-background;
@@ -162,6 +213,10 @@ input[type="submit"] {
         box-shadow: 3px 3px 3px hsla(0, 0%, 26.6667%, 0.7);
     }
 }
+
+//FOR ONE ROW
+
+//
 /*@include with-grid-settings(28,3em,0.5em,0) {
         div.name {
             @include container;
@@ -173,4 +228,7 @@ input[type="submit"] {
             @include nth-omega;
         }
     }*/
+
+
+
 

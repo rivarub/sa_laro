@@ -1,8 +1,3 @@
-/*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-*/
 /* 
     Created on : 15 січ 2017, 17:16:43
     Author     : Irusya
@@ -13,19 +8,37 @@ and open the template in the editor.
 $base-font-size: 16px !global;
 $base-line-height: 24px !global;
 $rhythm-unit: "rem" !global;
-$rem-with-px-fallback: true !global;  
-
+$rem-with-px-fallback: true !global;
 @include establish-baseline;
 
-/*h1,h2,h3,h4,h5,h6,p,div,label,input,select,trxtarea {
-    @include margin-trailer;
-}*/
+div {
+    @include margin-trailer(0.5); //додає вказану кількість рядків знизу
+}
+h1,h2,h3,h4,h5,h6,p {
+    @include margin-trailer; //додає вказану кількість рядків знизу
+/*    @media (min-width: 769px) {
+            @include rhythm-margins(2);
+    } //додає вказану кількість рядків зверху і знизу при певній ширині вьюпорта*/
+}
+:not(form) {
+    h1,h2,h3,h4,h5,h6 {
+        margin-bottom: 0.2em;       
+    }
+    p {
+        margin-top: 0;
+        //margin-bottom: 1.5em;
+        //text-indent: 2.5em;         
+    }
+    /*    p::first-line {
+        background-color: yellow;
+    }*/
+}
+p.indent {
+    text-indent: 2.5em;
+}
 /*body {
     font-family: Cabin,Arial,"Arial Unicode MS",Helvetica,sans-serif;
 }*/
-div {
-    @include margin-trailer(0.5);
-}
 h1 { @include adjust-font-size-to(1.602rem);} //використовуємо для підбору співвідношення шрифтів з базовим type-scale.com
 h2 { @include adjust-font-size-to(1.424rem);}
 h3 { @include adjust-font-size-to(1.266rem);}
@@ -42,19 +55,30 @@ h6 { @include adjust-font-size-to(0.889rem);}
 /*p {
     background: rgba($color4,.5);
 }*/
-h1,h2,h3,h4,h5,h6 {
+h1,h2,h3,h4,h5,h6 {    
     text-align: center;
     color: $color2;
     line-height: $Lh2;
 }
 legend {
     font-weight: bold;
-    //font-size: 0.7em;
+    //font-size: 1em;
     line-height: 2em;
     padding-right: 1em;    
-}
-fieldset {
-    p.larger {
-        font-size: $p_larger;
+    strong {
+        //font-size: 1em;
     }
 }
+.lager_legend {
+    font-weight: normal;
+    font-size: $p_larger;
+}
+fieldset {
+    [class*="larger"] {
+        font-size: $p_larger;        
+    }    
+}
+.underline {
+    text-decoration: underline; 
+}
+
