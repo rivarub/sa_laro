@@ -40,7 +40,19 @@ preg_match('/<title>(.*)<\/title>/i', $html, $match);
 $title = $match[1];
 //
 //$form = str_replace('<input value="send" onclick="send();" type="submit">', '', $form);
-//$html = preg_replace('/<textarea[^>]*>(.*)<\/textarea>/si', '<em>$1</em>', $form);
+
+$form = preg_replace('/<input\s[^<>]*type[^<>]*[text|tel|email][^<>]*value="([^"]*)"[^<>]*>/i', '<strong>$1</strong>', $form);
+
+$form = preg_replace('/<input\s[^<>]*value="([^"]*)"[^<>]*type[^<>]*[text|tel|email][^<>]*>/i', '<strong>$1</strong>', $form);
+//or use looking foward
+//or find <input type=text, then find value inside...
+
+$form = preg_replace_callback('/<textarea\s[^<>]*>([^<>]*)<\/textarea>/i', 
+        function ($matches) {
+            return '<br><strong><em>'.preg_replace('/\n/', '<br>', $matches[1]).'</em></strong>';
+        }, 
+        $form);
+//$form = preg_replace('/<textarea\s[^<>]*>([^<>]*)<\/textarea>/i', '<em>$1</em>', $form);
 $form = preg_replace('/<div\s[^<>]*class[^<>]*submit.*<\/div>/si', '', $form);
 //$form = str_replace('<input type="submit" value="send" onclick="send();">', '', $form);
 //$form = preg_replace('/<input\s[^<>]*type[^<>]*submit[^<>]*>/','', $form);

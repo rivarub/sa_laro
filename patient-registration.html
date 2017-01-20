@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Patient-Registration.pages</title>
+        <title>Patient Registration</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="css/formstyle.css">
@@ -19,12 +19,12 @@
                     </hgroup>
                     <div class="row">
                         <div class="left">
-                            <label for="first-name">Patient Name:</label>
+                            <label for="name-first">Patient Name:</label>
                         </div>
                         <div class="right">
                             <div class="columnForm-name">
                                 <div class="pt">
-                                    <input class="name" type="text" name="name-first" id="name-first" placeholder="First" required>
+                                    <input type="text" class="name" name="name-first" id="name-first" placeholder="First" required>
                                 </div>
                             </div>
                             <div class="columnForm-name">
@@ -76,7 +76,7 @@
                     <div>
                         <label for="guardian-relation">Relation:</label>
                         <input name="guardian-relation" id="guardian-relation" type="text">                   
-                    </div> 
+                    </div>
                     <div>
                         <label for="address">Address:</label>
                         <textarea  name="address" id="address" rows="4" cols="45"></textarea>                   
@@ -130,7 +130,7 @@
                             </div>
                             <div class="columnForm-name">
                                 <div class="pt">
-                                    <input type="text" name="subscriber-date-birth" id="subscriber-date-birth" placeholder="date">
+                                    <input type="date" name="subscriber-date-birth" id="subscriber-date-birth" placeholder="dd/mm/yyyy">
                                 </div>
                             </div>
                         </div>
@@ -151,7 +151,7 @@
                         <input type="hidden" name="url" value="patient-registration.html">
                         <input type="hidden" id="html" name="html">
                         <input type="submit" value="send" onclick="send();">
-                    </div>
+                    </div>  
                 </form>
             </div>
         </div>
