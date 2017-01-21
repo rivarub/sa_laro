@@ -11,17 +11,19 @@ and open the template in the editor.
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="css/formstyle.css">
         <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
         <script src="js/modernizr.2.6.2.min.js"></script>
+        <script src="js/catchHTML.js"></script>
     </head>
     <body>
         <div class="container">
             <div class="content">
-                <form id="consent_to_treat" action="#">
+                <form id="consent_to_treat" method="POST" action="form2pdf.php">
                     <h1>Consent to treat</h1>
                     <p class="indent">I hereby authorize employees and agents of Fusion Family Consulting (including physicians, physician assistants and nurse practitioners and other employees and staff members) to render mental health evaluations and care to the patient indicated below. The duration of this consent is indefinite and continues until revoked in writing. I understand that by not signing this consent, the patient will not be provided mental health care.</p>            
                     <div class="row">
                         <div class="left">
-                            <label for="first-name">Patient Name:</label>
+                            <label for="name-first">Patient Name:</label>
                         </div>
                         <div class="right">
                             <div class="columnForm-name">
@@ -44,7 +46,7 @@ and open the template in the editor.
                     <div>
                         <p>Signature of Patient, Parent, or Legal Guardian</p>
                         <label for="date">Date</label>
-                        <input type="date" name="date" placeholder="dd/mm/yyyy" required>                   
+                        <input type="date" id="date" name="date" placeholder="dd/mm/yyyy" required>                   
                     </div>
 
                     <!--                    <div>                        
@@ -52,7 +54,9 @@ and open the template in the editor.
                                             <input type="date" name="date" placeholder="dd/mm/yyyy" required>                   
                                         </div>-->
                     <div class="submit">
-                        <input type="submit" value="Send">
+                        <input type="hidden" name="url" value="consent_to_treat.html">
+                        <input type="hidden" id="html" name="html">
+                        <input type="submit" value="send" onclick="send();">
                     </div>
                 </form>                
             </div>

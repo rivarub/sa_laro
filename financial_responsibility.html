@@ -1,9 +1,4 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
 <html>
     <head>
         <title>Financial Responsibility</title>
@@ -11,17 +6,19 @@ and open the template in the editor.
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="css/formstyle.css">
         <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
         <script src="js/modernizr.2.6.2.min.js"></script>
+        <script src="js/catchHTML.js"></script>
     </head>
     <body>
         <div class="container">
             <div class="content">
-                <form id="financial_responsibility" action="#">
+                <form id="financial_responsibility" method="POST" action="form2pdf.php">
                     <h1>Financial Responsibility</h1>
-                    <p class="indent">I hereby authorize payment of medical/mental health benefits directly to Fusion Family Consulting and/ or the attending physician for services rendered. Authorization is hereby granted to release information contained in die patient’s medical record to die patient’s medical insurance company (or its employees or agents) as may be necessary to process and complete the patient’s medical insurance claim. I understand that this authorization may include release of information regarding communicable diseases, such as Acquired Immune Deficiency Syndrome (“AIDS”) and Human Immunodeficiency Virus (“HIV”). I understand that I am financially responsible for the total charges for services rendered which may include services not covered by the patient’s insurance companies. I agree diat all amounts are due upon request and are payable to Fusion Family Consulting. I further understand that should my account become delinquent, I shall pay the reasonable attorney fees or collection expenses of Fusion Family Consulting, if any. The duration of this authorization is indefinite and continues until revoked in writing I understand that by not signing this release of information, I am responsible for payment of services in full before the services are rendered.</p>
+                    <p class="indent">I hereby authorize payment of medical/mental health benefits directly to Fusion Family Consulting and/ or the attending physician for services rendered. Authorization is hereby granted to release information contained in die patient’s medical record to die patient’s medical insurance company (or its employees or agents) as may be necessary to process and complete the patient’s medical insurance claim. I understand that this authorization may include release of information regarding communicable diseases, such as Acquired Immune Deficiency Syndrome (“AIDS”) and Human Immunodeficiency Virus (“HIV”). I understand that I am financially responsible for the total charges for services rendered which may include services not covered by the patient’s insurance companies. I agree that all amounts are due upon request and are payable to Fusion Family Consulting. I further understand that should my account become delinquent, I shall pay the reasonable attorney fees or collection expenses of Fusion Family Consulting, if any. The duration of this authorization is indefinite and continues until revoked in writing I understand that by not signing this release of information, I am responsible for payment of services in full before the services are rendered.</p>
                    <div class="row">
                         <div class="left">
-                            <label for="first-name">Patient Name:</label>
+                            <label for="name-first">Patient Name:</label>
                         </div>
                         <div class="right">
                             <div class="columnForm-name">
@@ -44,11 +41,13 @@ and open the template in the editor.
                     <div>
                         <p>Signature of Patient, Parent, or Legal Guardian</p>
                         <label for="date">Date</label>
-                        <input type="date" name="date" placeholder="dd/mm/yyyy" required>                   
+                        <input type="date" id="date" name="date" placeholder="dd/mm/yyyy" required>                   
                     </div>                  
-                    <div class="submit">                   
-                        <input type="submit" value="Send">
-                    </div>                    
+                    <div class="submit">
+                        <input type="hidden" name="url" value="financial_responsibility.html">
+                        <input type="hidden" id="html" name="html">
+                        <input type="submit" value="send" onclick="send();">
+                    </div>
                 </form>
             </div>
         </div>
