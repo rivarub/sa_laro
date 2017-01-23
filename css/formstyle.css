@@ -295,36 +295,61 @@ html {
 }
 
 /* line 14, ../sass/partials/_typography.scss */
-div {
-  margin-bottom: 12px;
-  margin-bottom: 0.75rem;
+div, hgroup, [class*="columnForm_margin_trailer"] {
+  margin-bottom: 8px;
+  margin-bottom: 0.525rem;
 }
 
 /* line 17, ../sass/partials/_typography.scss */
-h1, h2, h3, h4, h5, h6, p {
-  margin-bottom: 24px;
-  margin-bottom: 1.5rem;
-  /*    @media (min-width: 769px) {
-              @include rhythm-margins(2);
-      } //╨┤╨╛╨┤╨░╤Ф ╨▓╨║╨░╨╖╨░╨╜╤Г ╨║╤Ц╨╗╤М╨║╤Ц╤Б╤В╤М ╤А╤П╨┤╨║╤Ц╨▓ ╨╖╨▓╨╡╤А╤Е╤Г ╤Ц ╨╖╨╜╨╕╨╖╤Г ╨┐╤А╨╕ ╨┐╨╡╨▓╨╜╤Ц╨╣ ╤И╨╕╤А╨╕╨╜╤Ц ╨▓╤М╤О╨┐╨╛╤А╤В╨░*/
+div[class^="full_margin_right"], div[class^="full_margin_right_right"] {
+  margin-bottom: 0px;
+  margin-bottom: 0rem;
 }
 
-/* line 23, ../sass/partials/_typography.scss */
+/* line 21, ../sass/partials/_typography.scss */
+div.pt, div.columnForm, div.small_yes_no {
+  margin-bottom: 0px;
+  margin-bottom: 0rem;
+}
+
+/* line 24, ../sass/partials/_typography.scss */
+h1, h2, h3, h4, h5, h6, p {
+  margin-top: 36px;
+  margin-top: 2.25rem;
+  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
+}
+
+/* line 28, ../sass/partials/_typography.scss */
+[class$="partial"] {
+  margin-top: 19px;
+  margin-top: 1.2rem;
+}
+
+/* line 32, ../sass/partials/_typography.scss */
+.full_partial {
+  margin-top: 31px;
+  margin-top: 1.95rem;
+  margin-bottom: 0px;
+  margin-bottom: 0rem;
+}
+
+/* line 37, ../sass/partials/_typography.scss */
 :not(form) {
   /*    p::first-line {
       background-color: yellow;
   }*/
 }
-/* line 24, ../sass/partials/_typography.scss */
+/* line 38, ../sass/partials/_typography.scss */
 :not(form) h1, :not(form) h2, :not(form) h3, :not(form) h4, :not(form) h5, :not(form) h6 {
   margin-bottom: 0.2em;
 }
-/* line 27, ../sass/partials/_typography.scss */
+/* line 41, ../sass/partials/_typography.scss */
 :not(form) p {
   margin-top: 0;
 }
 
-/* line 36, ../sass/partials/_typography.scss */
+/* line 50, ../sass/partials/_typography.scss */
 p.indent {
   text-indent: 2.5em;
 }
@@ -332,7 +357,7 @@ p.indent {
 /*body {
     font-family: Cabin,Arial,"Arial Unicode MS",Helvetica,sans-serif;
 }*/
-/* line 42, ../sass/partials/_typography.scss */
+/* line 56, ../sass/partials/_typography.scss */
 h1 {
   font-size: 26px;
   font-size: 1.602rem;
@@ -340,7 +365,7 @@ h1 {
   line-height: 3rem;
 }
 
-/* line 43, ../sass/partials/_typography.scss */
+/* line 57, ../sass/partials/_typography.scss */
 h2 {
   font-size: 23px;
   font-size: 1.424rem;
@@ -348,7 +373,7 @@ h2 {
   line-height: 3rem;
 }
 
-/* line 44, ../sass/partials/_typography.scss */
+/* line 58, ../sass/partials/_typography.scss */
 h3 {
   font-size: 20px;
   font-size: 1.266rem;
@@ -356,7 +381,7 @@ h3 {
   line-height: 3rem;
 }
 
-/* line 45, ../sass/partials/_typography.scss */
+/* line 59, ../sass/partials/_typography.scss */
 h4 {
   font-size: 18px;
   font-size: 1.125rem;
@@ -364,7 +389,7 @@ h4 {
   line-height: 1.5rem;
 }
 
-/* line 46, ../sass/partials/_typography.scss */
+/* line 60, ../sass/partials/_typography.scss */
 h5 {
   font-size: 16px;
   font-size: 1rem;
@@ -372,7 +397,7 @@ h5 {
   line-height: 1.5rem;
 }
 
-/* line 47, ../sass/partials/_typography.scss */
+/* line 61, ../sass/partials/_typography.scss */
 h6 {
   font-size: 14px;
   font-size: 0.889rem;
@@ -389,36 +414,44 @@ h6 {
 /*p {
     background: rgba($color4,.5);
 }*/
-/* line 58, ../sass/partials/_typography.scss */
+/* line 72, ../sass/partials/_typography.scss */
 h1, h2, h3, h4, h5, h6 {
   text-align: center;
   color: #1f5f93;
   line-height: 1.3em;
 }
 
-/* line 63, ../sass/partials/_typography.scss */
+/* line 77, ../sass/partials/_typography.scss */
 legend {
   font-weight: bold;
   line-height: 2em;
   padding-right: 1em;
 }
 
-/* line 72, ../sass/partials/_typography.scss */
+/* line 86, ../sass/partials/_typography.scss */
 .lager_legend {
   font-weight: normal;
   font-size: 1.3em;
 }
 
-/* line 77, ../sass/partials/_typography.scss */
-fieldset [class*="larger"] {
-  font-size: 1.3em;
+/* line 90, ../sass/partials/_typography.scss */
+[class*="bold"] {
+  font-weight: bold;
 }
 
-/* line 81, ../sass/partials/_typography.scss */
-.underline {
+/*fieldset {
+    [class*="larger"] {
+        font-size: $p_larger;        
+    }    
+}*/
+/* line 98, ../sass/partials/_typography.scss */
+[class*="underline"] {
   text-decoration: underline;
 }
 
+/*.invisible {
+    color: white;
+}*/
 /** {
     @include bs; //╨╖╨░ ╨╖╨░╨╝╨╛╨▓╤З╨╡╨╜╨╜╤П╨╝ border-box
 }*/
@@ -493,41 +526,118 @@ label.small {
   width: 22%;
 }
 
-/* line 80, ../sass/formstyle.scss */
+/* line 79, ../sass/formstyle.scss */
+div.small_yes_no {
+  min-width: 25%;
+}
+
+/* line 83, ../sass/formstyle.scss */
+.row {
+  /*    .right-board_yes_not {
+          width: 78%;       
+      }*/
+  /*    [class^="full_margin_right"] {
+          margin-left: 6.5%;
+          
+      }
+      .full_margin_right_right {
+          margin-left: 21.5%;        
+      }*/
+}
+/* line 84, ../sass/formstyle.scss */
 .row [class^="right"] {
   float: left;
   width: 60%;
 }
-/* line 85, ../sass/formstyle.scss */
+/* line 89, ../sass/formstyle.scss */
 .row .right-minim {
   width: 40%;
 }
-/* line 88, ../sass/formstyle.scss */
-.row .right-board {
+/* line 92, ../sass/formstyle.scss */
+.row [class*="right-board"] {
   width: 78%;
 }
-/* line 91, ../sass/formstyle.scss */
-.row .full {
+@media screen and (max-width: 848px) {
+  /* line 83, ../sass/formstyle.scss */
+  .row {
+    /*                div.full_margin_right_right {
+                        div.right-board_yes_not {
+                            width: 78.6%; 
+                        }
+                    }*/
+  }
+  /* line 100, ../sass/formstyle.scss */
+  .row div.full div.right-board_yes_not, .row div.full_partial div.right-board_yes_not {
+    width: 76%;
+  }
+  /* line 105, ../sass/formstyle.scss */
+  .row div.full_margin_right div.right-board_yes_not {
+    width: 79%;
+  }
+}
+@media screen and (max-width: 815px) {
+  /* line 83, ../sass/formstyle.scss */
+  .row {
+    /*                div.full_margin_right_right {
+                        div.right-board_yes_not {
+                            width: 78.6%; 
+                        }
+                    }*/
+  }
+  /* line 117, ../sass/formstyle.scss */
+  .row div.full div.right-board_yes_not, .row div.full_partial div.right-board_yes_not {
+    width: 100%;
+  }
+  /* line 122, ../sass/formstyle.scss */
+  .row div.full_margin_right div.right-board_yes_not {
+    width: 79%;
+  }
+}
+/* line 133, ../sass/formstyle.scss */
+.row div.full, .row div.full_partial {
   float: left;
   width: 100%;
 }
-/* line 95, ../sass/formstyle.scss */
+/* line 138, ../sass/formstyle.scss */
+.row div[class^="full_margin_right"] {
+  float: right;
+  width: 92.7%;
+}
+/* line 143, ../sass/formstyle.scss */
+.row div[class^="full_margin_right_right"] {
+  float: right;
+  width: 77.6%;
+}
+/* line 157, ../sass/formstyle.scss */
 .row [class^="columnForm"] {
   margin-right: 1.5em;
   float: left;
 }
-/* line 100, ../sass/formstyle.scss */
+/* line 168, ../sass/formstyle.scss */
+.row .pt_num_y_n {
+  background-color: powderblue;
+  width: 25%;
+}
+/* line 172, ../sass/formstyle.scss */
+.row .num, .row .y_n {
+  display: inline-block;
+}
+/* line 182, ../sass/formstyle.scss */
 .row .columnForm-name {
   margin-right: 0.3em;
 }
 
-/* line 108, ../sass/formstyle.scss */
+/*label#num10 {
+    width: 5%;
+    background-color: papayawhip;
+}*/
+/* line 194, ../sass/formstyle.scss */
 input {
   height: 20px;
   font-size: 1em;
 }
 
-/* line 112, ../sass/formstyle.scss */
+/* line 198, ../sass/formstyle.scss */
 input:not([type="submit"]), textarea, select {
   border: 1px solid #bfbfbf;
   padding: 0.1em;
@@ -538,18 +648,18 @@ input:not([type="submit"]), textarea, select {
   box-shadow: 2px 2px 5px rgba(43, 43, 43, 0.1);
 }
 
-/* line 122, ../sass/formstyle.scss */
+/* line 208, ../sass/formstyle.scss */
 .input_row {
   margin-left: 1em;
 }
 
-/* line 125, ../sass/formstyle.scss */
+/* line 211, ../sass/formstyle.scss */
 [class*="tab_input_row"] {
   margin-left: 0.5em;
   margin-right: 0.5em;
 }
 
-/* line 129, ../sass/formstyle.scss */
+/* line 215, ../sass/formstyle.scss */
 input[type="number"] {
   width: 4em;
 }
@@ -564,7 +674,7 @@ input[type="number"] {
         //@include nth-omega(4n);
     }
 }*/
-/* line 142, ../sass/formstyle.scss */
+/* line 228, ../sass/formstyle.scss */
 table {
   /*    .label_left {
          
@@ -588,34 +698,53 @@ table {
           width: 90%;            
       }     */
 }
-/* line 148, ../sass/formstyle.scss */
+/* line 234, ../sass/formstyle.scss */
 table table {
   /*        tr {
               text-align: center;
           }*/
 }
-/* line 150, ../sass/formstyle.scss */
+/* line 236, ../sass/formstyle.scss */
 table table td, table table th {
   border: none;
 }
-/* line 157, ../sass/formstyle.scss */
+/* line 243, ../sass/formstyle.scss */
 table td, table th {
   border: thin dotted gray;
 }
-/* line 161, ../sass/formstyle.scss */
+/* line 247, ../sass/formstyle.scss */
 table td:not([class*="label_left"]), table th:not([class*="label_left"]) {
   text-align: center;
 }
-/* line 179, ../sass/formstyle.scss */
+/* line 265, ../sass/formstyle.scss */
 table td[id*="date"], table th[id*="date"] {
   width: 10%;
 }
-/* line 182, ../sass/formstyle.scss */
+/* line 268, ../sass/formstyle.scss */
 table input[type="date"] {
   width: 90%;
 }
 
-/* line 192, ../sass/formstyle.scss */
+/* line 278, ../sass/formstyle.scss */
+.flex {
+  width: 100%;
+}
+
+/* line 281, ../sass/formstyle.scss */
+textarea[name="exercise_each_week"] {
+  width: 100%;
+}
+
+/*fieldset.tab {
+    display: table;
+    div.tab_row {
+        display: table-row;
+        div.tab-cell {
+            display: table-cell; //╨┐╤А╨░╤Ж╤О╤Ф ╨║╨╛╨╗╨╕ ╨╜╨╡ ╨╜╨░╨┤╤В╨╛ ╨▒╨░╨│╨░╤В╨╛ ╨▓╨║╨╗╨░╨┤╨╡╨╜╤М
+        }
+    }
+}*/
+/* line 294, ../sass/formstyle.scss */
 .submit {
   *zoom: 1;
   max-width: 61em;
@@ -632,7 +761,7 @@ table input[type="date"] {
   clear: both;
 }
 
-/* line 196, ../sass/formstyle.scss */
+/* line 298, ../sass/formstyle.scss */
 input[type="submit"] {
   width: 23.72881%;
   float: right;
@@ -651,7 +780,7 @@ input[type="submit"] {
   text-shadow: 0px 1px black;
   border: 1px solid #bfbfbf;
 }
-/* line 211, ../sass/formstyle.scss */
+/* line 313, ../sass/formstyle.scss */
 input[type="submit"]:hover {
   background-color: #205b8c;
   box-shadow: 3px 3px 3px rgba(68, 68, 68, 0.7);

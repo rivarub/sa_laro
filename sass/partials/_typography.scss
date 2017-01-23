@@ -11,15 +11,29 @@ $rhythm-unit: "rem" !global;
 $rem-with-px-fallback: true !global;
 @include establish-baseline;
 
-div {
-    @include margin-trailer(0.5); //додає вказану кількість рядків знизу
+div, hgroup, [class*="columnForm_margin_trailer"] {
+    @include margin-trailer(0.35); //додає вказану кількість рядків знизу
+}
+div[class^="full_margin_right"], div[class^="full_margin_right_right"] {
+    @include margin-trailer(0);
+    //background-color: rosybrown;
+}
+div.pt, div.columnForm, div.small_yes_no {
+    @include margin-trailer(0);
 }
 h1,h2,h3,h4,h5,h6,p {
-    @include margin-trailer; //додає вказану кількість рядків знизу
-/*    @media (min-width: 769px) {
-            @include rhythm-margins(2);
-    } //додає вказану кількість рядків зверху і знизу при певній ширині вьюпорта*/
+    //@include margin-trailer; //додає вказану кількість рядків знизу    
+    @include rhythm-margins(1.5, 1);
 }
+[class$="partial"] {        
+    @include margin-leader(0.8);
+    //background-color: yellowgreen;
+}
+.full_partial {
+    @include rhythm-margins(1.3, 0);
+    //background-color: yellow;
+}
+
 :not(form) {
     h1,h2,h3,h4,h5,h6 {
         margin-bottom: 0.2em;       
@@ -73,12 +87,18 @@ legend {
     font-weight: normal;
     font-size: $p_larger;
 }
-fieldset {
+[class*="bold"] {
+    font-weight: bold;
+}
+/*fieldset {
     [class*="larger"] {
         font-size: $p_larger;        
     }    
-}
-.underline {
+}*/
+[class*="underline"] {
     text-decoration: underline; 
 }
+/*.invisible {
+    color: white;
+}*/
 

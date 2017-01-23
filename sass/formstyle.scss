@@ -33,9 +33,9 @@ body {
     width: 97.5%;
     margin: auto; 
     padding: 0.7em 0 0.7em;
-/*        @media (min-width: 769px) {
-            @include rhythm-margins(2); //додає вказану кількість рядків знизу - тут не працює чомусь
-        }  */
+    /*        @media (min-width: 769px) {
+                @include rhythm-margins(2); //додає вказану кількість рядків знизу - тут не працює чомусь
+            }  */
     p {
         text-align: justify;
         color: $color4;
@@ -76,6 +76,10 @@ label[class*="maxim"] {
 label.small {
     width: 22%;
 }
+div.small_yes_no {
+    min-width: 25%;
+}
+
 .row {      
     [class^="right"] {        
         float: left;
@@ -85,18 +89,96 @@ label.small {
     .right-minim {
         width: 40%;
     }
-    .right-board {
+    [class*="right-board"] {
         width: 78%;
     }
-    .full {
+    /*    .right-board_yes_not {
+            width: 78%;       
+        }*/
+    @media screen and (max-width: 848px) {
+        div.full, div.full_partial {
+            div.right-board_yes_not {
+                width: 76%; 
+            }
+        }
+        div.full_margin_right {
+            div.right-board_yes_not {
+                width: 79%; 
+            }
+        }
+        /*                div.full_margin_right_right {
+                            div.right-board_yes_not {
+                                width: 78.6%; 
+                            }
+                        }*/
+    }
+    @media screen and (max-width: 815px) {
+        div.full, div.full_partial {
+            div.right-board_yes_not {
+                width: 100%; 
+            }
+        }
+        div.full_margin_right {
+            div.right-board_yes_not {
+                width: 79%; 
+            }
+        }
+        /*                div.full_margin_right_right {
+                            div.right-board_yes_not {
+                                width: 78.6%; 
+                            }
+                        }*/
+    }
+
+    div.full, div.full_partial {
         float: left;
         width: 100%;
+        //background-color: yellowgreen;
     }
+    div[class^="full_margin_right"] {
+        float: right;
+        width: 92.7%;
+        //background-color: yellow;
+    }
+    div[class^="full_margin_right_right"] {
+        float: right;
+        width: 77.6%;
+    }
+
+    /*    [class^="full_margin_right"] {
+            margin-left: 6.5%;
+            
+        }
+        .full_margin_right_right {
+            margin-left: 21.5%;        
+        }*/
+
+
     [class^="columnForm"] {
         //width: 49%;                
         margin-right: 1.5em;
         float: left;
     }
+
+    // номер переліку ширина
+    .columnForm {        
+        //display: table;
+        //width: 24%;
+    }
+    .pt_num_y_n {
+        background-color: powderblue;
+        width: 25%;            
+    }
+    .num, .y_n {
+        display: inline-block;    
+    }
+    .num {
+        //width: 20%;            
+    }
+
+
+    //
+
     .columnForm-name {
         margin-right: 0.3em;
     }    
@@ -105,6 +187,10 @@ label.small {
         //margin-right: 0.9em;
     }               
 }
+/*label#num10 {
+    width: 5%;
+    background-color: papayawhip;
+}*/
 input {
     height: 20px;
     font-size: 1em;
@@ -150,9 +236,9 @@ table {
         td, th {
             border: none;
         }
-/*        tr {
-            text-align: center;
-        }*/
+        /*        tr {
+                    text-align: center;
+                }*/
     }
     td, th {
         border: thin dotted gray;
@@ -161,9 +247,9 @@ table {
     td:not([class*="label_left"]), th:not([class*="label_left"]) {
         text-align: center;
     }
-/*    .label_left {
-       
-    }*/
+    /*    .label_left {
+           
+        }*/
     /*    td,th [id^="medical_problem"] {
             width: 30%;        
         }
@@ -189,6 +275,22 @@ table {
             width: 90%;            
         }     */
 }
+.flex {
+    width: 100%;
+}
+textarea[name="exercise_each_week"] {
+    width: 100%;    
+}
+
+/*fieldset.tab {
+    display: table;
+    div.tab_row {
+        display: table-row;
+        div.tab-cell {
+            display: table-cell; //працює коли не надто багато вкладень
+        }
+    }
+}*/
 .submit {
     @include container;
     //@include susy-grid-background;
@@ -213,6 +315,7 @@ input[type="submit"] {
         box-shadow: 3px 3px 3px hsla(0, 0%, 26.6667%, 0.7);
     }
 }
+
 
 //FOR ONE ROW
 
