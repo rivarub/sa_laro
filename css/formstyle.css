@@ -334,22 +334,22 @@ h1, h2, h3, h4, h5, h6, p {
   margin-bottom: 0rem;
 }
 
-/* line 37, ../sass/partials/_typography.scss */
+/* line 38, ../sass/partials/_typography.scss */
 :not(form) {
   /*    p::first-line {
       background-color: yellow;
   }*/
 }
-/* line 38, ../sass/partials/_typography.scss */
+/* line 39, ../sass/partials/_typography.scss */
 :not(form) h1, :not(form) h2, :not(form) h3, :not(form) h4, :not(form) h5, :not(form) h6 {
   margin-bottom: 0.2em;
 }
-/* line 41, ../sass/partials/_typography.scss */
+/* line 42, ../sass/partials/_typography.scss */
 :not(form) p {
   margin-top: 0;
 }
 
-/* line 50, ../sass/partials/_typography.scss */
+/* line 51, ../sass/partials/_typography.scss */
 p.indent {
   text-indent: 2.5em;
 }
@@ -357,7 +357,13 @@ p.indent {
 /*body {
     font-family: Cabin,Arial,"Arial Unicode MS",Helvetica,sans-serif;
 }*/
-/* line 56, ../sass/partials/_typography.scss */
+/* line 57, ../sass/partials/_typography.scss */
+.quick {
+  font-family: "Times New Roman", "Source Serif Pro", "Palatino Linotype", serif;
+  font-size: 1.1em;
+}
+
+/* line 61, ../sass/partials/_typography.scss */
 h1 {
   font-size: 26px;
   font-size: 1.602rem;
@@ -365,7 +371,7 @@ h1 {
   line-height: 3rem;
 }
 
-/* line 57, ../sass/partials/_typography.scss */
+/* line 62, ../sass/partials/_typography.scss */
 h2 {
   font-size: 23px;
   font-size: 1.424rem;
@@ -373,7 +379,7 @@ h2 {
   line-height: 3rem;
 }
 
-/* line 58, ../sass/partials/_typography.scss */
+/* line 63, ../sass/partials/_typography.scss */
 h3 {
   font-size: 20px;
   font-size: 1.266rem;
@@ -381,7 +387,7 @@ h3 {
   line-height: 3rem;
 }
 
-/* line 59, ../sass/partials/_typography.scss */
+/* line 64, ../sass/partials/_typography.scss */
 h4 {
   font-size: 18px;
   font-size: 1.125rem;
@@ -389,7 +395,7 @@ h4 {
   line-height: 1.5rem;
 }
 
-/* line 60, ../sass/partials/_typography.scss */
+/* line 65, ../sass/partials/_typography.scss */
 h5 {
   font-size: 16px;
   font-size: 1rem;
@@ -397,7 +403,7 @@ h5 {
   line-height: 1.5rem;
 }
 
-/* line 61, ../sass/partials/_typography.scss */
+/* line 66, ../sass/partials/_typography.scss */
 h6 {
   font-size: 14px;
   font-size: 0.889rem;
@@ -414,27 +420,27 @@ h6 {
 /*p {
     background: rgba($color4,.5);
 }*/
-/* line 72, ../sass/partials/_typography.scss */
+/* line 77, ../sass/partials/_typography.scss */
 h1, h2, h3, h4, h5, h6 {
   text-align: center;
   color: #1f5f93;
   line-height: 1.3em;
 }
 
-/* line 77, ../sass/partials/_typography.scss */
+/* line 82, ../sass/partials/_typography.scss */
 legend {
   font-weight: bold;
   line-height: 2em;
   padding-right: 1em;
 }
 
-/* line 86, ../sass/partials/_typography.scss */
+/* line 91, ../sass/partials/_typography.scss */
 .lager_legend {
   font-weight: normal;
   font-size: 1.3em;
 }
 
-/* line 90, ../sass/partials/_typography.scss */
+/* line 95, ../sass/partials/_typography.scss */
 [class*="bold"] {
   font-weight: bold;
 }
@@ -444,13 +450,26 @@ legend {
         font-size: $p_larger;        
     }    
 }*/
-/* line 98, ../sass/partials/_typography.scss */
+/* line 103, ../sass/partials/_typography.scss */
 [class*="underline"] {
   text-decoration: underline;
 }
 
+/* line 107, ../sass/partials/_typography.scss */
+span.index {
+  font-size: 75%;
+  vertical-align: sub;
+}
+
 /*.invisible {
     color: white;
+}*/
+/*.marg_rhythm {
+    clear: both;
+    width: 100%;
+    //margin-top: 3em;
+    //margin-bottom: 3em;
+    //background-color: buttontext;
 }*/
 /** {
     @include bs; //╨╖╨░ ╨╖╨░╨╝╨╛╨▓╤З╨╡╨╜╨╜╤П╨╝ border-box
@@ -532,112 +551,176 @@ div.small_yes_no {
 }
 
 /* line 83, ../sass/formstyle.scss */
+.num_box, .main_box {
+  margin-bottom: 0px;
+  margin-bottom: 0rem;
+}
+
+/* line 87, ../sass/formstyle.scss */
+div.helf_left {
+  width: 50%;
+  float: left;
+}
+/* line 91, ../sass/formstyle.scss */
+div.helf_left .full {
+  margin-bottom: 0px;
+  margin-bottom: 0rem;
+}
+/* line 94, ../sass/formstyle.scss */
+div.helf_left .num_box {
+  width: 9%;
+  float: left;
+}
+/* line 98, ../sass/formstyle.scss */
+div.helf_left .main_box {
+  width: 91%;
+  float: right;
+}
+/* line 102, ../sass/formstyle.scss */
+div.helf_left .columnForm {
+  margin-right: 0.6em;
+}
+/* line 105, ../sass/formstyle.scss */
+div.helf_left .pt_columnForm_margin_trailer, div.helf_left .row, div.helf_left right-board_yes_not {
+  margin-bottom: 0;
+}
+
+/* line 109, ../sass/formstyle.scss */
+div.helf_righ {
+  width: 50%;
+  float: left;
+}
+/* line 112, ../sass/formstyle.scss */
+div.helf_righ .num_box {
+  width: 9%;
+  float: left;
+}
+/* line 116, ../sass/formstyle.scss */
+div.helf_righ .main_box {
+  width: 91%;
+  float: right;
+}
+
+/* line 121, ../sass/formstyle.scss */
+.mein_box_radio {
+  width: 10%;
+}
+
+/* line 124, ../sass/formstyle.scss */
+.mein_box_legend {
+  width: 90%;
+}
+
+@media screen and (max-width: 900px) {
+  /* line 128, ../sass/formstyle.scss */
+  div.helf_left, div.helf_righ {
+    width: 100%;
+    float: none;
+  }
+}
+/* line 134, ../sass/formstyle.scss */
 .row {
   /*    .right-board_yes_not {
           width: 78%;       
       }*/
-  /*    [class^="full_margin_right"] {
-          margin-left: 6.5%;
-          
-      }
-      .full_margin_right_right {
-          margin-left: 21.5%;        
-      }*/
 }
-/* line 84, ../sass/formstyle.scss */
+/* line 135, ../sass/formstyle.scss */
 .row [class^="right"] {
   float: left;
   width: 60%;
 }
-/* line 89, ../sass/formstyle.scss */
+/* line 140, ../sass/formstyle.scss */
 .row .right-minim {
   width: 40%;
 }
-/* line 92, ../sass/formstyle.scss */
+/* line 143, ../sass/formstyle.scss */
 .row [class*="right-board"] {
   width: 78%;
 }
-@media screen and (max-width: 848px) {
-  /* line 83, ../sass/formstyle.scss */
-  .row {
-    /*                div.full_margin_right_right {
-                        div.right-board_yes_not {
-                            width: 78.6%; 
-                        }
-                    }*/
-  }
-  /* line 100, ../sass/formstyle.scss */
-  .row div.full div.right-board_yes_not, .row div.full_partial div.right-board_yes_not {
-    width: 76%;
-  }
-  /* line 105, ../sass/formstyle.scss */
-  .row div.full_margin_right div.right-board_yes_not {
-    width: 79%;
-  }
-}
-@media screen and (max-width: 815px) {
-  /* line 83, ../sass/formstyle.scss */
-  .row {
-    /*                div.full_margin_right_right {
-                        div.right-board_yes_not {
-                            width: 78.6%; 
-                        }
-                    }*/
-  }
-  /* line 117, ../sass/formstyle.scss */
-  .row div.full div.right-board_yes_not, .row div.full_partial div.right-board_yes_not {
-    width: 100%;
-  }
-  /* line 122, ../sass/formstyle.scss */
-  .row div.full_margin_right div.right-board_yes_not {
-    width: 79%;
-  }
-}
-/* line 133, ../sass/formstyle.scss */
+/* line 150, ../sass/formstyle.scss */
 .row div.full, .row div.full_partial {
   float: left;
   width: 100%;
 }
-/* line 138, ../sass/formstyle.scss */
+/* line 155, ../sass/formstyle.scss */
 .row div[class^="full_margin_right"] {
   float: right;
   width: 92.7%;
 }
-/* line 143, ../sass/formstyle.scss */
+/* line 160, ../sass/formstyle.scss */
 .row div[class^="full_margin_right_right"] {
   float: right;
   width: 77.6%;
 }
-/* line 157, ../sass/formstyle.scss */
+/* line 165, ../sass/formstyle.scss */
 .row [class^="columnForm"] {
   margin-right: 1.5em;
   float: left;
 }
-/* line 168, ../sass/formstyle.scss */
+/* line 170, ../sass/formstyle.scss */
 .row .pt_num_y_n {
   background-color: powderblue;
   width: 25%;
 }
-/* line 172, ../sass/formstyle.scss */
+/* line 174, ../sass/formstyle.scss */
 .row .num, .row .y_n {
   display: inline-block;
 }
-/* line 182, ../sass/formstyle.scss */
+/* line 184, ../sass/formstyle.scss */
 .row .columnForm-name {
   margin-right: 0.3em;
 }
 
+@media screen and (max-width: 848px) {
+  /* line 194, ../sass/formstyle.scss */
+  div.full div.right-board_yes_not, div.full_partial div.right-board_yes_not {
+    width: 76%;
+  }
+
+  /* line 199, ../sass/formstyle.scss */
+  div.full_margin_right div.right-board_yes_not {
+    width: 79%;
+  }
+
+  /*                div.full_margin_right_right {
+                      div.right-board_yes_not {
+                          width: 78.6%; 
+                      }
+                  }*/
+}
+@media screen and (max-width: 815px) {
+  /* line 211, ../sass/formstyle.scss */
+  div.full div.right-board_yes_not, div.full_partial div.right-board_yes_not {
+    width: 100%;
+  }
+
+  /* line 216, ../sass/formstyle.scss */
+  div.full_margin_right div.right-board_yes_not {
+    width: 79%;
+  }
+
+  /*                div.full_margin_right_right {
+                      div.right-board_yes_not {
+                          width: 78.6%; 
+                      }
+                  }*/
+}
 /*label#num10 {
     width: 5%;
     background-color: papayawhip;
 }*/
-/* line 194, ../sass/formstyle.scss */
+/* line 230, ../sass/formstyle.scss */
 input {
   height: 20px;
   font-size: 1em;
 }
 
-/* line 198, ../sass/formstyle.scss */
+/* line 234, ../sass/formstyle.scss */
+input[type="radio"], input[type="checkbox"] {
+  height: auto;
+}
+
+/* line 237, ../sass/formstyle.scss */
 input:not([type="submit"]), textarea, select {
   border: 1px solid #bfbfbf;
   padding: 0.1em;
@@ -648,18 +731,18 @@ input:not([type="submit"]), textarea, select {
   box-shadow: 2px 2px 5px rgba(43, 43, 43, 0.1);
 }
 
-/* line 208, ../sass/formstyle.scss */
+/* line 247, ../sass/formstyle.scss */
 .input_row {
   margin-left: 1em;
 }
 
-/* line 211, ../sass/formstyle.scss */
+/* line 250, ../sass/formstyle.scss */
 [class*="tab_input_row"] {
   margin-left: 0.5em;
   margin-right: 0.5em;
 }
 
-/* line 215, ../sass/formstyle.scss */
+/* line 254, ../sass/formstyle.scss */
 input[type="number"] {
   width: 4em;
 }
@@ -674,7 +757,7 @@ input[type="number"] {
         //@include nth-omega(4n);
     }
 }*/
-/* line 228, ../sass/formstyle.scss */
+/* line 267, ../sass/formstyle.scss */
 table {
   /*    .label_left {
          
@@ -698,39 +781,39 @@ table {
           width: 90%;            
       }     */
 }
-/* line 234, ../sass/formstyle.scss */
+/* line 273, ../sass/formstyle.scss */
 table table {
   /*        tr {
               text-align: center;
           }*/
 }
-/* line 236, ../sass/formstyle.scss */
+/* line 275, ../sass/formstyle.scss */
 table table td, table table th {
   border: none;
 }
-/* line 243, ../sass/formstyle.scss */
+/* line 282, ../sass/formstyle.scss */
 table td, table th {
   border: thin dotted gray;
 }
-/* line 247, ../sass/formstyle.scss */
+/* line 286, ../sass/formstyle.scss */
 table td:not([class*="label_left"]), table th:not([class*="label_left"]) {
   text-align: center;
 }
-/* line 265, ../sass/formstyle.scss */
+/* line 304, ../sass/formstyle.scss */
 table td[id*="date"], table th[id*="date"] {
   width: 10%;
 }
-/* line 268, ../sass/formstyle.scss */
+/* line 307, ../sass/formstyle.scss */
 table input[type="date"] {
   width: 90%;
 }
 
-/* line 278, ../sass/formstyle.scss */
+/* line 317, ../sass/formstyle.scss */
 .flex {
   width: 100%;
 }
 
-/* line 281, ../sass/formstyle.scss */
+/* line 320, ../sass/formstyle.scss */
 textarea[name="exercise_each_week"] {
   width: 100%;
 }
@@ -744,7 +827,7 @@ textarea[name="exercise_each_week"] {
         }
     }
 }*/
-/* line 294, ../sass/formstyle.scss */
+/* line 333, ../sass/formstyle.scss */
 .submit {
   *zoom: 1;
   max-width: 61em;
@@ -761,7 +844,7 @@ textarea[name="exercise_each_week"] {
   clear: both;
 }
 
-/* line 298, ../sass/formstyle.scss */
+/* line 337, ../sass/formstyle.scss */
 input[type="submit"] {
   width: 23.72881%;
   float: right;
@@ -780,7 +863,7 @@ input[type="submit"] {
   text-shadow: 0px 1px black;
   border: 1px solid #bfbfbf;
 }
-/* line 313, ../sass/formstyle.scss */
+/* line 352, ../sass/formstyle.scss */
 input[type="submit"]:hover {
   background-color: #205b8c;
   box-shadow: 3px 3px 3px rgba(68, 68, 68, 0.7);

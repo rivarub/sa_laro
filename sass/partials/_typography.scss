@@ -34,6 +34,7 @@ h1,h2,h3,h4,h5,h6,p {
     //background-color: yellow;
 }
 
+
 :not(form) {
     h1,h2,h3,h4,h5,h6 {
         margin-bottom: 0.2em;       
@@ -53,6 +54,10 @@ p.indent {
 /*body {
     font-family: Cabin,Arial,"Arial Unicode MS",Helvetica,sans-serif;
 }*/
+.quick {    
+    font-family: $font-sherif;
+    font-size: $serif-base;    
+}
 h1 { @include adjust-font-size-to(1.602rem);} //використовуємо для підбору співвідношення шрифтів з базовим type-scale.com
 h2 { @include adjust-font-size-to(1.424rem);}
 h3 { @include adjust-font-size-to(1.266rem);}
@@ -98,7 +103,19 @@ legend {
 [class*="underline"] {
     text-decoration: underline; 
 }
+
+span.index {
+    font-size: 75%;
+    vertical-align: sub;
+}
 /*.invisible {
     color: white;
+}*/
+/*.marg_rhythm {
+    clear: both;
+    width: 100%;
+    //margin-top: 3em;
+    //margin-bottom: 3em;
+    //background-color: buttontext;
 }*/
 

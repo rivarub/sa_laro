@@ -10,7 +10,8 @@ and open the template in the editor.
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="css/formstyle.css">
-        <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro:400,600,700&amp;subset=latin-ext" rel="stylesheet"> 
         <script src="js/modernizr.2.6.2.min.js"></script>
     </head>
     <body>
@@ -3138,14 +3139,632 @@ and open the template in the editor.
                         </div>                        
                         <div class="row">
                             <div class="full">
-                                <textarea class="flex" name="DIAGNOSTIC_Comments" rows="5"></textarea>
+                                <textarea class="flex" name="DIAGNOSTIC_Comments" rows="5" cols=""></textarea>
                             </div>                        
                         </div>
+                    </fieldset>
+                    <fieldset class="quick">
+                        <hgroup>
+                            <h1>QUICK INVENTORY OF DEPRESSIVE SYMPTOMATOLOGY (SELF-REPORT)(QIDS-SR<span class="index">16</span>)</h1>
+                        </hgroup>
+                        <div class="row">
+                            <div class="full_partial">
+                                <div class="columnForm_margin_trailer">
+                                    <div class="pt">
+                                        <label class="radio_tab_input_row" for="QUICK_ID">Subject ID</label>
+                                        <input type="text" name="QUICK_ID" id="QUICK_ID">
+                                    </div>
+                                </div>
+
+                                <div class="columnForm_margin_trailer">
+                                    <div class="pt">
+                                        <label class="radio_tab_input_row" for="QUICK_date">Date:</label>
+                                        <input type="date" name="QUICK_date" id="QUICK_date">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="full_partial">
+                                <!--                        <div class="marg_rhythm">-->
+                                <label class="radio_tab_input_row" for="QUICK_ID">Please circle the one response to each item that best describes you for the past seven days.</label>
+                            </div>
+                        </div>
+
+                        <!--ПЕРША ПАРА! Left+Right-->
+                        <!--                                                </div>-->
+
+                        <div class="row">
+                            <div class="full">
+
+                                <div class="helf_left">
+
+
+                                    <div class="row">
+                                        <div class="full_partial">                                
+                                            <div class="num_box">
+                                                <label class="radio_tab_input_row">1.</label>
+                                            </div>
+                                            <div class="main_box">
+                                                <label class="radio" for="DIAGNOSTIC_18_yes">Left BLOCK</label>
+                                            </div>
+                                        </div>                                
+                                        <div class="full_partial">
+                                            <div class="main_box">
+                                                <div class="row">
+                                                    <div class="full">
+                                                        <div class="small_yes_no">
+                                                            <div class="columnForm">                                
+                                                                <div class="pt">
+                                                                    <input type="radio" name="DIAGNOSTIC_16_yes" id="DIAGNOSTIC_16_yes">
+                                                                    <label class="radio_tab_input_row" for="DIAGNOSTIC_16_yes">0</label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="right-board_yes_not">
+                                                            <div class="columnForm">
+                                                                <div class="pt_columnForm_margin_trailer">
+                                                                    <label class="radio" for="DIAGNOSTIC_16">I never take longer than 30 minutes to fall asleep.</label>                                        
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="full">
+                                            <div class="main_box">
+                                                <div class="row">
+                                                    <div class="full">
+                                                        <div class="small_yes_no">
+                                                            <div class="columnForm">                                
+                                                                <div class="pt">
+                                                                    <input type="radio" name="DIAGNOSTIC_16_yes" id="DIAGNOSTIC_16_yes">
+                                                                    <label class="radio_tab_input_row" for="DIAGNOSTIC_16_yes">1</label></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="right-board_yes_not">
+                                                            <div class="columnForm">
+                                                                <div class="pt_columnForm_margin_trailer">
+                                                                    <label class="radio" for="DIAGNOSTIC_16">I take at least 30 minutes to fall asleep, less than half the time.</label>                                        
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="full">
+                                            <div class="main_box">
+                                                <div class="row">
+                                                    <div class="full">
+                                                        <div class="small_yes_no">
+                                                            <div class="columnForm">                                
+                                                                <div class="pt">
+                                                                    <input type="radio" name="DIAGNOSTIC_16_yes" id="DIAGNOSTIC_16_yes">
+                                                                    <label class="radio_tab_input_row" for="DIAGNOSTIC_16_yes">2</label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="right-board_yes_not">
+                                                            <div class="columnForm">
+                                                                <div class="pt_columnForm_margin_trailer">
+                                                                    <label class="radio" for="DIAGNOSTIC_16">I take at least 30 minutes to fall asleep, more than half the time.</label>                                        
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="full">
+                                            <div class="main_box">
+                                                <div class="row">
+                                                    <div class="full">
+                                                        <div class="small_yes_no">
+                                                            <div class="columnForm">                                
+                                                                <div class="pt">
+                                                                    <input type="radio" name="DIAGNOSTIC_16_yes" id="DIAGNOSTIC_16_yes">
+                                                                    <label class="radio_tab_input_row" for="DIAGNOSTIC_16_yes">3</label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="right-board_yes_not">
+                                                            <div class="columnForm">
+                                                                <div class="pt_columnForm_margin_trailer">
+                                                                    <label class="radio" for="DIAGNOSTIC_16">I take more than 60 minutes to fall asleep, more than half the time.</label>                                        
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="full_partial">                                
+                                            <div class="num_box">
+                                                <label class="radio_tab_input_row">1.</label>
+                                            </div>
+                                            <div class="main_box">
+                                                <label class="radio" for="DIAGNOSTIC_18_yes">Left BLOCK</label>
+                                            </div>
+                                        </div>                                
+                                        <div class="full_partial">
+                                            <div class="main_box">
+                                                <div class="row">
+                                                    <div class="full">
+                                                        <div class="small_yes_no">
+                                                            <div class="columnForm">                                
+                                                                <div class="pt">
+                                                                    <input type="radio" name="DIAGNOSTIC_16_yes" id="DIAGNOSTIC_16_yes">
+                                                                    <label class="radio_tab_input_row" for="DIAGNOSTIC_16_yes">0</label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="right-board_yes_not">
+                                                            <div class="columnForm">
+                                                                <div class="pt_columnForm_margin_trailer">
+                                                                    <label class="radio" for="DIAGNOSTIC_16">I never take longer than 30 minutes to fall asleep.</label>                                        
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="full">
+                                            <div class="main_box">
+                                                <div class="row">
+                                                    <div class="full">
+                                                        <div class="small_yes_no">
+                                                            <div class="columnForm">                                
+                                                                <div class="pt">
+                                                                    <input type="radio" name="DIAGNOSTIC_16_yes" id="DIAGNOSTIC_16_yes">
+                                                                    <label class="radio_tab_input_row" for="DIAGNOSTIC_16_yes">1</label></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="right-board_yes_not">
+                                                            <div class="columnForm">
+                                                                <div class="pt_columnForm_margin_trailer">
+                                                                    <label class="radio" for="DIAGNOSTIC_16">I take at least 30 minutes to fall asleep, less than half the time.</label>                                        
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="full">
+                                            <div class="main_box">
+                                                <div class="row">
+                                                    <div class="full">
+                                                        <div class="small_yes_no">
+                                                            <div class="columnForm">                                
+                                                                <div class="pt">
+                                                                    <input type="radio" name="DIAGNOSTIC_16_yes" id="DIAGNOSTIC_16_yes">
+                                                                    <label class="radio_tab_input_row" for="DIAGNOSTIC_16_yes">2</label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="right-board_yes_not">
+                                                            <div class="columnForm">
+                                                                <div class="pt_columnForm_margin_trailer">
+                                                                    <label class="radio" for="DIAGNOSTIC_16">I take at least 30 minutes to fall asleep, more than half the time.</label>                                        
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="full">
+                                            <div class="main_box">
+                                                <div class="row">
+                                                    <div class="full">
+                                                        <div class="small_yes_no">
+                                                            <div class="columnForm">                                
+                                                                <div class="pt">
+                                                                    <input type="radio" name="DIAGNOSTIC_16_yes" id="DIAGNOSTIC_16_yes">
+                                                                    <label class="radio_tab_input_row" for="DIAGNOSTIC_16_yes">3</label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="right-board_yes_not">
+                                                            <div class="columnForm">
+                                                                <div class="pt_columnForm_margin_trailer">
+                                                                    <label class="radio" for="DIAGNOSTIC_16">I take more than 60 minutes to fall asleep, more than half the time.</label>                                        
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                </div>
+                                </div>
+                                
+                                
+
+                                <div class="helf_left">
+                                    <div class="row">
+                                        <div class="full_partial">                                
+                                            <div class="num_box">
+                                                <label class="radio_tab_input_row">6.</label>
+                                            </div>
+                                            <div class="main_box">
+                                                <label class="radio" for="DIAGNOSTIC_18_yes">Decreased Appetite:</label>
+                                            </div>
+                                        </div>                                
+                                        <div class="full_partial">
+                                            <div class="main_box">
+                                                <div class="row">
+                                                    <div class="full">
+                                                        <div class="small_yes_no">
+                                                            <div class="columnForm">                                
+                                                                <div class="pt">
+                                                                    <input type="radio" name="DIAGNOSTIC_16_yes" id="DIAGNOSTIC_16_yes">
+                                                                    <label class="radio_tab_input_row" for="DIAGNOSTIC_16_yes">0</label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="right-board_yes_not">
+                                                            <div class="columnForm">
+                                                                <div class="pt_columnForm_margin_trailer">
+                                                                    <label class="radio" for="DIAGNOSTIC_16">I never take longer than 30 minutes to fall asleep.</label>                                        
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="full">
+                                            <div class="main_box">
+                                                <div class="row">
+                                                    <div class="full">
+                                                        <div class="small_yes_no">
+                                                            <div class="columnForm">                                
+                                                                <div class="pt">
+                                                                    <input type="radio" name="DIAGNOSTIC_16_yes" id="DIAGNOSTIC_16_yes">
+                                                                    <label class="radio_tab_input_row" for="DIAGNOSTIC_16_yes">1</label></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="right-board_yes_not">
+                                                            <div class="columnForm">
+                                                                <div class="pt_columnForm_margin_trailer">
+                                                                    <label class="radio" for="DIAGNOSTIC_16">I take at least 30 minutes to fall asleep, less than half the time.</label>                                        
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="full">
+                                            <div class="main_box">
+                                                <div class="row">
+                                                    <div class="full">
+                                                        <div class="small_yes_no">
+                                                            <div class="columnForm">                                
+                                                                <div class="pt">
+                                                                    <input type="radio" name="DIAGNOSTIC_16_yes" id="DIAGNOSTIC_16_yes">
+                                                                    <label class="radio_tab_input_row" for="DIAGNOSTIC_16_yes">2</label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="right-board_yes_not">
+                                                            <div class="columnForm">
+                                                                <div class="pt_columnForm_margin_trailer">
+                                                                    <label class="radio" for="DIAGNOSTIC_16">I take at least 30 minutes to fall asleep, more than half the time.</label>                                        
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="full">
+                                            <div class="main_box">
+                                                <div class="row">
+                                                    <div class="full">
+                                                        <div class="small_yes_no">
+                                                            <div class="columnForm">                                
+                                                                <div class="pt">
+                                                                    <input type="radio" name="DIAGNOSTIC_16_yes" id="DIAGNOSTIC_16_yes">
+                                                                    <label class="radio_tab_input_row" for="DIAGNOSTIC_16_yes">3</label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="right-board_yes_not">
+                                                            <div class="columnForm">
+                                                                <div class="pt_columnForm_margin_trailer">
+                                                                    <label class="radio" for="DIAGNOSTIC_16">I take more than 60 minutes to fall asleep, more than half the time.</label>                                        
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Кінець ПЕРШОЇ ПАРИ!-->
+
+                        <!--ДРУГА ПАРА LEFT+LEFT-->
+                        <div class="row">
+                            <div class="helf_left">
+                                <div class="row">
+                                    <div class="full">                                
+                                        <div class="num_box">
+                                            <label class="radio_tab_input_row">1.</label>
+                                        </div>
+                                        <div class="main_box">
+                                            <label class="radio" for="DIAGNOSTIC_18_yes">Left BLOCK</label>
+                                        </div>
+                                    </div>                                
+                                    <div class="full">
+                                        <div class="main_box">
+                                            <input type="radio" name="DIAGNOSTIC_18_yes" id="DIAGNOSTIC_18_yes">
+                                            <label class="radio_tab_input_row" for="DIAGNOSTIC_18_yes">I never take longer than 30 minutes to fall asleep.</label>
+                                        </div>
+                                    </div>
+                                    <div class="full">
+                                        <div class="main_box">
+                                            <input type="radio" name="DIAGNOSTIC_18_yes" id="DIAGNOSTIC_18_yes">
+                                            <label class="radio_tab_input_row" for="DIAGNOSTIC_18_yes">I never take longer than 30 minutes to fall asleep.</label>
+                                        </div>
+                                    </div>
+                                    <div class="full">
+                                        <div class="main_box">
+                                            <input type="radio" name="DIAGNOSTIC_18_yes" id="DIAGNOSTIC_18_yes">
+                                            <label class="radio_tab_input_row" for="DIAGNOSTIC_18_yes">I never take longer than 30 minutes to fall asleep.</label>
+                                        </div>
+                                    </div>
+                                </div> 
+
+                                <div class="row">
+                                    <div class="full">                                
+                                        <div class="num_box">
+                                            <label class="radio_tab_input_row">2.</label>
+                                        </div>
+                                        <div class="main_box">
+                                            <label class="radio" for="DIAGNOSTIC_18_yes">Left BLOCK</label>
+                                        </div>
+                                    </div>                                
+                                    <div class="full">
+                                        <div class="main_box">
+                                            <div class="row">
+                                                <div class="full">
+                                                    <div class="mein_box_radio">
+                                                        <div class="columnForm">
+                                                            <div class="pt">
+                                                                <input type="radio" name="DIAGNOSTIC_18_yes" id="DIAGNOSTIC_18_yes">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="mein_box_legend">
+                                                        <div class="columnForm">
+                                                            <label class="radio_tab_input_row" for="DIAGNOSTIC_18_yes">I never take longer than 30 minutes to fall asleep.</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="full">
+                                        <div class="main_box">
+                                            <input type="radio" name="DIAGNOSTIC_18_yes" id="DIAGNOSTIC_18_yes">
+                                            <label class="radio_tab_input_row" for="DIAGNOSTIC_18_yes">I never take longer than 30 minutes to fall asleep.</label>
+                                        </div>
+                                    </div>
+                                    <div class="full">
+                                        <div class="main_box">
+                                            <input type="radio" name="DIAGNOSTIC_18_yes" id="DIAGNOSTIC_18_yes">
+                                            <label class="radio_tab_input_row" for="DIAGNOSTIC_18_yes">I never take longer than 30 minutes to fall asleep.</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="full">                                
+                                        <div class="num_box">
+                                            <label class="radio_tab_input_row">3.</label>
+                                        </div>
+                                        <div class="main_box">
+                                            <label class="radio" for="DIAGNOSTIC_18_yes">Left BLOCK</label>
+                                        </div>
+                                    </div>                                
+                                    <div class="full">
+                                        <div class="main_box">
+                                            <input type="radio" name="DIAGNOSTIC_18_yes" id="DIAGNOSTIC_18_yes">
+                                            <label class="radio_tab_input_row" for="DIAGNOSTIC_18_yes">I never take longer than 30 minutes to fall asleep.</label>
+                                        </div>
+                                    </div>
+                                    <div class="full">
+                                        <div class="main_box">
+                                            <input type="radio" name="DIAGNOSTIC_18_yes" id="DIAGNOSTIC_18_yes">
+                                            <label class="radio_tab_input_row" for="DIAGNOSTIC_18_yes">I never take longer than 30 minutes to fall asleep.</label>
+                                        </div>
+                                    </div>
+                                    <div class="full">
+                                        <div class="main_box">
+                                            <input type="radio" name="DIAGNOSTIC_18_yes" id="DIAGNOSTIC_18_yes">
+                                            <label class="radio_tab_input_row" for="DIAGNOSTIC_18_yes">I never take longer than 30 minutes to fall asleep.</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="helf_left">
+                                <div class="row">
+                                    <div class="full">                                
+                                        <div class="num_box">
+                                            <label class="radio_tab_input_row">1.</label>
+                                        </div>
+                                        <div class="main_box">
+                                            <label class="radio" for="DIAGNOSTIC_18_yes">Left BLOCK</label>
+                                        </div>
+                                    </div>                                
+                                    <div class="full">
+                                        <div class="main_box">
+                                            <input type="radio" name="DIAGNOSTIC_18_yes" id="DIAGNOSTIC_18_yes">
+                                            <label class="radio_tab_input_row" for="DIAGNOSTIC_18_yes">I never take longer than 30 minutes to fall asleep.</label>
+                                        </div>
+                                    </div>
+                                    <div class="full">
+                                        <div class="main_box">
+                                            <input type="radio" name="DIAGNOSTIC_18_yes" id="DIAGNOSTIC_18_yes">
+                                            <label class="radio_tab_input_row" for="DIAGNOSTIC_18_yes">I never take longer than 30 minutes to fall asleep.</label>
+                                        </div>
+                                    </div>
+                                    <div class="full">
+                                        <div class="main_box">
+                                            <input type="radio" name="DIAGNOSTIC_18_yes" id="DIAGNOSTIC_18_yes">
+                                            <label class="radio_tab_input_row" for="DIAGNOSTIC_18_yes">I never take longer than 30 minutes to fall asleep.</label>
+                                        </div>
+                                    </div>
+                                </div> 
+
+                                <div class="row">
+                                    <div class="full">                                
+                                        <div class="num_box">
+                                            <label class="radio_tab_input_row">2.</label>
+                                        </div>
+                                        <div class="main_box">
+                                            <label class="radio" for="DIAGNOSTIC_18_yes">Left BLOCK</label>
+                                        </div>
+                                    </div>                                
+                                    <div class="full">
+                                        <div class="main_box">
+                                            <div class="row">
+                                                <div class="full">
+                                                    <div class="mein_box_radio">
+                                                        <div class="columnForm">
+                                                            <div class="pt">
+                                                                <input type="radio" name="DIAGNOSTIC_18_yes" id="DIAGNOSTIC_18_yes">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="mein_box_legend">
+                                                        <div class="columnForm">
+                                                            <label class="radio_tab_input_row" for="DIAGNOSTIC_18_yes">I never take longer than 30 minutes to fall asleep.</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="full">
+                                        <div class="main_box">
+                                            <input type="radio" name="DIAGNOSTIC_18_yes" id="DIAGNOSTIC_18_yes">
+                                            <label class="radio_tab_input_row" for="DIAGNOSTIC_18_yes">I never take longer than 30 minutes to fall asleep.</label>
+                                        </div>
+                                    </div>
+                                    <div class="full">
+                                        <div class="main_box">
+                                            <input type="radio" name="DIAGNOSTIC_18_yes" id="DIAGNOSTIC_18_yes">
+                                            <label class="radio_tab_input_row" for="DIAGNOSTIC_18_yes">I never take longer than 30 minutes to fall asleep.</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="full">                                
+                                        <div class="num_box">
+                                            <label class="radio_tab_input_row">3.</label>
+                                        </div>
+                                        <div class="main_box">
+                                            <label class="radio" for="DIAGNOSTIC_18_yes">Left BLOCK</label>
+                                        </div>
+                                    </div>                                
+                                    <div class="full">
+                                        <div class="main_box">
+                                            <input type="radio" name="DIAGNOSTIC_18_yes" id="DIAGNOSTIC_18_yes">
+                                            <label class="radio_tab_input_row" for="DIAGNOSTIC_18_yes">I never take longer than 30 minutes to fall asleep.</label>
+                                        </div>
+                                    </div>
+                                    <div class="full">
+                                        <div class="main_box">
+                                            <input type="radio" name="DIAGNOSTIC_18_yes" id="DIAGNOSTIC_18_yes">
+                                            <label class="radio_tab_input_row" for="DIAGNOSTIC_18_yes">I never take longer than 30 minutes to fall asleep.</label>
+                                        </div>
+                                    </div>
+                                    <div class="full">
+                                        <div class="main_box">
+                                            <input type="radio" name="DIAGNOSTIC_18_yes" id="DIAGNOSTIC_18_yes">
+                                            <label class="radio_tab_input_row" for="DIAGNOSTIC_18_yes">I never take longer than 30 minutes to fall asleep.</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Кінець ДРУГА ПАРА LEFT+LEFT-->
+
+                        <!--right BLOCK-->
+                        <!--                                <div class="columnForm">
+                                                            <div class="full">                                
+                                                            <div class="num_box">
+                                                                <label class="radio_tab_input_row">1.</label>
+                                                            </div>
+                                                            <div class="main_box">
+                                                                <label class="radio" for="DIAGNOSTIC_18_yes">Falling Asleep:</label>
+                                                                <div class="pt">
+                                                                    <input type="radio" name="DIAGNOSTIC_18_yes" id="DIAGNOSTIC_18_yes">
+                                                                    <label class="radio_tab_input_row" for="DIAGNOSTIC_18_yes">I never take longer than 30 minutes to fall asleep.</label>
+                                                                </div>
+                                                                <div class="pt">
+                                                                    <input type="radio" name="DIAGNOSTIC_18_yes" id="DIAGNOSTIC_18_yes">
+                                                                    <label class="radio_tab_input_row" for="DIAGNOSTIC_18_yes">I never take longer than 30 minutes to fall asleep.</label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="full">                                
+                                                            <div class="num_box">
+                                                                <label class="radio_tab_input_row">1.</label>
+                                                            </div>
+                                                            <div class="main_box">
+                                                                <label class="radio" for="DIAGNOSTIC_18_yes">Falling Asleep:</label>
+                                                                <div class="pt">
+                                                                    <input type="radio" name="DIAGNOSTIC_18_yes" id="DIAGNOSTIC_18_yes">
+                                                                    <label class="radio_tab_input_row" for="DIAGNOSTIC_18_yes">I never take longer than 30 minutes to fall asleep.</label>
+                                                                </div>
+                                                                <div class="pt">
+                                                                    <input type="radio" name="DIAGNOSTIC_18_yes" id="DIAGNOSTIC_18_yes">
+                                                                    <label class="radio_tab_input_row" for="DIAGNOSTIC_18_yes">I never take longer than 30 minutes to fall asleep.</label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="full">                                
+                                                            <div class="num_box">
+                                                                <label class="radio_tab_input_row">1.</label>
+                                                            </div>
+                                                            <div class="main_box">
+                                                                <label class="radio" for="DIAGNOSTIC_18_yes">Falling Asleep:</label>
+                                                                <div class="pt">
+                                                                    <input type="radio" name="DIAGNOSTIC_18_yes" id="DIAGNOSTIC_18_yes">
+                                                                    <label class="radio_tab_input_row" for="DIAGNOSTIC_18_yes">I never take longer than 30 minutes to fall asleep.</label>
+                                                                </div>
+                                                                <div class="pt">
+                                                                    <input type="radio" name="DIAGNOSTIC_18_yes" id="DIAGNOSTIC_18_yes">
+                                                                    <label class="radio_tab_input_row" for="DIAGNOSTIC_18_yes">I never take longer than 30 minutes to fall asleep.</label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>-->
+
+                        <!--                        </div>
+                                                </div>-->
+
+
+
+
 
 
                     </fieldset>
-                    <!--                    </fieldset>-->
 
+
+                    <!--                    </fieldset>-->
 
                     <!--                            SUBMIT-->
 

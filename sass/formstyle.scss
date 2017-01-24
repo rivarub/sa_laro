@@ -80,6 +80,57 @@ div.small_yes_no {
     min-width: 25%;
 }
 
+.num_box, .main_box {
+    @include margin-trailer(0);
+    //@include rhythm-margins(0.5, 0.5);
+}
+div.helf_left {
+    //background-color: darkseagreen;    
+    width: 50%;
+    float: left;
+    .full {
+       @include margin-trailer(0);  
+    }
+    .num_box {
+        width: 9%;
+        float: left        
+    }
+    .main_box {
+        width: 91%;
+        float: right;
+    }
+    .columnForm {
+         margin-right: 0.6em;
+    }
+    .pt_columnForm_margin_trailer, .row, right-board_yes_not {
+        margin-bottom: 0;
+    }
+}
+div.helf_righ {    
+    width: 50%;
+    float: left;
+    .num_box {
+        width: 9%;
+        float: left        
+    }
+    .main_box {
+        width: 91%;
+        float: right;
+    }
+}
+.mein_box_radio {
+    width: 10%;
+}
+.mein_box_legend {
+    width: 90%;
+}
+@media screen and (max-width: 900px) {
+    div.helf_left, div.helf_righ {
+        width: 100%;
+        float: none;        
+    } 
+}
+
 .row {      
     [class^="right"] {        
         float: left;
@@ -94,41 +145,7 @@ div.small_yes_no {
     }
     /*    .right-board_yes_not {
             width: 78%;       
-        }*/
-    @media screen and (max-width: 848px) {
-        div.full, div.full_partial {
-            div.right-board_yes_not {
-                width: 76%; 
-            }
-        }
-        div.full_margin_right {
-            div.right-board_yes_not {
-                width: 79%; 
-            }
-        }
-        /*                div.full_margin_right_right {
-                            div.right-board_yes_not {
-                                width: 78.6%; 
-                            }
-                        }*/
-    }
-    @media screen and (max-width: 815px) {
-        div.full, div.full_partial {
-            div.right-board_yes_not {
-                width: 100%; 
-            }
-        }
-        div.full_margin_right {
-            div.right-board_yes_not {
-                width: 79%; 
-            }
-        }
-        /*                div.full_margin_right_right {
-                            div.right-board_yes_not {
-                                width: 78.6%; 
-                            }
-                        }*/
-    }
+        }*/   
 
     div.full, div.full_partial {
         float: left;
@@ -143,28 +160,13 @@ div.small_yes_no {
     div[class^="full_margin_right_right"] {
         float: right;
         width: 77.6%;
-    }
-
-    /*    [class^="full_margin_right"] {
-            margin-left: 6.5%;
-            
-        }
-        .full_margin_right_right {
-            margin-left: 21.5%;        
-        }*/
-
+    }  
 
     [class^="columnForm"] {
         //width: 49%;                
         margin-right: 1.5em;
         float: left;
-    }
-
-    // номер переліку ширина
-    .columnForm {        
-        //display: table;
-        //width: 24%;
-    }
+    }    
     .pt_num_y_n {
         background-color: powderblue;
         width: 25%;            
@@ -187,6 +189,40 @@ div.small_yes_no {
         //margin-right: 0.9em;
     }               
 }
+@media screen and (max-width: 848px) {
+    div.full, div.full_partial {
+        div.right-board_yes_not {
+            width: 76%; 
+        }
+    }
+    div.full_margin_right {
+        div.right-board_yes_not {
+            width: 79%; 
+        }
+    }
+    /*                div.full_margin_right_right {
+                        div.right-board_yes_not {
+                            width: 78.6%; 
+                        }
+                    }*/
+}
+@media screen and (max-width: 815px) {
+    div.full, div.full_partial {
+        div.right-board_yes_not {
+            width: 100%; 
+        }
+    }
+    div.full_margin_right {
+        div.right-board_yes_not {
+            width: 79%; 
+        }
+    }
+    /*                div.full_margin_right_right {
+                        div.right-board_yes_not {
+                            width: 78.6%; 
+                        }
+                    }*/
+}
 /*label#num10 {
     width: 5%;
     background-color: papayawhip;
@@ -194,6 +230,9 @@ div.small_yes_no {
 input {
     height: 20px;
     font-size: 1em;
+}
+input[type="radio"], input[type="checkbox"] {
+    height: auto;
 }
 input:not([type="submit"]), textarea, select {
     border: 1px solid #bfbfbf;
