@@ -520,43 +520,43 @@ body {
   column-rule: thin dotted #999;
 }
 
-/* line 56, ../sass/formstyle.scss */
+/* line 57, ../sass/formstyle.scss */
 div.todey_date {
   text-align: right;
 }
-/* line 60, ../sass/formstyle.scss */
+/* line 61, ../sass/formstyle.scss */
 div.todey_date label {
   margin-right: 0.9em;
 }
 
-/* line 68, ../sass/formstyle.scss */
+/* line 69, ../sass/formstyle.scss */
 label:not([class^="radio"]) {
   width: 40%;
   float: left;
 }
 
-/* line 73, ../sass/formstyle.scss */
+/* line 74, ../sass/formstyle.scss */
 label[class*="maxim"] {
   width: 60%;
 }
 
-/* line 76, ../sass/formstyle.scss */
+/* line 77, ../sass/formstyle.scss */
 label.small {
   width: 22%;
 }
 
-/* line 79, ../sass/formstyle.scss */
+/* line 80, ../sass/formstyle.scss */
 div.small_yes_no {
   min-width: 25%;
 }
 
-/* line 83, ../sass/formstyle.scss */
-.num_box, .main_box {
+/* line 84, ../sass/formstyle.scss */
+.num_box, .main_box, .main_box_headline {
   margin-bottom: 0px;
   margin-bottom: 0rem;
 }
 
-/* line 87, ../sass/formstyle.scss */
+/* line 88, ../sass/formstyle.scss */
 div.helf_left {
   width: 50%;
   float: left;
@@ -567,160 +567,181 @@ div.helf_left .full {
   margin-bottom: 0rem;
 }
 /* line 94, ../sass/formstyle.scss */
+div.helf_left .full_partial {
+  margin-top: 29px;
+  margin-top: 1.8rem;
+  margin-bottom: 8px;
+  margin-bottom: 0.525rem;
+}
+/* line 98, ../sass/formstyle.scss */
 div.helf_left .num_box {
   width: 9%;
   float: left;
 }
-/* line 98, ../sass/formstyle.scss */
-div.helf_left .main_box {
+/* line 102, ../sass/formstyle.scss */
+div.helf_left .main_box, div.helf_left .main_box_headline {
   width: 91%;
   float: right;
 }
-/* line 102, ../sass/formstyle.scss */
+/* line 106, ../sass/formstyle.scss */
 div.helf_left .columnForm {
   margin-right: 0.6em;
 }
-/* line 105, ../sass/formstyle.scss */
-div.helf_left .pt_columnForm_margin_trailer, div.helf_left .row, div.helf_left right-board_yes_not {
-  margin-bottom: 0;
-}
-
 /* line 109, ../sass/formstyle.scss */
-div.helf_righ {
-  width: 50%;
-  float: left;
+div.helf_left .pt_columnForm_margin_trailer, div.helf_left .row {
+  margin-bottom: 0px;
+  margin-bottom: 0rem;
 }
 /* line 112, ../sass/formstyle.scss */
-div.helf_righ .num_box {
-  width: 9%;
-  float: left;
-}
-/* line 116, ../sass/formstyle.scss */
-div.helf_righ .main_box {
-  width: 91%;
-  float: right;
+div.helf_left .right-board_yes_not {
+  margin-bottom: 5px;
+  margin-bottom: 0.3rem;
 }
 
-/* line 121, ../sass/formstyle.scss */
-.mein_box_radio {
-  width: 10%;
+/* line 117, ../sass/formstyle.scss */
+.score .tab_input_row_maxim {
+  width: 53%;
+}
+/* line 120, ../sass/formstyle.scss */
+.score div.right-minim {
+  width: 45%;
 }
 
-/* line 124, ../sass/formstyle.scss */
-.mein_box_legend {
-  width: 90%;
-}
-
-@media screen and (max-width: 900px) {
-  /* line 128, ../sass/formstyle.scss */
-  div.helf_left, div.helf_righ {
+/*.score {
+    div.helf_left {
+        width: 100%;
+    }
+}*/
+@media screen and (max-width: 850px) {
+  /* line 130, ../sass/formstyle.scss */
+  div.helf_left {
     width: 100%;
     float: none;
   }
 }
-/* line 134, ../sass/formstyle.scss */
+@media screen and (max-width: 815px) {
+  /* line 137, ../sass/formstyle.scss */
+  div.helf_left .num_box {
+    width: 7%;
+  }
+  /* line 140, ../sass/formstyle.scss */
+  div.helf_left .main_box, div.helf_left .main_box_headline {
+    width: 93%;
+  }
+  /* line 142, ../sass/formstyle.scss */
+  div.helf_left .main_box .small_yes_no, div.helf_left .main_box_headline .small_yes_no {
+    width: 15%;
+  }
+  /* line 145, ../sass/formstyle.scss */
+  div.helf_left .main_box .right-board_yes_not, div.helf_left .main_box_headline .right-board_yes_not {
+    width: 85%;
+  }
+}
+@media screen and (max-width: 500px) {
+  /* line 153, ../sass/formstyle.scss */
+  div.helf_left label[class^="radio_tab_input_row"] {
+    margin-left: 0px;
+  }
+  /* line 156, ../sass/formstyle.scss */
+  div.helf_left .main_box {
+    width: 100%;
+  }
+  /* line 158, ../sass/formstyle.scss */
+  div.helf_left .main_box div.small_yes_no {
+    width: 12%;
+  }
+  /* line 161, ../sass/formstyle.scss */
+  div.helf_left .main_box div.right-board_yes_not {
+    width: 88%;
+  }
+}
+/* line 168, ../sass/formstyle.scss */
 .row {
   /*    .right-board_yes_not {
           width: 78%;       
       }*/
 }
-/* line 135, ../sass/formstyle.scss */
+/* line 169, ../sass/formstyle.scss */
 .row [class^="right"] {
   float: left;
   width: 60%;
 }
-/* line 140, ../sass/formstyle.scss */
+/* line 174, ../sass/formstyle.scss */
 .row .right-minim {
   width: 40%;
 }
-/* line 143, ../sass/formstyle.scss */
+/* line 177, ../sass/formstyle.scss */
 .row [class*="right-board"] {
   width: 78%;
 }
-/* line 150, ../sass/formstyle.scss */
+/* line 184, ../sass/formstyle.scss */
 .row div.full, .row div.full_partial {
   float: left;
   width: 100%;
 }
-/* line 155, ../sass/formstyle.scss */
+/* line 189, ../sass/formstyle.scss */
 .row div[class^="full_margin_right"] {
   float: right;
   width: 92.7%;
 }
-/* line 160, ../sass/formstyle.scss */
+/* line 194, ../sass/formstyle.scss */
 .row div[class^="full_margin_right_right"] {
   float: right;
   width: 77.6%;
 }
-/* line 165, ../sass/formstyle.scss */
+/* line 199, ../sass/formstyle.scss */
 .row [class^="columnForm"] {
   margin-right: 1.5em;
   float: left;
 }
-/* line 170, ../sass/formstyle.scss */
+/* line 204, ../sass/formstyle.scss */
 .row .pt_num_y_n {
   background-color: powderblue;
   width: 25%;
 }
-/* line 174, ../sass/formstyle.scss */
+/* line 208, ../sass/formstyle.scss */
 .row .num, .row .y_n {
   display: inline-block;
 }
-/* line 184, ../sass/formstyle.scss */
+/* line 218, ../sass/formstyle.scss */
 .row .columnForm-name {
   margin-right: 0.3em;
 }
 
 @media screen and (max-width: 848px) {
-  /* line 194, ../sass/formstyle.scss */
+  /* line 228, ../sass/formstyle.scss */
   div.full div.right-board_yes_not, div.full_partial div.right-board_yes_not {
     width: 76%;
   }
 
-  /* line 199, ../sass/formstyle.scss */
+  /* line 233, ../sass/formstyle.scss */
   div.full_margin_right div.right-board_yes_not {
     width: 79%;
   }
-
-  /*                div.full_margin_right_right {
-                      div.right-board_yes_not {
-                          width: 78.6%; 
-                      }
-                  }*/
 }
 @media screen and (max-width: 815px) {
-  /* line 211, ../sass/formstyle.scss */
+  /* line 240, ../sass/formstyle.scss */
   div.full div.right-board_yes_not, div.full_partial div.right-board_yes_not {
     width: 100%;
   }
 
-  /* line 216, ../sass/formstyle.scss */
+  /* line 245, ../sass/formstyle.scss */
   div.full_margin_right div.right-board_yes_not {
-    width: 79%;
+    width: 100%;
   }
-
-  /*                div.full_margin_right_right {
-                      div.right-board_yes_not {
-                          width: 78.6%; 
-                      }
-                  }*/
 }
-/*label#num10 {
-    width: 5%;
-    background-color: papayawhip;
-}*/
-/* line 230, ../sass/formstyle.scss */
+/* line 250, ../sass/formstyle.scss */
 input {
   height: 20px;
   font-size: 1em;
 }
 
-/* line 234, ../sass/formstyle.scss */
+/* line 254, ../sass/formstyle.scss */
 input[type="radio"], input[type="checkbox"] {
   height: auto;
 }
 
-/* line 237, ../sass/formstyle.scss */
+/* line 257, ../sass/formstyle.scss */
 input:not([type="submit"]), textarea, select {
   border: 1px solid #bfbfbf;
   padding: 0.1em;
@@ -731,18 +752,18 @@ input:not([type="submit"]), textarea, select {
   box-shadow: 2px 2px 5px rgba(43, 43, 43, 0.1);
 }
 
-/* line 247, ../sass/formstyle.scss */
+/* line 267, ../sass/formstyle.scss */
 .input_row {
   margin-left: 1em;
 }
 
-/* line 250, ../sass/formstyle.scss */
+/* line 270, ../sass/formstyle.scss */
 [class*="tab_input_row"] {
   margin-left: 0.5em;
   margin-right: 0.5em;
 }
 
-/* line 254, ../sass/formstyle.scss */
+/* line 274, ../sass/formstyle.scss */
 input[type="number"] {
   width: 4em;
 }
@@ -757,7 +778,7 @@ input[type="number"] {
         //@include nth-omega(4n);
     }
 }*/
-/* line 267, ../sass/formstyle.scss */
+/* line 287, ../sass/formstyle.scss */
 table {
   /*    .label_left {
          
@@ -781,39 +802,39 @@ table {
           width: 90%;            
       }     */
 }
-/* line 273, ../sass/formstyle.scss */
+/* line 293, ../sass/formstyle.scss */
 table table {
   /*        tr {
               text-align: center;
           }*/
 }
-/* line 275, ../sass/formstyle.scss */
+/* line 295, ../sass/formstyle.scss */
 table table td, table table th {
   border: none;
 }
-/* line 282, ../sass/formstyle.scss */
+/* line 302, ../sass/formstyle.scss */
 table td, table th {
   border: thin dotted gray;
 }
-/* line 286, ../sass/formstyle.scss */
+/* line 306, ../sass/formstyle.scss */
 table td:not([class*="label_left"]), table th:not([class*="label_left"]) {
   text-align: center;
 }
-/* line 304, ../sass/formstyle.scss */
+/* line 324, ../sass/formstyle.scss */
 table td[id*="date"], table th[id*="date"] {
   width: 10%;
 }
-/* line 307, ../sass/formstyle.scss */
+/* line 327, ../sass/formstyle.scss */
 table input[type="date"] {
   width: 90%;
 }
 
-/* line 317, ../sass/formstyle.scss */
+/* line 337, ../sass/formstyle.scss */
 .flex {
   width: 100%;
 }
 
-/* line 320, ../sass/formstyle.scss */
+/* line 340, ../sass/formstyle.scss */
 textarea[name="exercise_each_week"] {
   width: 100%;
 }
@@ -827,7 +848,7 @@ textarea[name="exercise_each_week"] {
         }
     }
 }*/
-/* line 333, ../sass/formstyle.scss */
+/* line 353, ../sass/formstyle.scss */
 .submit {
   *zoom: 1;
   max-width: 61em;
@@ -844,7 +865,7 @@ textarea[name="exercise_each_week"] {
   clear: both;
 }
 
-/* line 337, ../sass/formstyle.scss */
+/* line 357, ../sass/formstyle.scss */
 input[type="submit"] {
   width: 23.72881%;
   float: right;
@@ -863,7 +884,7 @@ input[type="submit"] {
   text-shadow: 0px 1px black;
   border: 1px solid #bfbfbf;
 }
-/* line 352, ../sass/formstyle.scss */
+/* line 372, ../sass/formstyle.scss */
 input[type="submit"]:hover {
   background-color: #205b8c;
   box-shadow: 3px 3px 3px rgba(68, 68, 68, 0.7);

@@ -52,6 +52,7 @@ body {
     -moz-column-rule: thin dotted #999;
     column-rule: thin dotted #999;
 }
+
 //FORM
 div.todey_date {
     text-align: right;
@@ -80,55 +81,88 @@ div.small_yes_no {
     min-width: 25%;
 }
 
-.num_box, .main_box {
+.num_box, .main_box, .main_box_headline {
     @include margin-trailer(0);
     //@include rhythm-margins(0.5, 0.5);
 }
-div.helf_left {
-    //background-color: darkseagreen;    
+div.helf_left {    
     width: 50%;
     float: left;
     .full {
-       @include margin-trailer(0);  
+        @include margin-trailer(0);  
     }
+    .full_partial {
+        @include rhythm-margins(1.2, 0.35);
+        //@include margin-trailer(0.35);
+    } 
     .num_box {
         width: 9%;
         float: left        
     }
-    .main_box {
+    .main_box, .main_box_headline {
         width: 91%;
         float: right;
     }
     .columnForm {
-         margin-right: 0.6em;
+        margin-right: 0.6em;
     }
-    .pt_columnForm_margin_trailer, .row, right-board_yes_not {
-        margin-bottom: 0;
+    .pt_columnForm_margin_trailer, .row {
+        @include margin-trailer(0);
+    }
+    .right-board_yes_not {
+        @include margin-trailer(0.2); //  
+    }   
+}
+.score {
+    .tab_input_row_maxim {
+        width: 53%
+    }
+    div.right-minim {
+        width: 45%;
     }
 }
-div.helf_righ {    
-    width: 50%;
-    float: left;
-    .num_box {
-        width: 9%;
-        float: left        
+/*.score {
+    div.helf_left {
+        width: 100%;
     }
-    .main_box {
-        width: 91%;
-        float: right;
-    }
-}
-.mein_box_radio {
-    width: 10%;
-}
-.mein_box_legend {
-    width: 90%;
-}
-@media screen and (max-width: 900px) {
-    div.helf_left, div.helf_righ {
+}*/
+@media screen and (max-width: 850px) {
+    div.helf_left {
         width: 100%;
         float: none;        
-    } 
+    }       
+}
+@media screen and (max-width: 815px) {
+    div.helf_left {
+        .num_box {
+            width: 7%;
+        }
+        .main_box, .main_box_headline {
+            width: 93%;
+            .small_yes_no {
+                width: 15%;
+            }
+            .right-board_yes_not {
+                width: 85%;
+            }
+        }
+    }
+}
+@media screen and (max-width: 500px) {    
+    div.helf_left {
+        label[class^="radio_tab_input_row"] {
+            margin-left: 0px;
+        }
+        .main_box {
+            width: 100%;
+            div.small_yes_no {
+                width: 12%;
+            }
+            div.right-board_yes_not {
+                width: 88%;
+            }
+        }
+    }
 }
 
 .row {      
@@ -199,12 +233,7 @@ div.helf_righ {
         div.right-board_yes_not {
             width: 79%; 
         }
-    }
-    /*                div.full_margin_right_right {
-                        div.right-board_yes_not {
-                            width: 78.6%; 
-                        }
-                    }*/
+    }  
 }
 @media screen and (max-width: 815px) {
     div.full, div.full_partial {
@@ -214,19 +243,10 @@ div.helf_righ {
     }
     div.full_margin_right {
         div.right-board_yes_not {
-            width: 79%; 
+            width: 100%; 
         }
-    }
-    /*                div.full_margin_right_right {
-                        div.right-board_yes_not {
-                            width: 78.6%; 
-                        }
-                    }*/
+    }  
 }
-/*label#num10 {
-    width: 5%;
-    background-color: papayawhip;
-}*/
 input {
     height: 20px;
     font-size: 1em;
