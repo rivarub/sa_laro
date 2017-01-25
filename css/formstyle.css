@@ -521,11 +521,11 @@ body {
 }
 
 /* line 56, ../sass/formstyle.scss */
-div.todey_date {
+div.today_date {
   text-align: right;
 }
 /* line 60, ../sass/formstyle.scss */
-div.todey_date label {
+div.today_date label {
   margin-right: 0.9em;
 }
 
