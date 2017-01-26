@@ -34,7 +34,6 @@ h1,h2,h3,h4,h5,h6,p {
     //background-color: yellow;
 }
 
-
 :not(form) {
     h1,h2,h3,h4,h5,h6 {
         margin-bottom: 0.2em;       
@@ -103,7 +102,9 @@ legend {
 [class*="underline"] {
     text-decoration: underline; 
 }
-
+label[class*="italic"] {
+    font-style: italic;
+}
 span.index {
     font-size: 75%;
     vertical-align: sub;
@@ -118,4 +119,9 @@ span.index {
     //margin-bottom: 3em;
     //background-color: buttontext;
 }*/
+#DIAGNOSTIC_SCREENING {
+    hgroup {
+        font-variant: small-caps;        
+    }
+}
 
