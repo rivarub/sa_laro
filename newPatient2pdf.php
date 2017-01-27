@@ -51,6 +51,49 @@ $html .= $_POST['b_studentStatus'];
 $html .= '<br><strong>c. Volunteer Status: </strong>';
 $html .= $_POST['c_VolunteerStatus'];
 
+$html .= '<br><strong>10. Type of occupation? </strong>';
+$html .= $_POST['type_of_occupation'];
+
+$html .= '<br><br><strong>Spousal Information </strong>';
+$html .= '<br><strong>11. How many years of formal education has your spouse completed? </strong>';
+$html .= $_POST['years_education_spouse'];
+
+$html .= '<br><strong>12. Highest degree your spouse has obtained: </strong>';
+$html .= $_POST['highest_degree_spouse'];
+if('Other' == $_POST['highest_degree_spouse']) $html .= ': '. $_POST['highest_degree_spouse_other'];
+
+$html .= '<br><strong>What best describes your spouse’s current employment status? (Check one from each a, b, & c)) </strong>';
+
+$html .= '<br><strong>a. Employment Status: </strong>';
+$html .= $_POST['a_employment_status_spouse'];
+
+$html .= '<br><strong>b. Student Status: </strong>';
+$html .= $_POST['b_student_status_spouse'];
+
+$html .= '<br><strong>c. Volunteer Status: </strong>';
+$html .= $_POST['c_volunteer_status_spouse'];
+
+$html .= '<br><strong>14. Spouse’s type of occupation? </strong>';
+$html .= $_POST['spous_type_of_occupation'];
+
+$html .= '<br><br><strong>Household: income: </strong>';
+$html .= $_POST['income'];
+$html .= '&nbsp;<strong>Zip Code : </strong>';
+$html .= $_POST['zip_Code'];
+$html .= '<br><strong>Current residence: </strong>';
+$html .= $_POST['current_residence'];
+$html .= '<br><strong>What is the major mode of transportation that you use: </strong>';
+$html .= $_POST['transportation'];
+
+
+$mpdf->WriteHTML($html, 2);
+$mpdf->AddPage();
+
+$html = '<h3>MEDICAL & MENTAL HEALTH HISTORY</h3>';
+$html .= '<br><strong>Have you ever had any of the following (check all that apply): </strong>';
+$html .= implode(", ", $_POST['any_following']);
+if(!empty($_POST['any_followinge_other'])) $html .= ": ". $_POST['any_followinge_other'];
+
 $mpdf->WriteHTML($html, 2);
 /*
 $stylesheet = file_get_contents('css/mpdf.css'); // external css
