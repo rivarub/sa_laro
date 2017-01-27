@@ -11,6 +11,8 @@ $color1: #fff; //white
 $color2: #1f5f93; //firm-h
 $color3: #2a76b5; //firm-background
 $color4: rgb(36, 44, 46); //text
+$color5: #eaebe4;  //table_tone_ligt   
+$color6: #ababa7; //table_ton  eaebe4
 
 $border-box-sizing: true;
 
@@ -19,7 +21,10 @@ $Lh2: 1.3em; // line-height-headline
 
 $p_larger: 1.3em;
 $serif-base: 1.2em;
+$serif-table-base: 1rem;
 $serif-h: 1.9rem; // for headlines serif
+$fs-comments: 0.97rem; // small for comments
+$fs-serif-comments: 1.065rem; // small for serif comments
 
 $font-sherif: "Times New Roman", 'Source Serif Pro', "Palatino Linotype", serif; //font-family serif
 

@@ -119,6 +119,7 @@ div.small_yes_no {
     @include margin-trailer(0);
     //@include rhythm-margins(0.5, 0.5);
 }
+// HELF_LEFT
 div.helf_left {    
     width: 50%;
     float: left;
@@ -126,16 +127,31 @@ div.helf_left {
         [class*="right-board"] {
             width: 86%;
         }
+        @media screen and (max-width: 974px) {
+            .right-board_yes_not {
+                width: 85%;
+            }
+        }
         @media screen and (max-width: 932px) {
             .right-board_yes_not {
                 width: 85%;
             }
         }
-        @media screen and (max-width: 870px) {
+        @media screen and (max-width: 911px) {
             .right-board_yes_not {
                 width: 84%;
             }
         }
+        @media screen and (max-width: 856px) {
+            .right-board_yes_not {
+                width: 83%;
+            }
+        }
+        /*        @media screen and (max-width: 468px) {
+                    .right-board_yes_not {
+                        width: 82%;
+                    }
+                }*/
         .small_yes_no {
             width: 14%;
         }
@@ -165,6 +181,110 @@ div.helf_left {
         @include margin-trailer(0.2); //  
     }   
 }
+@media screen and (max-width: 850px) {
+    div.helf_left {
+        width: 100%;
+        float: none;        
+    }    
+}
+@media screen and (max-width: 815px) {
+    div.helf_left {
+        .num_box {
+            width: 7%;
+        }
+        .main_box, .main_box_headline {
+            width: 93%;
+            .small_yes_no {
+                width: 15%;
+            }
+            .right-board_yes_not {
+                width: 85%;
+            }
+        }
+    }
+}
+@media screen and (max-width: 500px) {    
+    div.helf_left {
+        label[class^="radio_tab_input_row"] {
+            margin-left: 0px;
+        }
+        .main_box {
+            width: 100%;
+            div.small_yes_no {
+                width: 12%;
+            }
+            div.right-board_yes_not {
+                width: 87%;
+            }
+        }
+    }
+}
+@media screen and (max-width: 434px) {    
+    div.helf_left {
+        /*        label[class^="radio_tab_input_row"] {
+                    margin-left: 0px;
+                }*/
+        .main_box {
+            //width: 100%;
+            div.small_yes_no {
+                width: 14%;
+            }
+            div.right-board_yes_not {
+                width: 86%;
+            }
+        }
+    }
+}
+@media screen and (max-width: 381px) {    
+    div.helf_left {
+        /*        label[class^="radio_tab_input_row"] {
+                    margin-left: 0px;
+                }*/
+        .main_box {
+            //width: 100%;
+            div.small_yes_no {
+                width: 16%;
+            }
+            div.right-board_yes_not {
+                width: 84%;
+            }
+        }
+    }
+}
+@media screen and (max-width: 361px) {    
+    div.helf_left {
+        /*        label[class^="radio_tab_input_row"] {
+                    margin-left: 0px;
+                }*/
+        .main_box {
+            //width: 100%;
+            div.small_yes_no {
+                width: 17%;
+            }
+            div.right-board_yes_not {
+                width: 83%;
+            }
+        }
+    }
+}
+@media screen and (max-width: 347px) {    
+    div.helf_left {
+        /*        label[class^="radio_tab_input_row"] {
+                    margin-left: 0px;
+                }*/
+        .main_box {
+            //width: 100%;
+            div.small_yes_no {
+                width: 17%;
+            }
+            div.right-board_yes_not {
+                width: 100%;
+            }
+        }
+    }
+}
+// end_HELF_LEFT
+
 .score {
     div {
         @include rhythm-margins(0.01, 0.1);  
@@ -335,49 +455,12 @@ div.helf_left {
         }
     }
 }
-/*.score {
+/*.national_Network {
     div.helf_left {
         width: 100%;
     }
 }*/
-@media screen and (max-width: 850px) {
-    div.helf_left {
-        width: 100%;
-        float: none;        
-    }    
-}
-@media screen and (max-width: 815px) {
-    div.helf_left {
-        .num_box {
-            width: 7%;
-        }
-        .main_box, .main_box_headline {
-            width: 93%;
-            .small_yes_no {
-                width: 15%;
-            }
-            .right-board_yes_not {
-                width: 85%;
-            }
-        }
-    }
-}
-@media screen and (max-width: 500px) {    
-    div.helf_left {
-        label[class^="radio_tab_input_row"] {
-            margin-left: 0px;
-        }
-        .main_box {
-            width: 100%;
-            div.small_yes_no {
-                width: 12%;
-            }
-            div.right-board_yes_not {
-                width: 88%;
-            }
-        }
-    }
-}
+
 
 .row {      
     [class^="right"] {        
@@ -408,8 +491,7 @@ div.helf_left {
     div[class^="full_margin_right_right"] {
         float: right;
         width: 77.6%;
-    }  
-
+    }
     [class^="columnForm"] {
         //width: 49%;                
         margin-right: 1.5em;
@@ -424,11 +506,7 @@ div.helf_left {
     }
     .num {
         //width: 20%;            
-    }
-
-
-    //
-
+    }    
     .columnForm-name {
         margin-right: 0.3em;
     }    
@@ -488,16 +566,7 @@ input:not([type="submit"]), textarea, select {
 input[type="number"] {
     width: 4em;
 }
-/*@include with-grid-settings() {
-    .submit {
-        @include container;
-        @include susy-grid-background;
-    }
-    .submit input[type="submit"] {
-        @include span-columns(2 omega,12);
-        //@include nth-omega(4n);
-    }
-}*/
+
 table {
     //margin-left: 20px;
     //margin-right: 20px;
@@ -507,7 +576,7 @@ table {
     table {
         //float: right;
         td, th {
-            border: none;
+            border: none;            
         }
         /*        tr {
                     text-align: center;
@@ -564,17 +633,37 @@ textarea[name="exercise_each_week"] {
         }
     }
 }*/
-#national_Network {    
+#national_Network, #national_Network_2 {    
     :not(hgroup) {
         font-family: $font-sherif;
-        font-size: $serif-base; 
+        font-size: 1.25rem;        
+    }
+    p, legend, label, td, th {
+        //font-size: $serif-base;
+    }
+    table {
+        .label_left {
+            margin-left: 0;
+        }
+        td, th {                      
+            table {
+                margin-left: auto;
+                margin-right: auto;            
+            }                 
+        }
+        .tone_light {
+            background-color: $color5;
+        }
+        .tone {
+            background-color: $color6;
+        }       
     }
     hgroup {              
         h1 {
             font-family: $font-sherif;
             font-size: $serif-h; 
         }
-        h2 {
+        h2, em {
             font-family: sans-serif;
             @include adjust-font-size-to(1.424rem);
             @include rhythm-margins(0.01, 0.1);   
@@ -587,6 +676,20 @@ textarea[name="exercise_each_week"] {
             font-weight:lighter;
         }
     }
+}
+.comment {
+    width: 100%;
+    float: left;
+    @include rhythm-margins(3, 1);
+    p {
+        font-size: $fs-comments;
+    }
+    p.sherif {
+     margin-bottom: 1rem;
+     font-family: $font-sherif;
+     font-size: $fs-serif-comments;
+    }
+    
 }
 .submit {
     @include container;
