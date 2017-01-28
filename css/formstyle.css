@@ -960,98 +960,93 @@ div.helf_left .right-board_yes_not {
   }
 }
 
-/*.national_Network {
-    div.helf_left {
-        width: 100%;
-    }
-}*/
-/* line 465, ../sass/formstyle.scss */
+/* line 459, ../sass/formstyle.scss */
 .row {
   /*    .right-board_yes_not {
           width: 78%;       
       }*/
 }
-/* line 466, ../sass/formstyle.scss */
+/* line 460, ../sass/formstyle.scss */
 .row [class^="right"] {
   float: left;
   width: 60%;
 }
-/* line 471, ../sass/formstyle.scss */
+/* line 465, ../sass/formstyle.scss */
 .row .right-minim {
   width: 40%;
 }
-/* line 474, ../sass/formstyle.scss */
+/* line 468, ../sass/formstyle.scss */
 .row [class*="right-board"] {
   width: 78%;
 }
-/* line 481, ../sass/formstyle.scss */
+/* line 475, ../sass/formstyle.scss */
 .row div.full, .row div.full_partial {
   float: left;
   width: 100%;
 }
-/* line 486, ../sass/formstyle.scss */
+/* line 480, ../sass/formstyle.scss */
 .row div[class^="full_margin_right"] {
   float: right;
   width: 92.7%;
 }
-/* line 491, ../sass/formstyle.scss */
+/* line 485, ../sass/formstyle.scss */
 .row div[class^="full_margin_right_right"] {
   float: right;
   width: 77.6%;
 }
-/* line 495, ../sass/formstyle.scss */
+/* line 489, ../sass/formstyle.scss */
 .row [class^="columnForm"] {
   margin-right: 1.5em;
   float: left;
 }
-/* line 500, ../sass/formstyle.scss */
+/* line 494, ../sass/formstyle.scss */
 .row .pt_num_y_n {
   background-color: powderblue;
   width: 25%;
 }
-/* line 504, ../sass/formstyle.scss */
+/* line 498, ../sass/formstyle.scss */
 .row .num, .row .y_n {
   display: inline-block;
 }
-/* line 510, ../sass/formstyle.scss */
+/* line 504, ../sass/formstyle.scss */
 .row .columnForm-name {
   margin-right: 0.3em;
 }
 
 @media screen and (max-width: 848px) {
-  /* line 520, ../sass/formstyle.scss */
+  /* line 514, ../sass/formstyle.scss */
   div.full div.right-board_yes_not, div.full_partial div.right-board_yes_not {
     width: 76%;
   }
 
-  /* line 525, ../sass/formstyle.scss */
+  /* line 519, ../sass/formstyle.scss */
   div.full_margin_right div.right-board_yes_not {
     width: 79%;
   }
 }
 @media screen and (max-width: 815px) {
-  /* line 532, ../sass/formstyle.scss */
+  /* line 526, ../sass/formstyle.scss */
   div.full div.right-board_yes_not, div.full_partial div.right-board_yes_not {
     width: 100%;
   }
 
-  /* line 537, ../sass/formstyle.scss */
+  /* line 531, ../sass/formstyle.scss */
   div.full_margin_right div.right-board_yes_not {
     width: 100%;
   }
 }
-/* line 542, ../sass/formstyle.scss */
+/* line 536, ../sass/formstyle.scss */
 input {
   height: 20px;
   font-size: 1em;
 }
 
-/* line 546, ../sass/formstyle.scss */
+/* line 540, ../sass/formstyle.scss */
 input[type="radio"], input[type="checkbox"] {
   height: auto;
 }
 
-/* line 549, ../sass/formstyle.scss */
+/* line 543, ../sass/formstyle.scss */
 input:not([type="submit"]), textarea, select {
   border: 1px solid #bfbfbf;
   padding: 0.1em;
@@ -1062,23 +1057,23 @@ input:not([type="submit"]), textarea, select {
   box-shadow: 2px 2px 5px rgba(43, 43, 43, 0.1);
 }
 
-/* line 559, ../sass/formstyle.scss */
+/* line 553, ../sass/formstyle.scss */
 .input_row {
   margin-left: 1em;
 }
 
-/* line 562, ../sass/formstyle.scss */
+/* line 556, ../sass/formstyle.scss */
 [class*="tab_input_row"] {
   margin-left: 0.5em;
   margin-right: 0.5em;
 }
 
-/* line 566, ../sass/formstyle.scss */
+/* line 560, ../sass/formstyle.scss */
 input[type="number"] {
   width: 4em;
 }
 
-/* line 570, ../sass/formstyle.scss */
+/* line 564, ../sass/formstyle.scss */
 table {
   /*    .label_left {
          
@@ -1102,39 +1097,44 @@ table {
           width: 90%;            
       }     */
 }
-/* line 576, ../sass/formstyle.scss */
+/* line 570, ../sass/formstyle.scss */
 table table {
   /*        tr {
               text-align: center;
           }*/
 }
-/* line 578, ../sass/formstyle.scss */
+/* line 572, ../sass/formstyle.scss */
 table table td, table table th {
   border: none;
 }
-/* line 585, ../sass/formstyle.scss */
+/* line 579, ../sass/formstyle.scss */
 table td, table th {
   border: thin dotted gray;
 }
-/* line 589, ../sass/formstyle.scss */
+/* line 582, ../sass/formstyle.scss */
+table td div.tab_input_row, table th div.tab_input_row {
+  margin-left: 0.3em;
+  margin-right: 0.3em;
+}
+/* line 587, ../sass/formstyle.scss */
 table td:not([class*="label_left"]), table th:not([class*="label_left"]) {
   text-align: center;
 }
-/* line 607, ../sass/formstyle.scss */
+/* line 605, ../sass/formstyle.scss */
 table td[id*="date"], table th[id*="date"] {
   width: 10%;
 }
-/* line 610, ../sass/formstyle.scss */
+/* line 608, ../sass/formstyle.scss */
 table input[type="date"] {
   width: 90%;
 }
 
-/* line 620, ../sass/formstyle.scss */
+/* line 618, ../sass/formstyle.scss */
 .flex {
   width: 100%;
 }
 
-/* line 623, ../sass/formstyle.scss */
+/* line 621, ../sass/formstyle.scss */
 textarea[name="exercise_each_week"] {
   width: 100%;
 }
@@ -1148,35 +1148,35 @@ textarea[name="exercise_each_week"] {
         }
     }
 }*/
-/* line 637, ../sass/formstyle.scss */
-#national_Network :not(hgroup), #national_Network_2 :not(hgroup) {
+/* line 635, ../sass/formstyle.scss */
+#national_Network :not(hgroup), #national_Network_2 :not(hgroup), #national_Network_3 :not(hgroup), #national_Network_4 :not(hgroup) {
   font-family: "Times New Roman", "Source Serif Pro", "Palatino Linotype", serif;
   font-size: 1.25rem;
 }
-/* line 645, ../sass/formstyle.scss */
-#national_Network table .label_left, #national_Network_2 table .label_left {
+/* line 643, ../sass/formstyle.scss */
+#national_Network table .label_left, #national_Network_2 table .label_left, #national_Network_3 table .label_left, #national_Network_4 table .label_left {
   margin-left: 0;
 }
-/* line 649, ../sass/formstyle.scss */
-#national_Network table td table, #national_Network table th table, #national_Network_2 table td table, #national_Network_2 table th table {
+/* line 647, ../sass/formstyle.scss */
+#national_Network table td table, #national_Network table th table, #national_Network_2 table td table, #national_Network_2 table th table, #national_Network_3 table td table, #national_Network_3 table th table, #national_Network_4 table td table, #national_Network_4 table th table {
   margin-left: auto;
   margin-right: auto;
 }
-/* line 654, ../sass/formstyle.scss */
-#national_Network table .tone_light, #national_Network_2 table .tone_light {
+/* line 652, ../sass/formstyle.scss */
+#national_Network table .tone_light, #national_Network_2 table .tone_light, #national_Network_3 table .tone_light, #national_Network_4 table .tone_light {
   background-color: #eaebe4;
 }
-/* line 657, ../sass/formstyle.scss */
-#national_Network table .tone, #national_Network_2 table .tone {
+/* line 655, ../sass/formstyle.scss */
+#national_Network table .tone, #national_Network_2 table .tone, #national_Network_3 table .tone, #national_Network_4 table .tone {
   background-color: #ababa7;
 }
-/* line 662, ../sass/formstyle.scss */
-#national_Network hgroup h1, #national_Network_2 hgroup h1 {
+/* line 660, ../sass/formstyle.scss */
+#national_Network hgroup h1, #national_Network_2 hgroup h1, #national_Network_3 hgroup h1, #national_Network_4 hgroup h1 {
   font-family: "Times New Roman", "Source Serif Pro", "Palatino Linotype", serif;
   font-size: 1.9rem;
 }
-/* line 666, ../sass/formstyle.scss */
-#national_Network hgroup h2, #national_Network hgroup em, #national_Network_2 hgroup h2, #national_Network_2 hgroup em {
+/* line 664, ../sass/formstyle.scss */
+#national_Network hgroup h2, #national_Network hgroup em, #national_Network_2 hgroup h2, #national_Network_2 hgroup em, #national_Network_3 hgroup h2, #national_Network_3 hgroup em, #national_Network_4 hgroup h2, #national_Network_4 hgroup em {
   font-family: sans-serif;
   font-size: 23px;
   font-size: 1.424rem;
@@ -1187,20 +1187,52 @@ textarea[name="exercise_each_week"] {
   margin-bottom: 2px;
   margin-bottom: 0.15rem;
 }
-/* line 671, ../sass/formstyle.scss */
-#national_Network hgroup h2.underline_bold, #national_Network_2 hgroup h2.underline_bold {
+/* line 669, ../sass/formstyle.scss */
+#national_Network hgroup h2.underline_bold, #national_Network_2 hgroup h2.underline_bold, #national_Network_3 hgroup h2.underline_bold, #national_Network_4 hgroup h2.underline_bold {
   margin-top: 31px;
   margin-top: 1.95rem;
   margin-bottom: 31px;
   margin-bottom: 1.95rem;
   font-weight: 900;
 }
-/* line 675, ../sass/formstyle.scss */
-#national_Network hgroup h2.lighter, #national_Network_2 hgroup h2.lighter {
+/* line 673, ../sass/formstyle.scss */
+#national_Network hgroup h2.lighter, #national_Network_2 hgroup h2.lighter, #national_Network_3 hgroup h2.lighter, #national_Network_4 hgroup h2.lighter {
   font-weight: lighter;
 }
 
-/* line 680, ../sass/formstyle.scss */
+/* line 679, ../sass/formstyle.scss */
+#national_Network_3 .helf_left, #national_Network_4 .helf_left {
+  width: 100%;
+}
+/* line 681, ../sass/formstyle.scss */
+#national_Network_3 .helf_left .num_box, #national_Network_4 .helf_left .num_box {
+  width: 5%;
+  float: left;
+}
+/* line 685, ../sass/formstyle.scss */
+#national_Network_3 .helf_left .main_box, #national_Network_3 .helf_left .main_box_headline, #national_Network_4 .helf_left .main_box, #national_Network_4 .helf_left .main_box_headline {
+  width: 95%;
+  float: right;
+}
+/* line 689, ../sass/formstyle.scss */
+#national_Network_3 .helf_left .small_yes_no, #national_Network_4 .helf_left .small_yes_no {
+  width: 14%;
+}
+
+/* line 698, ../sass/formstyle.scss */
+#national_Network_4 .columnForm {
+  margin-right: 1.5em;
+  margin-left: 1.5em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+/* line 705, ../sass/formstyle.scss */
+#national_Network_4 .columnForm .pt label, #national_Network_4 .columnForm .pt input {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+/* line 715, ../sass/formstyle.scss */
 .comment {
   width: 100%;
   float: left;
@@ -1209,18 +1241,24 @@ textarea[name="exercise_each_week"] {
   margin-bottom: 24px;
   margin-bottom: 1.5rem;
 }
-/* line 684, ../sass/formstyle.scss */
+/* line 719, ../sass/formstyle.scss */
 .comment p {
+  font-family: serif;
   font-size: 0.97rem;
 }
-/* line 687, ../sass/formstyle.scss */
+/* line 723, ../sass/formstyle.scss */
 .comment p.sherif {
   margin-bottom: 1rem;
   font-family: "Times New Roman", "Source Serif Pro", "Palatino Linotype", serif;
   font-size: 1.065rem;
 }
+/* line 728, ../sass/formstyle.scss */
+.comment p {
+  font-family: sans-serif;
+  font-size: 0.97rem;
+}
 
-/* line 694, ../sass/formstyle.scss */
+/* line 734, ../sass/formstyle.scss */
 .submit {
   *zoom: 1;
   max-width: 61em;
@@ -1237,7 +1275,7 @@ textarea[name="exercise_each_week"] {
   clear: both;
 }
 
-/* line 698, ../sass/formstyle.scss */
+/* line 738, ../sass/formstyle.scss */
 input[type="submit"] {
   width: 23.72881%;
   float: right;
@@ -1256,7 +1294,7 @@ input[type="submit"] {
   text-shadow: 0px 1px black;
   border: 1px solid #bfbfbf;
 }
-/* line 713, ../sass/formstyle.scss */
+/* line 753, ../sass/formstyle.scss */
 input[type="submit"]:hover {
   background-color: #205b8c;
   box-shadow: 3px 3px 3px rgba(68, 68, 68, 0.7);

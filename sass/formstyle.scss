@@ -455,12 +455,6 @@ div.helf_left {
         }
     }
 }
-/*.national_Network {
-    div.helf_left {
-        width: 100%;
-    }
-}*/
-
 
 .row {      
     [class^="right"] {        
@@ -584,7 +578,11 @@ table {
     }
     td, th {
         border: thin dotted gray;
-        //padding: 5px;                
+        //padding: 5px;
+        div.tab_input_row  {
+            margin-left: 0.3em;
+            margin-right: 0.3em;
+        }
     }
     td:not([class*="label_left"]), th:not([class*="label_left"]) {
         text-align: center;
@@ -633,7 +631,7 @@ textarea[name="exercise_each_week"] {
         }
     }
 }*/
-#national_Network, #national_Network_2 {    
+#national_Network, #national_Network_2, #national_Network_3, #national_Network_4 {    
     :not(hgroup) {
         font-family: $font-sherif;
         font-size: 1.25rem;        
@@ -677,19 +675,61 @@ textarea[name="exercise_each_week"] {
         }
     }
 }
+#national_Network_3, #national_Network_4 {
+    .helf_left {
+        width: 100%;
+        .num_box {
+            width: 5%;
+            float: left        
+        }
+        .main_box, .main_box_headline {
+            width: 95%;
+            float: right;
+        }
+        .small_yes_no {
+            width: 14%;
+        }
+        .right-board_yes_not {
+        //@include margin-trailer(0.2); //  
+    }
+    }
+}
+#national_Network_4 {
+    .columnForm {
+        margin-right: 1.5em;
+        margin-left: 1.5em;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        //text-align: center;
+        .pt {
+            label, input {
+                margin-left: 0;
+                margin-right: 0;
+            }
+            //text-align: center;
+           // margin-left: auto;
+            //margin-right: auto;
+        }
+    }
+}
 .comment {
     width: 100%;
     float: left;
     @include rhythm-margins(3, 1);
     p {
+        font-family: serif;
         font-size: $fs-comments;
     }
     p.sherif {
-     margin-bottom: 1rem;
-     font-family: $font-sherif;
-     font-size: $fs-serif-comments;
+        margin-bottom: 1rem;
+        font-family: $font-sherif;
+        font-size: $fs-serif-comments;
     }
-    
+    p {
+        font-family: sans-serif;
+        font-size: $fs-comments;
+    }
+
 }
 .submit {
     @include container;
