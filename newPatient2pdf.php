@@ -1,4 +1,5 @@
 <?php
+
 $debug = true;
 require_once 'mpdf60/mpdf.php';
 $mpdf = new mPDF();
@@ -7,7 +8,7 @@ $title = 'New patient form';
 $html = '<h4>New patient form</h4>';
 $html .= '<h3>DEMOGRAPHIC INVENTORY</h3>';
 $html .= '<div style="text-align:right">Today’s Date: ';
-$html .= $_POST['today_date'].'</div>';
+$html .= $_POST['today_date'] . '</div>';
 
 //$html .= '<h6>1. Race/Ethnicity</h6>';
 $html .= '<br><strong>1. Race/Ethnicity</strong>';
@@ -16,13 +17,14 @@ $html .= $_POST['ethnicity'];
 $html .= '<br>';
 $html .= 'Race: ';
 $html .= $_POST['race'];
-if('Other' == $_POST['race']) $html .= ': '. $_POST['race_other'];
+if ('Other' == $_POST['race'])
+    $html .= ': ' . $_POST['race_other'];
 
 $html .= '<br><strong>2. Current marital status: </strong>';
 $html .= $_POST['marital'];
 
 $html .= '<br><strong>3. If you are married or cohabitating with partner, how long has this been? </strong>';
-$html .= $_POST['married_years'].' years '.$_POST['married_months'].' months';
+$html .= $_POST['married_years'] . ' years ' . $_POST['married_months'] . ' months';
 
 $html .= '<br><strong>4. Number of previous marriages? </strong>';
 $html .= $_POST['married_number'];
@@ -38,7 +40,8 @@ $html .= $_POST['years_education'];
 
 $html .= '<br><strong>8. Highest degree obtained: </strong>';
 $html .= $_POST['degree'];
-if('Other' == $_POST['degree']) $html .= ': '. $_POST['degree_other'];
+if ('Other' == $_POST['degree'])
+    $html .= ': ' . $_POST['degree_other'];
 
 $html .= '<br><strong>9. What best describes your current employment status? (Check one from each category a, b, & c) </strong>';
 
@@ -60,7 +63,8 @@ $html .= $_POST['years_education_spouse'];
 
 $html .= '<br><strong>12. Highest degree your spouse has obtained: </strong>';
 $html .= $_POST['highest_degree_spouse'];
-if('Other' == $_POST['highest_degree_spouse']) $html .= ': '. $_POST['highest_degree_spouse_other'];
+if ('Other' == $_POST['highest_degree_spouse'])
+    $html .= ': ' . $_POST['highest_degree_spouse_other'];
 
 $html .= '<br><strong>What best describes your spouse’s current employment status? (Check one from each a, b, & c)) </strong>';
 
@@ -91,38 +95,95 @@ $mpdf->AddPage();
 
 $html = '<h3>MEDICAL & MENTAL HEALTH HISTORY</h3>';
 $html .= '<br><strong>Have you ever had any of the following (check all that apply): </strong>';
-$html .= implode(", ", $_POST['any_following']);
-if(!empty($_POST['any_followinge_other'])) $html .= ": ". $_POST['any_followinge_other'];
+if (!empty($_POST['any_following']))
+    $html .= implode(", ", $_POST['any_following']);
+if (!empty($_POST['any_followinge_other']))
+    $html .= ": " . $_POST['any_followinge_other'];
+
+$html .= '<br><strong>Please list current or past medications you have taken for the treatment of any medical problem:</strong> ';
+$html .= '<table border="1"><tr><th>Medical Problem</th><th>Medication (name/dose)</th><th>Start Date</th><th>Stop Date</th><th>Currently Taking?</th></tr>';
+for ($i = 1; $i < 9; $i++) {
+    $html .= '<tr>
+<td>' . $_POST["medical_problem_$i"] . '</td>
+<td>' . $_POST["medication_$i"] . '</td>
+<td>' . $_POST["start_date_$i"] . '</td>
+<td>' . $_POST["stop_date_$i"] . '</td>                                
+<td>' . $_POST["currently_taking_$i"] . '</td>
+</tr>';
+}
+$html .= '</table>';
+$html .= '<br><strong>What kind of birth control are you using? </strong>';
+$html .= $_POST['birth_control'];
+$html .= '<br><strong>How much alcohol, including beer, do you drink per week? </strong>';
+$html .= $_POST['alcohol'];
+$html .= '<br><br><strong>Mental Health History</strong>';
+$html .= '<br><strong>Have you ever had a problem with any of the following (check all that apply): </strong>';
+if (!empty($_POST['psychologic_problem']))
+    $html .= implode(", ", $_POST['psychologic_problem']);
+if (!empty($_POST['psychologic_problem_other']))
+    $html .= ": " . $_POST['psychologic_problem_other'];
+
+$html .= '<br><strong>Please list current or past medications you have taken for the treatment of any mental health problem:</strong> ';
+$html .= '<table border="1"><tr><th>Problem (e.g. Depression, Anxiety)</th><th>Medication (name and highest dose)</th><th>Start Date</th><th>Stop Date</th><th>Why stopped (e.g. felt better, didn’t help)</th></tr>';
+for ($i = 1; $i < 9; $i++) {
+    $html .= '<tr>
+<td>' . $_POST["mental_problem_$i"] . '</td>
+<td>' . $_POST["mental_medication_$i"] . '</td>
+<td>' . $_POST["mental_start_date_$i"] . '</td>
+<td>' . $_POST["mental_stop_date_$i"] . '</td>                                
+<td>' . $_POST["mental_stopped_$i"] . '</td>
+</tr>';
+}
+$html .= '</table>';
+$html .= '<br><strong>Has anyone in your family ever been treated for any of the following (check all that apply):</strong> ';
+
+$rodychi = ['Mother', 'Father', 'Aunt', 'Uncle', 'Brother', 'Sister', 'Children'];
+$holovnyaky = ['Depression', 'Anxiety', 'Panic Attacks', 'Post Traumatic Stress', 'Bipolar (Manic / Depressive) Disorder', 'Schizophrenia', 'Alcohol Problems (including AA)', 'Drug Problems'];
+$html .= '<table border="1">';
+$html .= '<tr>';
+$html .= '<th></th>';
+foreach ($rodychi as $rodych) {
+    $html .= "<th>$rodych</th>";
+}
+$html .= '</tr>';
+foreach ($holovnyaky as $holovnyak) {
+    $html .= "<tr><td>$holovnyak</td>";
+    for($i = 0; $i < count($rodychi);$i++) {
+        $html .= '<td><input type="checkbox"></td>';
+    }
+    $html .= '</tr>';
+}
+$html .= '</table>';
 
 $mpdf->WriteHTML($html, 2);
 /*
-$stylesheet = file_get_contents('css/mpdf.css'); // external css
-$mpdf->WriteHTML($stylesheet, 1);
-$html = file_get_contents($url);
-preg_match('/<title>(.*)<\/title>/i', $html, $match);
-$title = $match[1];
-//
-//$form = str_replace('<input value="send" onclick="send();" type="submit">', '', $form);
+  $stylesheet = file_get_contents('css/mpdf.css'); // external css
+  $mpdf->WriteHTML($stylesheet, 1);
+  $html = file_get_contents($url);
+  preg_match('/<title>(.*)<\/title>/i', $html, $match);
+  $title = $match[1];
+  //
+  //$form = str_replace('<input value="send" onclick="send();" type="submit">', '', $form);
 
-$form = preg_replace('/<input\s[^<>]*type[^<>]*[text|tel|email][^<>]*value="([^"]*)"[^<>]*>/i', '<strong>$1</strong>', $form);
+  $form = preg_replace('/<input\s[^<>]*type[^<>]*[text|tel|email][^<>]*value="([^"]*)"[^<>]*>/i', '<strong>$1</strong>', $form);
 
-$form = preg_replace('/<input\s[^<>]*value="([^"]*)"[^<>]*type[^<>]*[text|tel|email][^<>]*>/i', '<strong>$1</strong>', $form);
-//or use looking foward
-//or find <input type=text, then find value inside...
+  $form = preg_replace('/<input\s[^<>]*value="([^"]*)"[^<>]*type[^<>]*[text|tel|email][^<>]*>/i', '<strong>$1</strong>', $form);
+  //or use looking foward
+  //or find <input type=text, then find value inside...
 
-$form = preg_replace_callback('/<textarea\s[^<>]*>([^<>]*)<\/textarea>/i', 
-        function ($matches) {
-            return '<br><strong><em>'.preg_replace('/\n/', '<br>', $matches[1]).'</em></strong>';
-        }, 
-        $form);
-//$form = preg_replace('/<textarea\s[^<>]*>([^<>]*)<\/textarea>/i', '<em>$1</em>', $form);
-$form = preg_replace('/<div\s[^<>]*class[^<>]*submit.*<\/div>/si', '', $form);
-//$form = str_replace('<input type="submit" value="send" onclick="send();">', '', $form);
-//$form = preg_replace('/<input\s[^<>]*type[^<>]*submit[^<>]*>/','', $form);
-$html = preg_replace('/<form[^>]*>.*<\/form>/si', $form, $html);
-//$html = var_dump($form);
-$mpdf->WriteHTML($html, 2);
-*/
+  $form = preg_replace_callback('/<textarea\s[^<>]*>([^<>]*)<\/textarea>/i',
+  function ($matches) {
+  return '<br><strong><em>'.preg_replace('/\n/', '<br>', $matches[1]).'</em></strong>';
+  },
+  $form);
+  //$form = preg_replace('/<textarea\s[^<>]*>([^<>]*)<\/textarea>/i', '<em>$1</em>', $form);
+  $form = preg_replace('/<div\s[^<>]*class[^<>]*submit.*<\/div>/si', '', $form);
+  //$form = str_replace('<input type="submit" value="send" onclick="send();">', '', $form);
+  //$form = preg_replace('/<input\s[^<>]*type[^<>]*submit[^<>]*>/','', $form);
+  $html = preg_replace('/<form[^>]*>.*<\/form>/si', $form, $html);
+  //$html = var_dump($form);
+  $mpdf->WriteHTML($html, 2);
+ */
 $mpdf->Output(); // into browser
 exit;
 /*
@@ -162,7 +223,7 @@ require_once 'swiftmailer-5.x/lib/swift_required.php';
 $filename = $title . '.pdf';
 $filename = preg_replace('/\s+/', '_', $filename);
 $subject = $title;
-if($debug) {
+if ($debug) {
     $mailto = 'pryshlyak@gmail.com';
 } else {
     $mailto = 'fusionfamilyconsulting@gmail.com';
@@ -187,9 +248,9 @@ $result = $mailer->send($message); //number of successful recipients
 //Send via swiftmailer - end
 echo '<p>';
 if ($result) {
-    echo $title.' has been sent';
+    echo $title . ' has been sent';
 } else {
-    echo $title.' could not be sent. Try again later...';
+    echo $title . ' could not be sent. Try again later...';
     //echo 'Mailer Error: ' . $mail->ErrorInfo;
 }
 echo '</p>';
