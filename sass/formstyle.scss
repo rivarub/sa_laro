@@ -52,11 +52,7 @@ body {
         width: 95%;
     }
 }
-@media screen and (max-width: 600px) {
-    .content {
-        width: 92%;
-    }
-}
+
 @media screen and (max-width: 360px) {
     .content {
         width: 90%;
@@ -235,6 +231,30 @@ div.helf_left {
         }
     }
 }
+@media screen and (max-width: 406px) {    
+    div.helf_left {
+        /*        label[class^="radio_tab_input_row"] {
+                    margin-left: 0px;
+                }*/
+        .num_box {
+            width: 14%;
+            font-weight: bold;
+        }
+        .main_box_headline {
+            width: 86%;
+            font-weight: bold;
+        }
+        .main_box {
+            //width: 100%;
+            div.small_yes_no {
+                width: 15%;
+            }
+            div.right-board_yes_not {
+                width: 85%;
+            }
+        }
+    }
+}
 @media screen and (max-width: 381px) {    
     div.helf_left {
         /*        label[class^="radio_tab_input_row"] {
@@ -272,13 +292,20 @@ div.helf_left {
         /*        label[class^="radio_tab_input_row"] {
                     margin-left: 0px;
                 }*/
+        .num_box {
+            width: 17%;
+            font-weight: bold;
+        }
+        .main_box_headline {
+            width: 83%;
+        }
         .main_box {
             //width: 100%;
             div.small_yes_no {
                 width: 17%;
             }
             div.right-board_yes_not {
-                width: 100%;
+                width: 82%;
             }
         }
     }
@@ -562,12 +589,13 @@ input[type="number"] {
 }
 
 table {
+    wigth: 100%;
     //margin-left: 20px;
     //margin-right: 20px;
     //border: thin solid gray;
     //caption-side: bottom;
     //border-collapse: collapse;
-    table {
+    table {        
         //float: right;
         td, th {
             border: none;            
@@ -632,13 +660,14 @@ textarea[name="exercise_each_week"] {
     }
 }*/
 #national_Network, #national_Network_2, #national_Network_3, #national_Network_4 {    
-    :not(hgroup) {
+    :not(hgroup), {
         font-family: $font-sherif;
         font-size: 1.25rem;        
     }
-    p, legend, label, td, th {
-        //font-size: $serif-base;
-    }
+    p.sans_serif {
+        font-family: sans-serif;
+        font-size: $fs-comments;
+    }   
     table {
         .label_left {
             margin-left: 0;
@@ -690,9 +719,79 @@ textarea[name="exercise_each_week"] {
             width: 14%;
         }
         .right-board_yes_not {
-        //@include margin-trailer(0.2); //  
+            //@include margin-trailer(0.2); //  
+        }
     }
-    }
+}
+
+@media screen and (max-width: 539px) {
+    #national_Network_3 {
+        .right-board_yes_not {
+            width: 84%;
+        }
+    }    
+}
+@media screen and (max-width: 500px) {
+    #national_Network_3 {
+        .helf_left {
+            .main_box, .main_box_headline {
+                width: 100%;
+                float: right;
+            }
+            .small_yes_no {
+                //width: 14%;
+            }
+            .right-board_yes_not {
+                width: 86%;
+            }
+        }
+
+    }    
+}
+@media screen and (max-width: 470px) {
+    #national_Network_3 {
+        .helf_left {
+            .right-board_yes_not {
+                width: 85%;
+            }
+        }
+    }    
+}
+@media screen and (max-width: 441px) {
+    #national_Network_3 {
+        .helf_left {
+            .right-board_yes_not {
+                width: 84%;
+            }
+        }
+    }    
+}
+@media screen and (max-width: 415px) {
+    #national_Network_3 {
+        .helf_left {
+            .right-board_yes_not {
+                width: 82%;
+            }
+        }
+    }    
+}
+@media screen and (max-width: 372px) {
+    #national_Network_3 {
+        .helf_left {
+            .right-board_yes_not {
+                width: 81%;
+            }
+        }
+    }    
+}
+@media screen and (max-width: 360px) {
+    #national_Network_3 {
+        .helf_left {
+            .right-board_yes_not {
+                width: 79%;
+            }
+        }
+    }    
 }
 #national_Network_4 {
     .columnForm {
@@ -707,28 +806,28 @@ textarea[name="exercise_each_week"] {
                 margin-right: 0;
             }
             //text-align: center;
-           // margin-left: auto;
+            // margin-left: auto;
             //margin-right: auto;
         }
     }
 }
 .comment {
+
     width: 100%;
     float: left;
     @include rhythm-margins(3, 1);
-    p {
-        font-family: serif;
-        font-size: $fs-comments;
+    p {        
+        //font-size: $fs-comments;
     }
     p.sherif {
         margin-bottom: 1rem;
         font-family: $font-sherif;
         font-size: $fs-serif-comments;
     }
-    p {
-        font-family: sans-serif;
-        font-size: $fs-comments;
-    }
+    /*    p {
+            font-family: sans-serif;
+            font-size: $fs-comments;
+        }*/
 
 }
 .submit {
@@ -771,7 +870,39 @@ input[type="submit"] {
             @include nth-omega;
         }
     }*/
+@media screen and (max-width: 600px) {
+    .content {
+        width: 92%;
+    }
+    h1 {
+        font-size: 1.5rem;
+        @include rhythm-margins(0.5, 0);
+        line-height: 1em;
+    }
+    fieldset.quick {
+        hgroup {
+            h1 {
+                font-size: 1.45rem;
+                line-height: 1.5em;
+            }
+        }
+    }
+    #national_Network, #national_Network_2, #national_Network_3, #national_Network_4 {
+        hgroup {
+            h1.bold {
+                font-size: 1.669rem; 
+            }
+            h2.lighter, h2.underline_bold {
+                font-size: 1.39rem;
+                line-height: 1rem;
+            } 
+            h2.underline_bold {
+                @include rhythm-margins(0.3, 1.2);
+            }
+        }
 
+    }
+}
 
 
 
