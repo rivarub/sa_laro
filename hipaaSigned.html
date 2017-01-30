@@ -10,7 +10,7 @@
         <script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
         <script src="js/modernizr.2.6.2.min.js"></script>
         <script src="js/catchHTML.js"></script>
-        
+
     </head>
     <body>
         <div class="container">
@@ -19,16 +19,42 @@
                 <p>The Health Insurance Portability and Accountability Act (HIPAA) is a federal government regulation designed to ensure that you are aware of your privacy rights and of how your medical information can be used by our staff in providing and arranging your medical care.</p>
                 <p>Fusion Family Consulting is furnishing you with the attached notice, which provides information about how Fusion Family Consulting and its providers may use and/or disclose protected health information about you for treatment, payment, health care operations and as otherwise allowed by law. By signing this form, you acknowledge that you have received a copy of Fusion Family Consulting’s Notice of Health Information Practices.</p>
                 <form id="hipaa_signed" method="POST" action="form2pdf.php">
-                    <div>
-                        <label for="nameFirst">Patient Name:</label>
-                        <input type="text" name="nameFirst" id="nameFirst" placeholder="First" required>
-                        <input type="text" name="nameMiddle" id="nameMiddle" placeholder="Middle">
-                        <input type="text" name="nameLast" id="nameLast" placeholder="Last" required>
+                    <div class="row">
+                        <div class="full">
+                            <div class="left">
+                                <label for="nameFirst">Patient Name:</label>
+                            </div>
+                            <div class="right">
+                                <div class="columnForm-name">
+                                    <div class="pt">
+                                        <input type="text" name="nameFirst" id="nameFirst" placeholder="First" required>
+                                    </div>
+                                </div>
+                                <div class="columnForm-name">
+                                    <div class="pt">
+                                        <input type="text" name="nameMiddle" id="nameMiddle" placeholder="Middle">
+                                    </div>
+                                </div>
+                                <div class="columnForm-name">
+                                    <div class="pt">
+                                        <input type="text" name="nameLast" id="nameLast" placeholder="Last" required>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div>
+                    <div class="full">
                         <p>Signature of Patient, Parent, or Legal Guardian</p>
-                        <label for="date">Date</label>
-                        <input id="date" type="date" name="date" placeholder="dd/mm/yyyy" required><br>
+                    </div>
+                    <div class="row">
+                        <div class="full">
+                            <div class="left">
+                                <label for="date">Date</label>
+                            </div>
+                            <div class="right">
+                                <input id="date" type="date" name="date" placeholder="dd/mm/yyyy" required><br>
+                            </div>
+                        </div>
                     </div>
                     <div class="submit">
                         <input type="hidden" name="url" value="hipaaSigned.html">

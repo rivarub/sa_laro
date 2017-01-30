@@ -22,12 +22,34 @@ and open the template in the editor.
                 <form id="hippa_signed" action="#">
                     <div class="row">
                         <div class="left">
+                            <label for="name-first">Patient Name:</label>
+                        </div>
+                        <div class="right">
+                            <div class="columnForm-name">
+                                <div class="pt">
+                                    <input type="text" class="name" name="name-first" id="name-first" placeholder="First" required>
+                                </div>
+                            </div>
+                            <div class="columnForm-name">
+                                <div class="pt">
+                                    <input class="name" type="text" name="name-middle" id="name-middle" placeholder="Middle">
+                                </div>
+                            </div>                                
+                            <div class="columnForm-name">
+                                <div class="pt">
+                                    <input class="name" type="text" name="name-last" id="name-last" placeholder="Last" required>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+<!--                    <div class="row">
+                        <div class="left">
                             <label for="first-name">Patient Name:</label>
                         </div>
                         <input class="name_columnForm_margin_trailer" type="text" name="name-first" id="name-first" placeholder="First" required>
                         <input class="name_columnForm_margin_trailer" type="text" name="name-middle" id="name-middle" placeholder="Middle">
                         <input class="name_columnForm_margin_trailer" type="text" name="name-last" id="name-last" placeholder="Last" required>
-                    </div>                    
+                    </div>                    -->
                     <div>                    
                         <p>Signature of Patient, Parent, or Legal Guardian</p>
                         <label for="date">Date</label>
