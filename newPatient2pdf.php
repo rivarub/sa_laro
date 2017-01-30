@@ -432,6 +432,19 @@ $html .= '<strong>'.$_POST['DIAGNOSTIC_SCREENING_gender'].'</strong>';
 $html .= ' Date: ';
 $html .= '<strong>'.$_POST['DIAGNOSTIC_SCREENING_date'].'</strong>';
 
+$html .= '<br><br><strong>QUICK INVENTORY OF DEPRESSIVE SYMPTOMATOLOGY (SELF-REPORT) (QIDS-SR<sub>16</sub>)</strong>';
+$html .= '<br>Subject ID: ';
+$html .= '<strong>'.$_POST['QUICK_ID'].'</strong>';
+$html .= ' Date: ';
+$html .= '<strong>'.$_POST['QUICK_date'].'</strong>';
+$html .= '<br>Please choose the one response to each item that best describes you for the past seven days.';
+$html .= '<br>1. Falling Asleep:<br>';
+$html .= '<strong>'.$_POST['QUICK_Asleep'].'</strong>';
+$html .= '<br>2. Sleep During the Night:<br>';
+$html .= '<strong>'.$_POST['QUICK_Sleep'].'</strong>';
+
+
+
 
 //if(isset($_POST['physical_activity_1'])) {
 //    if('yes' == $_POST['physical_activity_1']) {
