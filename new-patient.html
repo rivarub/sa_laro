@@ -1052,7 +1052,7 @@ and open the template in the editor.
                                             <td><input type="checkbox" name="Uncle_Post" id="uncle_Post_Traumatic"></td>
                                             <td><input type="checkbox" name="Brother_Post" id="brother_Post_Traumatic"></td>
                                             <td><input type="checkbox" name="Sister_Post" id="sister_Post_Traumatic"></td>
-                                            <td><input type="checkbox" name="children_Post_Traumatic" id="Children_Post"></td>
+                                            <td><input type="checkbox" name="Children_Post" id="children_Post_Traumatic"></td>
                                         </tr>
                                         <tr>
                                             <td class="label_left"><label class="radio_tab_input_row">Bipolar (Manic / Depressive) Disorder</label></td>
@@ -1875,7 +1875,7 @@ and open the template in the editor.
                                         <td>
                                             <table>
                                                 <tr>
-                                                    <td><input class="tab_input_row" type="number" name="dose_Doxepin" id="dose_Doxepin" min="0"></td>
+                                                    <td><input class="tab_input_row" type="number" name="dose_Doxepin" id="dose_Doxepin" min="0.001" step="0.001"></td>
                                                     <td><label class="tab_input_row" for="dose_Doxepin">mg</label></td>
                                                 </tr>                                                    
                                             </table>
@@ -1903,7 +1903,7 @@ and open the template in the editor.
                                         </td>                                            
                                     </tr>
                                     <tr>
-                                        <td class="label_left"><label class="radio_tab_input_row">Nomifensine or MERITAL or MERITAL</label></td>
+                                        <td class="label_left"><label class="radio_tab_input_row">Nomifensine or MERITAL</label></td>
                                         <td>
                                             <table>
                                                 <tr>
@@ -1912,7 +1912,7 @@ and open the template in the editor.
                                                 </tr>                                                    
                                             </table>
                                         </td>                                                
-                                        <td><input class="tab_input_row" type="number" name="weeks_Doxepin" id="weeks_Nomifensine" min="0"></td>
+                                        <td><input class="tab_input_row" type="number" name="weeks_Nomifensine" id="weeks_Nomifensine" min="0"></td>
                                         <td>
                                             <table>
                                                 <tr>
@@ -2153,9 +2153,9 @@ and open the template in the editor.
                                 <div class="columnForm_margin_trailer">                                
                                     <div class="pt">
                                         <label class="radio_tab_input_row_bold" for="DIAGNOSTIC_SCREENING_gender">Gender:</label>
-                                        <input type="radio" name="DIAGNOSTIC_SCREENING_gender_M" id="DIAGNOSTIC_SCREENING_gender_M">
+                                        <input type="radio" name="DIAGNOSTIC_SCREENING_gender" id="DIAGNOSTIC_SCREENING_gender_M" value="Male">
                                         <label class="radio_tab_input_row" for="DIAGNOSTIC_SCREENING_gender_M">M</label>
-                                        <input type="radio" name="DIAGNOSTIC_SCREENING_gender_F" id="DIAGNOSTIC_SCREENING_gender_F">
+                                        <input type="radio" name="DIAGNOSTIC_SCREENING_gender" id="DIAGNOSTIC_SCREENING_gender_F" value="Female">
                                         <label class="radio_tab_input_row" for="DIAGNOSTIC_SCREENING_gender_F">F</label>
                                     </div>
                                 </div>
@@ -2644,10 +2644,10 @@ and open the template in the editor.
                             <div class="full_margin_right">
                                 <div class="small_yes_no">
                                     <div class="columnForm">                                
-                                        <div class="pt">                                            
+                                        <div class="pt">
                                             <input type="radio" name="DIAGNOSTIC_4_concern_yes" id="DIAGNOSTIC_4_concern_yes">
                                             <label class="radio_bold_tab_input_row" for="DIAGNOSTIC_4_concern_yes">Yes</label>
-                                            <input type="radio" name="DIAGNOSTIC_3_concern_no" id="DIAGNOSTIC_3_concern_no">
+                                            <input type="radio" name="DIAGNOSTIC_4_concern_no" id="DIAGNOSTIC_4_concern_no">
                                             <label class="radio_bold_tab_input_row" for="DIAGNOSTIC_4_concern_no">No</label>
                                         </div>
                                     </div>
@@ -2665,11 +2665,11 @@ and open the template in the editor.
                             <div class="full_margin_right">
                                 <div class="small_yes_no">
                                     <div class="columnForm">                                
-                                        <div class="pt">                                            
-                                            <input type="radio" name="DIAGNOSTIC_4_concern_yes" id="DIAGNOSTIC_4_changed_yes">
-                                            <label class="radio_bold_tab_input_row" for="DIAGNOSTIC_4_changed_yes">Yes</label>
-                                            <input type="radio" name="DIAGNOSTIC_4_changed_no" id="DIAGNOSTIC_4_changed_no">
-                                            <label class="radio_bold_tab_input_row" for="DIAGNOSTIC_4_changed_no">No</label>
+                                        <div class="pt">                      
+                                            <input type="radio" name="DIAGNOSTIC_4_again_yes" id="DIAGNOSTIC_4_again_yes">
+                                            <label class="radio_bold_tab_input_row" for="DIAGNOSTIC_4_again_yes">Yes</label>
+                                            <input type="radio" name="DIAGNOSTIC_4_again_no" id="DIAGNOSTIC_4_again_no">
+                                            <label class="radio_bold_tab_input_row" for="DIAGNOSTIC_4_again_no">No</label>
                                         </div>
                                     </div>
                                 </div>
