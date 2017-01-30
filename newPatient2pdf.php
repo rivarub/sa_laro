@@ -172,9 +172,77 @@ $html .= '<br><strong>Are you currently seeing a counselor or therapist?</strong
 $html .= $_POST['currently_counselor_therapist'];
 $html .= '<br><strong>Are you having problems concentrating or problems remembering things?</strong> ';
 $html .= $_POST['problems_concentrating'];
+$html .= '<br><br><strong>Additional Medications</strong>';
+$html .= '<br><strong>Please list any medications you are taking that <u>have not been listed above</u>, including birth control pills, any over the counter medications and herbal remedies (i.e. decongestants, St. John\'s Wart, vitamins).</strong> ';
+$html .= '<table border="1"><tr><th>Medication (name/dose)</th><th>Start Date</th><th>Stop Date</th><th>Physician</th></tr>';
+for ($i = 1; $i < 5; $i++) {
+    $html .= '<tr>
+<td>' . $_POST["not_listed_above_medication_$i"] . '</td>
+<td>' . $_POST["not_listed_above_start_date_$i"] . '</td>
+<td>' . $_POST["not_listed_above_stop_date_$i"] . '</td>
+<td>' . $_POST["not_listed_above_physician_$i"] . '</td>
+</tr>';
+}
+$html .= '</table>';
+$html .= '<br><br><strong>Medication Allergies</strong>';
+$html .= '<table border="1"><tr><th>Medication (name/dose)</th><th>Type of Reaction</th></tr>';
+for ($i = 1; $i < 5; $i++) {
+    $html .= '<tr>
+<td>' . $_POST["allergies_medication_$i"] . '</td>
+<td>' . $_POST["allergies_reaction_$i"] . '</td>
+</tr>';
+}
+$html .= '</table>';
+
+$html .= '<br><br><strong>Physical Activity</strong>';
+$html .= '<br>Has your doctor ever said that you have a heart condition and that you should only do physical activity recommended by a doctor? ';
+$html .= '<strong>'.$_POST['physical_activity_1'].'</strong>';
+
+$html .= '<br>Do you feel pain in your chest when you do physical activity? ';
+$html .= '<strong>'.$_POST['physical_activity_2'].'</strong>';
+
+$html .= '<br>In the past month, have you had chest pain when you were doing physical activity? ';
+$html .= '<strong>'.$_POST['physical_activity_3'].'</strong>';
+
+$html .= '<br>Do you lose you balance because of dizziness or do you ever lose consciousness? ';
+$html .= '<strong>'.$_POST['physical_activity_4'].'</strong>';
+
+$html .= '<br>Do you have a bone or joint problem (for example, back, knee or hip) that could be made worse by a change in your physical activity? ';
+$html .= '<strong>'.$_POST['physical_activity_5'].'</strong>';
+
+$html .= '<br>Is you doctor currently prescribing drugs (for example, water pills) for your blood pressure or heart condition? ';
+$html .= '<strong>'.$_POST['physical_activity_6'].'</strong>';
+
+$html .= '<br>Do you know of <u>any other reason</u> why you should not do physical activity? ';
+$html .= '<strong>'.$_POST['physical_activity_7'].'</strong>';
+
+$html .= '<br><br><strong>How much do you exercise each week? </strong>';
+$html .= $_POST['exercise_each_week'];
+
+
+$mpdf->AddPage();
+$html .= '<strong>UTSW Antidepressant Treatment History Evaluation</strong>';
+$html .= '<br>Have you taken any of the anti-depressant medications listed below? ';
+$html .= '<br>If yes, please indicated: 1) What dosage did you take? 2) How many weeks did you take the medication? 3) Did it result in 50% reduction of depressive symptoms? 4) Did you have any troubling side effects that made it difficult to take the medication? ';
+$html .= '<table border="1"><tr><th>Anti-Depressant Medication</th><th>Dose Taken</th><th>Weeks Taken</th><th>50% Reduction in<br> Symptoms</th><th>Troubling Side <br>Effects</th></tr>';
+$html .= '<tr>';
+$html .= '<td>Citalopram or CELEXA</td>';
+$html .= '<td>' . $_POST['dose_citalopram'] . ' mg</td>';
+$html .= '<td>' . $_POST['weeks_citalopram'] . '</td>';
+$html .= '</tr>';
+$html .= '</table>';
+
+
+
+//if(isset($_POST['physical_activity_1'])) {
+//    if('yes' == $_POST['physical_activity_1']) {
+//        
+//    }
+//}
+
 //echo $html;
 //$html .= var_dump($_POST);
-
+$mpdf->AddPage();
 $mpdf->WriteHTML($html, 2);
 /*
   $stylesheet = file_get_contents('css/mpdf.css'); // external css
