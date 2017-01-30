@@ -569,14 +569,25 @@ input {
 }
 input[type="number"] {
     width: 4.5em;
-    padding-left: 0.5em;
-    padding-right: 0.1em;
+    padding: 0.2em 0.1em 0.2em 0.5em;
+    //padding-left: 0.5em;
+    //padding-right: 0.1em;
 }
 input[type="date"] {
-    width: 6.5em;
-    padding-left: 0.6em;
-    padding-right: 0.4em;
+    width: 7em;
+    padding: 0.2em 0.4em 0.2em 0.6em;
+    //padding-left: 0.6em;
+    //padding-right: 0.4em;
     letter-spacing: 2px;
+}
+input[type="text"] {
+    max-width: 12em;
+    padding: 0.2em 0.4em;
+    //letter-spacing: 2px;
+}
+textarea {
+    color: darken($color2, 5%);
+    padding: 0.3em 0.6em;    
 }
 input[type="radio"], input[type="checkbox"] {
     height: auto;

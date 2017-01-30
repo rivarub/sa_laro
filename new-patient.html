@@ -25,9 +25,10 @@ and open the template in the editor.
                         <hgroup>
                             <h1>DEMOGRAPHIC INVENTORY</h1>
                         </hgroup>
-                        <div class="today_date">                                                                  <div>
+                        <div class="today_date">
+                            <div>
                                 <label class="radio" for="today_date">Today’s Date</label>
-                                <input type="date" name="today_date" placeholder="dd/mm/yyyy" id="today_date">
+                                <input type="date" name="today_date" id="today_date" placeholder="mm/dd/yyyy">
                             </div>
                         </div>
                         <!--                        FIELDSET 1-->
@@ -157,14 +158,14 @@ and open the template in the editor.
                                 <div class="full">
                                     <div class="columnForm">
                                         <div class="pt">
-                                            <input type="number" name="married_years" min="1" max="100" id="married_years">
+                                            <input type="number" name="married_years" min="0" max="100" id="married_years">
                                             <label class="radio_tab_input_row" for="married_years">Years</label>
                                         </div>
                                     </div>
 
                                     <div class="columnForm">
                                         <div class="pt">
-                                            <input type="number" name="married_months" min="1" max="11" id="married_months">
+                                            <input type="number" name="married_months" min="0" max="11" id="married_months">
                                             <label class="radio_tab_input_row" for="married_months">Months</label>
                                         </div>                             
                                     </div>
@@ -196,7 +197,7 @@ and open the template in the editor.
                         </fieldset>                        
                         <!--                        FIELDSET 6-->
                         <fieldset>
-                            <legend>6. TOTAL number of persons including yourself in your household? <input class="input_row" type="number" name="number_persons_household" id="number_persons_household" min="1"></legend>                                                      
+                            <legend>6. TOTAL number of persons including yourself in your household? <input class="input_row" type="number" name="number_persons_household" id="number_persons_household" min="0"></legend>                                                      
                         </fieldset>
                         <!--                        FIELDSET 7-->
                         <fieldset>
@@ -386,7 +387,7 @@ and open the template in the editor.
                                 <div class="right-minim">
                                     <div class="columnForm">
                                         <div class="pt">
-                                            <input type="number" name="years_education_spouse" id="years_education_spouse">
+                                            <input type="number" name="years_education_spouse" id="years_education_spouse" min="0">
                                         </div>                                        
                                     </div>
                                 </div>
@@ -817,109 +818,69 @@ and open the template in the editor.
                                     <tr>
                                         <td><input type="text" name="medical_problem_1" id="medical_problem_1"></td>
                                         <td><input type="text" name="medication_1" id="medication_1"></td>
-                                        <td><input type="date" name="start_date_1" id="start_date_1"></td>
-                                        <td><input type="date" name="stop_date_1" id="stop_date_1"></td>                                
+                                        <td><input type="date" name="start_date_1" id="start_date_1" placeholder="mm/dd/yyyy"></td>
+                                        <td><input type="date" name="stop_date_1" id="stop_date_1" placeholder="mm/dd/yyyy"></td>
                                         <td><input type="text" name="currently_taking_1" id="currently_taking_1"></td>
                                     </tr>
                                     <tr>
                                         <td><input type="text" name="medical_problem_2" id="medical_problem_2"></td>
                                         <td><input type="text" name="medication_2" id="medication_2"></td>
-                                        <td><input type="date" name="start_date_2" id="start_date_2"></td>
-                                        <td><input type="date" name="stop_date_2" id="stop_date_2"></td>                                
+                                        <td><input type="date" name="start_date_2" id="start_date_2" placeholder="mm/dd/yyyy"></td>
+                                        <td><input type="date" name="stop_date_2" id="stop_date_2" placeholder="mm/dd/yyyy"></td>
                                         <td><input type="text" name="currently_taking_2" id="currently_taking_2"></td>
                                     </tr>
                                     <tr>
                                         <td><input type="text" name="medical_problem_3" id="medical_problem_3"></td>
                                         <td><input type="text" name="medication_3" id="medication_3"></td>
-                                        <td><input type="date" name="start_date_3" id="start_date_3"></td>
-                                        <td><input type="date" name="stop_date_3" id="stop_date_3"></td>                                
+                                        <td><input type="date" name="start_date_3" id="start_date_3" placeholder="mm/dd/yyyy"></td>
+                                        <td><input type="date" name="stop_date_3" id="stop_date_3" placeholder="mm/dd/yyyy"></td>
                                         <td><input type="text" name="currently_taking_3" id="currently_taking_3"></td>
                                     </tr>
                                     <tr>
                                         <td><input type="text" name="medical_problem_4" id="medical_problem_4"></td>
                                         <td><input type="text" name="medication_4" id="medication_4"></td>
-                                        <td><input type="date" name="start_date_4" id="start_date_4"></td>
-                                        <td><input type="date" name="stop_date_4" id="stop_date_4"></td>                                
+                                        <td><input type="date" name="start_date_4" id="start_date_4" placeholder="mm/dd/yyyy"></td>
+                                        <td><input type="date" name="stop_date_4" id="stop_date_4" placeholder="mm/dd/yyyy"></td>
                                         <td><input type="text" name="currently_taking_4" id="currently_taking_4"></td>
                                     </tr>
                                     <tr>
                                         <td><input type="text" name="medical_problem_5" id="medical_problem_5"></td>
                                         <td><input type="text" name="medication_5" id="medication_5"></td>
-                                        <td><input type="date" name="start_date_5" id="start_date_5"></td>
-                                        <td><input type="date" name="stop_date_5" id="stop_date_5"></td>                                
+                                        <td><input type="date" name="start_date_5" id="start_date_5" placeholder="mm/dd/yyyy"></td>
+                                        <td><input type="date" name="stop_date_5" id="stop_date_5" placeholder="mm/dd/yyyy"></td>
                                         <td><input type="text" name="currently_taking_5" id="currently_taking_5"></td>
                                     </tr>
                                     <tr>
                                         <td><input type="text" name="medical_problem_6" id="medical_problem_6"></td>
                                         <td><input type="text" name="medication_6" id="medication_6"></td>
-                                        <td><input type="date" name="start_date_6" id="start_date_6"></td>
-                                        <td><input type="date" name="stop_date_6" id="stop_date_6"></td>                                
+                                        <td><input type="date" name="start_date_6" id="start_date_6" placeholder="mm/dd/yyyy"></td>
+                                        <td><input type="date" name="stop_date_6" id="stop_date_6" placeholder="mm/dd/yyyy"></td>
                                         <td><input type="text" name="currently_taking_6" id="currently_taking_6"></td>
                                     </tr>
                                     <tr>
                                         <td><input type="text" name="medical_problem_7" id="medical_problem_7"></td>
                                         <td><input type="text" name="medication_7" id="medication_7"></td>
-                                        <td><input type="date" name="start_date_7" id="start_date_7"></td>
-                                        <td><input type="date" name="stop_date_7" id="stop_date_7"></td>                                
+                                        <td><input type="date" name="start_date_7" id="start_date_7" placeholder="mm/dd/yyyy"></td>
+                                        <td><input type="date" name="stop_date_7" id="stop_date_7" placeholder="mm/dd/yyyy"></td>
                                         <td><input type="text" name="currently_taking_7" id="currently_taking_7"></td>
                                     </tr>
                                     <tr>
                                         <td><input type="text" name="medical_problem_8" id="medical_problem_8"></td>
                                         <td><input type="text" name="medication_8" id="medication_8"></td>
-                                        <td><input type="date" name="start_date_8" id="start_date_8"></td>
-                                        <td><input type="date" name="stop_date_8" id="stop_date_8"></td>                                
+                                        <td><input type="date" name="start_date_8" id="start_date_8" placeholder="mm/dd/yyyy"></td>
+                                        <td><input type="date" name="stop_date_8" id="stop_date_8" placeholder="mm/dd/yyyy"></td>
                                         <td><input type="text" name="currently_taking_8" id="currently_taking_8"></td>
                                     </tr>
                                 </table>
                             </div>
                         </div>
-                    </fieldset>
-                    <!--                        <div class="row">                            
-                                                <div class="left">
-                                                    <label class="larger" for="birth_control">What kind of birth control are you using?</label>
-                                                </div>
-                                                <div class="right-minim">                                
-                                                        <div class="pt">
-                                                            <input class="input_row" type="text" name="birth_control" id="birth_control">
-                                                        </div>                                
-                                                </div>                            
-                                            </div>
-                                            <div class="row">                            
-                                                <div class="left">
-                                                    <label class="larger" for="alcohol">How much alcohol, including beer, do you drink per week?</label>
-                                                </div>
-                                                <div class="right-minim">
-                                                    <input class="input_row" type="text" name="alcohol" id="alcohol">
-                                                </div>                            
-                                            </div>-->
-
+                    </fieldset>                    
                     <fieldset>
                         <legend class="lager_legend">What kind of birth control are you using? <input class="input_row" type="text" name="birth_control" id="birth_control"></legend>                                                     
                     </fieldset>
                     <fieldset>
                         <legend class="lager_legend">How much alcohol, including beer, do you drink per week? <input class="input_row" type="text" name="alcohol" id="alcohol"></legend>                                                      
                     </fieldset>
-
-                    <!--                        <div>
-                                                <label for="birth_control_copy">? What kind of birth control are you using?</label>
-                                                <input type="text" name="birth_control_copy" id="birth_control_copy">                   
-                                            </div>
-                                            <div>
-                                                <label for="alcohol_copy">? How much alcohol, including beer, do you drink per week?</label>
-                                                <input type="text" name="alcohol_copy" id="alcohol_copy">                   
-                                            </div>-->
-
-                    <!--                        COPY-->
-                    <!--                                                <div class="line">
-                                                                        <p class="larger" for=birth_control">What kind of birth control are you using?</p>
-                                                                        <input type="text" name="birth_control" id="birth_control" required>                   
-                                                                    </div>
-                                            
-                                                                    <div class="line">
-                                                                        <p class="larger" for=alcohol">How much alcohol, including beer, do you drink per week?</p>
-                                                                        <input type="text" name="alcohol" id="alcohol" required>                   
-                                                                    </div>-->
-                    <!--END COPY-->
                     <fieldset>
                         <legend class="lager_legend"><strong>Mental Health History</strong></legend>
                         <legend class="lager_legend">Have you ever had a problem with any of the following (check all that apply):</legend>
@@ -983,57 +944,57 @@ and open the template in the editor.
                                     <tr>
                                         <td><input type="text" name="mental_problem_1" id="mental_problem_1"></td>
                                         <td><input type="text" name="mental_medication_1" id="mental_medication_1"></td>
-                                        <td><input type="date" name="mental_start_date_1" id="mental_start_date_1"></td>
-                                        <td><input type="date" name="mental_stop_date_1" id="mental_stop_date_1"></td>                                
+                                        <td><input type="date" name="mental_start_date_1" id="mental_start_date_1" placeholder="mm/dd/yyyy"></td>
+                                        <td><input type="date" name="mental_stop_date_1" id="mental_stop_date_1" placeholder="mm/dd/yyyy"></td>
                                         <td><input type="text" name="mental_stopped_1" id="mental_stopped_1"></td>
                                     </tr>
                                     <tr>
                                         <td><input type="text" name="mental_problem_2" id="mental_problem_2"></td>
                                         <td><input type="text" name="mental_medication_2" id="mental_medication_2"></td>
-                                        <td><input type="date" name="mental_start_date_2" id="mental_start_date_2"></td>
-                                        <td><input type="date" name="mental_stop_date_2" id="mental_stop_date_2"></td>                                
+                                        <td><input type="date" name="mental_start_date_2" id="mental_start_date_2" placeholder="mm/dd/yyyy"></td>
+                                        <td><input type="date" name="mental_stop_date_2" id="mental_stop_date_2" placeholder="mm/dd/yyyy"></td>
                                         <td><input type="text" name="mental_stopped_2" id="mental_stopped_2"></td>
                                     </tr>
                                     <tr>
                                         <td><input type="text" name="mental_problem_3" id="mental_problem_3"></td>
                                         <td><input type="text" name="mental_medication_3" id="mental_medication_3"></td>
-                                        <td><input type="date" name="mental_start_date_3" id="mental_start_date_3"></td>
-                                        <td><input type="date" name="mental_stop_date_3" id="mental_stop_date_3"></td>                                
+                                        <td><input type="date" name="mental_start_date_3" id="mental_start_date_3" placeholder="mm/dd/yyyy"></td>
+                                        <td><input type="date" name="mental_stop_date_3" id="mental_stop_date_3" placeholder="mm/dd/yyyy"></td>
                                         <td><input type="text" name="mental_stopped_3" id="mental_stopped_3"></td>
                                     </tr>
                                     <tr>
                                         <td><input type="text" name="mental_problem_4" id="mental_problem_4"></td>
                                         <td><input type="text" name="mental_medication_4" id="mental_medication_4"></td>
-                                        <td><input type="date" name="mental_start_date_4" id="mental_start_date_4"></td>
-                                        <td><input type="date" name="mental_stop_date_4" id="mental_stop_date_4"></td>                                
+                                        <td><input type="date" name="mental_start_date_4" id="mental_start_date_4" placeholder="mm/dd/yyyy"></td>
+                                        <td><input type="date" name="mental_stop_date_4" id="mental_stop_date_4" placeholder="mm/dd/yyyy"></td>
                                         <td><input type="text" name="mental_stopped_4" id="mental_stopped_4"></td>
                                     </tr>
                                     <tr>
                                         <td><input type="text" name="mental_problem_5" id="mental_problem_5"></td>
                                         <td><input type="text" name="mental_medication_5" id="mental_medication_5"></td>
-                                        <td><input type="date" name="mental_start_date_5" id="mental_start_date_5"></td>
-                                        <td><input type="date" name="mental_stop_date_5" id="mental_stop_date_5"></td>                                
+                                        <td><input type="date" name="mental_start_date_5" id="mental_start_date_5" placeholder="mm/dd/yyyy"></td>
+                                        <td><input type="date" name="mental_stop_date_5" id="mental_stop_date_5" placeholder="mm/dd/yyyy"></td>
                                         <td><input type="text" name="mental_stopped_5" id="mental_stopped_5"></td>
                                     </tr>
                                     <tr>
                                         <td><input type="text" name="mental_problem_6" id="mental_problem_6"></td>
                                         <td><input type="text" name="mental_medication_6" id="mental_medication_6"></td>
-                                        <td><input type="date" name="mental_start_date_6" id="mental_start_date_6"></td>
-                                        <td><input type="date" name="mental_stop_date_6" id="mental_stop_date_6"></td>                                
+                                        <td><input type="date" name="mental_start_date_6" id="mental_start_date_6" placeholder="mm/dd/yyyy"></td>
+                                        <td><input type="date" name="mental_stop_date_6" id="mental_stop_date_6" placeholder="mm/dd/yyyy"></td>
                                         <td><input type="text" name="mental_stopped_6" id="mental_stopped_6"></td>
                                     </tr>
                                     <tr>
                                         <td><input type="text" name="mental_problem_7" id="mental_problem_7"></td>
                                         <td><input type="text" name="mental_medication_7" id="mental_medication_7"></td>
-                                        <td><input type="date" name="mental_start_date_7" id="mental_start_date_7"></td>
-                                        <td><input type="date" name="mental_stop_date_7" id="mental_stop_date_7"></td>                                
+                                        <td><input type="date" name="mental_start_date_7" id="mental_start_date_7" placeholder="mm/dd/yyyy"></td>
+                                        <td><input type="date" name="mental_stop_date_7" id="mental_stop_date_7" placeholder="mm/dd/yyyy"></td>
                                         <td><input type="text" name="mental_stopped_7" id="mental_stopped_7"></td>
                                     </tr>
                                     <tr>
                                         <td><input type="text" name="mental_problem_8" id="mental_problem_8"></td>
                                         <td><input type="text" name="mental_medication_8" id="mental_medication_8"></td>
-                                        <td><input type="date" name="mental_start_date_8" id="mental_start_date_8"></td>
-                                        <td><input type="date" name="mental_stop_date_8" id="mental_stop_date_8"></td>                                
+                                        <td><input type="date" name="mental_start_date_8" id="mental_start_date_8" placeholder="mm/dd/yyyy"></td>
+                                        <td><input type="date" name="mental_stop_date_8" id="mental_stop_date_8" placeholder="mm/dd/yyyy"></td>
                                         <td><input type="text" name="mental_stopped_8" id="mental_stopped_8"></td>
                                     </tr>
                                 </table>
@@ -1157,26 +1118,26 @@ and open the template in the editor.
                                     </tr>
                                     <tr>                                            
                                         <td><input type="text" name="not_listed_above_medication_1" id="not_listed_above_medication_1"></td>
-                                        <td><input type="date" name="not_listed_above_start_date_1" id="not_listed_above_start_date_1"></td>
-                                        <td><input type="date" name="not_listed_above_stop_date_1" id="not_listed_above_stop_date_1"></td>
+                                        <td><input type="date" name="not_listed_above_start_date_1" id="not_listed_above_start_date_1" placeholder="mm/dd/yyyy"></td>
+                                        <td><input type="date" name="not_listed_above_stop_date_1" id="not_listed_above_stop_date_1" placeholder="mm/dd/yyyy"></td>
                                         <td><input type="text" name="not_listed_above_physician_1" id="not_listed_above_physician_1"></td>
                                     </tr>
                                     <tr>
                                         <td><input type="text" name="not_listed_above_medication_2" id="not_listed_above_medication_2"></td>
-                                        <td><input type="date" name="not_listed_above_start_date_2" id="not_listed_above_start_date_2"></td>
-                                        <td><input type="date" name="not_listed_above_stop_date_2" id="not_listed_above_stop_date_2"></td>
+                                        <td><input type="date" name="not_listed_above_start_date_2" id="not_listed_above_start_date_2" placeholder="mm/dd/yyyy"></td>
+                                        <td><input type="date" name="not_listed_above_stop_date_2" id="not_listed_above_stop_date_2" placeholder="mm/dd/yyyy"></td>
                                         <td><input type="text" name="not_listed_above_physician_2" id="not_listed_above_physician_2"></td>
                                     </tr>
                                     <tr>
                                         <td><input type="text" name="not_listed_above_medication_3" id="not_listed_above_medication_3"></td>
-                                        <td><input type="date" name="not_listed_above_start_date_3" id="not_listed_above_start_date_3"></td>
-                                        <td><input type="date" name="not_listed_above_stop_date_3" id="not_listed_above_stop_date_3"></td>
+                                        <td><input type="date" name="not_listed_above_start_date_3" id="not_listed_above_start_date_3" placeholder="mm/dd/yyyy"></td>
+                                        <td><input type="date" name="not_listed_above_stop_date_3" id="not_listed_above_stop_date_3" placeholder="mm/dd/yyyy"></td>
                                         <td><input type="text" name="not_listed_above_physician_3" id="not_listed_above_physician_3"></td>
                                     </tr>
                                     <tr>
                                         <td><input type="text" name="not_listed_above_medication_4" id="not_listed_above_medication_4"></td>
-                                        <td><input type="date" name="not_listed_above_start_date_4" id="not_listed_above_start_date_4"></td>
-                                        <td><input type="date" name="not_listed_above_stop_date_4" id="not_listed_above_stop_date_4"></td>
+                                        <td><input type="date" name="not_listed_above_start_date_4" id="not_listed_above_start_date_4" placeholder="mm/dd/yyyy"></td>
+                                        <td><input type="date" name="not_listed_above_stop_date_4" id="not_listed_above_stop_date_4" placeholder="mm/dd/yyyy"></td>
                                         <td><input type="text" name="not_listed_above_physician_4" id="not_listed_above_physician_4"></td>
                                     </tr>                                        
                                 </table>
@@ -1284,18 +1245,18 @@ and open the template in the editor.
                                         <td>
                                             <table>
                                                 <tr>
-                                                    <td><input class="tab_input_row" type="number" name="dose_citalopram" id="dose_citalopram"></td>
+                                                    <td><input class="tab_input_row" type="number" name="dose_citalopram" id="dose_citalopram" min="0"></td>
                                                     <td><label class="tab_input_row" for="dose_citalopram">mg</label></td>
                                                 </tr>                                                    
                                             </table>
                                         </td>                                                
-                                        <td><input class="tab_input_row" type="number" name="weeks_citalopram" id="weeks_citalopram"></td>
+                                        <td><input class="tab_input_row" type="number" name="weeks_citalopram" id="weeks_citalopram" min="0"></td>
                                         <td>
                                             <table>
                                                 <tr>
-                                                    <td><input class="radio_tab_input_row" type="checkbox" name="reduction_symptoms_citalopram_yes" id="reduction_symptoms_citalopram_yes"></td>
+                                                    <td><input class="radio_tab_input_row" type="radio" name="reduction_symptoms_citalopram" value="Yes" id="reduction_symptoms_citalopram_yes"></td>
                                                     <td><label class="radio_tab_input_row" for="reduction_symptoms_citalopram_yes">Yes</label></td>
-                                                    <td><input class="radio_tab_input_row" type="checkbox" name="reduction_symptoms_citalopram_no" id="reduction_symptoms_citalopram_no"></td>
+                                                    <td><input class="radio_tab_input_row" type="radio" name="reduction_symptoms_citalopram" value="No" id="reduction_symptoms_citalopram_no"></td>
                                                     <td><label class="radio_tab_input_row" for="reduction_symptoms_citalopram_no">No</label></td>
                                                 </tr>                                                    
                                             </table>
@@ -1303,9 +1264,9 @@ and open the template in the editor.
                                         <td>
                                             <table>
                                                 <tr>
-                                                    <td><input class="radio_tab_input_row" type="checkbox" name="troubling_side_effects_citalopram_yes" id="troubling_side_effects_citalopram_yes"></td>
+                                                    <td><input class="radio_tab_input_row" type="radio" name="troubling_side_effects_citalopram" value="Yes" id="troubling_side_effects_citalopram_yes"></td>
                                                     <td><label class="radio_tab_input_row" for="troubling_side_effects_citalopram_yes">Yes</label></td>
-                                                    <td><input class="radio_tab_input_row" type="checkbox" name="troubling_side_effects_citalopram_no" id="troubling_side_effects_citalopram_no"></td>
+                                                    <td><input class="radio_tab_input_row" type="radio" name="troubling_side_effects_citalopram" value="No" id="troubling_side_effects_citalopram_no"></td>
                                                     <td><label class="radio_tab_input_row" for="troubling_side_effects_citalopram_no">No</label></td>
                                                 </tr>                                                    
                                             </table>
@@ -1316,18 +1277,18 @@ and open the template in the editor.
                                         <td>
                                             <table>
                                                 <tr>
-                                                    <td><input class="tab_input_row" type="number" name="dose_fluoxetine" id="dose_fluoxetine"></td>
+                                                    <td><input class="tab_input_row" type="number" name="dose_fluoxetine" id="dose_fluoxetine" min="0"></td>
                                                     <td><label class="tab_input_row" for="dose_fluoxetine">mg</label></td></td>
                                                 </tr>                                                    
                                             </table>
                                         </td>                                                
-                                        <td><input class="tab_input_row" type="number" name="weeks_fluoxetine" id="weeks_fluoxetine"></td>
+                                        <td><input class="tab_input_row" type="number" name="weeks_fluoxetine" id="weeks_fluoxetine" min="0"></td>
                                         <td>
                                             <table>
                                                 <tr>
-                                                    <td><input class="radio_tab_input_row" type="checkbox" name="reduction_symptoms_fluoxetine_yes" id="reduction_symptoms_fluoxetine_yes"></td>
+                                                    <td><input class="radio_tab_input_row" type="radio" name="reduction_symptoms_fluoxetine" value="Yes" id="reduction_symptoms_fluoxetine_yes"></td>
                                                     <td><label class="radio_tab_input_row" for="reduction_symptoms_fluoxetine_yes">Yes</label></td>
-                                                    <td><input class="radio_tab_input_row" type="checkbox" name="reduction_symptoms_fluoxetine_no" id="reduction_symptoms_fluoxetine_no"></td>
+                                                    <td><input class="radio_tab_input_row" type="radio" name="reduction_symptoms_fluoxetine" value="No" id="reduction_symptoms_fluoxetine_no"></td>
                                                     <td><label class="radio_tab_input_row" for="reduction_symptoms_fluoxetine_no">No</label></td>
                                                 </tr>                                                    
                                             </table>
@@ -1335,9 +1296,9 @@ and open the template in the editor.
                                         <td>
                                             <table>
                                                 <tr>
-                                                    <td><input class="radio_tab_input_row" type="checkbox" name="troubling_side_effects_fluoxetine_yes" id="troubling_side_effects_fluoxetine_yes"></td>
+                                                    <td><input class="radio_tab_input_row" type="radio" name="troubling_side_effects_fluoxetine" value="Yes" id="troubling_side_effects_fluoxetine_yes"></td>
                                                     <td><label class="radio_tab_input_row" for="troubling_side_effects__fluoxetine_yes">Yes</label></td>
-                                                    <td><input class="radio_tab_input_row" type="checkbox" name="troubling_side_effects_fluoxetine_no" id="troubling_side_effects_fluoxetine_no"></td>
+                                                    <td><input class="radio_tab_input_row" type="radio" name="troubling_side_effects_fluoxetine" value="No" id="troubling_side_effects_fluoxetine_no"></td>
                                                     <td><label class="radio_tab_input_row" for="troubling_side_effects_fluoxetine_no">No</label></td>
                                                 </tr>                                                    
                                             </table>
@@ -1348,18 +1309,18 @@ and open the template in the editor.
                                         <td>
                                             <table>
                                                 <tr>
-                                                    <td><input class="tab_input_row" type="number" name="dose_paroxetine" id="dose_paroxetine"></td>
+                                                    <td><input class="tab_input_row" type="number" name="dose_paroxetine" id="dose_paroxetine" min="0"></td>
                                                     <td><label class="tab_input_row" for="dose_paroxetine">mg</label></td>
                                                 </tr>                                                    
                                             </table>
                                         </td>                                                
-                                        <td><input class="tab_input_row" type="number" name="weeks_paroxetine" id="weeks_paroxetine"></td>
+                                        <td><input class="tab_input_row" type="number" name="weeks_paroxetine" id="weeks_paroxetine" min="0"></td>
                                         <td>
                                             <table>
                                                 <tr>
-                                                    <td><input class="radio_tab_input_row" type="checkbox" name="reduction_symptoms_paroxetine_yes" id="reduction_symptoms_paroxetine_yes"></td>
+                                                    <td><input class="radio_tab_input_row" type="radio" name="reduction_symptoms_paroxetine" value="Yes" id="reduction_symptoms_paroxetine_yes"></td>
                                                     <td><label class="radio_tab_input_row" for="reduction_symptoms_paroxetine_yes">Yes</label></td>
-                                                    <td><input class="radio_tab_input_row" type="checkbox" name="reduction_symptoms_paroxetine_no" id="reduction_symptoms_paroxetine_no"></td>
+                                                    <td><input class="radio_tab_input_row" type="radio" name="reduction_symptoms_paroxetine" value="No" id="reduction_symptoms_paroxetine_no"></td>
                                                     <td><label class="radio_tab_input_row" for="reduction_symptoms_paroxetine_no">No</label></td>
                                                 </tr>                                                    
                                             </table>
@@ -1367,9 +1328,9 @@ and open the template in the editor.
                                         <td>
                                             <table>
                                                 <tr>
-                                                    <td><input class="radio_tab_input_row" type="checkbox" name="troubling_side_effects_paroxetine_yes" id="troubling_side_effects_paroxetine_yes"></td>
+                                                    <td><input class="radio_tab_input_row" type="radio" name="troubling_side_effects_paroxetine" value="Yes" id="troubling_side_effects_paroxetine_yes"></td>
                                                     <td><label class="radio_tab_input_row" for="troubling_side_effects_paroxetine_yes">Yes</label></td>
-                                                    <td><input class="radio_tab_input_row" type="checkbox" name="troubling_side_effects_paroxetine_no" id="troubling_side_effects_fluoxetine_no"></td>
+                                                    <td><input class="radio_tab_input_row" type="radio" name="troubling_side_effects_paroxetine" value="No" id="troubling_side_effects_fluoxetine_no"></td>
                                                     <td><label class="radio_tab_input_row" for="troubling_side_effects_paroxetine_no">No</label></td>
                                                 </tr>                                                    
                                             </table>
@@ -1380,17 +1341,17 @@ and open the template in the editor.
                                         <td>
                                             <table>
                                                 <tr>
-                                                    <td><input class="tab_input_row" type="number" name="dose_escitalopram" id="dose_escitalopram"></td>
+                                                    <td><input class="tab_input_row" type="number" name="dose_escitalopram" id="dose_escitalopram" min="0"></td>
                                                     <td><label class="tab_input_row" for="dose_escitalopram">mg</label></td>                                                    </tr>                                                    
                                             </table>
                                         </td>                                                
-                                        <td><input class="tab_input_row" type="number" name="weeks_escitalopram" id="weeks_escitalopram"></td>
+                                        <td><input class="tab_input_row" type="number" name="weeks_escitalopram" id="weeks_escitalopram" min="0"></td>
                                         <td>
                                             <table>
                                                 <tr>
-                                                    <td><input class="radio_tab_input_row" type="checkbox" name="reduction_symptoms_escitalopram_yes" id="reduction_symptoms_escitalopram_yes"></td>
+                                                    <td><input class="radio_tab_input_row" type="radio" name="reduction_symptoms_escitalopram" value="Yes" id="reduction_symptoms_escitalopram_yes"></td>
                                                     <td><label class="radio_tab_input_row" for="reduction_symptoms_escitalopram_yes">Yes</label></td>
-                                                    <td><input class="radio_tab_input_row" type="checkbox" name="reduction_symptoms_escitalopram_no" id="reduction_symptoms_escitalopram_no"></td>
+                                                    <td><input class="radio_tab_input_row" type="radio" name="reduction_symptoms_escitalopram" value="No" id="reduction_symptoms_escitalopram_no"></td>
                                                     <td><label class="radio_tab_input_row" for="reduction_symptoms_escitalopram_no">No</label></td>
                                                 </tr>                                                    
                                             </table>
@@ -1398,9 +1359,9 @@ and open the template in the editor.
                                         <td>
                                             <table>
                                                 <tr>
-                                                    <td><input class="radio_tab_input_row" type="checkbox" name="troubling_side_effects_escitalopram_yes" id="troubling_side_effects_escitalopram_yes"></td>
+                                                    <td><input class="radio_tab_input_row" type="radio" name="troubling_side_effects_escitalopram" value="Yes" id="troubling_side_effects_escitalopram_yes"></td>
                                                     <td><label class="radio_tab_input_row" for="troubling_side_effects_escitalopram_yes">Yes</label></td>
-                                                    <td><input class="radio_tab_input_row" type="checkbox" name="troubling_side_effects_escitalopram_no" id="troubling_side_effects_escitalopram_no"></td>
+                                                    <td><input class="radio_tab_input_row" type="radio" name="troubling_side_effects_escitalopram" value="No" id="troubling_side_effects_escitalopram_no"></td>
                                                     <td><label class="radio_tab_input_row" for="troubling_side_effects_escitalopram_no">No</label></td>
                                                 </tr>                                                    
                                             </table>
@@ -1411,17 +1372,17 @@ and open the template in the editor.
                                         <td>
                                             <table>
                                                 <tr>
-                                                    <td><input class="tab_input_row" type="number" name="dose_ZOLOFT" id="dose_ZOLOFT"></td>
+                                                    <td><input class="tab_input_row" type="number" name="dose_ZOLOFT" id="dose_ZOLOFT" min="0"></td>
                                                     <td><label class="tab_input_row" for="dose_ZOLOFT">mg</label></td>                                                    </tr>                                                    
                                             </table>
                                         </td>                                                
-                                        <td><input class="tab_input_row" type="number" name="weeks_ZOLOFT" id="weeks_ZOLOFT"></td>
+                                        <td><input class="tab_input_row" type="number" name="weeks_ZOLOFT" id="weeks_ZOLOFT" min="0"></td>
                                         <td>
                                             <table>
                                                 <tr>
-                                                    <td><input class="radio_tab_input_row" type="checkbox" name="reduction_symptoms_ZOLOFT_yes" id="reduction_symptoms_ZOLOFT_yes"></td>
+                                                    <td><input class="radio_tab_input_row" type="radio" name="reduction_symptoms_ZOLOFT" value="Yes" id="reduction_symptoms_ZOLOFT_yes"></td>
                                                     <td><label class="radio_tab_input_row" for="reduction_symptoms_ZOLOFT_yes">Yes</label></td>
-                                                    <td><input class="radio_tab_input_row" type="checkbox" name="reduction_symptoms_ZOLOFT_no" id="reduction_symptoms_ZOLOFT_no"></td>
+                                                    <td><input class="radio_tab_input_row" type="radio" name="reduction_symptoms_ZOLOFT" value="No" id="reduction_symptoms_ZOLOFT_no"></td>
                                                     <td><label class="radio_tab_input_row" for="reduction_symptoms_ZOLOFT_no">No</label></td>
                                                 </tr>                                                    
                                             </table>
@@ -1429,9 +1390,9 @@ and open the template in the editor.
                                         <td>
                                             <table>
                                                 <tr>
-                                                    <td><input class="radio_tab_input_row" type="checkbox" name="troubling_side_effects_ZOLOFT_yes" id="troubling_side_effects_ZOLOFT_yes"></td>
+                                                    <td><input class="radio_tab_input_row" type="radio" name="troubling_side_effects_ZOLOFT" value="Yes" id="troubling_side_effects_ZOLOFT_yes"></td>
                                                     <td><label class="radio_tab_input_row" for="troubling_side_effects_ZOLOFT_yes">Yes</label></td>
-                                                    <td><input class="radio_tab_input_row" type="checkbox" name="troubling_side_effects_ZOLOFT_no" id="troubling_side_effects_ZOLOFT_no"></td>
+                                                    <td><input class="radio_tab_input_row" type="radio" name="troubling_side_effects_ZOLOFT" value="No" id="troubling_side_effects_ZOLOFT_no"></td>
                                                     <td><label class="radio_tab_input_row" for="troubling_side_effects_ZOLOFT_no">No</label></td>
                                                 </tr>                                                    
                                             </table>
@@ -1442,17 +1403,17 @@ and open the template in the editor.
                                         <td>
                                             <table>
                                                 <tr>
-                                                    <td><input class="tab_input_row" type="number" name="dose_Paroxetine" id="dose_Paroxetine"></td>
+                                                    <td><input class="tab_input_row" type="number" name="dose_Paroxetine" id="dose_Paroxetine" min="0"></td>
                                                     <td><label class="tab_input_row" for="dose_Paroxetine">mg</label></td>                                                    </tr>                                                    
                                             </table>
                                         </td>                                                
-                                        <td><input class="tab_input_row" type="number" name="weeks_Paroxetine" id="weeks_Paroxetine"></td>
+                                        <td><input class="tab_input_row" type="number" name="weeks_Paroxetine" id="weeks_Paroxetine" min="0"></td>
                                         <td>
                                             <table>
                                                 <tr>
-                                                    <td><input class="radio_tab_input_row" type="checkbox" name="reduction_symptoms_Paroxetine_yes" id="reduction_symptoms_Paroxetine_yes"></td>
+                                                    <td><input class="radio_tab_input_row" type="radio" name="reduction_symptoms_Paroxetine" value="Yes" id="reduction_symptoms_Paroxetine_yes"></td>
                                                     <td><label class="radio_tab_input_row" for="reduction_symptoms_Paroxetine_yes">Yes</label></td>
-                                                    <td><input class="radio_tab_input_row" type="checkbox" name="reduction_symptoms_Paroxetine_no" id="reduction_symptoms_Paroxetine_no"></td>
+                                                    <td><input class="radio_tab_input_row" type="radio" name="reduction_symptoms_Paroxetine" value="No" id="reduction_symptoms_Paroxetine_no"></td>
                                                     <td><label class="radio_tab_input_row" for="reduction_symptoms_Paroxetine_no">No</label></td>
                                                 </tr>                                                    
                                             </table>
@@ -1460,9 +1421,9 @@ and open the template in the editor.
                                         <td>
                                             <table>
                                                 <tr>
-                                                    <td><input class="radio_tab_input_row" type="checkbox" name="troubling_side_effects_Paroxetine_yes" id="troubling_side_effects_Paroxetine_yes"></td>
+                                                    <td><input class="radio_tab_input_row" type="radio" name="troubling_side_effects_Paroxetine" value="Yes" id="troubling_side_effects_Paroxetine_yes"></td>
                                                     <td><label class="radio_tab_input_row" for="troubling_side_effects_Paroxetine_yes">Yes</label></td>
-                                                    <td><input class="radio_tab_input_row" type="checkbox" name="troubling_side_effects_Paroxetine_no" id="troubling_side_effects_Paroxetine_no"></td>
+                                                    <td><input class="radio_tab_input_row" type="radio" name="troubling_side_effects_Paroxetine" value="No" id="troubling_side_effects_Paroxetine_no"></td>
                                                     <td><label class="radio_tab_input_row" for="troubling_side_effects_Paroxetine_no">No</label></td>
                                                 </tr>                                                    
                                             </table>
@@ -1473,17 +1434,17 @@ and open the template in the editor.
                                         <td>
                                             <table>
                                                 <tr>
-                                                    <td><input class="tab_input_row" type="number" name="dose_LUVOX" id="dose_LUVOX"></td>
+                                                    <td><input class="tab_input_row" type="number" name="dose_LUVOX" id="dose_LUVOX" min="0"></td>
                                                     <td><label class="tab_input_row" for="dose_LUVOX">mg</label></td>                                                    </tr>                                                    
                                             </table>
                                         </td>                                                
-                                        <td><input class="tab_input_row" type="number" name="weeks_LUVOX" id="weeks_LUVOX"></td>
+                                        <td><input class="tab_input_row" type="number" name="weeks_LUVOX" id="weeks_LUVOX" min="0"></td>
                                         <td>
                                             <table>
                                                 <tr>
-                                                    <td><input class="radio_tab_input_row" type="checkbox" name="reduction_symptoms_LUVOX_yes" id="reduction_symptoms_LUVOX_yes"></td>
+                                                    <td><input class="radio_tab_input_row" type="radio" name="reduction_symptoms_LUVOX" value="Yes" id="reduction_symptoms_LUVOX_yes"></td>
                                                     <td><label class="radio_tab_input_row" for="reduction_symptoms_LUVOX_yes">Yes</label></td>
-                                                    <td><input class="radio_tab_input_row" type="checkbox" name="reduction_symptoms_LUVOX_no" id="reduction_symptoms_LUVOX_no"></td>
+                                                    <td><input class="radio_tab_input_row" type="radio" name="reduction_symptoms_LUVOX" value="No" id="reduction_symptoms_LUVOX_no"></td>
                                                     <td><label class="radio_tab_input_row" for="reduction_symptoms_LUVOX_no">No</label></td>
                                                 </tr>                                                    
                                             </table>
@@ -1491,9 +1452,9 @@ and open the template in the editor.
                                         <td>
                                             <table>
                                                 <tr>
-                                                    <td><input class="radio_tab_input_row" type="checkbox" name="troubling_side_effects_LUVOX_yes" id="troubling_side_effects_LUVOX_yes"></td>
+                                                    <td><input class="radio_tab_input_row" type="radio" name="troubling_side_effects_LUVOX" value="Yes" id="troubling_side_effects_LUVOX_yes"></td>
                                                     <td><label class="radio_tab_input_row" for="troubling_side_effects_LUVOX_yes">Yes</label></td>
-                                                    <td><input class="radio_tab_input_row" type="checkbox" name="troubling_side_effects_LUVOX_no" id="troubling_side_effects_LUVOX_no"></td>
+                                                    <td><input class="radio_tab_input_row" type="radio" name="troubling_side_effects_LUVOX" value="No" id="troubling_side_effects_LUVOX_no"></td>
                                                     <td><label class="radio_tab_input_row" for="troubling_side_effects_LUVOX_no">No</label></td>
                                                 </tr>                                                    
                                             </table>
@@ -1504,17 +1465,17 @@ and open the template in the editor.
                                         <td>
                                             <table>
                                                 <tr>
-                                                    <td><input class="tab_input_row" type="number" name="dose_CYMBALTA" id="dose_CYMBALTA"></td>
+                                                    <td><input class="tab_input_row" type="number" name="dose_CYMBALTA" id="dose_CYMBALTA" min="0"></td>
                                                     <td><label class="tab_input_row" for="dose_CYMBALTA">mg</label></td>                                                    </tr>                                                    
                                             </table>
                                         </td>                                                
-                                        <td><input class="tab_input_row" type="number" name="weeks_CYMBALTA" id="weeks_CYMBALTA"></td>
+                                        <td><input class="tab_input_row" type="number" name="weeks_CYMBALTA" id="weeks_CYMBALTA" min="0"></td>
                                         <td>
                                             <table>
                                                 <tr>
-                                                    <td><input class="radio_tab_input_row" type="checkbox" name="reduction_symptoms_CYMBALTA_yes" id="reduction_symptoms_CYMBALTA_yes"></td>
+                                                    <td><input class="radio_tab_input_row" type="radio" name="reduction_symptoms_CYMBALTA" value="Yes" id="reduction_symptoms_CYMBALTA_yes"></td>
                                                     <td><label class="radio_tab_input_row" for="reduction_symptoms_CYMBALTA_yes">Yes</label></td>
-                                                    <td><input class="radio_tab_input_row" type="checkbox" name="reduction_symptoms_CYMBALTA_no" id="reduction_symptoms_CYMBALTA_no"></td>
+                                                    <td><input class="radio_tab_input_row" type="radio" name="reduction_symptoms_CYMBALTA" value="No" id="reduction_symptoms_CYMBALTA_no"></td>
                                                     <td><label class="radio_tab_input_row" for="reduction_symptoms_CYMBALTA_no">No</label></td>
                                                 </tr>                                                    
                                             </table>
@@ -1522,9 +1483,9 @@ and open the template in the editor.
                                         <td>
                                             <table>
                                                 <tr>
-                                                    <td><input class="radio_tab_input_row" type="checkbox" name="troubling_side_effects_CYMBALTA_yes" id="troubling_side_effects_CYMBALTA_yes"></td>
+                                                    <td><input class="radio_tab_input_row" type="radio" name="troubling_side_effects_CYMBALTA" value="Yes" id="troubling_side_effects_CYMBALTA_yes"></td>
                                                     <td><label class="radio_tab_input_row" for="troubling_side_effects_CYMBALTA_yes">Yes</label></td>
-                                                    <td><input class="radio_tab_input_row" type="checkbox" name="troubling_side_effects_CYMBALTA_no" id="troubling_side_effects_CYMBALTA_no"></td>
+                                                    <td><input class="radio_tab_input_row" type="radio" name="troubling_side_effects_CYMBALTA" value="No" id="troubling_side_effects_CYMBALTA_no"></td>
                                                     <td><label class="radio_tab_input_row" for="troubling_side_effects_CYMBALTA_no">No</label></td>
                                                 </tr>                                                    
                                             </table>
@@ -1535,17 +1496,17 @@ and open the template in the editor.
                                         <td>
                                             <table>
                                                 <tr>
-                                                    <td><input class="tab_input_row" type="number" name="dose_Venlafaxine" id="dose_Venlafaxine"></td>
+                                                    <td><input class="tab_input_row" type="number" name="dose_Venlafaxine" id="dose_Venlafaxine" min="0"></td>
                                                     <td><label class="tab_input_row" for="dose_CYMBALTA">mg</label></td>                                                    </tr>                                                    
                                             </table>
                                         </td>                                                
-                                        <td><input class="tab_input_row" type="number" name="weeks_Venlafaxine" id="weeks_Venlafaxine"></td>
+                                        <td><input class="tab_input_row" type="number" name="weeks_Venlafaxine" id="weeks_Venlafaxine" min="0"></td>
                                         <td>
                                             <table>
                                                 <tr>
-                                                    <td><input class="radio_tab_input_row" type="checkbox" name="reduction_symptoms_Venlafaxine_yes" id="reduction_symptoms_Venlafaxine_yes"></td>
+                                                    <td><input class="radio_tab_input_row" type="radio" name="reduction_symptoms_Venlafaxine" value="Yes" id="reduction_symptoms_Venlafaxine_yes"></td>
                                                     <td><label class="radio_tab_input_row" for="reduction_symptoms_Venlafaxine_yes">Yes</label></td>
-                                                    <td><input class="radio_tab_input_row" type="checkbox" name="reduction_symptoms_Venlafaxine_no" id="reduction_symptoms_Venlafaxine_no"></td>
+                                                    <td><input class="radio_tab_input_row" type="radio" name="reduction_symptoms_Venlafaxine" value="No" id="reduction_symptoms_Venlafaxine_no"></td>
                                                     <td><label class="radio_tab_input_row" for="reduction_symptoms_Venlafaxine_no">No</label></td>
                                                 </tr>                                                    
                                             </table>
@@ -1553,9 +1514,9 @@ and open the template in the editor.
                                         <td>
                                             <table>
                                                 <tr>
-                                                    <td><input class="radio_tab_input_row" type="checkbox" name="troubling_side_effects_Venlafaxine_yes" id="troubling_side_effects_Venlafaxine_yes"></td>
+                                                    <td><input class="radio_tab_input_row" type="radio" name="troubling_side_effects_Venlafaxine" value="Yes" id="troubling_side_effects_Venlafaxine_yes"></td>
                                                     <td><label class="radio_tab_input_row" for="troubling_side_effects_Venlafaxine_yes">Yes</label></td>
-                                                    <td><input class="radio_tab_input_row" type="checkbox" name="troubling_side_effects_Venlafaxine_no" id="troubling_side_effects_Venlafaxine_no"></td>
+                                                    <td><input class="radio_tab_input_row" type="radio" name="troubling_side_effects_Venlafaxine" value="No" id="troubling_side_effects_Venlafaxine_no"></td>
                                                     <td><label class="radio_tab_input_row" for="troubling_side_effects_Venlafaxine_no">No</label></td>
                                                 </tr>                                                    
                                             </table>
@@ -1566,17 +1527,17 @@ and open the template in the editor.
                                         <td>
                                             <table>
                                                 <tr>
-                                                    <td><input class="tab_input_row" type="number" name="dose_REMERON" id="dose_REMERON"></td>
+                                                    <td><input class="tab_input_row" type="number" name="dose_REMERON" id="dose_REMERON" min="0"></td>
                                                     <td><label class="tab_input_row" for="dose_REMERON">mg</label></td>                                                    </tr>                                                    
                                             </table>
                                         </td>                                                
-                                        <td><input class="tab_input_row" type="number" name="weeks_REMERON" id="weeks_REMERON"></td>
+                                        <td><input class="tab_input_row" type="number" name="weeks_REMERON" id="weeks_REMERON" min="0"></td>
                                         <td>
                                             <table>
                                                 <tr>
-                                                    <td><input class="radio_tab_input_row" type="checkbox" name="reduction_symptoms_REMERON_yes" id="reduction_symptoms_REMERON_yes"></td>
+                                                    <td><input class="radio_tab_input_row" type="radio" name="reduction_symptoms_REMERON" value="Yes" id="reduction_symptoms_REMERON_yes"></td>
                                                     <td><label class="radio_tab_input_row" for="reduction_symptoms_REMERON_yes">Yes</label></td>
-                                                    <td><input class="radio_tab_input_row" type="checkbox" name="reduction_symptoms_REMERON_no" id="reduction_symptoms_REMERON_no"></td>
+                                                    <td><input class="radio_tab_input_row" type="radio" name="reduction_symptoms_REMERON" value="No" id="reduction_symptoms_REMERON_no"></td>
                                                     <td><label class="radio_tab_input_row" for="reduction_symptoms_REMERON_no">No</label></td>
                                                 </tr>                                                    
                                             </table>
@@ -1584,9 +1545,9 @@ and open the template in the editor.
                                         <td>
                                             <table>
                                                 <tr>
-                                                    <td><input class="radio_tab_input_row" type="checkbox" name="troubling_side_effects_REMERON_yes" id="troubling_side_effects_REMERON_yes"></td>
+                                                    <td><input class="radio_tab_input_row" type="radio" name="troubling_side_effects_REMERON" value="Yes" id="troubling_side_effects_REMERON_yes"></td>
                                                     <td><label class="radio_tab_input_row" for="troubling_side_effects_REMERON_yes">Yes</label></td>
-                                                    <td><input class="radio_tab_input_row" type="checkbox" name="troubling_side_effects_REMERON_no" id="troubling_side_effects_REMERON_no"></td>
+                                                    <td><input class="radio_tab_input_row" type="radio" name="troubling_side_effects_REMERON" value="No" id="troubling_side_effects_REMERON_no"></td>
                                                     <td><label class="radio_tab_input_row" for="troubling_side_effects_REMERON_no">No</label></td>
                                                 </tr>                                                    
                                             </table>
@@ -1597,17 +1558,17 @@ and open the template in the editor.
                                         <td>
                                             <table>
                                                 <tr>
-                                                    <td><input class="tab_input_row" type="number" name="dose_Bupropion" id="dose_Bupropion"></td>
+                                                    <td><input class="tab_input_row" type="number" name="dose_Bupropion" id="dose_Bupropion" min="0"></td>
                                                     <td><label class="tab_input_row" for="dose_REMERON">mg</label></td>                                                    </tr>                                                    
                                             </table>
                                         </td>                                                
-                                        <td><input class="tab_input_row" type="number" name="weeks_Bupropion" id="weeks_Bupropion"></td>
+                                        <td><input class="tab_input_row" type="number" name="weeks_Bupropion" id="weeks_Bupropion" min="0"></td>
                                         <td>
                                             <table>
                                                 <tr>
-                                                    <td><input class="radio_tab_input_row" type="checkbox" name="reduction_symptoms_Bupropion_yes" id="reduction_symptoms_Bupropion_yes"></td>
+                                                    <td><input class="radio_tab_input_row" type="radio" name="reduction_symptoms_Bupropion" value="Yes" id="reduction_symptoms_Bupropion_yes"></td>
                                                     <td><label class="radio_tab_input_row" for="reduction_symptoms_Bupropion_yes">Yes</label></td>
-                                                    <td><input class="radio_tab_input_row" type="checkbox" name="reduction_symptoms_Bupropion_no" id="reduction_symptoms_Bupropion_no"></td>
+                                                    <td><input class="radio_tab_input_row" type="radio" name="reduction_symptoms_Bupropion" value="No" id="reduction_symptoms_Bupropion_no"></td>
                                                     <td><label class="radio_tab_input_row" for="reduction_symptoms_Bupropion_no">No</label></td>
                                                 </tr>                                                    
                                             </table>
@@ -1615,9 +1576,9 @@ and open the template in the editor.
                                         <td>
                                             <table>
                                                 <tr>
-                                                    <td><input class="radio_tab_input_row" type="checkbox" name="troubling_side_effects_Bupropion_yes" id="troubling_side_effects_Bupropion_yes"></td>
+                                                    <td><input class="radio_tab_input_row" type="radio" name="troubling_side_effects_Bupropion" value="Yes" id="troubling_side_effects_Bupropion_yes"></td>
                                                     <td><label class="radio_tab_input_row" for="troubling_side_effects_Bupropion_yes">Yes</label></td>
-                                                    <td><input class="radio_tab_input_row" type="checkbox" name="troubling_side_effects_Bupropion_no" id="troubling_side_effects_Bupropion_no"></td>
+                                                    <td><input class="radio_tab_input_row" type="radio" name="troubling_side_effects_Bupropion" value="No" id="troubling_side_effects_Bupropion_no"></td>
                                                     <td><label class="radio_tab_input_row" for="troubling_side_effects_Bupropion_no">No</label></td>
                                                 </tr>                                                    
                                             </table>
@@ -1628,17 +1589,17 @@ and open the template in the editor.
                                         <td>
                                             <table>
                                                 <tr>
-                                                    <td><input class="tab_input_row" type="number" name="dose_Nortriptyline" id="dose_Nortriptyline"></td>
+                                                    <td><input class="tab_input_row" type="number" name="dose_Nortriptyline" id="dose_Nortriptyline" min="0"></td>
                                                     <td><label class="tab_input_row" for="dose_Nortriptyline">mg</label></td>                                                    </tr>                                                    
                                             </table>
                                         </td>                                                
-                                        <td><input class="tab_input_row" type="number" name="weeks_Nortriptyline" id="weeks_Nortriptyline"></td>
+                                        <td><input class="tab_input_row" type="number" name="weeks_Nortriptyline" id="weeks_Nortriptyline" min="0"></td>
                                         <td>
                                             <table>
                                                 <tr>
-                                                    <td><input class="radio_tab_input_row" type="checkbox" name="reduction_symptoms_Nortriptyline_yes" id="reduction_symptoms_Nortriptyline_yes"></td>
+                                                    <td><input class="radio_tab_input_row" type="radio" name="reduction_symptoms_Nortriptyline" value="Yes" id="reduction_symptoms_Nortriptyline_yes"></td>
                                                     <td><label class="radio_tab_input_row" for="reduction_symptoms_Nortriptyline_yes">Yes</label></td>
-                                                    <td><input class="radio_tab_input_row" type="checkbox" name="reduction_symptoms_Nortriptyline_no" id="reduction_symptoms_Nortriptyline_no"></td>
+                                                    <td><input class="radio_tab_input_row" type="radio" name="reduction_symptoms_Nortriptyline" value="No" id="reduction_symptoms_Nortriptyline_no"></td>
                                                     <td><label class="radio_tab_input_row" for="reduction_symptoms_Nortriptyline_no">No</label></td>
                                                 </tr>                                                    
                                             </table>
@@ -1646,9 +1607,9 @@ and open the template in the editor.
                                         <td>
                                             <table>
                                                 <tr>
-                                                    <td><input class="radio_tab_input_row" type="checkbox" name="troubling_side_effects_Nortriptyline_yes" id="troubling_side_effects_Nortriptyline_yes"></td>
+                                                    <td><input class="radio_tab_input_row" type="radio" name="troubling_side_effects_Nortriptyline" value="Yes" id="troubling_side_effects_Nortriptyline_yes"></td>
                                                     <td><label class="radio_tab_input_row" for="troubling_side_effects_Nortriptyline_yes">Yes</label></td>
-                                                    <td><input class="radio_tab_input_row" type="checkbox" name="troubling_side_effects_Nortriptyline_no" id="troubling_side_effects_Nortriptyline_no"></td>
+                                                    <td><input class="radio_tab_input_row" type="radio" name="troubling_side_effects_Nortriptyline" value="No" id="troubling_side_effects_Nortriptyline_no"></td>
                                                     <td><label class="radio_tab_input_row" for="troubling_side_effects_Nortriptyline_no">No</label></td>
                                                 </tr>                                                    
                                             </table>
@@ -1659,17 +1620,17 @@ and open the template in the editor.
                                         <td>
                                             <table>
                                                 <tr>
-                                                    <td><input class="tab_input_row" type="number" name="dose_Protriptyline" id="dose_Protriptyline"></td>
+                                                    <td><input class="tab_input_row" type="number" name="dose_Protriptyline" id="dose_Protriptyline" min="0"></td>
                                                     <td><label class="tab_input_row" for="dose_Protriptyline">mg</label></td>                                                    </tr>                                                    
                                             </table>
                                         </td>                                                
-                                        <td><input class="tab_input_row" type="number" name="weeks_Protriptyline" id="weeks_Protriptyline"></td>
+                                        <td><input class="tab_input_row" type="number" name="weeks_Protriptyline" id="weeks_Protriptyline" min="0"></td>
                                         <td>
                                             <table>
                                                 <tr>
-                                                    <td><input class="radio_tab_input_row" type="checkbox" name="reduction_symptoms_Protriptyline_yes" id="reduction_symptoms_Protriptyline_yes"></td>
+                                                    <td><input class="radio_tab_input_row" type="radio" name="reduction_symptoms_Protriptyline" value="Yes" id="reduction_symptoms_Protriptyline_yes"></td>
                                                     <td><label class="radio_tab_input_row" for="reduction_symptoms_Protriptyline_yes">Yes</label></td>
-                                                    <td><input class="radio_tab_input_row" type="checkbox" name="reduction_symptoms_Protriptyline_no" id="reduction_symptoms_Protriptyline_no"></td>
+                                                    <td><input class="radio_tab_input_row" type="radio" name="reduction_symptoms_Protriptyline" value="No" id="reduction_symptoms_Protriptyline_no"></td>
                                                     <td><label class="radio_tab_input_row" for="reduction_symptoms_Protriptyline_no">No</label></td>
                                                 </tr>                                                    
                                             </table>
@@ -1677,9 +1638,9 @@ and open the template in the editor.
                                         <td>
                                             <table>
                                                 <tr>
-                                                    <td><input class="radio_tab_input_row" type="checkbox" name="troubling_side_effects_Protriptyline_yes" id="troubling_side_effects_Protriptyline_yes"></td>
+                                                    <td><input class="radio_tab_input_row" type="radio" name="troubling_side_effects_Protriptyline" value="Yes" id="troubling_side_effects_Protriptyline_yes"></td>
                                                     <td><label class="radio_tab_input_row" for="troubling_side_effects_Protriptyline_yes">Yes</label></td>
-                                                    <td><input class="radio_tab_input_row" type="checkbox" name="troubling_side_effects_Protriptyline_no" id="troubling_side_effects_Protriptyline_no"></td>
+                                                    <td><input class="radio_tab_input_row" type="radio" name="troubling_side_effects_Protriptyline" value="No" id="troubling_side_effects_Protriptyline_no"></td>
                                                     <td><label class="radio_tab_input_row" for="troubling_side_effects_Protriptyline_no">No</label></td>
                                                 </tr>                                                    
                                             </table>
@@ -1690,18 +1651,18 @@ and open the template in the editor.
                                         <td>
                                             <table>
                                                 <tr>
-                                                    <td><input class="tab_input_row" type="number" name="dose_Amitriptyline" id="dose_Amitriptyline"></td>
+                                                    <td><input class="tab_input_row" type="number" name="dose_Amitriptyline" id="dose_Amitriptyline" min="0"></td>
                                                     <td><label class="tab_input_row" for="dose_Amitriptyline">mg</label></td>
                                                 </tr>                                                    
                                             </table>
                                         </td>                                                
-                                        <td><input class="tab_input_row" type="number" name="weeks_Amitriptyline" id="weeks_Amitriptyline"></td>
+                                        <td><input class="tab_input_row" type="number" name="weeks_Amitriptyline" id="weeks_Amitriptyline" min="0"></td>
                                         <td>
                                             <table>
                                                 <tr>
-                                                    <td><input class="radio_tab_input_row" type="checkbox" name="reduction_symptoms_Amitriptyline_yes" id="reduction_symptoms_Amitriptyline_yes"></td>
+                                                    <td><input class="radio_tab_input_row" type="radio" name="reduction_symptoms_Amitriptyline" value="Yes" id="reduction_symptoms_Amitriptyline_yes"></td>
                                                     <td><label class="radio_tab_input_row" for="reduction_symptoms_Amitriptyline_yes">Yes</label></td>
-                                                    <td><input class="radio_tab_input_row" type="checkbox" name="reduction_symptoms_Amitriptyline_no" id="reduction_symptoms_Amitriptyline_no"></td>
+                                                    <td><input class="radio_tab_input_row" type="radio" name="reduction_symptoms_Amitriptyline" value="No" id="reduction_symptoms_Amitriptyline_no"></td>
                                                     <td><label class="radio_tab_input_row" for="reduction_symptoms_Amitriptyline_no">No</label></td>
                                                 </tr>                                                    
                                             </table>
@@ -1709,9 +1670,9 @@ and open the template in the editor.
                                         <td>
                                             <table>
                                                 <tr>
-                                                    <td><input class="radio_tab_input_row" type="checkbox" name="troubling_side_effects_Amitriptyline_yes" id="troubling_side_effects_Amitriptyline_yes"></td>
+                                                    <td><input class="radio_tab_input_row" type="radio" name="troubling_side_effects_Amitriptyline" value="Yes" id="troubling_side_effects_Amitriptyline_yes"></td>
                                                     <td><label class="radio_tab_input_row" for="troubling_side_effects_Amitriptyline_yes">Yes</label></td>
-                                                    <td><input class="radio_tab_input_row" type="checkbox" name="troubling_side_effects_Amitriptyline_no" id="troubling_side_effects_Amitriptyline_no"></td>
+                                                    <td><input class="radio_tab_input_row" type="radio" name="troubling_side_effects_Amitriptyline" value="No" id="troubling_side_effects_Amitriptyline_no"></td>
                                                     <td><label class="radio_tab_input_row" for="troubling_side_effects_Amitriptyline_no">No</label></td>
                                                 </tr>                                                    
                                             </table>
@@ -1722,18 +1683,18 @@ and open the template in the editor.
                                         <td>
                                             <table>
                                                 <tr>
-                                                    <td><input class="tab_input_row" type="number" name="dose_Amoxapine" id="dose_Amoxapine"></td>
+                                                    <td><input class="tab_input_row" type="number" name="dose_Amoxapine" id="dose_Amoxapine" min="0"></td>
                                                     <td><label class="tab_input_row" for="dose_Amoxapine">mg</label></td>
                                                 </tr>                                                    
                                             </table>
                                         </td>                                                
-                                        <td><input class="tab_input_row" type="number" name="weeks_Amoxapine" id="weeks_Amoxapine"></td>
+                                        <td><input class="tab_input_row" type="number" name="weeks_Amoxapine" id="weeks_Amoxapine" min="0"></td>
                                         <td>
                                             <table>
                                                 <tr>
-                                                    <td><input class="radio_tab_input_row" type="checkbox" name="reduction_symptoms_Amoxapine_yes" id="reduction_symptoms_Amoxapine_yes"></td>
+                                                    <td><input class="radio_tab_input_row" type="radio" name="reduction_symptoms_Amoxapine" value="Yes" id="reduction_symptoms_Amoxapine_yes"></td>
                                                     <td><label class="radio_tab_input_row" for="reduction_symptoms_Amoxapine_yes">Yes</label></td>
-                                                    <td><input class="radio_tab_input_row" type="checkbox" name="reduction_symptoms_Amoxapine_no" id="reduction_symptoms_Amoxapine_no"></td>
+                                                    <td><input class="radio_tab_input_row" type="radio" name="reduction_symptoms_Amoxapine" value="No" id="reduction_symptoms_Amoxapine_no"></td>
                                                     <td><label class="radio_tab_input_row" for="reduction_symptoms_Amoxapine_no">No</label></td>
                                                 </tr>                                                    
                                             </table>
@@ -1741,9 +1702,9 @@ and open the template in the editor.
                                         <td>
                                             <table>
                                                 <tr>
-                                                    <td><input class="radio_tab_input_row" type="checkbox" name="troubling_side_effects_Amoxapine_yes" id="troubling_side_effects_Amoxapine_yes"></td>
+                                                    <td><input class="radio_tab_input_row" type="radio" name="troubling_side_effects_Amoxapine" value="Yes" id="troubling_side_effects_Amoxapine_yes"></td>
                                                     <td><label class="radio_tab_input_row" for="troubling_side_effects_Amoxapine_yes">Yes</label></td>
-                                                    <td><input class="radio_tab_input_row" type="checkbox" name="troubling_side_effects_Amoxapine_no" id="troubling_side_effects_Amoxapine_no"></td>
+                                                    <td><input class="radio_tab_input_row" type="radio" name="troubling_side_effects_Amoxapine" value="No" id="troubling_side_effects_Amoxapine_no"></td>
                                                     <td><label class="radio_tab_input_row" for="troubling_side_effects_Amoxapine_no">No</label></td>
                                                 </tr>                                                    
                                             </table>
@@ -1754,18 +1715,18 @@ and open the template in the editor.
                                         <td>
                                             <table>
                                                 <tr>
-                                                    <td><input class="tab_input_row" type="number" name="dose_Imipramine" id="dose_Imipramine"></td>
+                                                    <td><input class="tab_input_row" type="number" name="dose_Imipramine" id="dose_Imipramine" min="0"></td>
                                                     <td><label class="tab_input_row" for="dose_Imipramine">mg</label></td>
                                                 </tr>                                                    
                                             </table>
                                         </td>                                                
-                                        <td><input class="tab_input_row" type="number" name="weeks_Imipramine" id="weeks_Imipramine"></td>
+                                        <td><input class="tab_input_row" type="number" name="weeks_Imipramine" id="weeks_Imipramine" min="0"></td>
                                         <td>
                                             <table>
                                                 <tr>
-                                                    <td><input class="radio_tab_input_row" type="checkbox" name="reduction_symptoms_Imipramine_yes" id="reduction_symptoms_Imipramine_yes"></td>
+                                                    <td><input class="radio_tab_input_row" type="radio" name="reduction_symptoms_Imipramine" value="Yes" id="reduction_symptoms_Imipramine_yes"></td>
                                                     <td><label class="radio_tab_input_row" for="reduction_symptoms_Imipramine_yes">Yes</label></td>
-                                                    <td><input class="radio_tab_input_row" type="checkbox" name="reduction_symptoms_Imipramine_no" id="reduction_symptoms_Imipramine_no"></td>
+                                                    <td><input class="radio_tab_input_row" type="radio" name="reduction_symptoms_Imipramine" value="No" id="reduction_symptoms_Imipramine_no"></td>
                                                     <td><label class="radio_tab_input_row" for="reduction_symptoms_Imipramine_no">No</label></td>
                                                 </tr>                                                    
                                             </table>
@@ -1773,9 +1734,9 @@ and open the template in the editor.
                                         <td>
                                             <table>
                                                 <tr>
-                                                    <td><input class="radio_tab_input_row" type="checkbox" name="troubling_side_effects_Imipramine_yes" id="troubling_side_effects_Imipramine_yes"></td>
+                                                    <td><input class="radio_tab_input_row" type="radio" name="troubling_side_effects_Imipramine" value="Yes" id="troubling_side_effects_Imipramine_yes"></td>
                                                     <td><label class="radio_tab_input_row" for="troubling_side_effects_Imipramine_yes">Yes</label></td>
-                                                    <td><input class="radio_tab_input_row" type="checkbox" name="troubling_side_effects_Imipramine_no" id="troubling_side_effects_Imipramine_no"></td>
+                                                    <td><input class="radio_tab_input_row" type="radio" name="troubling_side_effects_Imipramine" value="No" id="troubling_side_effects_Imipramine_no"></td>
                                                     <td><label class="radio_tab_input_row" for="troubling_side_effects_Imipramine_no">No</label></td>
                                                 </tr>                                                    
                                             </table>
@@ -1786,18 +1747,18 @@ and open the template in the editor.
                                         <td>
                                             <table>
                                                 <tr>
-                                                    <td><input class="tab_input_row" type="number" name="dose_Desipramine" id="dose_Desipramine"></td>
+                                                    <td><input class="tab_input_row" type="number" name="dose_Desipramine" id="dose_Desipramine" min="0"></td>
                                                     <td><label class="tab_input_row" for="dose_Desipramine">mg</label></td>
                                                 </tr>                                                    
                                             </table>
                                         </td>                                                
-                                        <td><input class="tab_input_row" type="number" name="weeks_Desipramine" id="weeks_Desipramine"></td>
+                                        <td><input class="tab_input_row" type="number" name="weeks_Desipramine" id="weeks_Desipramine" min="0"></td>
                                         <td>
                                             <table>
                                                 <tr>
-                                                    <td><input class="radio_tab_input_row" type="checkbox" name="reduction_symptoms_Desipramine_yes" id="reduction_symptoms_Desipramine_yes"></td>
+                                                    <td><input class="radio_tab_input_row" type="radio" name="reduction_symptoms_Desipramine" value="Yes" id="reduction_symptoms_Desipramine_yes"></td>
                                                     <td><label class="radio_tab_input_row" for="reduction_symptoms_Desipramine_yes">Yes</label></td>
-                                                    <td><input class="radio_tab_input_row" type="checkbox" name="reduction_symptoms_Desipramine_no" id="reduction_symptoms_Desipramine_no"></td>
+                                                    <td><input class="radio_tab_input_row" type="radio" name="reduction_symptoms_Desipramine" value="No" id="reduction_symptoms_Desipramine_no"></td>
                                                     <td><label class="radio_tab_input_row" for="reduction_symptoms_Desipramine_no">No</label></td>
                                                 </tr>                                                    
                                             </table>
@@ -1805,9 +1766,9 @@ and open the template in the editor.
                                         <td>
                                             <table>
                                                 <tr>
-                                                    <td><input class="radio_tab_input_row" type="checkbox" name="troubling_side_effects_Desipramine_yes" id="troubling_side_effects_Desipramine_yes"></td>
+                                                    <td><input class="radio_tab_input_row" type="radio" name="troubling_side_effects_Desipramine" value="Yes" id="troubling_side_effects_Desipramine_yes"></td>
                                                     <td><label class="radio_tab_input_row" for="troubling_side_effects_Desipramine_yes">Yes</label></td>
-                                                    <td><input class="radio_tab_input_row" type="checkbox" name="troubling_side_effects_Desipramine_no" id="troubling_side_effects_Desipramine_no"></td>
+                                                    <td><input class="radio_tab_input_row" type="radio" name="troubling_side_effects_Desipramine" value="No" id="troubling_side_effects_Desipramine_no"></td>
                                                     <td><label class="radio_tab_input_row" for="troubling_side_effects_Desipramine_no">No</label></td>
                                                 </tr>                                                    
                                             </table>
@@ -1818,18 +1779,18 @@ and open the template in the editor.
                                         <td>
                                             <table>
                                                 <tr>
-                                                    <td><input class="tab_input_row" type="number" name="dose_Trimipramine" id="dose_Trimipramine"></td>
+                                                    <td><input class="tab_input_row" type="number" name="dose_Trimipramine" id="dose_Trimipramine" min="0"></td>
                                                     <td><label class="tab_input_row" for="dose_Trimipramine">mg</label></td>
                                                 </tr>                                                    
                                             </table>
                                         </td>                                                
-                                        <td><input class="tab_input_row" type="number" name="weeks_Trimipramine" id="weeks_Trimipramine"></td>
+                                        <td><input class="tab_input_row" type="number" name="weeks_Trimipramine" id="weeks_Trimipramine" min="0"></td>
                                         <td>
                                             <table>
                                                 <tr>
-                                                    <td><input class="radio_tab_input_row" type="checkbox" name="reduction_symptoms_Trimipramine_yes" id="reduction_symptoms_Trimipramine_yes"></td>
+                                                    <td><input class="radio_tab_input_row" type="radio" name="reduction_symptoms_Trimipramine" value="Yes" id="reduction_symptoms_Trimipramine_yes"></td>
                                                     <td><label class="radio_tab_input_row" for="reduction_symptoms_Trimipramine_yes">Yes</label></td>
-                                                    <td><input class="radio_tab_input_row" type="checkbox" name="reduction_symptoms_Trimipramine_no" id="reduction_symptoms_Trimipramine_no"></td>
+                                                    <td><input class="radio_tab_input_row" type="radio" name="reduction_symptoms_Trimipramine" value="No" id="reduction_symptoms_Trimipramine_no"></td>
                                                     <td><label class="radio_tab_input_row" for="reduction_symptoms_Trimipramine_no">No</label></td>
                                                 </tr>                                                    
                                             </table>
@@ -1837,9 +1798,9 @@ and open the template in the editor.
                                         <td>
                                             <table>
                                                 <tr>
-                                                    <td><input class="radio_tab_input_row" type="checkbox" name="troubling_side_effects_Trimipramine_yes" id="troubling_side_effects_Trimipramine_yes"></td>
+                                                    <td><input class="radio_tab_input_row" type="radio" name="troubling_side_effects_Trimipramine" value="Yes" id="troubling_side_effects_Trimipramine_yes"></td>
                                                     <td><label class="radio_tab_input_row" for="troubling_side_effects_Trimipramine_yes">Yes</label></td>
-                                                    <td><input class="radio_tab_input_row" type="checkbox" name="troubling_side_effects_Trimipramine_no" id="troubling_side_effects_Trimipramine_no"></td>
+                                                    <td><input class="radio_tab_input_row" type="radio" name="troubling_side_effects_Trimipramine" value="No" id="troubling_side_effects_Trimipramine_no"></td>
                                                     <td><label class="radio_tab_input_row" for="troubling_side_effects_Trimipramine_no">No</label></td>
                                                 </tr>                                                    
                                             </table>
@@ -1850,18 +1811,18 @@ and open the template in the editor.
                                         <td>
                                             <table>
                                                 <tr>
-                                                    <td><input class="tab_input_row" type="number" name="dose_Clomipramine" id="dose_Clomipramine"></td>
+                                                    <td><input class="tab_input_row" type="number" name="dose_Clomipramine" id="dose_Clomipramine" min="0"></td>
                                                     <td><label class="tab_input_row" for="dose_Clomipramine">mg</label></td>
                                                 </tr>                                                    
                                             </table>
                                         </td>                                                
-                                        <td><input class="tab_input_row" type="number" name="weeks_Clomipramine" id="weeks_Clomipramine"></td>
+                                        <td><input class="tab_input_row" type="number" name="weeks_Clomipramine" id="weeks_Clomipramine" min="0"></td>
                                         <td>
                                             <table>
                                                 <tr>
-                                                    <td><input class="radio_tab_input_row" type="checkbox" name="reduction_symptoms_Clomipramine_yes" id="reduction_symptoms_Clomipramine_yes"></td>
+                                                    <td><input class="radio_tab_input_row" type="radio" name="reduction_symptoms_Clomipramine" value="Yes" id="reduction_symptoms_Clomipramine_yes"></td>
                                                     <td><label class="radio_tab_input_row" for="reduction_symptoms_Clomipramine_yes">Yes</label></td>
-                                                    <td><input class="radio_tab_input_row" type="checkbox" name="reduction_symptoms_Clomipramine_no" id="reduction_symptoms_Clomipramine_no"></td>
+                                                    <td><input class="radio_tab_input_row" type="radio" name="reduction_symptoms_Clomipramine" value="No" id="reduction_symptoms_Clomipramine_no"></td>
                                                     <td><label class="radio_tab_input_row" for="reduction_symptoms_Clomipramine_no">No</label></td>
                                                 </tr>                                                    
                                             </table>
@@ -1869,9 +1830,9 @@ and open the template in the editor.
                                         <td>
                                             <table>
                                                 <tr>
-                                                    <td><input class="radio_tab_input_row" type="checkbox" name="troubling_side_effects_Clomipramine_yes" id="troubling_side_effects_Clomipramine_yes"></td>
+                                                    <td><input class="radio_tab_input_row" type="radio" name="troubling_side_effects_Clomipramine" value="Yes" id="troubling_side_effects_Clomipramine_yes"></td>
                                                     <td><label class="radio_tab_input_row" for="troubling_side_effects_Clomipramine_yes">Yes</label></td>
-                                                    <td><input class="radio_tab_input_row" type="checkbox" name="troubling_side_effects_Clomipramine_no" id="troubling_side_effects_Clomipramine_no"></td>
+                                                    <td><input class="radio_tab_input_row" type="radio" name="troubling_side_effects_Clomipramine" value="No" id="troubling_side_effects_Clomipramine_no"></td>
                                                     <td><label class="radio_tab_input_row" for="troubling_side_effects_Clomipramine_no">No</label></td>
                                                 </tr>                                                    
                                             </table>
@@ -1882,18 +1843,18 @@ and open the template in the editor.
                                         <td>
                                             <table>
                                                 <tr>
-                                                    <td><input class="tab_input_row" type="number" name="dose_Maprotilene" id="dose_Maprotilene"></td>
+                                                    <td><input class="tab_input_row" type="number" name="dose_Maprotilene" id="dose_Maprotilene" min="0"></td>
                                                     <td><label class="tab_input_row" for="dose_Maprotilene">mg</label></td>
                                                 </tr>                                                    
                                             </table>
                                         </td>                                                
-                                        <td><input class="tab_input_row" type="number" name="weeks_Maprotilene" id="weeks_Maprotilene"></td>
+                                        <td><input class="tab_input_row" type="number" name="weeks_Maprotilene" id="weeks_Maprotilene" min="0"></td>
                                         <td>
                                             <table>
                                                 <tr>
-                                                    <td><input class="radio_tab_input_row" type="checkbox" name="reduction_symptoms_Maprotilene_yes" id="reduction_symptoms_Maprotilene_yes"></td>
+                                                    <td><input class="radio_tab_input_row" type="radio" name="reduction_symptoms_Maprotilene" value="Yes" id="reduction_symptoms_Maprotilene_yes"></td>
                                                     <td><label class="radio_tab_input_row" for="reduction_symptoms_Maprotilene_yes">Yes</label></td>
-                                                    <td><input class="radio_tab_input_row" type="checkbox" name="reduction_symptoms_Maprotilene_no" id="reduction_symptoms_Maprotilene_no"></td>
+                                                    <td><input class="radio_tab_input_row" type="radio" name="reduction_symptoms_Maprotilene" value="No" id="reduction_symptoms_Maprotilene_no"></td>
                                                     <td><label class="radio_tab_input_row" for="reduction_symptoms_Maprotilene_no">No</label></td>
                                                 </tr>                                                    
                                             </table>
@@ -1901,9 +1862,9 @@ and open the template in the editor.
                                         <td>
                                             <table>
                                                 <tr>
-                                                    <td><input class="radio_tab_input_row" type="checkbox" name="troubling_side_effects_Maprotilene_yes" id="troubling_side_effects_Maprotilene_yes"></td>
+                                                    <td><input class="radio_tab_input_row" type="radio" name="troubling_side_effects_Maprotilene" value="Yes" id="troubling_side_effects_Maprotilene_yes"></td>
                                                     <td><label class="radio_tab_input_row" for="troubling_side_effects_Maprotilene_yes">Yes</label></td>
-                                                    <td><input class="radio_tab_input_row" type="checkbox" name="troubling_side_effects_Maprotilene_no" id="troubling_side_effects_Maprotilene_no"></td>
+                                                    <td><input class="radio_tab_input_row" type="radio" name="troubling_side_effects_Maprotilene" value="No" id="troubling_side_effects_Maprotilene_no"></td>
                                                     <td><label class="radio_tab_input_row" for="troubling_side_effects_Maprotilene_no">No</label></td>
                                                 </tr>                                                    
                                             </table>
@@ -1914,18 +1875,18 @@ and open the template in the editor.
                                         <td>
                                             <table>
                                                 <tr>
-                                                    <td><input class="tab_input_row" type="number" name="dose_Doxepin" id="dose_Doxepin"></td>
+                                                    <td><input class="tab_input_row" type="number" name="dose_Doxepin" id="dose_Doxepin" min="0"></td>
                                                     <td><label class="tab_input_row" for="dose_Doxepin">mg</label></td>
                                                 </tr>                                                    
                                             </table>
                                         </td>                                                
-                                        <td><input class="tab_input_row" type="number" name="weeks_Doxepin" id="weeks_Doxepin"></td>
+                                        <td><input class="tab_input_row" type="number" name="weeks_Doxepin" id="weeks_Doxepin" min="0"></td>
                                         <td>
                                             <table>
                                                 <tr>
-                                                    <td><input class="radio_tab_input_row" type="checkbox" name="reduction_symptoms_Doxepin_yes" id="reduction_symptoms_Doxepin_yes"></td>
+                                                    <td><input class="radio_tab_input_row" type="radio" name="reduction_symptoms_Doxepin" value="Yes" id="reduction_symptoms_Doxepin_yes"></td>
                                                     <td><label class="radio_tab_input_row" for="reduction_symptoms_Doxepin_yes">Yes</label></td>
-                                                    <td><input class="radio_tab_input_row" type="checkbox" name="reduction_symptoms_Doxepin_no" id="reduction_symptoms_Doxepin_no"></td>
+                                                    <td><input class="radio_tab_input_row" type="radio" name="reduction_symptoms_Doxepin" value="No" id="reduction_symptoms_Doxepin_no"></td>
                                                     <td><label class="radio_tab_input_row" for="reduction_symptoms_Doxepin_no">No</label></td>
                                                 </tr>                                                    
                                             </table>
@@ -1933,9 +1894,9 @@ and open the template in the editor.
                                         <td>
                                             <table>
                                                 <tr>
-                                                    <td><input class="radio_tab_input_row" type="checkbox" name="troubling_side_effects_Doxepin_yes" id="troubling_side_effects_Doxepin_yes"></td>
+                                                    <td><input class="radio_tab_input_row" type="radio" name="troubling_side_effects_Doxepin" value="Yes" id="troubling_side_effects_Doxepin_yes"></td>
                                                     <td><label class="radio_tab_input_row" for="troubling_side_effects_Doxepin_yes">Yes</label></td>
-                                                    <td><input class="radio_tab_input_row" type="checkbox" name="troubling_side_effects_Doxepin_no" id="troubling_side_effects_Doxepin_no"></td>
+                                                    <td><input class="radio_tab_input_row" type="radio" name="troubling_side_effects_Doxepin" value="No" id="troubling_side_effects_Doxepin_no"></td>
                                                     <td><label class="radio_tab_input_row" for="troubling_side_effects_Doxepin_no">No</label></td>
                                                 </tr>                                                    
                                             </table>
@@ -1946,18 +1907,18 @@ and open the template in the editor.
                                         <td>
                                             <table>
                                                 <tr>
-                                                    <td><input class="tab_input_row" type="number" name="dose_Nomifensine" id="dose_Nomifensine"></td>
+                                                    <td><input class="tab_input_row" type="number" name="dose_Nomifensine" id="dose_Nomifensine" min="0"></td>
                                                     <td><label class="tab_input_row" for="dose_Nomifensine">mg</label></td>
                                                 </tr>                                                    
                                             </table>
                                         </td>                                                
-                                        <td><input class="tab_input_row" type="number" name="weeks_Doxepin" id="weeks_Nomifensine"></td>
+                                        <td><input class="tab_input_row" type="number" name="weeks_Doxepin" id="weeks_Nomifensine" min="0"></td>
                                         <td>
                                             <table>
                                                 <tr>
-                                                    <td><input class="radio_tab_input_row" type="checkbox" name="reduction_symptoms_Nomifensine_yes" id="reduction_symptoms_Nomifensine_yes"></td>
+                                                    <td><input class="radio_tab_input_row" type="radio" name="reduction_symptoms_Nomifensine" value="Yes" id="reduction_symptoms_Nomifensine_yes"></td>
                                                     <td><label class="radio_tab_input_row" for="reduction_symptoms_Nomifensine_yes">Yes</label></td>
-                                                    <td><input class="radio_tab_input_row" type="checkbox" name="reduction_symptoms_Nomifensine_no" id="reduction_symptoms_Nomifensine_no"></td>
+                                                    <td><input class="radio_tab_input_row" type="radio" name="reduction_symptoms_Nomifensine" value="No" id="reduction_symptoms_Nomifensine_no"></td>
                                                     <td><label class="radio_tab_input_row" for="reduction_symptoms_Nomifensine_no">No</label></td>
                                                 </tr>                                                    
                                             </table>
@@ -1965,9 +1926,9 @@ and open the template in the editor.
                                         <td>
                                             <table>
                                                 <tr>
-                                                    <td><input class="radio_tab_input_row" type="checkbox" name="troubling_side_effects_Nomifensine_yes" id="troubling_side_effects_Nomifensine_yes"></td>
+                                                    <td><input class="radio_tab_input_row" type="radio" name="troubling_side_effects_Nomifensine" value="Yes" id="troubling_side_effects_Nomifensine_yes"></td>
                                                     <td><label class="radio_tab_input_row" for="troubling_side_effects_Nomifensine_yes">Yes</label></td>
-                                                    <td><input class="radio_tab_input_row" type="checkbox" name="troubling_side_effects_Nomifensine_no" id="troubling_side_effects_Nomifensine_no"></td>
+                                                    <td><input class="radio_tab_input_row" type="radio" name="troubling_side_effects_Nomifensine" value="No" id="troubling_side_effects_Nomifensine_no"></td>
                                                     <td><label class="radio_tab_input_row" for="troubling_side_effects_Nomifensine_no">No</label></td>
                                                 </tr>                                                    
                                             </table>
@@ -1978,18 +1939,18 @@ and open the template in the editor.
                                         <td>
                                             <table>
                                                 <tr>
-                                                    <td><input class="tab_input_row" type="number" name="dose_Isocarboxazid" id="dose_Isocarboxazid"></td>
+                                                    <td><input class="tab_input_row" type="number" name="dose_Isocarboxazid" id="dose_Isocarboxazid" min="0"></td>
                                                     <td><label class="tab_input_row" for="dose_Isocarboxazid">mg</label></td>
                                                 </tr>                                                    
                                             </table>
                                         </td>                                                
-                                        <td><input class="tab_input_row" type="number" name="weeks_Isocarboxazid" id="weeks_Isocarboxazid"></td>
+                                        <td><input class="tab_input_row" type="number" name="weeks_Isocarboxazid" id="weeks_Isocarboxazid" min="0"></td>
                                         <td>
                                             <table>
                                                 <tr>
-                                                    <td><input class="radio_tab_input_row" type="checkbox" name="reduction_symptoms_Isocarboxazid_yes" id="reduction_symptoms_Isocarboxazid_yes"></td>
+                                                    <td><input class="radio_tab_input_row" type="radio" name="reduction_symptoms_Isocarboxazid" value="Yes" id="reduction_symptoms_Isocarboxazid_yes"></td>
                                                     <td><label class="radio_tab_input_row" for="reduction_symptoms_Isocarboxazid_yes">Yes</label></td>
-                                                    <td><input class="radio_tab_input_row" type="checkbox" name="reduction_symptoms_Isocarboxazid_no" id="reduction_symptoms_Isocarboxazid_no"></td>
+                                                    <td><input class="radio_tab_input_row" type="radio" name="reduction_symptoms_Isocarboxazid" value="No" id="reduction_symptoms_Isocarboxazid_no"></td>
                                                     <td><label class="radio_tab_input_row" for="reduction_symptoms_Isocarboxazid_no">No</label></td>
                                                 </tr>                                                    
                                             </table>
@@ -1997,9 +1958,9 @@ and open the template in the editor.
                                         <td>
                                             <table>
                                                 <tr>
-                                                    <td><input class="radio_tab_input_row" type="checkbox" name="troubling_side_effects_Isocarboxazid_yes" id="troubling_side_effects_Isocarboxazid_yes"></td>
+                                                    <td><input class="radio_tab_input_row" type="radio" name="troubling_side_effects_Isocarboxazid" value="Yes" id="troubling_side_effects_Isocarboxazid_yes"></td>
                                                     <td><label class="radio_tab_input_row" for="troubling_side_effects_Isocarboxazid_yes">Yes</label></td>
-                                                    <td><input class="radio_tab_input_row" type="checkbox" name="troubling_side_effects_Isocarboxazid_no" id="troubling_side_effects_Isocarboxazid_no"></td>
+                                                    <td><input class="radio_tab_input_row" type="radio" name="troubling_side_effects_Isocarboxazid" value="No" id="troubling_side_effects_Isocarboxazid_no"></td>
                                                     <td><label class="radio_tab_input_row" for="troubling_side_effects_Isocarboxazid_no">No</label></td>
                                                 </tr>                                                    
                                             </table>
@@ -2010,18 +1971,18 @@ and open the template in the editor.
                                         <td>
                                             <table>
                                                 <tr>
-                                                    <td><input class="tab_input_row" type="number" name="dose_Tranylcypromine" id="dose_Tranylcypromine"></td>
+                                                    <td><input class="tab_input_row" type="number" name="dose_Tranylcypromine" id="dose_Tranylcypromine" min="0"></td>
                                                     <td><label class="tab_input_row" for="dose_Tranylcypromine">mg</label></td>
                                                 </tr>                                                    
                                             </table>
                                         </td>                                                
-                                        <td><input class="tab_input_row" type="number" name="weeks_Tranylcypromine" id="weeks_Tranylcypromine"></td>
+                                        <td><input class="tab_input_row" type="number" name="weeks_Tranylcypromine" id="weeks_Tranylcypromine" min="0"></td>
                                         <td>
                                             <table>
                                                 <tr>
-                                                    <td><input class="radio_tab_input_row" type="checkbox" name="reduction_symptoms_Tranylcypromine_yes" id="reduction_symptoms_Tranylcypromine_yes"></td>
+                                                    <td><input class="radio_tab_input_row" type="radio" name="reduction_symptoms_Tranylcypromine" value="Yes" id="reduction_symptoms_Tranylcypromine_yes"></td>
                                                     <td><label class="radio_tab_input_row" for="reduction_symptoms_Tranylcypromine_yes">Yes</label></td>
-                                                    <td><input class="radio_tab_input_row" type="checkbox" name="reduction_symptoms_Tranylcypromine_no" id="reduction_symptoms_Tranylcypromine_no"></td>
+                                                    <td><input class="radio_tab_input_row" type="radio" name="reduction_symptoms_Tranylcypromine" value="No" id="reduction_symptoms_Tranylcypromine_no"></td>
                                                     <td><label class="radio_tab_input_row" for="reduction_symptoms_Tranylcypromine_no">No</label></td>
                                                 </tr>                                                    
                                             </table>
@@ -2029,9 +1990,9 @@ and open the template in the editor.
                                         <td>
                                             <table>
                                                 <tr>
-                                                    <td><input class="radio_tab_input_row" type="checkbox" name="troubling_side_effects_Tranylcypromine_yes" id="troubling_side_effects_Tranylcypromine_yes"></td>
+                                                    <td><input class="radio_tab_input_row" type="radio" name="troubling_side_effects_Tranylcypromine" value="Yes" id="troubling_side_effects_Tranylcypromine_yes"></td>
                                                     <td><label class="radio_tab_input_row" for="troubling_side_effects_Tranylcypromine_yes">Yes</label></td>
-                                                    <td><input class="radio_tab_input_row" type="checkbox" name="troubling_side_effects_Tranylcypromine_no" id="troubling_side_effects_Tranylcypromine_no"></td>
+                                                    <td><input class="radio_tab_input_row" type="radio" name="troubling_side_effects_Tranylcypromine" value="No" id="troubling_side_effects_Tranylcypromine_no"></td>
                                                     <td><label class="radio_tab_input_row" for="troubling_side_effects_Tranylcypromine_no">No</label></td>
                                                 </tr>                                                    
                                             </table>
@@ -2042,18 +2003,18 @@ and open the template in the editor.
                                         <td>
                                             <table>
                                                 <tr>
-                                                    <td><input class="tab_input_row" type="number" name="dose_Phenelzine" id="dose_Phenelzine"></td>
+                                                    <td><input class="tab_input_row" type="number" name="dose_Phenelzine" id="dose_Phenelzine" min="0"></td>
                                                     <td><label class="tab_input_row" for="dose_Phenelzine">mg</label></td>
                                                 </tr>                                                    
                                             </table>
                                         </td>                                                
-                                        <td><input class="tab_input_row" type="number" name="weeks_Phenelzine" id="weeks_Phenelzine"></td>
+                                        <td><input class="tab_input_row" type="number" name="weeks_Phenelzine" id="weeks_Phenelzine" min="0"></td>
                                         <td>
                                             <table>
                                                 <tr>
-                                                    <td><input class="radio_tab_input_row" type="checkbox" name="reduction_symptoms_Phenelzine_yes" id="reduction_symptoms_Phenelzine_yes"></td>
+                                                    <td><input class="radio_tab_input_row" type="radio" name="reduction_symptoms_Phenelzine" value="Yes" id="reduction_symptoms_Phenelzine_yes"></td>
                                                     <td><label class="radio_tab_input_row" for="reduction_symptoms_Phenelzine_yes">Yes</label></td>
-                                                    <td><input class="radio_tab_input_row" type="checkbox" name="reduction_symptoms_Phenelzine_no" id="reduction_symptoms_Phenelzine_no"></td>
+                                                    <td><input class="radio_tab_input_row" type="radio" name="reduction_symptoms_Phenelzine" value="No" id="reduction_symptoms_Phenelzine_no"></td>
                                                     <td><label class="radio_tab_input_row" for="reduction_symptoms_Phenelzine_no">No</label></td>
                                                 </tr>                                                    
                                             </table>
@@ -2061,9 +2022,9 @@ and open the template in the editor.
                                         <td>
                                             <table>
                                                 <tr>
-                                                    <td><input class="radio_tab_input_row" type="checkbox" name="troubling_side_effects_Phenelzine_yes" id="troubling_side_effects_Phenelzine_yes"></td>
+                                                    <td><input class="radio_tab_input_row" type="radio" name="troubling_side_effects_Phenelzine" value="Yes" id="troubling_side_effects_Phenelzine_yes"></td>
                                                     <td><label class="radio_tab_input_row" for="troubling_side_effects_Phenelzine_yes">Yes</label></td>
-                                                    <td><input class="radio_tab_input_row" type="checkbox" name="troubling_side_effects_Phenelzine_no" id="troubling_side_effects_Phenelzine_no"></td>
+                                                    <td><input class="radio_tab_input_row" type="radio" name="troubling_side_effects_Phenelzine" value="No" id="troubling_side_effects_Phenelzine_no"></td>
                                                     <td><label class="radio_tab_input_row" for="troubling_side_effects_Phenelzine_no">No</label></td>
                                                 </tr>                                                    
                                             </table>
@@ -2074,18 +2035,18 @@ and open the template in the editor.
                                         <td>
                                             <table>
                                                 <tr>
-                                                    <td><input class="tab_input_row" type="number" name="dose_Trazodone" id="dose_Trazodone"></td>
+                                                    <td><input class="tab_input_row" type="number" name="dose_Trazodone" id="dose_Trazodone" min="0"></td>
                                                     <td><label class="tab_input_row" for="dose_Trazodone">mg</label></td>
                                                 </tr>                                                    
                                             </table>
                                         </td>                                                
-                                        <td><input class="tab_input_row" type="number" name="weeks_Trazodone" id="weeks_Trazodone"></td>
+                                        <td><input class="tab_input_row" type="number" name="weeks_Trazodone" id="weeks_Trazodone" min="0"></td>
                                         <td>
                                             <table>
                                                 <tr>
-                                                    <td><input class="radio_tab_input_row" type="checkbox" name="reduction_symptoms_Trazodone_yes" id="reduction_symptoms_Trazodone_yes"></td>
+                                                    <td><input class="radio_tab_input_row" type="radio" name="reduction_symptoms_Trazodone" value="Yes" id="reduction_symptoms_Trazodone_yes"></td>
                                                     <td><label class="radio_tab_input_row" for="reduction_symptoms_Trazodone_yes">Yes</label></td>
-                                                    <td><input class="radio_tab_input_row" type="checkbox" name="reduction_symptoms_Trazodone_no" id="reduction_symptoms_Trazodone_no"></td>
+                                                    <td><input class="radio_tab_input_row" type="radio" name="reduction_symptoms_Trazodone" value="No" id="reduction_symptoms_Trazodone_no"></td>
                                                     <td><label class="radio_tab_input_row" for="reduction_symptoms_Trazodone_no">No</label></td>
                                                 </tr>                                                    
                                             </table>
@@ -2093,9 +2054,9 @@ and open the template in the editor.
                                         <td>
                                             <table>
                                                 <tr>
-                                                    <td><input class="radio_tab_input_row" type="checkbox" name="troubling_side_effects_Trazodone_yes" id="troubling_side_effects_Trazodone_yes"></td>
+                                                    <td><input class="radio_tab_input_row" type="radio" name="troubling_side_effects_Trazodone" value="Yes" id="troubling_side_effects_Trazodone_yes"></td>
                                                     <td><label class="radio_tab_input_row" for="troubling_side_effects_Trazodone_yes">Yes</label></td>
-                                                    <td><input class="radio_tab_input_row" type="checkbox" name="troubling_side_effects_Trazodone_no" id="troubling_side_effects_Trazodone_no"></td>
+                                                    <td><input class="radio_tab_input_row" type="radio" name="troubling_side_effects_Trazodone" value="No" id="troubling_side_effects_Trazodone_no"></td>
                                                     <td><label class="radio_tab_input_row" for="troubling_side_effects_Trazodone_no">No</label></td>
                                                 </tr>                                                    
                                             </table>
@@ -2106,18 +2067,18 @@ and open the template in the editor.
                                         <td>
                                             <table>
                                                 <tr>
-                                                    <td><input class="tab_input_row" type="number" name="dose_Nefazodone" id="dose_Nefazodone"></td>
+                                                    <td><input class="tab_input_row" type="number" name="dose_Nefazodone" id="dose_Nefazodone" min="0"></td>
                                                     <td><label class="tab_input_row" for="dose_Nefazodone">mg</label></td>
                                                 </tr>                                                    
                                             </table>
                                         </td>                                                
-                                        <td><input class="tab_input_row" type="number" name="weeks_Nefazodone" id="weeks_Nefazodone"></td>
+                                        <td><input class="tab_input_row" type="number" name="weeks_Nefazodone" id="weeks_Nefazodone" min="0"></td>
                                         <td>
                                             <table>
                                                 <tr>
-                                                    <td><input class="radio_tab_input_row" type="checkbox" name="reduction_symptoms_Nefazodone_yes" id="reduction_symptoms_Nefazodone_yes"></td>
+                                                    <td><input class="radio_tab_input_row" type="radio" name="reduction_symptoms_Nefazodone" value="Yes" id="reduction_symptoms_Nefazodone_yes"></td>
                                                     <td><label class="radio_tab_input_row" for="reduction_symptoms_Nefazodone_yes">Yes</label></td>
-                                                    <td><input class="radio_tab_input_row" type="checkbox" name="reduction_symptoms_Nefazodone_no" id="reduction_symptoms_Nefazodone_no"></td>
+                                                    <td><input class="radio_tab_input_row" type="radio" name="reduction_symptoms_Nefazodone" value="No" id="reduction_symptoms_Nefazodone_no"></td>
                                                     <td><label class="radio_tab_input_row" for="reduction_symptoms_Nefazodone_no">No</label></td>
                                                 </tr>                                                    
                                             </table>
@@ -2125,9 +2086,9 @@ and open the template in the editor.
                                         <td>
                                             <table>
                                                 <tr>
-                                                    <td><input class="radio_tab_input_row" type="checkbox" name="troubling_side_effects_Nefazodone_yes" id="troubling_side_effects_Nefazodone_yes"></td>
+                                                    <td><input class="radio_tab_input_row" type="radio" name="troubling_side_effects_Nefazodone" value="Yes" id="troubling_side_effects_Nefazodone_yes"></td>
                                                     <td><label class="radio_tab_input_row" for="troubling_side_effects_Nefazodone_yes">Yes</label></td>
-                                                    <td><input class="radio_tab_input_row" type="checkbox" name="troubling_side_effects_Nefazodone_no" id="troubling_side_effects_Nefazodone_no"></td>
+                                                    <td><input class="radio_tab_input_row" type="radio" name="troubling_side_effects_Nefazodone" value="No" id="troubling_side_effects_Nefazodone_no"></td>
                                                     <td><label class="radio_tab_input_row" for="troubling_side_effects_Nefazodone_no">No</label></td>
                                                 </tr>                                                    
                                             </table>
@@ -2138,18 +2099,18 @@ and open the template in the editor.
                                         <td>
                                             <table>
                                                 <tr>
-                                                    <td><input class="tab_input_row" type="number" name="dose_Selegiline" id="dose_Selegiline"></td>
+                                                    <td><input class="tab_input_row" type="number" name="dose_Selegiline" id="dose_Selegiline" min="0"></td>
                                                     <td><label class="tab_input_row" for="dose_Selegiline">mg</label></td>
                                                 </tr>                                                    
                                             </table>
                                         </td>                                                
-                                        <td><input class="tab_input_row" type="number" name="weeks_Selegiline" id="weeks_Selegiline"></td>
+                                        <td><input class="tab_input_row" type="number" name="weeks_Selegiline" id="weeks_Selegiline" min="0"></td>
                                         <td>
                                             <table>
                                                 <tr>
-                                                    <td><input class="radio_tab_input_row" type="checkbox" name="reduction_symptoms_Selegiline_yes" id="reduction_symptoms_Selegiline_yes"></td>
+                                                    <td><input class="radio_tab_input_row" type="radio" name="reduction_symptoms_Selegiline" value="Yes" id="reduction_symptoms_Selegiline_yes"></td>
                                                     <td><label class="radio_tab_input_row" for="reduction_symptoms_Selegiline_yes">Yes</label></td>
-                                                    <td><input class="radio_tab_input_row" type="checkbox" name="reduction_symptoms_Selegiline_no" id="reduction_symptoms_Selegiline_no"></td>
+                                                    <td><input class="radio_tab_input_row" type="radio" name="reduction_symptoms_Selegiline" value="No" id="reduction_symptoms_Selegiline_no"></td>
                                                     <td><label class="radio_tab_input_row" for="reduction_symptoms_Selegiline_no">No</label></td>
                                                 </tr>                                                    
                                             </table>
@@ -2157,15 +2118,14 @@ and open the template in the editor.
                                         <td>
                                             <table>
                                                 <tr>
-                                                    <td><input class="radio_tab_input_row" type="checkbox" name="troubling_side_effects_Selegiline_yes" id="troubling_side_effects_Selegiline_yes"></td>
+                                                    <td><input class="radio_tab_input_row" type="radio" name="troubling_side_effects_Selegiline" value="Yes" id="troubling_side_effects_Selegiline_yes"></td>
                                                     <td><label class="radio_tab_input_row" for="troubling_side_effects_Selegiline_yes">Yes</label></td>
-                                                    <td><input class="radio_tab_input_row" type="checkbox" name="troubling_side_effects_Selegiline_no" id="troubling_side_effects_Selegiline_no"></td>
+                                                    <td><input class="radio_tab_input_row" type="radio" name="troubling_side_effects_Selegiline" value="No" id="troubling_side_effects_Selegiline_no"></td>
                                                     <td><label class="radio_tab_input_row" for="troubling_side_effects_Selegiline_no">No</label></td>
                                                 </tr>                                                    
                                             </table>
                                         </td>                                            
                                     </tr>
-
                                 </table>
                             </div>
                         </div>
@@ -2187,7 +2147,7 @@ and open the template in the editor.
                                 <div class="columnForm_margin_trailer">
                                     <div class="pt">
                                         <label class="radio_tab_input_row_bold" for="DIAGNOSTIC_SCREENING_age">Age:</label>
-                                        <input type="number" name="DIAGNOSTIC_SCREENING_age" id="DIAGNOSTIC_SCREENING_age">
+                                        <input type="number" name="DIAGNOSTIC_SCREENING_age" id="DIAGNOSTIC_SCREENING_age" min="0">
                                     </div>
                                 </div>
                                 <div class="columnForm_margin_trailer">                                
@@ -2202,7 +2162,7 @@ and open the template in the editor.
                                 <div class="columnForm_margin_trailer">
                                     <div class="pt">
                                         <label class="radio_tab_input_row_bold" for="DIAGNOSTIC_SCREENING_date">Date:</label>
-                                        <input type="date" name="DIAGNOSTIC_SCREENING_date" id="DIAGNOSTIC_SCREENING_date">
+                                        <input type="date" name="DIAGNOSTIC_SCREENING_date" id="DIAGNOSTIC_SCREENING_date" placeholder="mm/dd/yyyy">
                                     </div>
                                 </div>
                             </div>
@@ -3153,7 +3113,7 @@ and open the template in the editor.
                                 <div class="columnForm_margin_trailer">
                                     <div class="pt">
                                         <label class="radio_tab_input_row" for="QUICK_date">Date:</label>
-                                        <input type="date" name="QUICK_date" id="QUICK_date">
+                                        <input type="date" name="QUICK_date" id="QUICK_date" placeholder="mm/dd/yyyy">
                                     </div>
                                 </div>
                             </div>

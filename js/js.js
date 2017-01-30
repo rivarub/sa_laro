@@ -13,3 +13,26 @@ $(document).ready(function () {
    		$('input[type=date]').mask("99/99/9999",{placeholder:"mm/dd/yyyy"});
 	});
 });
+
+//$(function () {
+//  $('input[type=date]').val("fgg");
+//});
+
+//var d = new Date();
+//document.getElementById("today_date").innerHTML = d.toDateString();
+
+$(document).ready(function() {
+    var date = new Date();
+
+    var day = date.getDate();
+    var month = date.getMonth() + 1;
+    var year = date.getFullYear();
+
+    if (month < 10) month = "0" + month;
+    if (day < 10) day = "0" + day;
+    
+    var today = month + "/" + day + "/" + year;
+    $("#today_date").attr("value", today);
+    $("#DIAGNOSTIC_SCREENING_date").attr("value", today);
+    $("#QUICK_date").attr("value", today);
+});
