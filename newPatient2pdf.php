@@ -149,11 +149,31 @@ $html .= '</tr>';
 foreach ($holovnyaky as $holovnyak) {
     $html .= "<tr><td>$holovnyak</td>";
     for($i = 0; $i < count($rodychi);$i++) {
-        $html .= '<td><input type="checkbox"></td>';
+//        $html .= '<td><input type="checkbox" ';
+        $html .= '<td>';
+//        $arr = explode(' ',trim($myvalue));
+//        $problem = $arr[0];
+//        $fieldName = $rodych.'_'.$problem;
+//        $fieldName = strtolower($rodychi[$i]).'_'.explode(' ',trim(strtolower($holovnyak)))[0];
+        $fieldName = $rodychi[$i].'_'.explode(' ',trim($holovnyak))[0];
+//        $html .= $fieldName;
+        if(isset($_POST[$fieldName])) {
+            $html .= '+';
+        } else {
+            $html .= '&nbsp;';
+        }
+        $html .= '</td>';
     }
     $html .= '</tr>';
 }
 $html .= '</table>';
+
+$html .= '<br><strong>Are you currently seeing a counselor or therapist?</strong> ';
+$html .= $_POST['currently_counselor_therapist'];
+$html .= '<br><strong>Are you having problems concentrating or problems remembering things?</strong> ';
+$html .= $_POST['problems_concentrating'];
+//echo $html;
+//$html .= var_dump($_POST);
 
 $mpdf->WriteHTML($html, 2);
 /*
