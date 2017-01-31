@@ -219,7 +219,7 @@ $html .= $_POST['exercise_each_week'];
 
 
 //$mpdf->AddPage();
-$html .= '<strong>UTSW Antidepressant Treatment History Evaluation</strong>';
+$html .= '<br><br><strong>UTSW Antidepressant Treatment History Evaluation</strong>';
 $html .= '<br>Have you taken any of the anti-depressant medications listed below? ';
 $html .= '<br>If yes, please indicated: 1) What dosage did you take? 2) How many weeks did you take the medication? 3) Did it result in 50% reduction of depressive symptoms? 4) Did you have any troubling side effects that made it difficult to take the medication? ';
 $html .= '<table border="1"><tr><th>Anti-Depressant Medication</th><th>Dose Taken</th><th>Weeks Taken</th><th>50% Reduction in<br> Symptoms</th><th>Troubling Side <br>Effects</th></tr>';
@@ -422,7 +422,7 @@ $html .= '</tr>';
 $html .= '</table>';
 
 //$mpdf->AddPage();
-$html .= '<strong>DIAGNOSTIC SCREENING QUESTIONNAIRE (DSQ)</strong>';
+$html .= '<br><br><strong>DIAGNOSTIC SCREENING QUESTIONNAIRE (DSQ)</strong>';
 $html .= '<br>Name: ';
 $html .= '<strong>'.$_POST['DIAGNOSTIC_SCREENING_name'].'</strong>';
 $html .= ' Age: ';
@@ -431,6 +431,137 @@ $html .= ' Gender: ';
 $html .= '<strong>'.$_POST['DIAGNOSTIC_SCREENING_gender'].'</strong>';
 $html .= ' Date: ';
 $html .= '<strong>'.$_POST['DIAGNOSTIC_SCREENING_date'].'</strong>';
+
+$html .= '<br><br>1. There have been times when I felt down, depressed, or sad for several weeks in a row: ';
+$html .= '<strong>'.$_POST['DIAGNOSTIC_felt_down'].'</strong>';
+
+$html .= '<br><br>2. There have been times when I lost interest or pleasure in things I usually enjoyed, and it lasted for several weeks in a row: ';
+$html .= '<strong>'.$_POST['DIAGNOSTIC_lost_interest'].'</strong>';
+
+$html .= '<br>If you answered YES to questions 1 or 2, when you felt that way did you also notice... ';
+$html .= '<br>Not feeling like eating...or the opposite, eating more than usual: ';
+$html .= '<strong>'.$_POST['DIAGNOSTIC_eating'].'</strong>';
+
+$html .= '<br>Not getting enough sleep...or the opposite, sleeping too much: ';
+$html .= '<strong>'.$_POST['DIAGNOSTIC_sleep'].'</strong>';
+
+$html .= '<br>Feeling restless and couldn\'t sit still...or the opposite, feeling slowed down: ';
+$html .= '<strong>'.$_POST['DIAGNOSTIC_restless'].'</strong>';
+
+$html .= '<br>Feeling low in energy or getting tired for no reason: ';
+$html .= '<strong>'.$_POST['DIAGNOSTIC_low_energy'].'</strong>';
+
+$html .= '<br>Feeling guilty most of the time or feeling worthless: ';
+$html .= '<strong>'.$_POST['DIAGNOSTIC_guilty'].'</strong>';
+
+$html .= '<br>Having trouble concentrating or trouble making decisions: ';
+$html .= '<strong>'.$_POST['DIAGNOSTIC_trouble_concentrating'].'</strong>';
+
+$html .= '<br>Thinking that life is not worth living or thinking about dying: ';
+$html .= '<strong>'.$_POST['DIAGNOSTIC_dying'].'</strong>';
+
+$html .= '<br><br>Have you been feeling this way the last 2 weeks? ';
+$html .= '<strong>'.$_POST['DIAGNOSTIC_last_2_weeks'].'</strong>';
+$html .= '<br>If YES, how long have you felt this way? ';
+$html .= '<strong>'.$_POST['DIAGNOSTIC_2_weeks_how_long'].'</strong>';
+
+$html .= '<br><br>Have you felt this way before? ';
+$html .= '<strong>'.$_POST['DIAGNOSTIC_before'].'</strong>';
+$html .= '<br>If YES, how many times have you felt this way? ';
+$html .= '<strong>'.$_POST['DIAGNOSTIC_before_times'].'</strong>';
+$html .= '<br>How old were you when you first felt this way? ';
+$html .= '<strong>'.$_POST['DIAGNOSTIC_old'].'</strong>';
+
+$html .= '<br><br>3. I have had a period of six months or more when I worried excessively and found it difficult to control my anxiety: ';
+$html .= '<strong>'.$_POST['DIAGNOSTIC_3'].'</strong>';
+
+$html .= '<br>If you answered YES to question 3 please answer the following questions.<br>
+                                        More days than not during the last 6 months: ';
+$html .= '<br>I worried excessively and found it difficult to control my anxiety: ';
+$html .= '<strong>'.$_POST['DIAGNOSTIC_3_control'].'</strong>';
+
+$html .= '<br>I felt tense or keyed-up, or felt restless: ';
+$html .= '<strong>'.$_POST['DIAGNOSTIC_3_tense'].'</strong>';
+
+$html .= '<br>I have had trouble concentrating or my mind goes blank at times: ';
+$html .= '<strong>'.$_POST['DIAGNOSTIC_3_concentrating'].'</strong>';
+
+$html .= '<br>I have felt easily annoyed or irritable: ';
+$html .= '<strong>'.$_POST['DIAGNOSTIC_3_annoyed'].'</strong>';
+
+$html .= '<br>I have had tense or sore muscles: ';
+$html .= '<strong>'.$_POST['DIAGNOSTIC_3_muscles'].'</strong>';
+
+$html .= '<br>I have not been getting enough sleep: ';
+$html .= '<strong>'.$_POST['DIAGNOSTIC_3_sleep'].'</strong>';
+
+$html .= '<br><br>4. I have had a panic attack when I suddenly felt frightened or anxious or suddenly developed a lot of physical symptoms: ';
+$html .= '<strong>'.$_POST['DIAGNOSTIC_4'].'</strong>';
+$html .= '<br>(The symptoms may have included some of the following:<br>heart pounding or racing, sweating, shaking or trembling, shortness of breath, choking feeling, chest pain, upset stomach, feeling dizzy or faint, feeling spaced-out, fear of losing control, fear of dying, numbness or tingling, chills or hot flushes.) ';
+$html .= '<br>If you answered YES to question 4 please answer the following questions.<br>
+                                        The month after this happened did you: ';
+$html .= '<br>I had a lot of concern about this happening again. (For example you may have been concerned that if it happened again you might lose control, or have a heart attack.): ';
+$html .= '<strong>'.$_POST['DIAGNOSTIC_4_concern'].'</strong>';
+
+$html .= '<br>I changed what I was doing or where I was going because I was concerned that this might happen again: ';
+$html .= '<strong>'.$_POST['DIAGNOSTIC_4_again'].'</strong>';
+
+$html .= '<br>This only happens to me in certain situations. Some of the situations are things such as:<br>seeing a snake or a dog; being in a storm; being in high places; going swimming; seeing blood; being in places that are small and enclosed; driving the car; having to talk or perform in front of people; going to crowded places; etc.: ';
+$html .= '<strong>'.$_POST['DIAGNOSTIC_4_certain_situations'].'</strong>';
+
+$html .= '<br><br>5. I have been bothered by thoughts that did not make any sense and kept coming back even when I tried not to have them: ';
+$html .= '<strong>'.$_POST['DIAGNOSTIC_5'].'</strong>';
+
+$html .= '<br><br>6. I cannot resist doing some things over and over again, like washing my hands repeatedly, or checking the same thing repeatedly, or counting things: ';
+$html .= '<strong>'.$_POST['DIAGNOSTIC_6'].'</strong>';
+
+$html .= '<br><br>7. I keep thinking about, or dreaming about a traumatic event that involved me or someone I cared about. The event(s) were life threatening, such as a serious accident, a physical assault, or seeing someone killed or badly injured: ';
+$html .= '<strong>'.$_POST['DIAGNOSTIC_7'].'</strong>';
+
+$html .= '<br><br>8. There have been days when I was feeling so good, high, excited, irritable, or hyper that other people thought I was not my normal self or I got into trouble: ';
+$html .= '<strong>'.$_POST['DIAGNOSTIC_8'].'</strong>';
+
+$html .= '<br><br>9. There have been days when I felt so good about myself that I thought I could do just about anything: ';
+$html .= '<strong>'.$_POST['DIAGNOSTIC_9'].'</strong>';
+
+$html .= '<br><br>10. There have been times when I only needed a couple of hours of sleep each night: ';
+$html .= '<strong>'.$_POST['DIAGNOSTIC_10'].'</strong>';
+
+$html .= '<br><br>11. There have been days when other people noticed that I was talking a lot more than usual: ';
+$html .= '<strong>'.$_POST['DIAGNOSTIC_11'].'</strong>';
+
+$html .= '<br><br>12. There have been days when my thoughts seemed to be racing through my head: ';
+$html .= '<strong>'.$_POST['DIAGNOSTIC_12'].'</strong>';
+
+$html .= '<br><br>13. There have been days when I was easily distracted and had trouble paying attention: ';
+$html .= '<strong>'.$_POST['DIAGNOSTIC_13'].'</strong>';
+
+$html .= '<br><br>14. There have been times when I started so many projects that I could never finish them all: ';
+$html .= '<strong>'.$_POST['DIAGNOSTIC_14'].'</strong>';
+
+$html .= '<br><br>15. There have been times when I did a lot or reckless things such as, spending a lot of money on things I didn’t need, or getting sexually involved with people I normally would not get involved with: ';
+$html .= '<strong>'.$_POST['DIAGNOSTIC_15'].'</strong>';
+$html .= '<br>If you answered YES any of the questions 8 through 15, please answer the following questions. ';
+$html .= '<br>Did this last for more than 4 days in a row? ';
+$html .= '<strong>'.$_POST['DIAGNOSTIC_15_more_4_days'].'</strong>';
+
+$html .= '<br>Did this last for a week or more?  ';
+$html .= '<strong>'.$_POST['DIAGNOSTIC_15_week'].'</strong>';
+
+$html .= '<br>I have felt some of these things in the last week?  ';
+$html .= '<strong>'.$_POST['DIAGNOSTIC_15_last_week'].'</strong>';
+
+$html .= '<br><br>16. I have heard things that other people couldn’t hear, such as noises, or the voices of people whispering or talking: ';
+$html .= '<strong>'.$_POST['DIAGNOSTIC_16'].'</strong>';
+
+$html .= '<br><br>17. I have seen visions or have seen things that other people couldn’t see: ';
+$html .= '<strong>'.$_POST['DIAGNOSTIC_17'].'</strong>';
+
+$html .= '<br><br>18. I have had a problem with alcohol or drug use...or my friends, family, or employers have told me they thought I had a problem with alcohol or drug use: ';
+$html .= '<strong>'.$_POST['DIAGNOSTIC_18'].'</strong>';
+
+$html .= '<br>Comments: ';
+$html .= '<strong>'.$_POST['DIAGNOSTIC_Comments'].'</strong>';
 
 $html .= '<br><br><strong>QUICK INVENTORY OF DEPRESSIVE SYMPTOMATOLOGY (SELF-REPORT) (QIDS-SR<sub>16</sub>)</strong>';
 $html .= '<br>Subject ID: ';
