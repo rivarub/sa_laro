@@ -11,7 +11,7 @@ $html .= '<div style="text-align:right">Today’s Date: ';
 $html .= $_POST['today_date'] . '</div>';
 
 //$html .= '<h6>1. Race/Ethnicity</h6>';
-$html .= '<br><strong>1. Race/Ethnicity</strong>';
+$html .= '<strong>1. Race/Ethnicity</strong>';
 $html .= '<br>Ethnicity: ';
 $html .= $_POST['ethnicity'];
 $html .= '<br>';
@@ -27,16 +27,16 @@ $html .= '<br><strong>3. If you are married or cohabitating with partner, how lo
 $html .= $_POST['married_years'] . ' years ' . $_POST['married_months'] . ' months';
 
 $html .= '<br><strong>4. Number of previous marriages? </strong>';
-$html .= $_POST['married_number'];
+$html .= $_POST['married_number'].'&nbsp;';
 
 $html .= '<br><strong>5. How many children do you have? </strong>';
-$html .= $_POST['children_number'];
+$html .= $_POST['children_number'].'&nbsp;';
 
 $html .= '<br><strong>6. TOTAL number of persons including yourself in your household? </strong>';
 $html .= $_POST['number_persons_household'];
 
 $html .= '<br><strong>7. How many years of formal education have you completed? </strong>';
-$html .= $_POST['years_education'];
+$html .= $_POST['years_education'].'&nbsp;';
 
 $html .= '<br><strong>8. Highest degree obtained: </strong>';
 $html .= $_POST['degree'];
@@ -59,7 +59,7 @@ $html .= $_POST['type_of_occupation'];
 
 $html .= '<br><br><strong>Spousal Information </strong>';
 $html .= '<br><strong>11. How many years of formal education has your spouse completed? </strong>';
-$html .= $_POST['years_education_spouse'];
+$html .= $_POST['years_education_spouse'].'&nbsp;';
 
 $html .= '<br><strong>12. Highest degree your spouse has obtained: </strong>';
 $html .= $_POST['highest_degree_spouse'];
@@ -91,7 +91,7 @@ $html .= $_POST['transportation'];
 
 //$mpdf->AddPage();
 
-$html .= '<h3>MEDICAL & MENTAL HEALTH HISTORY</h3>';
+$html .= '<formfeed><h3>MEDICAL & MENTAL HEALTH HISTORY</h3>';
 $html .= '<br><strong>Have you ever had any of the following (check all that apply): </strong>';
 if (!empty($_POST['any_following']))
     $html .= implode(", ", $_POST['any_following']);
@@ -219,7 +219,7 @@ $html .= $_POST['exercise_each_week'];
 
 
 //$mpdf->AddPage();
-$html .= '<br><br><strong>UTSW Antidepressant Treatment History Evaluation</strong>';
+$html .= '<formfeed><strong>UTSW Antidepressant Treatment History Evaluation</strong>';
 $html .= '<br>Have you taken any of the anti-depressant medications listed below? ';
 $html .= '<br>If yes, please indicated: 1) What dosage did you take? 2) How many weeks did you take the medication? 3) Did it result in 50% reduction of depressive symptoms? 4) Did you have any troubling side effects that made it difficult to take the medication? ';
 $html .= '<table border="1"><tr><th>Anti-Depressant Medication</th><th>Dose Taken</th><th>Weeks Taken</th><th>50% Reduction in<br> Symptoms</th><th>Troubling Side <br>Effects</th></tr>';
@@ -422,7 +422,7 @@ $html .= '</tr>';
 $html .= '</table>';
 
 //$mpdf->AddPage();
-$html .= '<br><br><strong>DIAGNOSTIC SCREENING QUESTIONNAIRE (DSQ)</strong>';
+$html .= '<formfeed><strong>DIAGNOSTIC SCREENING QUESTIONNAIRE (DSQ)</strong>';
 $html .= '<br>Name: ';
 $html .= '<strong>'.$_POST['DIAGNOSTIC_SCREENING_name'].'</strong>';
 $html .= ' Age: ';
@@ -563,7 +563,7 @@ $html .= '<strong>'.$_POST['DIAGNOSTIC_18'].'</strong>';
 $html .= '<br>Comments: ';
 $html .= '<strong>'.$_POST['DIAGNOSTIC_Comments'].'</strong>';
 
-$html .= '<br><br><strong>QUICK INVENTORY OF DEPRESSIVE SYMPTOMATOLOGY (SELF-REPORT) (QIDS-SR<sub>16</sub>)</strong>';
+$html .= '<formfeed><strong>QUICK INVENTORY OF DEPRESSIVE SYMPTOMATOLOGY (SELF-REPORT) (QIDS-SR<sub>16</sub>)</strong>';
 $html .= '<br>Subject ID: ';
 $html .= '<strong>'.$_POST['QUICK_ID'].'</strong>';
 $html .= ' Date: ';
@@ -573,16 +573,153 @@ $html .= '<br>1. Falling Asleep:<br>';
 $html .= '<strong>'.$_POST['QUICK_Asleep'].'</strong>';
 $html .= '<br>2. Sleep During the Night:<br>';
 $html .= '<strong>'.$_POST['QUICK_Sleep'].'</strong>';
+$html .= '<br>3. Waking Up Too Early:<br>';
+$html .= '<strong>'.$_POST['QUICK_Waking'].'</strong>';
+$html .= '<br>4. Sleeping Too Much:<br>';
+$html .= '<strong>'.$_POST['QUICK_Sleeping_Too_Much'].'</strong>';
+$html .= '<br>5. Feeling Sad:<br>';
+$html .= '<strong>'.$_POST['QUICK_Sad'].'</strong>';
+$html .= '<br>6. Decreased Appetite:<br>';
+$html .= '<strong>'.$_POST['QUICK_Appetite'].'</strong>';
+$html .= '<br>7. Increased Appetite:<br>';
+$html .= '<strong>'.$_POST['QUICK_Increased'].'</strong>';
+$html .= '<br>8. Decreased Weight (Within the Last Two Weeks):<br>';
+$html .= '<strong>'.$_POST['QUICK_Decreased_Weight'].'</strong>';
+$html .= '<br>9. Increased Weight (Within the Last Two Weeks):<br>';
+$html .= '<strong>'.$_POST['QUICK_Increased_Weight'].'</strong>';
+$html .= '<br>10. Concentration/Decision Making:<br>';
+$html .= '<strong>'.$_POST['QUICK_Concentration'].'</strong>';
+$html .= '<br>11. View of Myself:<br>';
+$html .= '<strong>'.$_POST['QUICK_Myself'].'</strong>';
+$html .= '<br>12. Thoughts of Death or Suicide:<br>';
+$html .= '<strong>'.$_POST['QUICK_Suicide'].'</strong>';
+$html .= '<br>13. General Interest:<br>';
+$html .= '<strong>'.$_POST['QUICK_Interest'].'</strong>';
+$html .= '<br>14. Energy Level:<br>';
+$html .= '<strong>'.$_POST['QUICK_Energy'].'</strong>';
+$html .= '<br>15. Feeling slowed down:<br>';
+$html .= '<strong>'.$_POST['QUICK_slowed_down'].'</strong>';
+$html .= '<br>16. Feeling restless:<br>';
+$html .= '<strong>'.$_POST['QUICK_restless'].'</strong>';
 
+$html .= '<br><br><u>To Score:</u><br>';
+$html .= '<br>1. Enter the highest score on any 1 of the 4 sleep items (1-4): ';
+$html .= '<strong>'.($_POST['score1'] > 0?:$_POST['score1'].'&nbsp;').'</strong>'; // hack to show 0 on PDF ;)
+$html .= '<br>2. Item 5: ';
+$html .= '<strong>'.$_POST['score2'].'&nbsp;</strong>'; // works for all numbers ;)
+$html .= '<br>3. Enter the highest score on any 1 appetite/weight item (6-9): ';
+$html .= '<strong>'.$_POST['score3'].'&nbsp;</strong>';
+$html .= '<br>4. Item 10: ';
+$html .= '<strong>'.$_POST['score4'].'&nbsp;</strong>';
+$html .= '<br>5. Item 11: ';
+$html .= '<strong>'.$_POST['score5'].'&nbsp;</strong>';
+$html .= '<br>6. Item 12: ';
+$html .= '<strong>'.$_POST['score6'].'&nbsp;</strong>';
+$html .= '<br>7. Item 13: ';
+$html .= '<strong>'.$_POST['score7'].'&nbsp;</strong>';
+$html .= '<br>8. Item 14: ';
+$html .= '<strong>'.$_POST['score8'].'&nbsp;</strong>';
+$html .= '<br>9. Enter the highest score on either of the 2 psychomotor items (15 and 16): ';
+$html .= '<strong>'.$_POST['score9'].'&nbsp;</strong>';
+$html .= '<br>TOTAL SCORE (Range 0-27): ';
+$html .= '<strong>'.$_POST['scoreTOTAL'].'&nbsp;</strong>';
 
+$html .= '<formfeed><strong>National Network of Depression Centers</strong>';
+$html .= '<br>Common Assessment Package: <em>Self-Rated</em>';
+$html .= '<br><u>Patient Health Questionnaire (PHQ-9)</u>';
+$html .= '<br><br>Please choose one number for each statement:';
+$html .= '<br>0 - Not at all, 1 - Several days, 2 - More than half the days, 3 - Nearly every day';
+$html .= '<br><br>Over the <strong>last 2 weeks</strong>, how often have you been bothered by any of the following problems?';
+$html .= '<br>1. Little interest or pleasure in doing things: ';
+$html .= '<strong>'.$_POST['PHQ-9_little'].'&nbsp;</strong>';
+$html .= '<br>2. Feeling down, depressed, or hopeless: ';
+$html .= '<strong>'.$_POST['PHQ-9_hopeless'].'&nbsp;</strong>';
+$html .= '<br>3. Trouble falling or staying asleep, or sleeping too much: ';
+$html .= '<strong>'.$_POST['PHQ-9_trouble'].'&nbsp;</strong>';
+$html .= '<br>4. Feeling tired or having little energy: ';
+$html .= '<strong>'.$_POST['PHQ-9_tired'].'&nbsp;</strong>';
+$html .= '<br>5. Poor appetite or overeating: ';
+$html .= '<strong>'.$_POST['PHQ-9_appetite'].'&nbsp;</strong>';
+$html .= '<br>6. Feeling bad about yourself - or that you are a failure or have let yourself or your family down: ';
+$html .= '<strong>'.$_POST['PHQ-9_yourself'].'&nbsp;</strong>';
+$html .= '<br>7. Trouble concentrating on things, such as reading the newspaper or watching television: ';
+$html .= '<strong>'.$_POST['PHQ-9_concentrating'].'&nbsp;</strong>';
+$html .= '<br>8. Moving or speaking so slowly that other people could have noticed. Or the opposite – being so fidgety or restless that you have been moving around a lot more than usual: ';
+$html .= '<strong>'.$_POST['PHQ-9_slowly'].'&nbsp;</strong>';
+$html .= '<br>9. Thoughts that you would be better off dead, or of hurting yourself: ';
+$html .= '<strong>'.$_POST['PHQ-9_hurting'].'&nbsp;</strong>';
 
+$html .= '<br><br>10. If you checked off <u>any</u> problems, how <u>difficult</u> have these problems made it for you to do your work, take care of things at home, or get along with other people? ';
+$html .= '<strong>'.$_POST['PHQ-9_problems'].'&nbsp;</strong>';
 
-//if(isset($_POST['physical_activity_1'])) {
-//    if('yes' == $_POST['physical_activity_1']) {
-//        
-//    }
-//}
+$html .= '<br><br>PHQ-9 Copyright © 1999 Pfizer Inc. All rights reserved. ';
+$html .= '<br>NNDC Common Assessment Package: Self-Rated (January 25, 2011) ';
 
+$html .= '<formfeed><strong>National Network of Depression Centers</strong>';
+$html .= '<br>Common Assessment Package: <em>Self-Rated</em>';
+$html .= '<br><u>Generalized Anxiety Disorder Scale (GAD-7)</u>';
+$html .= '<br><br>Please choose one number for each statement:';
+$html .= '<br>0 - Not at all, 1 - Several days, 2 - More than half the days, 3 - Nearly every day';
+$html .= '<br><br>Over the <strong>last 2 weeks</strong>, how often have you been bothered by any of the following problems?';
+$html .= '<br>1. Feeling nervous, anxious, or on edge: ';
+$html .= '<strong>'.$_POST['GAD-7_nervous'].'&nbsp;</strong>';
+$html .= '<br>2. Not being able to stop or control worrying: ';
+$html .= '<strong>'.$_POST['GAD-7_worrying'].'&nbsp;</strong>';
+$html .= '<br>3. Worrying too much about different things: ';
+$html .= '<strong>'.$_POST['GAD-7_different'].'&nbsp;</strong>';
+$html .= '<br>4. Trouble relaxing: ';
+$html .= '<strong>'.$_POST['GAD-7_relaxing'].'&nbsp;</strong>';
+$html .= '<br>5. Being so restless it is hard to sit still: ';
+$html .= '<strong>'.$_POST['GAD-7_restless'].'&nbsp;</strong>';
+$html .= '<br>6. Becoming easily annoyed or irritable: ';
+$html .= '<strong>'.$_POST['GAD-7_irritable'].'&nbsp;</strong>';
+$html .= '<br>7. Feeling afraid as if something awful might happen: ';
+$html .= '<strong>'.$_POST['GAD-7_afraid'].'&nbsp;</strong>';
+
+$html .= '<br><br>If you checked off <u>any</u> problems, how <u>difficult</u> have these problems made it for you to do your work, take care of things at home, or get along with other people? ';
+$html .= '<strong>'.$_POST['GAD-7_problems'].'&nbsp;</strong>';
+
+$html .= '<br><br>Spitzer RL, Kroenke K, Williams JBW, Lowe B. A brief measure for assessing generalized anxiety disorder: the GAD-7. Arch Intern Med 2006;166:1092-97. ';
+$html .= '<br>NNDC Common Assessment Package: Self-Rated (January 25, 2011) ';
+
+$html .= '<formfeed><strong>National Network of Depression Centers</strong>';
+$html .= '<br>Common Assessment Package: <em>Self-Rated</em>';
+$html .= '<br><u>Altman Self-Rating Mania Scale (ASRM)</u>';
+$html .= '<br><u><strong>Instructions:</strong></u>';
+$html .= '<ul><li>On this questionnaire are groups of 5 statements; read each group of statements carefully.</li>';
+$html .= '<li>Choose the one statement in each group that best describes the way you have been feeling for the <strong><u>past week</u></strong>.</li>';
+$html .= '<li><strong><u>Please note:</u></strong>The word “occasionally” when used here means once or twice; “often” means several times or more; “frequently” means most of the time.</li></ul>';
+$html .= '<br>1. ';
+$html .= '<strong>'.$_POST['ASRM_1'].'&nbsp;</strong>';
+$html .= '<br>2. ';
+$html .= '<strong>'.$_POST['ASRM_2'].'&nbsp;</strong>';
+$html .= '<br>3. ';
+$html .= '<strong>'.$_POST['ASRM_3'].'&nbsp;</strong>';
+$html .= '<br>4. ';
+$html .= '<strong>'.$_POST['ASRM_4'].'&nbsp;</strong>';
+$html .= '<br>5. ';
+$html .= '<strong>'.$_POST['ASRM_5'].'&nbsp;</strong>';
+
+$html .= '<br><br>NNDC Common Assessment Package: Self-Rated (January 25, 2011) ';
+
+$html .= '<formfeed><strong>National Network of Depression Centers</strong>';
+$html .= '<br>Common Assessment Package: <em>Self-Rated (Baseline)</em>';
+$html .= '<br><u>Work and Social Adjustment Scale (WSAS)</u>';
+$html .= '<br><u><strong>Instructions: </strong></u>';
+$html .= '<br>Rate each of the following questions on a 0 to 8 scale: 0 indicates <u>no impairment</u> at all and 8 indicates <u>very severe impairment</u>. Please choose your responses below.';
+$html .= '<br>1. Because of my mood problems, my ability to work is impaired. 0 means not at all impaired and 8 means very severely impaired to the point I can’t work: ';
+$html .= '<strong>'.$_POST['WSAS_1'].'&nbsp;</strong>';
+$html .= '<br>2. Because of my mood problems, my home management (cleaning, tidying, shopping, cooking, looking after home or children, paying bills) is impaired. 0 means not at all impaired and 8 means very severely impaired: ';
+$html .= '<strong>'.$_POST['WSAS_2'].'&nbsp;</strong>';
+$html .= '<br>3. Because of my mood problems, my social leisure activities (with other people, such as parties, bars, clubs, outings, visits, dating, home entertainment) are impaired. 0 means not at all impaired and 8 means very severely impaired: ';
+$html .= '<strong>'.$_POST['WSAS_3'].'&nbsp;</strong>';
+$html .= '<br>4. Because of my mood problems, my private leisure activities (done alone, such as reading, gardening, collecting, sewing, walking alone) are impaired. 0 means not at all impaired and 8 means very severely impaired: ';
+$html .= '<strong>'.$_POST['WSAS_4'].'&nbsp;</strong>';
+$html .= '<br>5. Because of my mood problems, my ability to form and maintain close relationships with others, including those I live with, is impaired. 0 means not at all impaired and 8 means very severely impaired: ';
+$html .= '<strong>'.$_POST['WSAS_5'].'&nbsp;</strong>';
+
+$html .= '<br><br>Mundt, J.C., Marks, I.M., Shear, M.K., & Greist, J.H. (2002). The Work and Social Adjustment Scale: a simple measure of impairment in functioning. Br J Psychiatry, 180, 461-464.';
+$html .= '<br><br>NNDC Common Assessment Package, Baseline: Self-Rated (February 14, 2011) ';
 //echo $html;
 //$html .= var_dump($_POST);
 $mpdf->WriteHTML($html, 2);
