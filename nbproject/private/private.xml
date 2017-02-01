@@ -3,13 +3,20 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Irusya/sa_laro2/sass/partials/_variables.scss</file>
-            <file>file:/C:/Irusya/sa_laro2/sass/partials/_typography.scss</file>
-            <file>file:/C:/Irusya/sa_laro2/new-patient.html</file>
-            <file>file:/C:/Irusya/sa_laro2/hipaa-signed.html</file>
-            <file>file:/C:/Irusya/sa_laro2/patient-registration.html</file>
-            <file>file:/C:/Irusya/sa_laro2/sass/formstyle.scss</file>
-            <file>file:/C:/Irusya/sa_laro2/consent.html</file>
+            <file>file:/var/www/html/sa_laro/consent_to_treat.html</file>
+            <file>file:/var/www/html/sa_laro/financial_responsibility.html</file>
+            <file>file:/var/www/html/sa_laro/hipaaSigned.html</file>
+            <file>file:/var/www/html/sa_laro/patients.html</file>
+            <file>file:/var/www/html/sa_laro/Consent_to_treat_and_Financial%20Responsibility.html</file>
+            <file>file:/var/www/html/sa_laro/hipaa-signed.html</file>
+            <file>file:/var/www/html/sa_laro/patient-registration.html</file>
+            <file>file:/var/www/html/sa_laro/hipaa-notification.html</file>
+            <file>file:/var/www/html/sa_laro/new-patient.html</file>
+            <file>file:/var/www/html/sa_laro/practice-policy.html</file>
+            <file>file:/var/www/html/sa_laro/style.css</file>
+            <file>file:/var/www/html/sa_laro/newPatient2pdf.php</file>
+            <file>file:/var/www/html/sa_laro/form2pdf.php</file>
+            <file>file:/var/www/html/sa_laro/index.php</file>
         </group>
     </open-files>
 </project-private>

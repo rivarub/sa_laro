@@ -4,35 +4,7 @@ require_once 'mpdf60/mpdf.php';
 $mpdf = new mPDF();
 $url = $_POST['url'];
 $form = '<form>' . $_POST['html'] . '</form>';
-//if (count($_POST) > 0) {
-//
-//    $ch = curl_init($url);
-//    curl_setopt($ch, CURLOPT_HEADER, 0);
-//    curl_setopt ($ch, CURLOPT_RETURNTRANSFER, 1 );
-//
-//    foreach($_POST as $name => $post) {
-//      $formvars = array($name => $post . " \n");
-//    }
-//
-//    curl_setopt($ch, CURLOPT_POSTFIELDS, $formvars);
-//    $html = curl_exec($ch);
-//    curl_close($ch);
-//
-//} elseif (ini_get('allow_url_fopen')) {
-//    $html = file_get_contents($url);
-//
-//} else {
-//    $ch = curl_init($url);
-//    curl_setopt($ch, CURLOPT_HEADER, 0);
-//    curl_setopt ( $ch , CURLOPT_RETURNTRANSFER , 1 );
-//    $html = curl_exec($ch);
-//    curl_close($ch);
-//}
-//$mpdf->WriteHTML('This is it');
-//$mpdf->WriteHTML($url);
-//$mpdf->WriteHTML($nameFirst);
-//$mpdf->CSSselectMedia='print';
-//$mpdf->setBasePath($url);
+
 $stylesheet = file_get_contents('css/mpdf.css'); // external css
 $mpdf->WriteHTML($stylesheet, 1);
 $html = file_get_contents($url);
