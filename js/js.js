@@ -8,10 +8,12 @@
 
 /*DATE*/
 
-$(document).ready(function () { 
-	jQuery(function($){
-   		$('input[type=date]').mask("99/99/9999",{placeholder:"mm/dd/yyyy"});
-	});
+$(document).ready(function () {
+    jQuery(function ($) {
+       $('input[name*=date]').mask("99/99/9999", {placeholder: "mm/dd/yyyy"}); 
+       //$('input[type=date]').mask("99/99/9999", {placeholder: "mm/dd/yyyy"});
+        //$("#today_date").mask("99/99/9999",{placeholder:"mm/dd/yyyy"});
+    });
 });
 
 //$(function () {
@@ -21,17 +23,20 @@ $(document).ready(function () {
 //var d = new Date();
 //document.getElementById("today_date").innerHTML = d.toDateString();
 
-$(document).ready(function() {
+$(document).ready(function () {
     var date = new Date();
 
     var day = date.getDate();
     var month = date.getMonth() + 1;
     var year = date.getFullYear();
 
-    if (month < 10) month = "0" + month;
-    if (day < 10) day = "0" + day;
-    
+    if (month < 10)
+        month = "0" + month;
+    if (day < 10)
+        day = "0" + day;
+
     var today = month + "/" + day + "/" + year;
+    //$('input[name*=date]').attr("value", today);
     $("#today_date").attr("value", today);
     $("#DIAGNOSTIC_SCREENING_date").attr("value", today);
     $("#QUICK_date").attr("value", today);

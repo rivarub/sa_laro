@@ -573,13 +573,43 @@ input[type="number"] {
     //padding-left: 0.5em;
     //padding-right: 0.1em;
 }
+input[name*=date] {
+    width: 8em;
+    padding: 0.2em 0.4em 0.2em 0.4em;
+}
 input[type="date"] {
-    width: 7em;
-    padding: 0.2em 0.4em 0.2em 0.6em;
+    width: 8em;
+    padding: 0.2em 0.4em 0.2em 0.4em;
     //padding-left: 0.6em;
     //padding-right: 0.4em;
-    letter-spacing: 2px;
+    //letter-spacing: 2px;
+
+    //зброс бровзерів
+    //-webkit-appearance: textfield!important;
+    //-webkit-appearance: none;
+
+    /* for FF */
+    //-moz-appearance: none;
+
+    /* for Chrome */
+    //-chrome-appearance: none;
+
+    /* for Opera */
+    //-o-appearance: none;
+
+    /* for IE */
+    //-ms-appearance: none;
+    //appearance: none!important;
 }
+::-webkit-inner-spin-button { display: none; }
+/*input::-webkit-calendar-picker-indicator {
+//background-image:url(./resources/images/calendar.png);
+//background-repeat: repeat-y;
+//font-size: 21px;
+//opacity: 1;
+//color: rgba(0,0,0,0);
+display: none;
+}*/
 input[type="text"] {
     max-width: 12em;
     padding: 0.2em 0.4em;
@@ -590,7 +620,7 @@ textarea {
     padding: 0.3em 0.6em;    
 }
 input[type="radio"], input[type="checkbox"] {
-   // width: 100%;
+    // width: 100%;
     //height: 2em;
     height: auto;
 }
