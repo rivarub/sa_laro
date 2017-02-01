@@ -575,9 +575,10 @@ input[type="number"] {
 }
 input[name*=date] {
     width: 8em;
-    padding: 0.2em 0.4em 0.2em 0.4em;
+    padding: 0.2em 0.4em 0.2em 0.8em;
+    letter-spacing: 1px;
 }
-input[type="date"] {
+/*input[type="date"] {
     width: 8em;
     padding: 0.2em 0.4em 0.2em 0.4em;
     //padding-left: 0.6em;
@@ -588,21 +589,21 @@ input[type="date"] {
     //-webkit-appearance: textfield!important;
     //-webkit-appearance: none;
 
-    /* for FF */
+     for FF 
     //-moz-appearance: none;
 
-    /* for Chrome */
+     for Chrome 
     //-chrome-appearance: none;
 
-    /* for Opera */
+     for Opera 
     //-o-appearance: none;
 
-    /* for IE */
+     for IE 
     //-ms-appearance: none;
     //appearance: none!important;
 }
 ::-webkit-inner-spin-button { display: none; }
-/*input::-webkit-calendar-picker-indicator {
+input::-webkit-calendar-picker-indicator {
 //background-image:url(./resources/images/calendar.png);
 //background-repeat: repeat-y;
 //font-size: 21px;
