@@ -74,8 +74,10 @@ $mpdf->WriteHTML($html, 2);
   //$html = var_dump($form);
   $mpdf->WriteHTML($html, 2);
  */
+  /*
 $mpdf->Output(); // into browser
 exit;
+*/
 /*
   //Send via mail() - begin
   $content = $mpdf->Output('', 'S');

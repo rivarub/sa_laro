@@ -93,10 +93,12 @@ $html .= $_POST['transportation'];
 
 $html .= '<formfeed><h3>MEDICAL & MENTAL HEALTH HISTORY</h3>';
 $html .= '<br><strong>Have you ever had any of the following (check all that apply): </strong>';
-if (!empty($_POST['any_following']))
+if (!empty($_POST['any_following'])) {
     $html .= implode(", ", $_POST['any_following']);
-if (!empty($_POST['any_followinge_other']))
+    if (in_array('Other', $_POST['any_following']) && !empty($_POST['any_followinge_other']))
     $html .= ": " . $_POST['any_followinge_other'];
+}
+
 
 $html .= '<br><strong>Please list current or past medications you have taken for the treatment of any medical problem:</strong> ';
 $html .= '<table border="1"><tr><th>Medical Problem</th><th>Medication (name/dose)</th><th>Start Date</th><th>Stop Date</th><th>Currently Taking?</th></tr>';
@@ -116,10 +118,12 @@ $html .= '<br><strong>How much alcohol, including beer, do you drink per week? <
 $html .= $_POST['alcohol'];
 $html .= '<br><br><strong>Mental Health History</strong>';
 $html .= '<br><strong>Have you ever had a problem with any of the following (check all that apply): </strong>';
-if (!empty($_POST['psychologic_problem']))
+if (!empty($_POST['psychologic_problem'])) {
     $html .= implode(", ", $_POST['psychologic_problem']);
-if (!empty($_POST['psychologic_problem_other']))
+    if (in_array('Other', $_POST['psychologic_problem']) && !empty($_POST['psychologic_problem_other']))
     $html .= ": " . $_POST['psychologic_problem_other'];
+}
+
 
 $html .= '<br><strong>Please list current or past medications you have taken for the treatment of any mental health problem:</strong> ';
 $html .= '<table border="1"><tr><th>Problem (e.g. Depression, Anxiety)</th><th>Medication (name and highest dose)</th><th>Start Date</th><th>Stop Date</th><th>Why stopped (e.g. felt better, didn’t help)</th></tr>';
