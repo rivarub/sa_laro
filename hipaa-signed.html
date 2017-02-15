@@ -6,11 +6,13 @@ and open the template in the editor.
 -->
 <html>
     <head>
-        <title>Hippa-signed-form.pages</title>
+        <title>Acknowledgement of The Receipt of Fusion Family Consulting’s Notice of Health Information Practices</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="css/formstyle.css">
         <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet"> 
+        <link rel="stylesheet" type="text/css" href="css/mpdf.css" media="print">
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
         <script src="js/modernizr.2.6.2.min.js"></script>
     </head>
     <body>
@@ -19,7 +21,7 @@ and open the template in the editor.
                 <h1>Acknowledgement of The Receipt of Fusion Family Consulting’s Notice of Health Information Practices</h1>            
                 <p class="indent">The Health Insurance Portability and Accountability Act (HIPAA) is a federal government regulation designed to ensure that you are aware of your privacy rights and of how your medical information can be used by our staff in providing and arranging your medical care.</p>
                 <p class="indent">Fusion Family Consulting is furnishing you with the attached notice, which provides information about how Fusion Family Consulting and its providers may use and/or disclose protected health information about you for treatment, payment, health care operations and as otherwise allowed by law. By signing this form, you acknowledge that you have received a copy of Fusion Family Consulting’s Notice of Health Information Practices.</p>
-                <form id="hippa_signed" action="#">
+                <form id="hippa_signed" method="post" action="form2pdf.php">
                     <div class="row">
                         <div class="left">
                             <label for="name-first">Patient Name:</label>
@@ -53,10 +55,12 @@ and open the template in the editor.
                     <div>                    
                         <p>Signature of Patient, Parent, or Legal Guardian</p>
                         <label for="date">Date</label>
-                        <input type="date" name="date" placeholder="dd/mm/yyyy" required>                   
+                        <input type="date" name="date" placeholder="mm/dd/yyyy" required>                   
                     </div>
                     <div class="submit">
-                        <input type="submit" value="Send">
+                        <input type="hidden" name="url" value="hipaaSigned.html">
+                        <input type="hidden" id="html" name="html">
+                        <input type="submit" value="send" onclick="send();">
                     </div>
                 </form>
             </div>            
