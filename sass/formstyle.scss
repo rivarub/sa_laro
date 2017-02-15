@@ -42,6 +42,11 @@ body {
     }
 
 }
+form#new-patient-child {
+    fieldset {
+        margin-bottom: 1em;
+    }
+}
 @media screen and (max-width: 1000px) {
     .content {
         width: 96%;
