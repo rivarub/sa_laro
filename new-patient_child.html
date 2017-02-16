@@ -38,17 +38,17 @@ and open the template in the editor.
                                 <div class="right-board">
                                     <div class="columnForm-name">
                                         <div class="pt">
-                                            <input type="text" class="name" name="child_name_first" id="child_name" placeholder="First" required>
+                                            <input type="text" name="child_name_first" id="child_name" placeholder="First" required>
                                         </div>
                                     </div>
                                     <div class="columnForm-name">
                                         <div class="pt">
-                                            <input class="name" type="text" name="child_name_middle" id="child_name" placeholder="Middle">
+                                            <input type="text" name="child_name_middle" id="child_name" placeholder="Middle">
                                         </div>
                                     </div>                                
                                     <div class="columnForm-name">
                                         <div class="pt">
-                                            <input class="name" type="text" name="child_name_last" id="child_name" placeholder="Last" required>
+                                            <input type="text" name="child_name_last" id="child_name" placeholder="Last" required>
                                         </div>
                                     </div>
                                 </div>
@@ -333,180 +333,678 @@ and open the template in the editor.
                                 </div>
                             </div>
                         </div>
-                        <fieldset class="chief">
-                            <!--                            <div class="row">
-                                                            <div class="full">-->
-                            <legend class="radio">Chief Complaint: <span class="legend_light"> What is your primary reason for seeking psychiatric consultation?</span></legend>
-                            <textarea class="flex" name="cild_chief_Complaint" rows="4" cols=""></textarea>                                
-                            <!--                                </div>
-                                                        </div>-->
-                        </fieldset>
-                        <fieldset class="presenting_illness">
-                            <!--                            <div class="row">
-                                                            <div class="full_partial">-->
-                            <legend class="radio">History of Presenting Illness:</legend>
-                            <!--                                </div>
-                                                        </div>-->
-                            <div class="row">
-                                <div class="full">                                
-                                    <label class="radio">When did these symptoms begin?</label>
-                                    <textarea class="flex" name="cild_symptoms_begin" rows="4" cols=""></textarea>                                
-                                </div>
+                    </fieldset>
+                    <fieldset class="chief">
+                        <!--                            <div class="row">
+                                                        <div class="full">-->
+                        <legend class="radio">Chief Complaint: <span class="legend_light"> What is your primary reason for seeking psychiatric consultation?</span></legend>
+                        <textarea class="flex" name="cild_chief_Complaint" rows="4" cols=""></textarea>                                
+                        <!--                                </div>
+                                                    </div>-->
+                    </fieldset>
+                    <fieldset class="presenting_illness">
+                        <!--                            <div class="row">
+                                                        <div class="full_partial">-->
+                        <legend class="radio">History of Presenting Illness:</legend>
+                        <!--                                </div>
+                                                    </div>-->
+                        <div class="row">
+                            <div class="full">                                
+                                <label class="radio">When did these symptoms begin?</label>
+                                <textarea class="flex" name="cild_symptoms_begin" rows="4" cols=""></textarea>                                
                             </div>
-                            <div class="row">
-                                <div class="full">                                
-                                    <label class="radio">Did something occur to precipitate them?</label>
-                                    <textarea class="flex" name="cild_something_occur" rows="1" cols=""></textarea>                                
-                                </div>
+                        </div>
+                        <div class="row">
+                            <div class="full">                                
+                                <label class="radio">Did something occur to precipitate them?</label>
+                                <textarea class="flex" name="cild_something_occur" rows="1" cols=""></textarea>                                
                             </div>
-                            <div class="row">
-                                <div class="full">                                
-                                    <label>Have there been symptom-free periods?</label>                                
-                                    <textarea class="flex" name="cild_symptom_‐free" rows="1" cols=""></textarea>                                
-                                </div>
+                        </div>
+                        <div class="row">
+                            <div class="full">                                
+                                <label>Have there been symptom-free periods?</label>                                
+                                <textarea class="flex" name="cild_symptom_‐free" rows="1" cols=""></textarea>                                
                             </div>
-                            <!--                        <div class="row">
-                                                        <div class="full_partial">
+                        </div>
+                        <!--                        <div class="row">
+                                                    <div class="full_partial">
+                                                        <div class="left">
+                                                            <label>Have there been symptom-free periods?</label>
+                                                        </div>
+                                                        <div class="right">                         
+                                                                <textarea class="flex"  name="cild_symptom_‐free" rows="2" cols="45"></textarea>
+                                                        </div>
+                                                    </div>
+                                                </div>-->
+                    </fieldset>
+                    <fieldset class="psychiatric_history">
+                        <!--                            <div class="row">
+                                                        <div class="full_partial">-->
+                        <legend class="radio">Past Psychiatric History:</legend>
+                        <!--                                </div>
+                                                    </div>-->
+                        <div class="row">
+                            <div class="full">                                
+                                <label class="radio">When did treatment first begin?</label>
+                                <textarea class="flex" name="cild_treatment_begin" rows="1" cols=""></textarea>                                
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="full">                                
+                                <label class="radio">What kind of treatment has occurred?</label>
+                                <textarea class="flex" name="cild_treatment_kind" rows="1" cols=""></textarea>                                
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="full">                                
+                                <label class="radio">1. Individual Psychotherapy? If yes, when and with whom?</label>
+                                <textarea class="flex" name="cild_individual_psychotherapy" rows="2" cols=""></textarea>                                
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="full">                                
+                                <label class="radio">2. Group or Family/Couples Psychotherapy? If yes, when and with whom?</label>
+                                <textarea class="flex" name="cild_group_psychotherapy" rows="2" cols=""></textarea>                                
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="full">                                
+                                <label class="radio">Have you (your child) ever been psychiatrically hospitalized? If yes, when, where, and for what reason?</label>
+                                <textarea class="flex" name="cild_hospitalized" rows="3" cols=""></textarea>                                
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="full">                                
+                                <label class="radio">Have you (your child) ever thought of or attempted to commit suicide? If yes, when, how, and under what circumstances?</label>
+                                <textarea class="flex" name="cild_suicide" rows="3" cols=""></textarea>                                
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="full">                                
+                                <label class="radio">Have you (your child) ever hurt oneself in any way? For example, cutting or burning self. If yes, when, how, and under what circumstances?</label>
+                                <textarea class="flex" name="cild_hurt_oneself" rows="3" cols=""></textarea>                                
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset class="medical_history">
+                        <!--                            <div class="row">
+                                                        <div class="full_partial">-->
+                        <legend class="radio">Medical History:</legend>
+                        <!--                                </div>
+                                                    </div>-->
+                        <div class="row">
+                            <div class="full">                                
+                                <label class="radio">Current and Prior Medical Problems:</label>
+                                <textarea class="flex" name="cild_medical_problems" rows="3" cols=""></textarea>                                
+                            </div>
+                        </div>
+                        <!--                            <div class="row">
+                                                        <div class="full">
                                                             <div class="left">
-                                                                <label>Have there been symptom-free periods?</label>
+                                                                <label for="cild_medical_problems">Current and Prior Medical Problems:</label>
                                                             </div>
-                                                            <div class="right">                         
-                                                                    <textarea class="flex"  name="cild_symptom_‐free" rows="2" cols="45"></textarea>
+                                                            <div class="right">
+                                                                <textarea class="flex" name="cild_medical_problems" id="cild_medical_problems" rows="4"></textarea>
                                                             </div>
                                                         </div>
                                                     </div>-->
-                        </fieldset>
-                        <fieldset class="psychiatric_history">
-                            <!--                            <div class="row">
-                                                            <div class="full_partial">-->
-                            <legend class="radio">Past Psychiatric History:</legend>
-                            <!--                                </div>
-                                                        </div>-->
-                            <div class="row">
-                                <div class="full">                                
-                                    <label class="radio">When did treatment first begin?</label>
-                                    <textarea class="flex" name="cild_treatment_begin" rows="1" cols=""></textarea>                                
-                                </div>
+                        <div class="row">
+                            <div class="full">                                
+                                <label class="radio">Medical Hospitalizations/Surgeries:</label>
+                                <textarea class="flex" name="cild_medical_hospitalizations" rows="1" cols=""></textarea>                                
                             </div>
-                            <div class="row">
-                                <div class="full">                                
-                                    <label class="radio">What kind of treatment has occurred?</label>
-                                    <textarea class="flex" name="cild_treatment_kind" rows="1" cols=""></textarea>                                
-                                </div>
+                        </div>
+                        <div class="row">
+                            <div class="full">                                
+                                <label class="radio">Known Drug Allergies:</label>
+                                <textarea class="flex" name="cild_allergies" rows="2" cols=""></textarea>                                
                             </div>
-                            <div class="row">
-                                <div class="full">                                
-                                    <label class="radio">1. Individual Psychotherapy? If yes, when and with whom?</label>
-                                    <textarea class="flex" name="cild_individual_psychotherapy" rows="2" cols=""></textarea>                                
-                                </div>
+                        </div>
+                        <div class="row">
+                            <div class="full">                                
+                                <label class="radio">Primary Care Physician:</label>
+                                <textarea class="flex" name="care_physician" rows="1" cols=""></textarea>                                
                             </div>
-                            <div class="row">
-                                <div class="full">                                
-                                    <label class="radio">2. Group or Family/Couples Psychotherapy? If yes, when and with whom?</label>
-                                    <textarea class="flex" name="cild_group_psychotherapy" rows="2" cols=""></textarea>                                
-                                </div>
+                        </div>
+                        <div class="row">
+                            <div class="full">                                
+                                <label class="radio">Last physical exam:</label>
+                                <textarea class="flex" name="care_physical_exam" rows="1" cols=""></textarea>                                
                             </div>
-                            <div class="row">
-                                <div class="full">                                
-                                    <label class="radio">Have you (your child) ever been psychiatrically hospitalized? If yes, when, where, and for what reason?</label>
-                                    <textarea class="flex" name="cild_hospitalized" rows="3" cols=""></textarea>                                
-                                </div>
+                        </div>
+                        <div class="row">
+                            <div class="full">                                
+                                <label class="radio">Address/Phone:</label>
+                                <textarea class="flex" name="care_phone" rows="2" cols=""></textarea>                                
                             </div>
-                            <div class="row">
-                                <div class="full">                                
-                                    <label class="radio">Have you (your child) ever thought of or attempted to commit suicide? If yes, when, how, and under what circumstances?</label>
-                                    <textarea class="flex" name="cild_suicide" rows="3" cols=""></textarea>                                
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="full">                                
-                                    <label class="radio">Have you (your child) ever hurt oneself in any way? For example, cutting or burning self. If yes, when, how, and under what circumstances?</label>
-                                    <textarea class="flex" name="cild_hurt_oneself" rows="3" cols=""></textarea>                                
-                                </div>
-                            </div>
-                        </fieldset>
-                        <fieldset class="medical_history">
-                            <!--                            <div class="row">
-                                                            <div class="full_partial">-->
-                            <legend class="radio">Medical History:</legend>
-                            <!--                                </div>
-                                                        </div>-->
-                            <div class="row">
-                                <div class="full">                                
-                                    <label class="radio">Current and Prior Medical Problems:</label>
-                                    <textarea class="flex" name="cild_medical_problems" rows="3" cols=""></textarea>                                
-                                </div>
-                            </div>
-                            <!--                            <div class="row">
-                                                            <div class="full">
-                                                                <div class="left">
-                                                                    <label for="cild_medical_problems">Current and Prior Medical Problems:</label>
-                                                                </div>
-                                                                <div class="right">
-                                                                    <textarea class="flex" name="cild_medical_problems" id="cild_medical_problems" rows="4"></textarea>
-                                                                </div>
+                        </div>
+                        <!--                            <div class="row">
+                                                        <div class="full">
+                                                            <div class="left">
+                                                                <label class="small" for="reminders_address">Primary Care Physician:</label>
                                                             </div>
-                                                        </div>-->
-                            <div class="row">
-                                <div class="full">                                
-                                    <label class="radio">Medical Hospitalizations/Surgeries:</label>
-                                    <textarea class="flex" name="cild_medical_hospitalizations" rows="1" cols=""></textarea>                                
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="full">                                
-                                    <label class="radio">Known Drug Allergies:</label>
-                                    <textarea class="flex" name="cild_allergies" rows="2" cols=""></textarea>                                
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="full">                                
-                                    <label class="radio">Primary Care Physician:</label>
-                                    <textarea class="flex" name="care_physician" rows="1" cols=""></textarea>                                
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="full">                                
-                                    <label class="radio">Last physical exam:</label>
-                                    <textarea class="flex" name="care_physical_exam" rows="1" cols=""></textarea>                                
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="full">                                
-                                    <label class="radio">Address/Phone:</label>
-                                    <textarea class="flex" name="care_phone" rows="2" cols=""></textarea>                                
-                                </div>
-                            </div>
-                            <!--                            <div class="row">
-                                                            <div class="full">
-                                                                <div class="left">
-                                                                    <label class="small" for="reminders_address">Primary Care Physician:</label>
-                                                                </div>
-                                                                <div class="right-board">
-                                                                                                            <div class="row">
-                                                                    <textarea class="flex"  name="care_physician" rows="2" cols="45" id="reminders_address"></textarea>
-                                                                                                            </div>
-                            
-                                                                </div>
+                                                            <div class="right-board">
+                                                                                                        <div class="row">
+                                                                <textarea class="flex"  name="care_physician" rows="2" cols="45" id="reminders_address"></textarea>
+                                                                                                        </div>
+                        
                                                             </div>
-                                                        </div>                                                     -->
-                            <div class="row">
-                                <div class="full_partial">
-                                    <label class="radio_tab_input_row">Immunizations current?</label>
-                                    <input type="radio" name="child_immunizations" id="child_immunizations_yes" value="Yes">
-                                    <label class="radio_tab_input_row" for="child_immunizations_yes">Yes</label>
-                                    <input type="radio" name="child_immunizations" id="child_immunizations_no" value="No">
-                                    <label class="radio_tab_input_row" for="child_immunizations_no">No</label>
+                                                        </div>
+                                                    </div>                                                     -->
+                        <div class="row">
+                            <div class="full_partial">
+                                <label class="radio_tab_input_row">Immunizations current?</label>
+                                <input type="radio" name="child_immunizations" id="child_immunizations_yes" value="Yes">
+                                <label class="radio_tab_input_row" for="child_immunizations_yes">Yes</label>
+                                <input type="radio" name="child_immunizations" id="child_immunizations_no" value="No">
+                                <label class="radio_tab_input_row" for="child_immunizations_no">No</label>
+                            </div>
+                        </div>                            
+                    </fieldset>
+                    <fieldset>
+                        <legend>Past Medications:</legend>
+                        <div class="row">
+                            <div class="full">
+                                <table id="pastMedications">
+                                    <tr>
+                                        <th>Name of Medication</th>
+                                        <th>Dose Taken</th>
+                                        <th>Reason</th>
+                                        <th>Prescriber</th>
+                                        <th>Comments (helpfulness/side effects)</th>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="text" name="pastNameMedication_1"></td>
+                                        <td>
+                                            <table>
+                                                <tr>
+                                                    <td><input class="tab_input_row" type="number" name="pastDoseTaken_1" id="pastDoseTaken_1" min="0" step="0.001"></td>
+                                                    <td><label class="tab_input_row" for="pastDoseTaken_1">mg</label></td>
+                                                </tr>                                                    
+                                            </table>
+                                        </td> 
+                                        <td><input type="text" name="pastReason_1"></td>
+                                        <td><input type="text" name="pastPrescriber_1"></td>
+                                        <td><input type="text" name="pastComments_1"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="text" name="pastNnameMedication_2"></td>
+                                        <td>
+                                            <table>
+                                                <tr>
+                                                    <td><input class="tab_input_row" type="number" name="pastDoseTaken_2" id="pastDoseTaken_2" min="0" step="0.001"></td>
+                                                    <td><label class="tab_input_row" for="pastDoseTaken_2">mg</label></td>
+                                                </tr>                                                    
+                                            </table>
+                                        </td> 
+                                        <td><input type="text" name="pastReason_2"></td>
+                                        <td><input type="text" name="pastPrescriber_2"></td>
+                                        <td><input type="text" name="pastComments_2"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="text" name="pastNameMedication_3"></td>
+                                        <td>
+                                            <table>
+                                                <tr>
+                                                    <td><input class="tab_input_row" type="number" name="pastDoseTaken_3" id="pastDoseTaken_3" min="0" step="0.001"></td>
+                                                    <td><label class="tab_input_row" for="pastDoseTaken_3">mg</label></td>
+                                                </tr>                                                    
+                                            </table>
+                                        </td> 
+                                        <td><input type="text" name="pastReason_3"></td>
+                                        <td><input type="text" name="pastPrescriber_3"></td>
+                                        <td><input type="text" name="pastComments_3"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="text" name="pastNameMedication_4"></td>
+                                        <td>
+                                            <table>
+                                                <tr>
+                                                    <td><input class="tab_input_row" type="number" name="pastDoseTaken_4" id="pastDoseTaken_4" min="0" step="0.001"></td>
+                                                    <td><label class="tab_input_row" for="pastDoseTaken_4">mg</label></td>
+                                                </tr>                                                    
+                                            </table>
+                                        </td> 
+                                        <td><input type="text" name="pastReason_4"></td>
+                                        <td><input type="text" name="pastPrescriber_4"></td>
+                                        <td><input type="text" name="pastComments_4"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="text" name="pastNameMedication_4"></td>
+                                        <td>
+                                            <table>
+                                                <tr>
+                                                    <td><input class="tab_input_row" type="number" name="pastDoseTaken_5" id="pastDoseTaken_5" min="0" step="0.001"></td>
+                                                    <td><label class="tab_input_row" for="pastDoseTaken_5">mg</label></td>
+                                                </tr>                                                    
+                                            </table>
+                                        </td> 
+                                        <td><input type="text" name="pastReason_5"></td>
+                                        <td><input type="text" name="pastPrescriber_5"></td>
+                                        <td><input type="text" name="pastComments_5"></td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Current Medications:</legend>
+                        <div class="row">
+                            <div class="full">
+                                <table id="currentMedications">
+                                    <tr>
+                                        <th>Name of Medication</th>
+                                        <th>Dose Taken</th>
+                                        <th>Reason</th>
+                                        <th>Prescriber</th>
+                                        <th>Comments (helpfulness/side effects)</th>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="text" name="currentNameMedication_1"></td>
+                                        <td>
+                                            <table>
+                                                <tr>
+                                                    <td><input class="tab_input_row" type="number" name="currentDoseTaken_1" id="currentDoseTaken_1" min="0" step="0.001"></td>
+                                                    <td><label class="tab_input_row" for="currentDoseTaken_1">mg</label></td>
+                                                </tr>                                                    
+                                            </table>
+                                        </td> 
+                                        <td><input type="text" name="currentReason_1"></td>
+                                        <td><input type="text" name="currentPrescriber_1"></td>
+                                        <td><input type="text" name="currentComments_1"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="text" name="currentNameMedication_2"></td>
+                                        <td>
+                                            <table>
+                                                <tr>
+                                                    <td><input class="tab_input_row" type="number" name="currentDoseTaken_2" id="currentDoseTaken_2" min="0" step="0.001"></td>
+                                                    <td><label class="tab_input_row" for="currentDoseTaken_2">mg</label></td>
+                                                </tr>                                                    
+                                            </table>
+                                        </td> 
+                                        <td><input type="text" name="currentReason_2"></td>
+                                        <td><input type="text" name="currentPrescriber_2"></td>
+                                        <td><input type="text" name="currentComments_2"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="text" name="currentNameMedication_3"></td>
+                                        <td>
+                                            <table>
+                                                <tr>
+                                                    <td><input class="tab_input_row" type="number" name="currentDoseTaken_3" id="currentDoseTaken_3" min="0" step="0.001"></td>
+                                                    <td><label class="tab_input_row" for="currentDoseTaken_3">mg</label></td>
+                                                </tr>                                                    
+                                            </table>
+                                        </td> 
+                                        <td><input type="text" name="currentReason_3"></td>
+                                        <td><input type="text" name="currentPrescriber_3"></td>
+                                        <td><input type="text" name="currentComments_3"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="text" name="currentNameMedication_4"></td>
+                                        <td>
+                                            <table>
+                                                <tr>
+                                                    <td><input class="tab_input_row" type="number" name="currentDoseTaken_4" id="currentDoseTaken_4" min="0" step="0.001"></td>
+                                                    <td><label class="tab_input_row" for="currentDoseTaken_4">mg</label></td>
+                                                </tr>                                                    
+                                            </table>
+                                        </td> 
+                                        <td><input type="text" name="currentReason_4"></td>
+                                        <td><input type="text" name="currentPrescriber_4"></td>
+                                        <td><input type="text" name="currentComments_4"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="text" name="currentNameMedication_4"></td>
+                                        <td>
+                                            <table>
+                                                <tr>
+                                                    <td><input class="tab_input_row" type="number" name="currentDoseTaken_5" id="currentDoseTaken_5" min="0" step="0.001"></td>
+                                                    <td><label class="tab_input_row" for="currentDoseTaken_5">mg</label></td>
+                                                </tr>                                                    
+                                            </table>
+                                        </td> 
+                                        <td><input type="text" name="currentReason_5"></td>
+                                        <td><input type="text" name="currentPrescriber_5"></td>
+                                        <td><input type="text" name="currentComments_5"></td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Please comment on any substance abuse (drugs/alcohol).</legend>
+                        <div class="row">
+                            <div class="full">
+                                <table id="substance">
+                                    <tr>
+                                        <th>What?</th>
+                                        <th>When did you start?</th>
+                                        <th>How much did you use?</th>
+                                        <th>Last use?</th>
+                                        <th>What did it do for you?</th>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="text" name="substanceWhat1"></td>
+                                        <td><input type="text" name="substanceWhen1"></td> 
+                                        <td><input type="text" name="substanceHowMuch1"></td>
+                                        <td><input type="text" name="substanceLast1"></td>
+                                        <td><input type="text" name="substanceWhatDid1"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="text" name="substanceWhat2"></td>
+                                        <td><input type="text" name="substanceWhen2"></td> 
+                                        <td><input type="text" name="substanceHowMuch2"></td>
+                                        <td><input type="text" name="substanceLast2"></td>
+                                        <td><input type="text" name="substanceWhatDid2"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="text" name="substanceWhat3"></td>
+                                        <td><input type="text" name="substanceWhen3"></td> 
+                                        <td><input type="text" name="substanceHowMuch3"></td>
+                                        <td><input type="text" name="substanceLast3"></td>
+                                        <td><input type="text" name="substanceWhatDid3"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="text" name="substanceWhat3"></td>
+                                        <td><input type="text" name="substanceWhen3"></td> 
+                                        <td><input type="text" name="substanceHowMuch3"></td>
+                                        <td><input type="text" name="substanceLast3"></td>
+                                        <td><input type="text" name="substanceWhatDid4"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="text" name="substanceWhat5"></td>
+                                        <td><input type="text" name="substanceWhen5"></td> 
+                                        <td><input type="text" name="substanceHowMuch5"></td>
+                                        <td><input type="text" name="substanceLast5"></td>
+                                        <td><input type="text" name="substanceWhatDid5"></td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Please circle any that the patient has had and include dates as best you can:</legend>
+                        <div class="row">
+                            <div class="full">
+                                <div class="helf_left">
+                                    <div class="columnForm">
+                                        <div class="pt">
+                                            <input type="checkbox" name="childAnyInclude[]" value="Head Injury/Loss of Consciousness" id="headInjury">
+                                            <label class="radio" for="headInjury">Head Injury/Loss of Consciousness</label> 
+                                        </div>
+                                        <div class="pt">
+                                            <input type="checkbox" name="childAnyInclude[]" value="Seizures/convulsions" id="convulsions">
+                                            <label class="radio" for="convulsions">Seizures/convulsions</label>
+                                        </div>
+                                        <div class="pt">
+                                            <input type="checkbox" name="childAnyInclude[]" value="Other neurological problems" id="neurologicalProblems">
+                                            <label class="radio" for="neurologicalProblems">Other neurological problems</label>
+                                        </div>
+                                        <div class="pt">
+                                            <input type="checkbox" name="childAnyInclude[]" value="Ear, nose or throat problems" id="throatProblems">
+                                            <label class="radio" for="throatProblems">Ear, nose or throat problems</label>
+                                        </div>
+                                        <div class="pt">
+                                            <input type="checkbox" name="childAnyInclude[]" value="Dental problems" id="dentalProblems">
+                                            <label class="radio" for="dentalProblems">Dental problems</label>
+                                        </div>
+                                        <div class="pt">
+                                            <input type="checkbox" name="childAnyInclude[]" value="Asthma" id="asthma">
+                                            <label class="radio" for="asthma">Asthma</label>
+                                        </div>
+                                        <div class="pt">
+                                            <input class="input_row" type="checkbox" name="childAnyInclude[]" value="Chest problems" id="chestProblems">
+                                            <label class="radio" for="chestProblems">Chest problems</label>
+                                        </div>
+                                        <div class="pt">
+                                            <input type="checkbox" name="childAnyInclude[]" value="Stomach or bowel problems/soiling" id="stomach">
+                                            <label class="radio" for="stomach">Stomach or bowel problems/soiling</label>
+                                        </div>
+                                        <div class="pt">
+                                            <input type="checkbox" name="childAnyInclude[]" value="Urinary or bladder/wetting" id="urinary">
+                                            <label class="radio" for="urinary">Urinary or bladder/wetting</label>
+                                        </div>                                    
+                                    </div>
+                                </div>
+                                <div class="helf_left">
+                                    <div class="columnForm">
+                                        <div class="pt">
+                                            <input type="checkbox" name="childAnyInclude[]" value="Heart Problems" id="heartProblems">
+                                            <label class="radio" for="heartProblems">Heart Problems</label> 
+                                        </div>
+                                        <div class="pt">
+                                            <input class="input_row" type="checkbox" name="childAnyInclude[]" value="Rheumatic fever/strep infections" id="rheumatic">
+                                            <label class="radio" for="rheumatic">Rheumatic fever/strep infections</label>
+                                        </div>
+                                        <div class="pt">
+                                            <input type="checkbox" name="childAnyInclude[]" value="Liver/Kidney problems" id="liverProblems">
+                                            <label class="radio" for="liverProblems">Liver/Kidney problems</label>
+                                        </div>
+                                        <div class="pt">
+                                            <input type="checkbox" name="childAnyInclude[]" value="Skin problems" id="skinProblems">
+                                            <label class="radio" for="skinProblems">Skin problems</label>
+                                        </div>
+                                        <div class="pt">
+                                            <input type="checkbox" name="childAnyInclude[]" value="Joint/limb problems" id="limbProblems">
+                                            <label class="radio" for="limbProblems">Joint/limb problems</label>
+                                        </div>
+                                        <div class="pt">
+                                            <input type="checkbox" name="childAnyInclude[]" value="Hearing/vision problems" id="visionProblems">
+                                            <label class="radio" for="visionProblems">Hearing/vision problems</label>
+                                        </div>
+                                        <div class="pt">
+                                            <input type="checkbox" name="childAnyInclude[]" value="Growth/endocrine problems" id="endocrineProblems">
+                                            <label class="radio" for="endocrineProblems">Growth/endocrine problems</label>
+                                        </div>
+                                        <div class="pt">
+                                            <input type="checkbox" name="childAnyInclude[]" value="Gynecological/menstrual problems" id="menstrualProblems">
+                                            <label class="radio" for="menstrualProblems">Gynecological/menstrual problems</label>
+                                        </div>
+                                        <div class="pt">
+                                            <input type="checkbox" name="childAnyInclude[]" value="Childhood measles/mumps" id="childhoodMeasles">
+                                            <label class="radio" for="childhoodMeasles">Childhood measles/mumps</label>
+                                        </div>                                    
+                                    </div>
                                 </div>
                             </div>
-                            
-                        </fieldset>
-
-
+                        </div>
+                    </fieldset>
+                    <fieldset>                        
+                        <legend class="radio">Family History:</legend>                        
+                        <div class="row">
+                            <div class="full">                                
+                                <label class="radio">1. Please give the names, ages, and relationships of people living in the home:</label>
+                                <textarea class="flex" name="peopleLivingHome" rows="5" cols=""></textarea>                                
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="full">                                
+                                <label class="radio">2. Who are other immediate family members not living in the home?</label>
+                                <textarea class="flex" name="otherFamilyMembers" rows="4" cols=""></textarea>                                
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset id="familyPsychiatricHistory">                        
+                        <legend class="radio">Family Psychiatric History:</legend>
+                        <label class="radio">Has any family member had any of the following? Please circle and indicate which family member.</label>
+                        <div class="row">
+                            <div class="full_partial">
+                                <div class="helf_left">
+                                    <div class="columnForm">
+                                        <div class="pt">
+                                            <div class="full">
+                                                <input type="checkbox" name="familyPsychiatricHistory[]" value="Depression" id="familyDepression">
+                                                <label class="radio" for="familyDepression">Depression</label>
+                                                <input class="input_row columnForm_margin_trailer" type="text" name="familyDepressionMember">
+                                            </div>
+                                        </div>
+                                        <div class="pt">
+                                            <div class="full">
+                                                <input class="input_row" type="checkbox" name="familyPsychiatricHistory[]" value="Mania/Bipolar Disorder" id="familyMania">
+                                                <label class="radio" for="familyMania">Mania/Bipolar Disorder</label>
+                                                <input class="input_row columnForm_margin_trailer" type="text" name="familyManiaMember">
+                                            </div>
+                                        </div>
+                                        <div class="pt">
+                                            <div class="full">
+                                                <input class="input_row" type="checkbox" name="familyPsychiatricHistory[]" value="Suicidal thoughts/urges/behaviors" id="familySuicidal">
+                                                <label class="radio" for="familySuicidal">Suicidal thoughts/urges/behaviors</label>
+                                                <input class="input_row columnForm_margin_trailer" type="text" name="familySuicidalMember">
+                                            </div>
+                                        </div>
+                                        <div class="pt">
+                                            <div class="full">
+                                                <input class="input_row" type="checkbox" name="familyPsychiatricHistory[]" value="Anxiety Panic" id="familyPanic">
+                                                <label class="radio" for="familyPanic">Anxiety Panic</label>
+                                                <input class="input_row columnForm_margin_trailer" type="text" name="familyPanicMember">
+                                            </div>
+                                        </div>
+                                        <div class="pt">
+                                            <div class="full">
+                                                <input type="checkbox" name="familyPsychiatricHistory[]" value="Obsessions/Compulsions" id="familyObsessions">
+                                                <label class="radio" for="familyObsessions">Obsessions/Compulsions</label>
+                                                <input class="input_row columnForm_margin_trailer" type="text" name="familyObsessionsMember">
+                                            </div>
+                                        </div>
+                                        <div class="pt">
+                                            <div class="full">
+                                                <input class="input_row" type="checkbox" name="familyPsychiatricHistory[]" value="Rituals Movement Disorders" id="familyRituals">
+                                                <label class="radio" for="familyRituals">Rituals Movement Disorders</label>
+                                                <input class="input_row columnForm_margin_trailer" type="text" name="familyRitualsMember">
+                                            </div>
+                                        </div>
+                                        <div class="pt">
+                                            <div class="full">
+                                                <input class="input_row" type="checkbox" name="familyPsychiatricHistory[]" value="Tics Unusual noises/vocalizations" id="familyVocalizations">
+                                                <label class="radio" for="familyVocalizations">Tics Unusual noises/vocalizations</label>
+                                                <input class="input_row columnForm_margin_trailer" type="text" name="familyVocalizationsMember">
+                                            </div>
+                                        </div>
+                                        <div class="pt">
+                                            <div class="full">
+                                                <input type="checkbox" name="familyPsychiatricHistory[]" value="Eating Disorder" id="familyEating">
+                                                <label class="radio" for="familyEating">Eating Disorder</label>
+                                                <input class="input_row columnForm_margin_trailer" type="text" name="familyEatingMember">
+                                            </div>
+                                        </div>
+                                        <div class="pt">
+                                            <div class="full">
+                                                <input type="checkbox" name="familyPsychiatricHistory[]" value="ADHD/ADD" id="familyADHD">
+                                                <label class="radio" for="familyADHD">ADHD/ADD</label>
+                                                <input class="input_row columnForm_margin_trailer" type="text" name="familyADHDMember">
+                                            </div>
+                                        </div>
+                                        <div class="pt">
+                                            <div class="full">
+                                                <input type="checkbox" name="familyPsychiatricHistory[]" value="Learning Disability" id="familyLearning">
+                                                <label class="radio" for="familyLearning">Learning Disability</label>
+                                                <input class="input_row columnForm_margin_trailer" type="text" name="familyLearningMember">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="helf_left">
+                                    <div class="columnForm">
+                                        <div class="pt">
+                                            <div class="full">
+                                                <input class="input_row" type="checkbox" name="familyPsychiatricHistory[]" value="Coordination Problems" id="familyCoordination">
+                                                <label class="radio" for="familyCoordination">Coordination Problems</label>
+                                                <input class="input_row columnForm_margin_trailer" type="text" name="familyCoordinationMember">
+                                            </div>
+                                        </div>
+                                        <div class="pt">
+                                            <div class="full">
+                                                <input type="checkbox" name="familyPsychiatricHistory[]" value="Mental Retardation" id="familyRetardation">
+                                                <label class="radio" for="familyRetardation">Mental Retardation</label>
+                                                <input class="input_row columnForm_margin_trailer" type="text" name="familyRetardationMember">
+                                            </div>
+                                        </div>
+                                        <div class="pt">
+                                            <div class="full">
+                                                <input type="checkbox" name="familyPsychiatricHistory[]" value="Autism/Asperger’s Disorder/PDD" id="familyAutism">
+                                                <label class="radio" for="familyAutism">Autism/Asperger’s Disorder/PDD</label>
+                                                <input class="input_row columnForm_margin_trailer" type="text" name="familyAutismMember">
+                                            </div>
+                                        </div>
+                                        <div class="pt">
+                                            <div class="full">
+                                                <input type="checkbox" name="familyPsychiatricHistory[]" value="Sleep Disorder" id="familySleepDisorder">
+                                                <label class="radio" for="familySleepDisorder">Sleep Disorder</label>
+                                                <input class="input_row columnForm_margin_trailer" type="text" name="familySleepDisorderMember">
+                                            </div>
+                                        </div>
+                                        <div class="pt">
+                                            <div class="full">
+                                                <input class="input_row" type="checkbox" name="familyPsychiatricHistory[]" value="Drug Use" id="familyDrug">
+                                                <label class="radio" for="familyDrug">Drug Use</label>
+                                                <input class="input_row columnForm_margin_trailer" type="text" name="familyDrugMember">
+                                            </div>
+                                        </div>
+                                        <div class="pt">
+                                            <div class="full">
+                                                <input type="checkbox" name="familyPsychiatricHistory[]" value="Alcohol Use" id="familyAlcohol">
+                                                <label class="radio" for="familyAlcohol">Alcohol Use</label>
+                                                <input class="input_row columnForm_margin_trailer" type="text" name="familyAlcoholMember">
+                                            </div>
+                                        </div>
+                                        <div class="pt">
+                                            <div class="full">
+                                                <input class="input_row" type="checkbox" name="familyPsychiatricHistory[]" value="Psychosis" id="familyPsychosis">
+                                                <label class="radio" for="familyPsychosis">Psychosis</label>
+                                                <input class="input_row columnForm_margin_trailer" type="text" name="familyPsychosisMember">
+                                            </div>
+                                        </div>
+                                        <div class="pt">
+                                            <div class="full">
+                                                <input class="input_row" type="checkbox" name="familyPsychiatricHistory[]" value="Legal Problems" id="familyLegal">
+                                                <label class="radio" for="familyLegal">Legal Problems</label>
+                                                <input class="input_row columnForm_margin_trailer" type="text" name="familyLegalMember">
+                                            </div>
+                                        </div>
+                                        <div class="pt">
+                                            <div class="full">
+                                                <input class="input_row" type="checkbox" name="familyPsychiatricHistory[]" value="Psychiatric Hospitalizations" id="familyHospitalizations">
+                                                <label class="radio" for="familyHospitalizations">Psychiatric Hospitalizations</label>
+                                                <input class="input_row columnForm_margin_trailer" type="text" name="familyHospitalizationsMember">
+                                            </div>
+                                        </div>
+                                        <div class="pt">
+                                            <div class="full">
+                                                <input type="checkbox" name="familyPsychiatricHistory[]" value="Other:" id="familyOther">
+                                                <label class="radio" for="familyOther">Other:</label>
+                                                <input class="input_row columnForm_margin_trailer" type="text" name="familyOtherMember">
+                                            </div>
+                                        </div>                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="full_partial">                                
+                                <label class="radio">Please elaborate on above as needed:</label>
+                                <textarea class="flex" name="elaborate" rows="3" cols=""></textarea>                                
+                            </div>
+                        </div>                        
+                    </fieldset>
+                    <fieldset>                        
+                        <legend class="radio">Family Medical History:</legend>                        
+                        <div class="row">
+                            <div class="full">                                
+                                <label class="radio">Please provide information about significant medical issues on the FATHER’S side:</label>
+                                <textarea class="flex" name="issuesFATHER" rows="4" cols=""></textarea>                                
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="full">                                
+                                <label class="radio">Please provide information about significant medical issues on the MOTHER’S side:</label>
+                                <textarea class="flex" name="issuesMOTHER" rows="4" cols=""></textarea>                                
+                            </div>
+                        </div>
                     </fieldset>
 
-
-
+                    <!--old form-->
                     <fieldset>
                         <legend>1. Race/Ethnicity</legend>
                         <div class="row">                                

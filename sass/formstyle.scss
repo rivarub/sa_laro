@@ -46,6 +46,59 @@ form#new-patient-child {
     fieldset {
         margin-bottom: 1em;
     }
+    table#pastMedications, table#currentMedications {
+        tr {
+            td:nth-child(2), th:nth-child(2) {
+                width: 10%;
+            }
+        }
+        th, td {
+            width: 20%;
+            input {
+                width: 85%;
+            }
+            input[type="number"] {
+                width: 4.5em;
+            }            
+            table {
+                //width: 80%;
+                td:first-child {                    
+                }
+                /*                td:last-child {
+                                    width: 30%;
+                                    label {
+                                        width: 2em;
+                                    }
+                                }*/
+            }
+        }
+        /*        input[name*="Reason"] {
+                    max-width: 10em;
+                }
+                input[name*="Prescriber"] {
+                    max-width: 10em;
+                }
+                input[name*="Comments"] {
+                    max-width: 12em;
+                }*/
+    }
+    table#substance {
+        th, td {
+            width: 20%;
+            input {
+                width: 85%;
+            }
+        }
+    }
+    fieldset#familyPsychiatricHistory {
+        input[type="text"] {
+            width: 7em;
+            float: right;
+        }
+        input[name*="Other"] {
+            width: 19.5em;
+        }
+    }
 }
 @media screen and (max-width: 1000px) {
     .content {
@@ -617,7 +670,8 @@ input::-webkit-calendar-picker-indicator {
 display: none;
 }*/
 input[type="text"] {
-    max-width: 12em;
+    //max-width: 12em;
+    width: 12em;
     padding: 0.2em 0.4em;
     //letter-spacing: 2px;
 }
@@ -668,6 +722,14 @@ table {
     input[type="date"] {
         //max-width: 4em; 
     }
+    td, th {
+        border: thin dotted gray;
+        //padding: 5px;
+        div.tab_input_row  {
+            margin-left: 0.3em;
+            margin-right: 0.3em;
+        }
+    }
     table {        
         //float: right;
         td, th {
@@ -677,14 +739,7 @@ table {
                     text-align: center;
                 }*/
     }
-    td, th {
-        border: thin dotted gray;
-        //padding: 5px;
-        div.tab_input_row  {
-            margin-left: 0.3em;
-            margin-right: 0.3em;
-        }
-    }
+
     td:not([class*="label_left"]), th:not([class*="label_left"]) {
         text-align: center;
     }
