@@ -11,8 +11,8 @@ and open the template in the editor.
         <meta name="viewport" content="width=device-width, initial-scale=1.0">        
         <link rel="stylesheet" type="text/css" href="css/formstyle.css">
         <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro:400,600,700&amp;subset=latin-ext" rel="stylesheet"> 
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro:400,600,700&amp;subset=latin-ext" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
         <script src="js/modernizr.2.6.2.min.js"></script>
         <script src="js/jquery.maskedinput.js"></script>
         <script type="text/javascript" src="js/js.js"></script>
@@ -989,7 +989,7 @@ and open the template in the editor.
                         </div>                        
                     </fieldset>
                     <fieldset>                        
-                        <legend class="radio">Family Medical History:</legend>                        
+                        <legend class="radio">Family Medical History:</legend>
                         <div class="row">
                             <div class="full">                                
                                 <label class="radio">Please provide information about significant medical issues on the FATHER’S side:</label>
@@ -1002,6 +1002,864 @@ and open the template in the editor.
                                 <textarea class="flex" name="issuesMOTHER" rows="4" cols=""></textarea>                                
                             </div>
                         </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend class="radio">Prenatal History:</legend>
+                        <div class="row">
+                            <div class="full">
+                                <div class="columnForm">
+                                    <div class="pt">
+                                        <label class="radio_input_row">Was the pregnancy healthy?</label>
+                                    </div>
+                                </div>
+                                <div class="columnForm">
+                                    <div class="pt">
+                                        <input type="radio" name="childPrenatalPregnancy" id="childPrenatalPregnancy_yes" value="Yes">
+                                        <label class="radio_tab_input_row" for="childPrenatalPregnancy_yes">Yes</label>
+                                        <input type="radio" name="childPrenatalPregnancy" id="childPrenatalPregnancy_no" value="No">
+                                        <label class="radio_tab_input_row" for="childPrenatalPregnancy_no">No</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="full">
+                                <label class="radio" for="childPrenatalProblems">Problems:</label>
+                                <input class="input_row wide columnForm_margin_trailer" type="text" name="childPrenatalProblems">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="full">
+                                <div class="columnForm">
+                                    <div class="pt">
+                                        <label class="radio_input_row">Were medications used during the pregnancy?</label>
+                                    </div>
+                                </div>
+                                <div class="columnForm">
+                                    <div class="pt">
+                                        <input type="radio" name="childPrenatalMedications" id="childPrenatalMedications_yes" value="Yes">
+                                        <label class="radio_tab_input_row" for="childPrenatalMedications_yes">Yes</label>
+                                        <input type="radio" name="childPrenatalMedications" id="childPrenatalMedications_no" value="No">
+                                        <label class="radio_tab_input_row" for="childPrenatalMedications_no">No</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="full">
+                                <label class="radio" for="childPrenatalMedicationsKind">If yes, what kind?</label>
+                                <input class="input_row wide columnForm_margin_trailer" type="text" name="childPrenatalMedicationsKind">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="full">
+                                <label class="radio" for="childPrenatalMedicationsOften">How Often?</label>
+                                <input class="input_row wide columnForm_margin_trailer" type="text" name="childPrenatalMedicationsOften">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="full">
+                                <div class="columnForm">
+                                    <div class="pt">
+                                        <label class="radio_input_row">Were drugs/alcohol used during the pregnancy?</label>
+                                    </div>
+                                </div>
+                                <div class="columnForm">
+                                    <div class="pt">
+                                        <input type="radio" name="childPrenatalDrugs" id="childPrenatalDrugs_yes" value="Yes">
+                                        <label class="radio_tab_input_row" for="childPrenatalDrugs_yes">Yes</label>
+                                        <input type="radio" name="childPrenatalDrugs" id="childPrenatalDrugs_no" value="No">
+                                        <label class="radio_tab_input_row" for="childPrenatalDrugs_no">No</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="full">
+                                <label class="radio" for="childPrenatalDrugsKind">If yes, what kind?</label>
+                                <input class="input_row wide columnForm_margin_trailer" type="text" name="childPrenatalDrugsKind">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="full">
+                                <label class="radio" for="childPrenatalDrugsOften">How Often?</label>
+                                <input class="input_row wide columnForm_margin_trailer" type="text" name="childPrenatalDrugsOften">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="full">
+                                <div class="columnForm">
+                                    <div class="pt">
+                                        <label class="radio_input_row">Did the mother smoke during the pregnancy?</label>
+                                    </div>
+                                </div>
+                                <div class="columnForm">
+                                    <div class="pt">
+                                        <input type="radio" name="childPrenatalSmoke" id="childPrenatalSmoke_yes" value="Yes">
+                                        <label class="radio_tab_input_row" for="childPrenatalSmoke_yes">Yes</label>
+                                        <input type="radio" name="childPrenatalSmoke" id="childPrenatalSmoke_no" value="No">
+                                        <label class="radio_tab_input_row" for="childPrenatalSmoke_no">No</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="full">
+                                <label class="radio" for="childPrenatalDrugsMuch">If yes how much?</label>
+                                <input class="input_row wide columnForm_margin_trailer" type="text" name="childPrenatalDrugsMuch">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="full">
+                                <div class="columnForm">
+                                    <div class="pt">
+                                        <label class="radio_input_row">Was the pregnancy full term?</label>
+                                    </div>
+                                </div>
+                                <div class="columnForm">
+                                    <div class="pt">
+                                        <input type="radio" name="childPrenatalTerm" id="childPrenatalTerm_yes" value="Yes">
+                                        <label class="radio_tab_input_row" for="childPrenatalTerm_yes">Yes</label>
+                                        <input type="radio" name="childPrenatalTerm" id="childPrenatalTerm_no" value="No">
+                                        <label class="radio_tab_input_row" for="childPrenatalTerm_no">No</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="full">
+                                <div class="columnForm">
+                                    <div class="pt">
+                                        <label class="radio_input_row">Was delivery normal?</label>
+                                    </div>
+                                </div>
+                                <div class="columnForm">
+                                    <div class="pt">
+                                        <input type="radio" name="childPrenatalDelivery" id="childPrenatalDelivery_yes" value="Yes">
+                                        <label class="radio_tab_input_row" for="childPrenatalDelivery_yes">Yes</label>
+                                        <input type="radio" name="childPrenatalDelivery" id="childPrenatalDelivery_no" value="No">
+                                        <label class="radio_tab_input_row" for="childPrenatalDelivery_no">No</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="full">
+                                <label class="radio" for="childPrenatalDeliveryProblems">If no, problems?</label>
+                                <input class="input_row wide columnForm_margin_trailer" type="text" name="childPrenatalDeliveryProblems">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="full">
+                                <label class="radio" for="childPrenatalDeliveryFeeding">Any feeding problems?</label>
+                                <input class="input_row wide columnForm_margin_trailer" type="text" name="childPrenatalDeliveryFeeding">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="full">
+                                <label class="radio" for="childPrenatalGained">Gained weight well?</label>
+                                <input class="input_row wide columnForm_margin_trailer" type="text" name="childPrenatalGained">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="full">
+                                <label class="radio" for="childPrenatalFirstWeek">Was there any problem in the first week?</label>
+                                <input class="input_row wide columnForm_margin_trailer" type="text" name="childPrenatalFirstWeek">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="full">
+                                <label class="radio" for="childPrenatalFirstMonth">first month?</label>
+                                <input class="input_row wide columnForm_margin_trailer" type="text" name="childPrenatalFirstMonth">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="full">
+                                <label class="radio" for="childPrenatalFirstYear">first year?</label>
+                                <input class="input_row wide columnForm_margin_trailer" type="text" name="childPrenatalFirstYear">
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset id="developmentalHistory">
+                        <legend class="radio">Developmental History:</legend>
+                        <label class="radio">1. Describe yourself/child as an infant:</label>
+                        <div class="row">
+                            <div class="full_partial">
+                                <label class="small" for="child_name">a)</label>
+                                <div class="right-board">
+                                    <div class="columnForm">
+                                        <div class="pt">                                        
+                                            <input class="  input_row" type="radio" name="childDevelopmentalA" id="childDevelopmental_active" value="active">
+                                            <label class="radio_tab_input_row" for="childDevelopmental_active">active</label>
+                                        </div>
+                                    </div>
+                                    <div class="columnForm">
+                                        <div class="pt">                                        
+                                            <input class="  input_row" type="radio" name="childDevelopmentalA" id="childDevelopmental_calm" value="active but calm">
+                                            <label class="radio_tab_input_row" for="childDevelopmental_calm">active but calm</label>
+                                        </div>
+                                    </div>
+                                    <div class="columnForm">
+                                        <div class="pt">                                        
+                                            <input class="  input_row" type="radio" name="childDevelopmentalA" id="childDevelopmental_passive" value="passive">
+                                            <label class="radio_tab_input_row" for="childDevelopmental_passive">passive</label>
+                                        </div>
+                                    </div>
+                                    <div class="columnForm">
+                                        <div class="pt">                                        
+                                            <input class="  input_row" type="radio" name="childDevelopmentalA" id="childDevelopmentalA_other" value="other:">
+                                            <label class="radio_tab_input_row" for="childDevelopmentalA_other">other:</label>
+                                            <input class="input_row columnForm_margin_trailer" type="text" name="childDevelopmentalA_other">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="full">
+                                <label class="small" for="child_name">b)</label>
+                                <div class="right-board">
+                                    <div class="columnForm">
+                                        <div class="pt">                                        
+                                            <input class="  input_row" type="radio" name="childDevelopmentalB" id="childDevelopmentalB_cuddly" value="cuddly">
+                                            <label class="radio_tab_input_row" for="childDevelopmentalB_cuddly">cuddly</label>
+                                        </div>
+                                    </div>
+                                    <div class="columnForm">
+                                        <div class="pt">                                        
+                                            <input class="  input_row" type="radio" name="childDevelopmentalB" id="childDevelopmentalB_irritable" value="irritable">
+                                            <label class="radio_tab_input_row" for="childDevelopmentalB_irritable">irritable</label>
+                                        </div>
+                                    </div>
+                                    <div class="columnForm">
+                                        <div class="pt">                                        
+                                            <input class="  input_row" type="radio" name="childDevelopmentalB" id="childDevelopmentalB_withdrawn" value="withdrawn">
+                                            <label class="radio_tab_input_row" for="childDevelopmentalB_withdrawn">withdrawn</label>
+                                        </div>
+                                    </div>
+                                    <div class="columnForm">
+                                        <div class="pt">                                        
+                                            <input class="  input_row" type="radio" name="childDevelopmentalB" id="childDevelopmentalB_other" value="other:">
+                                            <label class="radio_tab_input_row" for="childDevelopmentalB_other">other:</label>
+                                            <input class="input_row columnForm_margin_trailer" type="text" name="childDevelopmentalB_other">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="full">
+                                <label class="small" for="child_name">c)</label>
+                                <div class="right-board">
+                                    <div class="columnForm">
+                                        <div class="pt">                                        
+                                            <input class="  input_row" type="radio" name="childDevelopmentalC" id="childDevelopmentalC_cried" value="cried easily and frequently">
+                                            <label class="radio_tab_input_row" for="childDevelopmentalC_cried">cried easily and frequently</label>
+                                        </div>
+                                    </div>
+                                    <div class="columnForm">
+                                        <div class="pt">                                        
+                                            <input class="  input_row" type="radio" name="childDevelopmentalC" id="childDevelopmentalC_reasonable" value="reasonable amount">
+                                            <label class="radio_tab_input_row" for="childDevelopmentalC_reasonable">reasonable amount</label>
+                                        </div>
+                                    </div>
+                                    <div class="columnForm">
+                                        <div class="pt">                                        
+                                            <input class="  input_row" type="radio" name="childDevelopmentalC" id="childDevelopmentalC_seldom" value="seldom">
+                                            <label class="radio_tab_input_row" for="childDevelopmentalC_seldom">seldom</label>
+                                        </div>
+                                    </div>                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="full">
+                                <label class="small" for="child_name">d)</label>
+                                <div class="right-board">
+                                    <div class="columnForm">
+                                        <div class="pt">                                        
+                                            <input class="  input_row" type="radio" name="childDevelopmentalD" id="childDevelopmentalD_soothed" value="soothed easily">
+                                            <label class="radio_tab_input_row" for="childDevelopmentalD_soothed">soothed easily</label>
+                                        </div>
+                                    </div>
+                                    <div class="columnForm">
+                                        <div class="pt">                                        
+                                            <input class="input_row" type="radio" name="childDevelopmentalD" id="childDevelopmentalD_difficult" value="difficult to soothe">
+                                            <label class="radio_tab_input_row" for="childDevelopmentalD_difficult">difficult to soothe</label>
+                                        </div>
+                                    </div>
+                                    <div class="columnForm">
+                                        <div class="pt">                                        
+                                            <input class="  input_row" type="radio" name="childDevelopmentalD" id="childDevelopmentalD_average" value="average">
+                                            <label class="radio_tab_input_row" for="childDevelopmentalD_average">average</label>
+                                        </div>
+                                    </div>                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="full">
+                                <label class="small" for="child_name">e)</label>
+                                <div class="right-board">
+                                    <div class="columnForm">
+                                        <div class="pt">                                        
+                                            <input class="  input_row" type="radio" name="childDevelopmentalE" id="childDevelopmentalE_response" value="response to changes: severe">
+                                            <label class="radio_tab_input_row" for="childDevelopmentalE_response">response to changes: severe</label>
+                                        </div>
+                                    </div>
+                                    <div class="columnForm">
+                                        <div class="pt">                                        
+                                            <input class="input_row" type="radio" name="childDevelopmentalE" id="childDevelopmentalE_moderate" value="moderate">
+                                            <label class="radio_tab_input_row" for="childDevelopmentalE_moderate">moderate</label>
+                                        </div>
+                                    </div>
+                                    <div class="columnForm">
+                                        <div class="pt">                                        
+                                            <input class="  input_row" type="radio" name="childDevelopmentalE" id="childDevelopmentalE_mild" value="mild">
+                                            <label class="radio_tab_input_row" for="childDevelopmentalE_mild">mild</label>
+                                        </div>
+                                    </div>                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="full">
+                                <label class="small" for="child_name">f)</label>
+                                <div class="right-board">
+                                    <div class="columnForm">
+                                        <div class="pt">                                        
+                                            <!--                                            <input class="  input_row" type="radio" name="childDevelopmentalF" id="childDevelopmentalF_response" value="response to being held (describe):">-->
+                                            <label class="radio_tab_input_row" for="childDevelopmentalF_response">response to being held (describe):</label>
+                                            <input class="input_row columnForm_margin_trailer" type="text" name="childDevelopmentalF_response">
+                                        </div>
+                                    </div>                                                                        
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="full">
+                                <label class="small" for="child_name">g)</label>
+                                <div class="right-board">
+                                    <div class="columnForm">
+                                        <div class="pt"> 
+                                            <label class="radio_tab_input_row" for="childDevelopmentalG_response">reaction to strangers:</label>
+                                        </div>
+                                    </div>
+                                    <div class="columnForm">
+                                        <div class="pt">                                        
+                                            <input class="input_row" type="radio" name="childDevelopmentalG" id="childDevelopmentalG_friendly" value="friendly">
+                                            <label class="radio_tab_input_row" for="childDevelopmentalG_friendly">friendly</label>
+                                        </div>
+                                    </div>
+                                    <div class="columnForm">
+                                        <div class="pt">                                        
+                                            <input class="  input_row" type="radio" name="childDevelopmentalG" id="childDevelopmentalG_indifferent" value="indifferent">
+                                            <label class="radio_tab_input_row" for="childDevelopmentalG_indifferent">indifferent</label>
+                                        </div>
+                                    </div>
+                                    <div class="columnForm">
+                                        <div class="pt">                                        
+                                            <input class="  input_row" type="radio" name="childDevelopmentalG" id="childDevelopmentalG_fearful" value="fearful">
+                                            <label class="radio_tab_input_row" for="childDevelopmentalG_fearful">fearful</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--                        <div class="row">
+                                                    <div class="full_partial">                                
+                                                        <div class="right-board">
+                                                            <div class="columnForm">
+                                                                <div class="pt">
+                                                                    <label class="radio_input_row" for="childDevelopmentalF_response">2. Describe current eating habits:</label>
+                                                                    <input class="input_row columnForm_margin_trailer" type="text" name="childDevelopmentalF_response">
+                                                                </div>
+                                                            </div>                                                                        
+                                                        </div>
+                                                    </div>
+                                                </div>-->
+                        <div class="row">
+                            <div class="full">
+                                <label class="radio" for="childDevelopmental2">2. Describe current eating habits:</label>
+                                <input class="input_row wide columnForm_margin_trailer" type="text" name="childDevelopmental2">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="full">
+                                <label class="radio" for="childDevelopmental2Problems">Problems:</label>
+                                <input class="input_row wide columnForm_margin_trailer" type="text" name="childDevelopmental2Problems">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="full">
+                                <label class="radio" for="childDevelopmental3">3. Describe current sleeping habits:</label>
+                                <input class="input_row wide columnForm_margin_trailer" type="text" name="childDevelopmental3">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="full">
+                                <label class="radio" for="childDevelopmental3Problems">Problems:</label>
+                                <input class="input_row wide columnForm_margin_trailer" type="text" name="childDevelopmental3Problems">
+                            </div>
+                        </div>
+                        <label class="radio" for="childDevelopmental3">4. Developmental Milestones (only <strong>mark if significantly early or late</strong>):</label>
+                        <div class="row">
+                            <div class="full_partial">
+                                <div class="columnForm_marg">
+                                    <div class="pt">                                        
+                                        <label class="radio_tab_input_row" for="childDevelopmentalB_other">Motor:</label>                                        
+                                    </div>
+                                    <div class="pt">
+                                        <input class="mini columnForm_margin_trailer" type="text" name="childDevelopmental4_rolled">                                        
+                                        <label class="radio_tab_input_row" for="childDevelopmental4_rolled">rolled front/back (4 mo)</label>
+                                    </div>
+                                    <div class="pt">
+                                        <input class="mini columnForm_margin_trailer" type="text" name="childDevelopmental4_sitSupport">
+                                        <label class="radio_tab_input_row" for="childDevelopmental4_sitSupport">sit with support (6 mo)</label>
+                                    </div>
+                                    <div class="pt">
+                                        <input class="mini columnForm_margin_trailer" type="text" name="childDevelopmental4_sitAlone">
+                                        <label class="radio_tab_input_row" for="childDevelopmental4_sitAlone">sit alone (9-‐10)</label>
+                                    </div>
+                                    <div class="pt">
+                                        <input class="mini columnForm_margin_trailer" type="text" name="childDevelopmental4_pull">
+                                        <label class="radio_tab_input_row" for="childDevelopmental4_pull">pull to stand (10 mo)</label>
+                                    </div>
+                                    <div class="pt">
+                                        <input class="mini columnForm_margin_trailer" type="text" name="childDevelopmental4_crawling">
+                                        <label class="radio_tab_input_row" for="childDevelopmental4_crawling">crawling (10-‐12 mo)</label>
+                                    </div>
+                                    <div class="pt">
+                                        <input class="mini columnForm_margin_trailer" type="text" name="childDevelopmental4_walksAlone">
+                                        <label class="radio_tab_input_row" for="childDevelopmental4_walksAlone">walks alone (10-‐18 mo)</label>
+                                    </div>
+                                    <div class="pt">
+                                        <input class="mini columnForm_margin_trailer" type="text" name="childDevelopmental4_running">
+                                        <label class="radio_tab_input_row" for="childDevelopmental4_running">running (15-‐24 mo)</label>
+                                    </div>
+                                    <div class="pt">
+                                        <input class="mini columnForm_margin_trailer" type="text" name="childDevelopmental4_tricycle">
+                                        <label class="radio_tab_input_row" for="childDevelopmental4_tricycle">tricycle (3 yrs)</label>
+                                    </div>
+                                    <div class="pt">
+                                        <input class="mini columnForm_margin_trailer" type="text" name="childDevelopmental4_bicycle">
+                                        <label class="radio_tab_input_row" for="childDevelopmental4_bicycle">bicycle (5-‐7 yrs)</label>
+                                    </div>
+                                </div>
+                                <div class="columnForm_marg">
+                                    <div class="pt">                                        
+                                        <label class="radio_tab_input_row" for="childDevelopmentalB_other">Language:</label>                                        
+                                    </div>
+                                    <div class="pt">
+                                        <input class="mini columnForm_margin_trailer" type="text" name="childDevelopmental4_smiling">
+                                        <label class="radio_tab_input_row" for="childDevelopmental4_smiling">smiling (4-‐6 wks)</label>
+                                    </div>
+                                    <div class="pt">
+                                        <input class="mini columnForm_margin_trailer" type="text" name="childDevelopmental4_cooing">
+                                        <label class="radio_tab_input_row" for="childDevelopmental4_cooing">cooing (3 mo)</label>
+                                    </div>
+                                    <div class="pt">
+                                        <input class="mini columnForm_margin_trailer" type="text" name="childDevelopmental4_babbling">
+                                        <label class="radio_tab_input_row" for="childDevelopmental4_babbling">babbling (6 mo)</label>
+                                    </div>
+                                    <div class="pt">
+                                        <input class="mini columnForm_margin_trailer" type="text" name="childDevelopmental4_jargon">
+                                        <label class="radio_tab_input_row" for="childDevelopmental4_jargon">jargon (10-‐14 mo)</label>
+                                    </div>
+                                    <div class="pt">
+                                        <input class="mini columnForm_margin_trailer" type="text" name="childDevelopmental4_firstWord">
+                                        <label class="radio_tab_input_row" for="childDevelopmental4_firstWord">first word (12 mo)</label>
+                                    </div>
+                                    <div class="pt">
+                                        <input class="mini columnForm_margin_trailer" type="text" name="childDevelopmental4_follows">
+                                        <label class="radio_tab_input_row" for="childDevelopmental4_follows">follows 1-step command (15 mo)</label>
+                                    </div>
+                                    <div class="pt">
+                                        <input class="mini columnForm_margin_trailer" type="text" name="childDevelopmental4_combo">
+                                        <label class="radio_tab_input_row" for="childDevelopmental4_combo">2 word combo (22 mo)</label>
+                                    </div>
+                                    <div class="pt">
+                                        <input class="mini columnForm_margin_trailer" type="text" name="childDevelopmental4_sentence">
+                                        <label class="radio_tab_input_row" for="childDevelopmental4_sentence">3 word sentence (3 yrs)</label>
+                                    </div>
+                                    <div class="pt">
+                                        <input class="mini columnForm_margin_trailer" type="text" name="childDevelopmental4_speech">
+                                        <label class="radio_tab_input_row" for="childDevelopmental4_speech">speech problems</label>
+                                    </div>
+                                </div>
+                                <div class="columnForm_marg">
+                                    <div class="pt">                                        
+                                        <label class="radio_tab_input_row" for="childDevelopmentalB_other">Adaptive:</label>                                        
+                                    </div>
+                                    <div class="pt">
+                                        <input class="mini columnForm_margin_trailer" type="text" name="childDevelopmental4_mouthing">
+                                        <label class="radio_tab_input_row" for="childDevelopmental4_mouthing">mouthing (3 mo)</label>
+                                    </div>
+                                    <div class="pt">
+                                        <input class="mini columnForm_margin_trailer" type="text" name="childDevelopmental4_transfers">
+                                        <label class="radio_tab_input_row" for="childDevelopmental4_transfers">transfers objects (6 mo)</label>
+                                    </div>
+                                    <div class="pt">
+                                        <input class="mini columnForm_margin_trailer" type="text" name="childDevelopmental4_picks">
+                                        <label class="radio_tab_input_row" for="childDevelopmental4_picks">picks up raisin (11-‐12 mo)</label>
+                                    </div>
+                                    <div class="pt">
+                                        <input class="mini columnForm_margin_trailer" type="text" name="childDevelopmental4_scribble">
+                                        <label class="radio_tab_input_row" for="childDevelopmental4_scribble">scribble (15 mo)</label>
+                                    </div>
+                                    <div class="pt">
+                                        <input class="mini columnForm_margin_trailer" type="text" name="childDevelopmental4_drinks">
+                                        <label class="radio_tab_input_row" for="childDevelopmental4_drinks">drinks from cup (10 mo)</label>
+                                    </div>
+                                    <div class="pt">
+                                        <input class="mini columnForm_margin_trailer" type="text" name="childDevelopmental4_spoon">
+                                        <label class="radio_tab_input_row" for="childDevelopmental4_spoon">uses spoon (12-‐15 mo)</label>
+                                    </div>
+                                    <div class="pt">
+                                        <input class="mini columnForm_margin_trailer" type="text" name="childDevelopmental4_undresses">
+                                        <label class="radio_tab_input_row" for="childDevelopmental4_undresses">undresses</label>
+                                    </div>
+                                    <div class="pt">
+                                        <input class="mini columnForm_margin_trailer" type="text" name="childDevelopmental4_bowel">
+                                        <label class="radio_tab_input_row" for="childDevelopmental4_bowel">bowel trained</label>
+                                    </div>
+                                    <div class="pt">
+                                        <input class="mini columnForm_margin_trailer" type="text" name="childDevelopmental4_bladder">
+                                        <label class="radio_tab_input_row" for="childDevelopmental4_bladder">bladder trained</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend class="radio">School:</legend>
+                        <div class="row">
+                            <div class="full">
+                                <div class="columnForm">
+                                    <div class="pt">
+                                        <label class="radio_input_row">Repeated Grade?</label>
+                                    </div>
+                                </div>
+                                <div class="columnForm">
+                                    <div class="pt">
+                                        <input type="radio" name="childSchoolRepeated" id="childSchoolRepeated_yes" value="Yes">
+                                        <label class="radio_tab_input_row" for="childSchoolRepeated_yes">Yes</label>
+                                        <input type="radio" name="childPrenatalTerm" id="childSchoolRepeated_no" value="No">
+                                        <label class="radio_tab_input_row" for="childSchoolRepeated_no">No</label>
+                                    </div>
+                                </div>
+                                <div class="columnForm">
+                                    <div class="pt">
+                                        <label class="radio_tab_input_row" for="childSchoolRepeated_which">If yes, which?</label>
+                                        <input class="input_row columnForm_margin_trailer" type="text" name="childSchoolRepeated_which">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--                        <div class="row">
+                                                    <div class="full">
+                                                        <label class="radio" for="childSchoolRepeated_which">If yes, which?</label>
+                                                        <input class="input_row wide columnForm_margin_trailer" type="text" name="childSchoolRepeated_which">
+                                                    </div>
+                                                </div>-->
+                        <div class="row">
+                            <div class="full">
+                                <label class="radio" for="childSchoolSpecial">Special/resource classes?</label>
+                                <input class="input_row wide columnForm_margin_trailer" type="text" name="childSchoolSpecial">
+                            </div>
+                        </div>
+                        <!--                        <div class="row">
+                                                    <div class="full">
+                                                        <label class="radio" for="childSchoolOtherSpecial">Other special services? (Speech/OT/PT)</label>
+                                                        <input class="input_row wide columnForm_margin_trailer" type="text" name="childSchoolOtherSpecial">
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="full">
+                                                        <label class="radio_tab_input_row" for="childSchoolOtherSpecial">IEP?</label>
+                                                        <input class="input_row wide columnForm_margin_trailer" type="text" name="childSchoolOtherSpecial">
+                                                    </div>
+                                                </div>-->
+                        <div class="row">
+                            <div class="full">
+                                <div class="columnForm">
+                                    <div class="pt">
+                                        <label class="radio" for="childSchoolOtherSpecial">Other special services? (Speech/OT/PT)</label>
+                                        <input class="input_row columnForm_margin_trailer" type="text" name="childSchoolOtherSpecial">
+                                    </div>
+                                </div>
+                                <div class="columnForm">
+                                    <div class="pt">
+                                        <label class="radio_tab_input_row" for="childSchoolOtherSpecialIEP">IEP?</label>
+                                        <input class="input_row mini columnForm_margin_trailer" type="text" name="childSchoolOtherSpecialIEP">
+                                    </div>
+                                </div>
+                                <div class="columnForm">
+                                    <div class="pt">
+                                        <label class="radio_tab_input_row" for="childSchooOtherSpeciall504">504 Plan?</label>
+                                        <input class="input_row mini columnForm_margin_trailer" type="text" name="childSchoolOtherSpecial504">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="full">
+                                <label class="radio" for="childSchoolAcademic">Academic grades received:</label>
+                                <input class="input_row wide columnForm_margin_trailer" type="text" name="childSchoolAcademic">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="full_partial">
+                                <div>
+                                    <label class="radio" for="childSchoolEvaluations">Evaluations performed:</label>                            
+                                </div>
+                                <!--                        <div class="row">-->
+                                <div class="full">                                
+                                    <div class="columnForm">
+                                        <div class="pt">
+                                            <label class="radio" for="childSchoolEvaluations_date">Date</label>
+                                            <input  class="input_row columnForm_margin_trailer" type="text" name="childSchoolEvaluations_date" id="childSchoolEvaluations_date" placeholder="mm/dd/yyyy" required>
+                                        </div>
+                                    </div>
+                                    <div class="columnForm">
+                                        <div class="pt">
+                                            <label class="radio_tab_input_row" for="childSchoolEvaluationsType">Type</label>
+                                            <input class="input_row columnForm_margin_trailer" type="text" name="childSchoolEvaluationsType">
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--                        </div>-->
+                                <!--                        <div class="row">-->
+                                <div class="full">
+                                    <label class="radio" for="childSchoolEvaluationsReasons">Reasons</label>
+                                    <input class="input_row wide columnForm_margin_trailer" type="text" name="childSchoolEvaluationsReasons">
+                                </div>
+                                <!--                        </div>-->
+                                <!--                        <div class="row">-->
+                                <div class="full">
+                                    <label class="radio" for="childSchoolEvaluationsResults">Results</label>
+                                    <input class="input_row wide columnForm_margin_trailer" type="text" name="childSchoolEvaluationsResults">
+                                </div>
+                                <!--                        </div>-->
+                                <!--                        <div class="row">-->
+                                <div class="full">
+                                    <div class="columnForm">
+                                        <div class="pt">
+                                            <label class="radio" for="childSchoolEvaluations1_date">Date</label>
+                                            <input  class="input_row columnForm_margin_trailer" type="text" name="childSchoolEvaluations1_date" id="childSchoolEvaluations1_date" placeholder="mm/dd/yyyy" required>
+                                        </div>
+                                    </div>
+                                    <div class="columnForm">
+                                        <div class="pt">
+                                            <label class="radio_tab_input_row" for="childSchoolEvaluations1Type">Type</label>
+                                            <input class="input_row columnForm_margin_trailer" type="text" name="childSchoolEvaluations1Type">
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--                        </div>-->
+                                <!--                        <div class="row">-->
+                                <div class="full">
+                                    <label class="radio" for="childSchoolEvaluations1Reasons">Reasons</label>
+                                    <input class="input_row wide columnForm_margin_trailer" type="text" name="childSchoolEvaluations1Reasons">
+                                </div>
+                                <!--                        </div>-->
+                                <!--                        <div class="row">-->
+                                <div class="full">
+                                    <label class="radio" for="childSchoolEvaluations1Results">Results</label>
+                                    <input class="input_row wide columnForm_margin_trailer" type="text" name="childSchoolEvaluations1Results">
+                                </div>
+                                <!--                        </div>-->
+                                <!--                        <div class="row">-->
+                                <div class="full">
+                                    <div class="columnForm">
+                                        <div class="pt">
+                                            <label class="radio" for="childSchoolRelationshipsTeachers">Relationships with teachers?</label>
+                                            <input class="input_row columnForm_margin_trailer" type="text" name="childSchoolRelationshipsTeachers">
+                                        </div>
+                                    </div>
+                                    <div class="columnForm">
+                                        <div class="pt">
+                                            <label class="radio_tab_input_row" for="childSchoolRelationshipsPeers">With peers?</label>
+                                            <input class="input_row columnForm_margin_trailer" type="text" name="childSchoolRelationshipsPeers">
+                                        </div>
+                                    </div>                                
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="full_partial">
+                                <div class="full">
+                                    <label for="childSchoolAbility">Ability to work independently?</label>
+                                    <div class="right">
+                                        <div class="columnForm">
+                                            <div class="pt">                                        
+                                                <input class="  input_row" type="radio" name="childSchoolAbility" id="childSchoolAbility_good" value="good">
+                                                <label class="radio_tab_input_row" for="childSchoolAbility_good">good</label>
+                                            </div>
+                                        </div>
+                                        <div class="columnForm">
+                                            <div class="pt">                                        
+                                                <input class="  input_row" type="radio" name="childSchoolAbility" id="childSchoolAbility_average" value="average">
+                                                <label class="radio_tab_input_row" for="childSchoolAbility_average">average</label>
+                                            </div>
+                                        </div>
+                                        <div class="columnForm">
+                                            <div class="pt">                                        
+                                                <input class="  input_row" type="radio" name="childSchoolAbility" id="childSchoolAbility_poor" value="poor">
+                                                <label class="radio_tab_input_row" for="childSchoolAbility_poor">poor</label>
+                                            </div>
+                                        </div>                                    
+                                    </div>
+                                </div>
+                                <!--                        </div>-->
+                                <!--                        <div class="row">-->
+                                <div class="full">
+                                    <label for="childSchoolAbility">Organize self?</label>
+                                    <div class="right">
+                                        <div class="columnForm">
+                                            <div class="pt">                                        
+                                                <input class="  input_row" type="radio" name="childSchoolOrganize" id="childSchoolOrganize_good" value="good">
+                                                <label class="radio_tab_input_row" for="childSchoolOrganize_good">good</label>
+                                            </div>
+                                        </div>
+                                        <div class="columnForm">
+                                            <div class="pt">                                        
+                                                <input class="  input_row" type="radio" name="childSchoolOrganize" id="childSchoolOrganize_average" value="average">
+                                                <label class="radio_tab_input_row" for="childSchoolOrganize_average">average</label>
+                                            </div>
+                                        </div>
+                                        <div class="columnForm">
+                                            <div class="pt">                                        
+                                                <input class="  input_row" type="radio" name="childSchoolOrganize" id="childSchoolOrganize_poor" value="poor">
+                                                <label class="radio_tab_input_row" for="childSchoolOrganize_poor">poor</label>
+                                            </div>
+                                        </div>                                    
+                                    </div>
+                                </div>
+                                <!--                        </div>-->
+                                <!--                        <div class="row">-->
+                                <div class="full">
+                                    <label for="childSchoolAbility">Attendance?</label>
+                                    <div class="right">
+                                        <div class="columnForm">
+                                            <div class="pt">                                        
+                                                <input class="  input_row" type="radio" name="childSchoolAttendance" id="childSchoolAttendance_good" value="good">
+                                                <label class="radio_tab_input_row" for="childSchoolAttendance_good">good</label>
+                                            </div>
+                                        </div>
+                                        <div class="columnForm">
+                                            <div class="pt">                                        
+                                                <input class="  input_row" type="radio" name="childSchoolAttendance" id="childSchoolAttendance_average" value="average">
+                                                <label class="radio_tab_input_row" for="childSchoolAttendance_average">average</label>
+                                            </div>
+                                        </div>
+                                        <div class="columnForm">
+                                            <div class="pt">                                        
+                                                <input class="  input_row" type="radio" name="childSchoolAttendance" id="childSchoolAttendance_poor" value="poor">
+                                                <label class="radio_tab_input_row" for="childSchoolAttendance_poor">poor</label>
+                                            </div>
+                                        </div>                                    
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="full_partial">
+                                <div class="full">
+                                    <div class="columnForm">
+                                        <div class="pt">
+                                            <label class="radio_input_row">Have you (your child) ever had truancy proceedings?</label>
+                                        </div>
+                                    </div>
+                                    <div class="columnForm">
+                                        <div class="pt">
+                                            <input type="radio" name="childSchoolProceedings" id="childSchoolProceedings_yes" value="Yes">
+                                            <label class="radio_tab_input_row" for="childSchoolProceedings_yes">Yes</label>
+                                            <input type="radio" name="childSchoolProceedings" id="childSchoolProceedings_no" value="No">
+                                            <label class="radio_tab_input_row" for="childSchoolProceedings_no">No</label>
+                                        </div>
+                                    </div>                                
+                                </div>
+                                <div class="full">
+                                    <div class="columnForm">
+                                        <div class="pt">
+                                            <label class="radio_input_row">Have you (your child) had any other legal proceedings?</label>
+                                        </div>
+                                    </div>
+                                    <div class="columnForm">
+                                        <div class="pt">
+                                            <input type="radio" name="childSchoolLegalProceedings" id="childSchoolLegalProceedings_yes" value="Yes">
+                                            <label class="radio_tab_input_row" for="childSchoolLegalProceedings_yes">Yes</label>
+                                            <input type="radio" name="childSchoolLegalProceedings" id="childSchoolLegalProceedings_no" value="No">
+                                            <label class="radio_tab_input_row" for="childSchoolLegalProceedings_no">No</label>
+                                        </div>
+                                    </div>                                
+                                </div>
+                                <div class="row">
+                                    <div class="full">                                
+                                        <label class="radio">If yes, please describe.</label>
+                                        <textarea class="flex" name="childSchoolLegalProceedingsDescribe" rows="4" cols=""></textarea>                                
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="full">                                
+                                        <label class="radio">Describe your (your child’s) activities, interests, hobbies, skills, strengths:</label>
+                                        <textarea class="flex" name="childSchoolLegalProceedingsInterests" rows="4" cols=""></textarea>                                
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="full">                                
+                                        <label class="radio">Please use the remaining space to describe any other concerns:</label>
+                                        <textarea class="flex" name="childSchoolLegalProceedingsConcerns" rows="4" cols=""></textarea>                                
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Problem Behavior Checklist: Do you/your child have any of the following problems?</legend>
+                        <div class="row">
+                                        <div class="full">
+                                            <table id="short">
+                                                <tr>
+                                                    <td class="label_left_"><label class="radio_tab_input_row">Short Attention Span</label></td>
+                                                    <td><label class="radio_tab_input_row">Past</label></td>
+                                                    <td><label class="radio_tab_input_row">Occasionally</label></td>
+                                                    <td><label class="radio_tab_input_row">Often</label></td>
+                                                    <td><label class="radio_tab_input_row">Very Often</label></td>                                                    
+                                                </tr>
+                                                <tr>
+                                                    <td class="label_left_"><label class="radio_tab_input_row">Impulsivity (acts before thinking)</label></td>
+                                                    <td><input type="radio" name="impulsivity" id="impulsivityPast"></td>
+                                                    <td><input type="radio" name="impulsivity" id="impulsivityOccasionally"></td>
+                                                    <td><input type="radio" name="impulsivity" id="impulsivityOften"></td>
+                                                    <td><input type="radio" name="impulsivity" id="impulsivityVeryOften"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="label_left_"><label class="radio_tab_input_row">Won’t follow rules/directions</label></td>
+                                                    <td><input type="radio" name="rules" id="rulesPast"></td>
+                                                    <td><input type="radio" name="rules" id="rulesOccasionally"></td>
+                                                    <td><input type="radio" name="rules" id="rulesOften"></td>
+                                                    <td><input type="radio" name="rules" id="rulesVeryOften"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="label_left_"><label class="radio_tab_input_row">Irritable, poor frustration tolerance</label></td>
+                                                    <td><input type="radio" name="tolerance" id="tolerancePast"></td>
+                                                    <td><input type="radio" name="tolerance" id="toleranceOccasionally"></td>
+                                                    <td><input type="radio" name="tolerance" id="toleranceOften"></td>
+                                                    <td><input type="radio" name="tolerance" id="toleranceVeryOften"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="label_left_"><label class="radio_tab_input_row">Easily riled up</label></td>
+                                                    <td><input type="radio" name="tolerance" id="tolerancePast"></td>
+                                                    <td><input type="radio" name="tolerance" id="toleranceOccasionally"></td>
+                                                    <td><input type="radio" name="tolerance" id="toleranceOften"></td>
+                                                    <td><input type="radio" name="tolerance" id="toleranceVeryOften"></td>
+                                                </tr>
+                                                
+                                            </table>
+                                        </div>
+                                    </div>
                     </fieldset>
 
                     <!--old form-->

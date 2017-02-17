@@ -578,26 +578,42 @@ form#new-patient-child fieldset#familyPsychiatricHistory input[type="text"] {
 form#new-patient-child fieldset#familyPsychiatricHistory input[name*="Other"] {
   width: 19.5em;
 }
+/* line 103, ../sass/formstyle.scss */
+form#new-patient-child fieldset#developmentalHistory .columnForm {
+  margin-right: 0;
+}
+/* line 106, ../sass/formstyle.scss */
+form#new-patient-child fieldset#developmentalHistory .columnForm_marg {
+  margin-right: 1em;
+}
+/* line 109, ../sass/formstyle.scss */
+form#new-patient-child fieldset#developmentalHistory .small {
+  width: 5%;
+}
+/* line 112, ../sass/formstyle.scss */
+form#new-patient-child fieldset#developmentalHistory .right-board {
+  width: 95%;
+}
 
 @media screen and (max-width: 1000px) {
-  /* line 104, ../sass/formstyle.scss */
+  /* line 118, ../sass/formstyle.scss */
   .content {
     width: 96%;
   }
 }
 @media screen and (max-width: 750px) {
-  /* line 109, ../sass/formstyle.scss */
+  /* line 123, ../sass/formstyle.scss */
   .content {
     width: 95%;
   }
 }
 @media screen and (max-width: 360px) {
-  /* line 115, ../sass/formstyle.scss */
+  /* line 129, ../sass/formstyle.scss */
   .content {
     width: 90%;
   }
 }
-/* line 119, ../sass/formstyle.scss */
+/* line 133, ../sass/formstyle.scss */
 .column_3 {
   -webkit-column-count: 3;
   /* Chrome, Safari, Opera */
@@ -612,7 +628,7 @@ form#new-patient-child fieldset#familyPsychiatricHistory input[name*="Other"] {
   column-rule: thin dotted #999;
 }
 @media screen and (max-width: 900px) {
-  /* line 119, ../sass/formstyle.scss */
+  /* line 133, ../sass/formstyle.scss */
   .column_3 {
     -webkit-column-count: 2;
     /* Chrome, Safari, Opera */
@@ -622,7 +638,7 @@ form#new-patient-child fieldset#familyPsychiatricHistory input[name*="Other"] {
   }
 }
 @media screen and (max-width: 749px) {
-  /* line 119, ../sass/formstyle.scss */
+  /* line 133, ../sass/formstyle.scss */
   .column_3 {
     -webkit-column-count: 1;
     /* Chrome, Safari, Opera */
@@ -632,48 +648,48 @@ form#new-patient-child fieldset#familyPsychiatricHistory input[name*="Other"] {
   }
 }
 
-/* line 145, ../sass/formstyle.scss */
+/* line 159, ../sass/formstyle.scss */
 div.today_date {
   text-align: right;
 }
-/* line 149, ../sass/formstyle.scss */
+/* line 163, ../sass/formstyle.scss */
 div.today_date label {
   margin-right: 0.9em;
 }
 
-/* line 157, ../sass/formstyle.scss */
+/* line 171, ../sass/formstyle.scss */
 label:not([class^="radio"]) {
   width: 40%;
   float: left;
 }
 
-/* line 162, ../sass/formstyle.scss */
+/* line 176, ../sass/formstyle.scss */
 label[class*="maxim"] {
   width: 60%;
 }
 
-/* line 165, ../sass/formstyle.scss */
+/* line 179, ../sass/formstyle.scss */
 label.small {
   width: 22%;
 }
 
-/* line 168, ../sass/formstyle.scss */
+/* line 182, ../sass/formstyle.scss */
 div.small_yes_no {
   min-width: 25%;
 }
 
-/* line 172, ../sass/formstyle.scss */
+/* line 186, ../sass/formstyle.scss */
 .num_box, .main_box, .main_box_headline {
   margin-bottom: 0px;
   margin-bottom: 0rem;
 }
 
-/* line 177, ../sass/formstyle.scss */
+/* line 191, ../sass/formstyle.scss */
 div.helf_left {
   width: 50%;
   float: left;
 }
-/* line 180, ../sass/formstyle.scss */
+/* line 194, ../sass/formstyle.scss */
 div.helf_left .row {
   /*        @media screen and (max-width: 468px) {
               .right-board_yes_not {
@@ -681,467 +697,472 @@ div.helf_left .row {
               }
           }*/
 }
-/* line 181, ../sass/formstyle.scss */
+/* line 195, ../sass/formstyle.scss */
 div.helf_left .row [class*="right-board"] {
   width: 86%;
 }
 @media screen and (max-width: 974px) {
-  /* line 185, ../sass/formstyle.scss */
+  /* line 199, ../sass/formstyle.scss */
   div.helf_left .row .right-board_yes_not {
     width: 85%;
   }
 }
 @media screen and (max-width: 932px) {
-  /* line 190, ../sass/formstyle.scss */
+  /* line 204, ../sass/formstyle.scss */
   div.helf_left .row .right-board_yes_not {
     width: 85%;
   }
 }
 @media screen and (max-width: 911px) {
-  /* line 195, ../sass/formstyle.scss */
+  /* line 209, ../sass/formstyle.scss */
   div.helf_left .row .right-board_yes_not {
     width: 84%;
   }
 }
 @media screen and (max-width: 856px) {
-  /* line 200, ../sass/formstyle.scss */
+  /* line 214, ../sass/formstyle.scss */
   div.helf_left .row .right-board_yes_not {
     width: 83%;
   }
 }
-/* line 209, ../sass/formstyle.scss */
+/* line 223, ../sass/formstyle.scss */
 div.helf_left .row .small_yes_no {
   width: 14%;
 }
-/* line 213, ../sass/formstyle.scss */
+/* line 227, ../sass/formstyle.scss */
 div.helf_left .full {
   margin-bottom: 0px;
   margin-bottom: 0rem;
 }
-/* line 216, ../sass/formstyle.scss */
+/* line 230, ../sass/formstyle.scss */
 div.helf_left .full_partial {
   margin-top: 29px;
   margin-top: 1.8rem;
   margin-bottom: 8px;
   margin-bottom: 0.525rem;
 }
-/* line 220, ../sass/formstyle.scss */
+/* line 234, ../sass/formstyle.scss */
 div.helf_left .num_box {
   width: 9%;
   float: left;
 }
-/* line 224, ../sass/formstyle.scss */
+/* line 238, ../sass/formstyle.scss */
 div.helf_left .main_box, div.helf_left .main_box_headline {
   width: 91%;
   float: right;
 }
-/* line 228, ../sass/formstyle.scss */
+/* line 242, ../sass/formstyle.scss */
 div.helf_left .columnForm {
   margin-right: 0.6em;
 }
-/* line 231, ../sass/formstyle.scss */
+/* line 245, ../sass/formstyle.scss */
 div.helf_left .pt_columnForm_margin_trailer, div.helf_left .row {
   margin-bottom: 0px;
   margin-bottom: 0rem;
 }
-/* line 234, ../sass/formstyle.scss */
+/* line 248, ../sass/formstyle.scss */
 div.helf_left .right-board_yes_not {
   margin-bottom: 5px;
   margin-bottom: 0.3rem;
 }
 
 @media screen and (max-width: 850px) {
-  /* line 239, ../sass/formstyle.scss */
+  /* line 253, ../sass/formstyle.scss */
   div.helf_left {
     width: 100%;
     float: none;
   }
 }
 @media screen and (max-width: 815px) {
-  /* line 246, ../sass/formstyle.scss */
+  /* line 260, ../sass/formstyle.scss */
   div.helf_left .num_box {
     width: 7%;
   }
-  /* line 249, ../sass/formstyle.scss */
+  /* line 263, ../sass/formstyle.scss */
   div.helf_left .main_box, div.helf_left .main_box_headline {
     width: 93%;
   }
-  /* line 251, ../sass/formstyle.scss */
+  /* line 265, ../sass/formstyle.scss */
   div.helf_left .main_box .small_yes_no, div.helf_left .main_box_headline .small_yes_no {
     width: 15%;
   }
-  /* line 254, ../sass/formstyle.scss */
+  /* line 268, ../sass/formstyle.scss */
   div.helf_left .main_box .right-board_yes_not, div.helf_left .main_box_headline .right-board_yes_not {
     width: 85%;
   }
 }
 @media screen and (max-width: 500px) {
-  /* line 262, ../sass/formstyle.scss */
+  /* line 276, ../sass/formstyle.scss */
   div.helf_left label[class^="radio_tab_input_row"] {
     margin-left: 0px;
   }
-  /* line 265, ../sass/formstyle.scss */
+  /* line 279, ../sass/formstyle.scss */
   div.helf_left .main_box {
     width: 100%;
   }
-  /* line 267, ../sass/formstyle.scss */
+  /* line 281, ../sass/formstyle.scss */
   div.helf_left .main_box div.small_yes_no {
     width: 12%;
   }
-  /* line 270, ../sass/formstyle.scss */
+  /* line 284, ../sass/formstyle.scss */
   div.helf_left .main_box div.right-board_yes_not {
     width: 87%;
   }
 }
 @media screen and (max-width: 434px) {
-  /* line 277, ../sass/formstyle.scss */
-  div.helf_left {
-    /*        label[class^="radio_tab_input_row"] {
-                margin-left: 0px;
-            }*/
-  }
-  /* line 283, ../sass/formstyle.scss */
-  div.helf_left .main_box div.small_yes_no {
-    width: 14%;
-  }
-  /* line 286, ../sass/formstyle.scss */
-  div.helf_left .main_box div.right-board_yes_not {
-    width: 86%;
-  }
-}
-@media screen and (max-width: 406px) {
-  /* line 293, ../sass/formstyle.scss */
+  /* line 291, ../sass/formstyle.scss */
   div.helf_left {
     /*        label[class^="radio_tab_input_row"] {
                 margin-left: 0px;
             }*/
   }
   /* line 297, ../sass/formstyle.scss */
+  div.helf_left .main_box div.small_yes_no {
+    width: 14%;
+  }
+  /* line 300, ../sass/formstyle.scss */
+  div.helf_left .main_box div.right-board_yes_not {
+    width: 86%;
+  }
+}
+@media screen and (max-width: 406px) {
+  /* line 307, ../sass/formstyle.scss */
+  div.helf_left {
+    /*        label[class^="radio_tab_input_row"] {
+                margin-left: 0px;
+            }*/
+  }
+  /* line 311, ../sass/formstyle.scss */
   div.helf_left .num_box {
     width: 14%;
     font-weight: bold;
   }
-  /* line 301, ../sass/formstyle.scss */
+  /* line 315, ../sass/formstyle.scss */
   div.helf_left .main_box_headline {
     width: 86%;
     font-weight: bold;
   }
-  /* line 307, ../sass/formstyle.scss */
+  /* line 321, ../sass/formstyle.scss */
   div.helf_left .main_box div.small_yes_no {
     width: 15%;
   }
-  /* line 310, ../sass/formstyle.scss */
+  /* line 324, ../sass/formstyle.scss */
   div.helf_left .main_box div.right-board_yes_not {
     width: 85%;
   }
 }
 @media screen and (max-width: 381px) {
-  /* line 317, ../sass/formstyle.scss */
+  /* line 331, ../sass/formstyle.scss */
   div.helf_left {
     /*        label[class^="radio_tab_input_row"] {
                 margin-left: 0px;
             }*/
   }
-  /* line 323, ../sass/formstyle.scss */
+  /* line 337, ../sass/formstyle.scss */
   div.helf_left .main_box div.small_yes_no {
     width: 16%;
   }
-  /* line 326, ../sass/formstyle.scss */
+  /* line 340, ../sass/formstyle.scss */
   div.helf_left .main_box div.right-board_yes_not {
     width: 84%;
   }
 }
 @media screen and (max-width: 361px) {
-  /* line 333, ../sass/formstyle.scss */
-  div.helf_left {
-    /*        label[class^="radio_tab_input_row"] {
-                margin-left: 0px;
-            }*/
-  }
-  /* line 339, ../sass/formstyle.scss */
-  div.helf_left .main_box div.small_yes_no {
-    width: 17%;
-  }
-  /* line 342, ../sass/formstyle.scss */
-  div.helf_left .main_box div.right-board_yes_not {
-    width: 83%;
-  }
-}
-@media screen and (max-width: 347px) {
-  /* line 349, ../sass/formstyle.scss */
+  /* line 347, ../sass/formstyle.scss */
   div.helf_left {
     /*        label[class^="radio_tab_input_row"] {
                 margin-left: 0px;
             }*/
   }
   /* line 353, ../sass/formstyle.scss */
+  div.helf_left .main_box div.small_yes_no {
+    width: 17%;
+  }
+  /* line 356, ../sass/formstyle.scss */
+  div.helf_left .main_box div.right-board_yes_not {
+    width: 83%;
+  }
+}
+@media screen and (max-width: 347px) {
+  /* line 363, ../sass/formstyle.scss */
+  div.helf_left {
+    /*        label[class^="radio_tab_input_row"] {
+                margin-left: 0px;
+            }*/
+  }
+  /* line 367, ../sass/formstyle.scss */
   div.helf_left .num_box {
     width: 17%;
     font-weight: bold;
   }
-  /* line 357, ../sass/formstyle.scss */
+  /* line 371, ../sass/formstyle.scss */
   div.helf_left .main_box_headline {
     width: 83%;
   }
-  /* line 362, ../sass/formstyle.scss */
+  /* line 376, ../sass/formstyle.scss */
   div.helf_left .main_box div.small_yes_no {
     width: 17%;
   }
-  /* line 365, ../sass/formstyle.scss */
+  /* line 379, ../sass/formstyle.scss */
   div.helf_left .main_box div.right-board_yes_not {
     width: 82%;
   }
 }
-/* line 374, ../sass/formstyle.scss */
+/* line 388, ../sass/formstyle.scss */
 .score div {
   margin-top: 0px;
   margin-top: 0.015rem;
   margin-bottom: 2px;
   margin-bottom: 0.15rem;
 }
-/* line 377, ../sass/formstyle.scss */
+/* line 391, ../sass/formstyle.scss */
 .score .full_partial {
   margin-top: 29px;
   margin-top: 1.8rem;
   margin-bottom: 8px;
   margin-bottom: 0.525rem;
 }
-/* line 380, ../sass/formstyle.scss */
+/* line 394, ../sass/formstyle.scss */
 .score .score_number {
   width: 2%;
 }
-/* line 383, ../sass/formstyle.scss */
+/* line 397, ../sass/formstyle.scss */
 .score .score_number label {
   width: 100%;
 }
-/* line 388, ../sass/formstyle.scss */
+/* line 402, ../sass/formstyle.scss */
 .score .score_main {
   width: 98%;
 }
-/* line 390, ../sass/formstyle.scss */
+/* line 404, ../sass/formstyle.scss */
 .score .score_main label {
   width: 50%;
   float: left;
 }
-/* line 394, ../sass/formstyle.scss */
+/* line 408, ../sass/formstyle.scss */
 .score .score_main div.right-input {
   width: 9%;
   float: left;
 }
-/* line 399, ../sass/formstyle.scss */
+/* line 413, ../sass/formstyle.scss */
 .score .total_score_main {
   width: 100%;
 }
-/* line 401, ../sass/formstyle.scss */
+/* line 415, ../sass/formstyle.scss */
 .score .total_score_main label {
   width: 53%;
   float: left;
 }
-/* line 405, ../sass/formstyle.scss */
+/* line 419, ../sass/formstyle.scss */
 .score .total_score_main div.right-input {
   width: 9%;
   float: left;
 }
 @media screen and (max-width: 950px) {
-  /* line 412, ../sass/formstyle.scss */
+  /* line 426, ../sass/formstyle.scss */
   .score .score_main label {
     width: 49.5%;
   }
-  /* line 417, ../sass/formstyle.scss */
+  /* line 431, ../sass/formstyle.scss */
   .score .total_score_main label {
     width: 52.5%;
   }
 }
 @media screen and (max-width: 850px) {
-  /* line 424, ../sass/formstyle.scss */
+  /* line 438, ../sass/formstyle.scss */
   .score .score_main label {
     width: 76%;
   }
-  /* line 429, ../sass/formstyle.scss */
+  /* line 443, ../sass/formstyle.scss */
   .score .total_score_main label {
     width: 78.7%;
   }
 }
 @media screen and (max-width: 750px) {
-  /* line 436, ../sass/formstyle.scss */
+  /* line 450, ../sass/formstyle.scss */
   .score .score_main label {
     width: 81%;
   }
-  /* line 441, ../sass/formstyle.scss */
+  /* line 455, ../sass/formstyle.scss */
   .score .total_score_main label {
     width: 84%;
   }
 }
 @media screen and (max-width: 680px) {
-  /* line 448, ../sass/formstyle.scss */
+  /* line 462, ../sass/formstyle.scss */
   .score .score_main label {
     width: 79%;
   }
-  /* line 453, ../sass/formstyle.scss */
+  /* line 467, ../sass/formstyle.scss */
   .score .total_score_main label {
     width: 82%;
   }
 }
 @media screen and (max-width: 640px) {
-  /* line 460, ../sass/formstyle.scss */
+  /* line 474, ../sass/formstyle.scss */
   .score .score_main label {
     width: 74.5%;
   }
-  /* line 465, ../sass/formstyle.scss */
+  /* line 479, ../sass/formstyle.scss */
   .score .total_score_main label {
     width: 78%;
   }
 }
 @media screen and (max-width: 560px) {
-  /* line 472, ../sass/formstyle.scss */
+  /* line 486, ../sass/formstyle.scss */
   .score .score_main label {
     width: 72.5%;
   }
-  /* line 477, ../sass/formstyle.scss */
+  /* line 491, ../sass/formstyle.scss */
   .score .total_score_main label {
     width: 76.5%;
   }
 }
 @media screen and (max-width: 500px) {
-  /* line 484, ../sass/formstyle.scss */
+  /* line 498, ../sass/formstyle.scss */
   .score .score_main label {
     width: 71.5%;
   }
-  /* line 489, ../sass/formstyle.scss */
+  /* line 503, ../sass/formstyle.scss */
   .score .total_score_main label {
     width: 76%;
   }
 }
 @media screen and (max-width: 440px) {
-  /* line 496, ../sass/formstyle.scss */
+  /* line 510, ../sass/formstyle.scss */
   .score .score_main label {
     width: 66.5%;
   }
-  /* line 501, ../sass/formstyle.scss */
+  /* line 515, ../sass/formstyle.scss */
   .score .total_score_main label {
     width: 72%;
   }
 }
 @media screen and (max-width: 400px) {
-  /* line 508, ../sass/formstyle.scss */
+  /* line 522, ../sass/formstyle.scss */
   .score .score_main label {
     width: 62.5%;
   }
-  /* line 513, ../sass/formstyle.scss */
+  /* line 527, ../sass/formstyle.scss */
   .score .total_score_main label {
     width: 69%;
   }
 }
 @media screen and (max-width: 360px) {
-  /* line 520, ../sass/formstyle.scss */
+  /* line 534, ../sass/formstyle.scss */
   .score .score_main label {
     width: 58.5%;
   }
-  /* line 525, ../sass/formstyle.scss */
+  /* line 539, ../sass/formstyle.scss */
   .score .total_score_main label {
     width: 65%;
   }
 }
 @media screen and (max-width: 320px) {
-  /* line 532, ../sass/formstyle.scss */
+  /* line 546, ../sass/formstyle.scss */
   .score .score_main label {
     width: 58.5%;
   }
-  /* line 537, ../sass/formstyle.scss */
+  /* line 551, ../sass/formstyle.scss */
   .score .total_score_main label {
     width: 66%;
   }
 }
 
-/* line 544, ../sass/formstyle.scss */
+/* line 558, ../sass/formstyle.scss */
 .row {
   /*    .right-board_yes_not {
           width: 78%;       
       }*/
 }
-/* line 545, ../sass/formstyle.scss */
+/* line 559, ../sass/formstyle.scss */
 .row [class^="right"] {
   float: left;
   width: 60%;
 }
-/* line 550, ../sass/formstyle.scss */
+/* line 564, ../sass/formstyle.scss */
 .row .right-minim {
   width: 40%;
 }
-/* line 553, ../sass/formstyle.scss */
+/* line 567, ../sass/formstyle.scss */
 .row [class*="right-board"] {
   width: 78%;
 }
-/* line 560, ../sass/formstyle.scss */
+/* line 574, ../sass/formstyle.scss */
 .row div.full, .row div.full_partial {
   float: left;
   width: 100%;
 }
-/* line 565, ../sass/formstyle.scss */
+/* line 579, ../sass/formstyle.scss */
 .row div[class^="full_margin_right"] {
   float: right;
   width: 92.7%;
 }
-/* line 570, ../sass/formstyle.scss */
+/* line 584, ../sass/formstyle.scss */
 .row div[class^="full_margin_right_right"] {
   float: right;
   width: 77.6%;
 }
-/* line 574, ../sass/formstyle.scss */
+/* line 588, ../sass/formstyle.scss */
 .row [class^="columnForm"] {
   margin-right: 1.5em;
   float: left;
 }
-/* line 579, ../sass/formstyle.scss */
+/* line 593, ../sass/formstyle.scss */
 .row .pt_num_y_n {
   background-color: powderblue;
   width: 25%;
 }
-/* line 583, ../sass/formstyle.scss */
+/* line 597, ../sass/formstyle.scss */
 .row .num, .row .y_n {
   display: inline-block;
 }
-/* line 589, ../sass/formstyle.scss */
+/* line 603, ../sass/formstyle.scss */
 .row .columnForm-name {
   margin-right: 0.3em;
 }
 
 @media screen and (max-width: 848px) {
-  /* line 599, ../sass/formstyle.scss */
+  /* line 613, ../sass/formstyle.scss */
   div.full div.right-board_yes_not, div.full_partial div.right-board_yes_not {
     width: 76%;
   }
 
-  /* line 604, ../sass/formstyle.scss */
+  /* line 618, ../sass/formstyle.scss */
   div.full_margin_right div.right-board_yes_not {
     width: 79%;
   }
 }
 @media screen and (max-width: 815px) {
-  /* line 611, ../sass/formstyle.scss */
+  /* line 625, ../sass/formstyle.scss */
   div.full div.right-board_yes_not, div.full_partial div.right-board_yes_not {
     width: 100%;
   }
 
-  /* line 616, ../sass/formstyle.scss */
+  /* line 630, ../sass/formstyle.scss */
   div.full_margin_right div.right-board_yes_not {
     width: 100%;
   }
 }
-/* line 621, ../sass/formstyle.scss */
+/* line 635, ../sass/formstyle.scss */
 input {
   height: 20px;
   font-size: 1em;
   color: #1b517e;
 }
 
-/* line 628, ../sass/formstyle.scss */
+/* line 642, ../sass/formstyle.scss */
+select {
+  color: #1b517e;
+}
+
+/* line 645, ../sass/formstyle.scss */
 input[type="number"] {
   width: 4.5em;
   padding: 0.2em 0.1em 0.2em 0.5em;
 }
 
-/* line 634, ../sass/formstyle.scss */
+/* line 651, ../sass/formstyle.scss */
 input[name*=date] {
   width: 8em;
   padding: 0.2em 0.4em 0.2em 0.8em;
@@ -1181,24 +1202,47 @@ input::-webkit-calendar-picker-indicator {
 //color: rgba(0,0,0,0);
 display: none;
 }*/
-/* line 672, ../sass/formstyle.scss */
+/* line 689, ../sass/formstyle.scss */
 input[type="text"] {
-  width: 12em;
   padding: 0.2em 0.4em;
 }
 
-/* line 678, ../sass/formstyle.scss */
+/* line 696, ../sass/formstyle.scss */
+form:not([id="new-patient-child"]) input[type="text"] {
+  max-width: 12em;
+}
+
+/* line 701, ../sass/formstyle.scss */
+form#new-patient-child input[type="text"] {
+  width: 12em;
+}
+/* line 704, ../sass/formstyle.scss */
+form#new-patient-child input.wide {
+  width: 67%;
+}
+/* line 707, ../sass/formstyle.scss */
+form#new-patient-child input.mini {
+  width: 4em;
+}
+/* line 710, ../sass/formstyle.scss */
+form#new-patient-child input[name*=date] {
+  width: 8em;
+  padding: 0.2em 0.4em 0.2em 0.8em;
+  letter-spacing: 1px;
+}
+
+/* line 718, ../sass/formstyle.scss */
 textarea {
   color: #1b517e;
   padding: 0.3em 0.6em;
 }
 
-/* line 682, ../sass/formstyle.scss */
+/* line 722, ../sass/formstyle.scss */
 input[type="radio"], input[type="checkbox"] {
   height: auto;
 }
 
-/* line 687, ../sass/formstyle.scss */
+/* line 727, ../sass/formstyle.scss */
 input:not([type="submit"]), textarea, select {
   border: 1px solid #bfbfbf;
   line-height: 1.2em;
@@ -1208,18 +1252,18 @@ input:not([type="submit"]), textarea, select {
   box-shadow: 2px 2px 5px rgba(43, 43, 43, 0.1);
 }
 
-/* line 697, ../sass/formstyle.scss */
+/* line 737, ../sass/formstyle.scss */
 .input_row {
   margin-left: 1em;
 }
 
-/* line 700, ../sass/formstyle.scss */
+/* line 740, ../sass/formstyle.scss */
 [class*="tab_input_row"] {
   margin-left: 0.5em;
   margin-right: 0.5em;
 }
 
-/* line 705, ../sass/formstyle.scss */
+/* line 745, ../sass/formstyle.scss */
 table {
   wigth: 100%;
   /*    .label_left {
@@ -1250,42 +1294,42 @@ table {
           width: 90%;            
       }     */
 }
-/* line 712, ../sass/formstyle.scss */
+/* line 752, ../sass/formstyle.scss */
 table input[type="text"], table input[type="date"], table input[type="number"] {
   margin-top: 0.2em;
   margin-bottom: 0.2em;
   height: 1.5em;
 }
-/* line 725, ../sass/formstyle.scss */
+/* line 765, ../sass/formstyle.scss */
 table td, table th {
   border: thin dotted gray;
 }
-/* line 728, ../sass/formstyle.scss */
+/* line 768, ../sass/formstyle.scss */
 table td div.tab_input_row, table th div.tab_input_row {
   margin-left: 0.3em;
   margin-right: 0.3em;
 }
-/* line 733, ../sass/formstyle.scss */
+/* line 773, ../sass/formstyle.scss */
 table table {
   /*        tr {
               text-align: center;
           }*/
 }
-/* line 735, ../sass/formstyle.scss */
+/* line 775, ../sass/formstyle.scss */
 table table td, table table th {
   border: none;
 }
-/* line 743, ../sass/formstyle.scss */
+/* line 783, ../sass/formstyle.scss */
 table td:not([class*="label_left"]), table th:not([class*="label_left"]) {
   text-align: center;
 }
 
-/* line 774, ../sass/formstyle.scss */
+/* line 814, ../sass/formstyle.scss */
 .flex {
   width: 95%;
 }
 
-/* line 777, ../sass/formstyle.scss */
+/* line 817, ../sass/formstyle.scss */
 textarea[name="exercise_each_week"] {
   width: 100%;
 }
@@ -1299,39 +1343,39 @@ textarea[name="exercise_each_week"] {
         }
     }
 }*/
-/* line 791, ../sass/formstyle.scss */
+/* line 831, ../sass/formstyle.scss */
 #national_Network :not(hgroup), #national_Network_2 :not(hgroup), #national_Network_3 :not(hgroup), #national_Network_4 :not(hgroup) {
   font-family: "Times New Roman", "Source Serif Pro", "Palatino Linotype", serif;
   font-size: 1.25rem;
 }
-/* line 795, ../sass/formstyle.scss */
+/* line 835, ../sass/formstyle.scss */
 #national_Network p.sans_serif, #national_Network_2 p.sans_serif, #national_Network_3 p.sans_serif, #national_Network_4 p.sans_serif {
   font-family: sans-serif;
   font-size: 0.97rem;
 }
-/* line 800, ../sass/formstyle.scss */
+/* line 840, ../sass/formstyle.scss */
 #national_Network table .label_left, #national_Network_2 table .label_left, #national_Network_3 table .label_left, #national_Network_4 table .label_left {
   margin-left: 0;
 }
-/* line 804, ../sass/formstyle.scss */
+/* line 844, ../sass/formstyle.scss */
 #national_Network table td table, #national_Network table th table, #national_Network_2 table td table, #national_Network_2 table th table, #national_Network_3 table td table, #national_Network_3 table th table, #national_Network_4 table td table, #national_Network_4 table th table {
   margin-left: auto;
   margin-right: auto;
 }
-/* line 809, ../sass/formstyle.scss */
+/* line 849, ../sass/formstyle.scss */
 #national_Network table .tone_light, #national_Network_2 table .tone_light, #national_Network_3 table .tone_light, #national_Network_4 table .tone_light {
   background-color: #eaebe4;
 }
-/* line 812, ../sass/formstyle.scss */
+/* line 852, ../sass/formstyle.scss */
 #national_Network table .tone, #national_Network_2 table .tone, #national_Network_3 table .tone, #national_Network_4 table .tone {
   background-color: #ababa7;
 }
-/* line 817, ../sass/formstyle.scss */
+/* line 857, ../sass/formstyle.scss */
 #national_Network hgroup h1, #national_Network_2 hgroup h1, #national_Network_3 hgroup h1, #national_Network_4 hgroup h1 {
   font-family: "Times New Roman", "Source Serif Pro", "Palatino Linotype", serif;
   font-size: 1.9rem;
 }
-/* line 821, ../sass/formstyle.scss */
+/* line 861, ../sass/formstyle.scss */
 #national_Network hgroup h2, #national_Network hgroup em, #national_Network_2 hgroup h2, #national_Network_2 hgroup em, #national_Network_3 hgroup h2, #national_Network_3 hgroup em, #national_Network_4 hgroup h2, #national_Network_4 hgroup em {
   font-family: sans-serif;
   font-size: 23px;
@@ -1343,7 +1387,7 @@ textarea[name="exercise_each_week"] {
   margin-bottom: 2px;
   margin-bottom: 0.15rem;
 }
-/* line 826, ../sass/formstyle.scss */
+/* line 866, ../sass/formstyle.scss */
 #national_Network hgroup h2.underline_bold, #national_Network_2 hgroup h2.underline_bold, #national_Network_3 hgroup h2.underline_bold, #national_Network_4 hgroup h2.underline_bold {
   margin-top: 31px;
   margin-top: 1.95rem;
@@ -1351,44 +1395,44 @@ textarea[name="exercise_each_week"] {
   margin-bottom: 1.95rem;
   font-weight: 900;
 }
-/* line 830, ../sass/formstyle.scss */
+/* line 870, ../sass/formstyle.scss */
 #national_Network hgroup h2.lighter, #national_Network_2 hgroup h2.lighter, #national_Network_3 hgroup h2.lighter, #national_Network_4 hgroup h2.lighter {
   font-weight: lighter;
 }
 
-/* line 836, ../sass/formstyle.scss */
+/* line 876, ../sass/formstyle.scss */
 #national_Network_3 .helf_left, #national_Network_4 .helf_left {
   width: 100%;
 }
-/* line 838, ../sass/formstyle.scss */
+/* line 878, ../sass/formstyle.scss */
 #national_Network_3 .helf_left .num_box, #national_Network_4 .helf_left .num_box {
   width: 5%;
   float: left;
 }
-/* line 842, ../sass/formstyle.scss */
+/* line 882, ../sass/formstyle.scss */
 #national_Network_3 .helf_left .main_box, #national_Network_3 .helf_left .main_box_headline, #national_Network_4 .helf_left .main_box, #national_Network_4 .helf_left .main_box_headline {
   width: 95%;
   float: right;
 }
-/* line 846, ../sass/formstyle.scss */
+/* line 886, ../sass/formstyle.scss */
 #national_Network_3 .helf_left .small_yes_no, #national_Network_4 .helf_left .small_yes_no {
   width: 14%;
 }
 
-/* line 855, ../sass/formstyle.scss */
+/* line 895, ../sass/formstyle.scss */
 #national_Network_4 .columnForm {
   margin-left: 2em;
   margin-right: 2em;
   margin-top: 1em;
   margin-bottom: 1em;
 }
-/* line 863, ../sass/formstyle.scss */
+/* line 903, ../sass/formstyle.scss */
 #national_Network_4 .columnForm .pt label, #national_Network_4 .columnForm .pt input {
   margin-left: 0;
   margin-right: 0;
 }
 
-/* line 873, ../sass/formstyle.scss */
+/* line 913, ../sass/formstyle.scss */
 .comment {
   width: 100%;
   float: left;
@@ -1401,14 +1445,14 @@ textarea[name="exercise_each_week"] {
           font-size: $fs-comments;
       }*/
 }
-/* line 881, ../sass/formstyle.scss */
+/* line 921, ../sass/formstyle.scss */
 .comment p.sherif {
   margin-bottom: 1rem;
   font-family: "Times New Roman", "Source Serif Pro", "Palatino Linotype", serif;
   font-size: 1.065rem;
 }
 
-/* line 892, ../sass/formstyle.scss */
+/* line 932, ../sass/formstyle.scss */
 .submit {
   *zoom: 1;
   max-width: 61em;
@@ -1425,7 +1469,7 @@ textarea[name="exercise_each_week"] {
   clear: both;
 }
 
-/* line 896, ../sass/formstyle.scss */
+/* line 936, ../sass/formstyle.scss */
 input[type="submit"] {
   width: 23.72881%;
   float: right;
@@ -1444,56 +1488,56 @@ input[type="submit"] {
   text-shadow: 0px 1px black;
   border: 1px solid #bfbfbf;
 }
-/* line 911, ../sass/formstyle.scss */
+/* line 951, ../sass/formstyle.scss */
 input[type="submit"]:hover {
   background-color: #205b8c;
   box-shadow: 3px 3px 3px rgba(68, 68, 68, 0.7);
 }
 
 @media screen and (max-width: 880px) {
-  /* line 919, ../sass/formstyle.scss */
+  /* line 959, ../sass/formstyle.scss */
   #national_Network_4 .helf_left .columnForm {
     margin-left: 0;
     margin-right: 3.5em;
   }
 }
 @media screen and (max-width: 756px) {
-  /* line 929, ../sass/formstyle.scss */
+  /* line 969, ../sass/formstyle.scss */
   #national_Network_4 .helf_left .num_box {
     width: 6%;
     float: left;
   }
-  /* line 933, ../sass/formstyle.scss */
+  /* line 973, ../sass/formstyle.scss */
   #national_Network_4 .helf_left .main_box, #national_Network_4 .helf_left .main_box_headline {
     width: 94%;
     float: right;
   }
-  /* line 937, ../sass/formstyle.scss */
+  /* line 977, ../sass/formstyle.scss */
   #national_Network_4 .helf_left .columnForm {
     margin-left: 0;
     margin-right: 3em;
   }
 }
 @media screen and (max-width: 680px) {
-  /* line 947, ../sass/formstyle.scss */
+  /* line 987, ../sass/formstyle.scss */
   #national_Network_4 .helf_left .columnForm {
     margin-left: 0;
   }
 }
 @media screen and (max-width: 674px) {
-  /* line 957, ../sass/formstyle.scss */
+  /* line 997, ../sass/formstyle.scss */
   #national_Network_4 .helf_left .columnForm {
     margin-left: 0;
     margin-right: 2.55em;
   }
 }
 @media screen and (max-width: 600px) {
-  /* line 965, ../sass/formstyle.scss */
+  /* line 1005, ../sass/formstyle.scss */
   .content {
     width: 92%;
   }
 
-  /* line 968, ../sass/formstyle.scss */
+  /* line 1008, ../sass/formstyle.scss */
   h1 {
     font-size: 1.5rem;
     margin-top: 12px;
@@ -1503,7 +1547,7 @@ input[type="submit"]:hover {
     line-height: 1em;
   }
 
-  /* line 973, ../sass/formstyle.scss */
+  /* line 1013, ../sass/formstyle.scss */
   h2 {
     font-size: 1.3rem;
     margin-top: 0px;
@@ -1512,7 +1556,7 @@ input[type="submit"]:hover {
     margin-bottom: 0rem;
   }
 
-  /* line 977, ../sass/formstyle.scss */
+  /* line 1017, ../sass/formstyle.scss */
   h3 {
     font-size: 1rem;
     margin-top: 24px;
@@ -1521,22 +1565,22 @@ input[type="submit"]:hover {
     margin-bottom: 1.5rem;
   }
 
-  /* line 983, ../sass/formstyle.scss */
+  /* line 1023, ../sass/formstyle.scss */
   fieldset.quick hgroup h1 {
     font-size: 1.45rem;
     line-height: 1.5em;
   }
 
-  /* line 991, ../sass/formstyle.scss */
+  /* line 1031, ../sass/formstyle.scss */
   #national_Network hgroup h1.bold, #national_Network_2 hgroup h1.bold, #national_Network_3 hgroup h1.bold, #national_Network_4 hgroup h1.bold {
     font-size: 1.669rem;
     line-height: 1.1em;
   }
-  /* line 995, ../sass/formstyle.scss */
+  /* line 1035, ../sass/formstyle.scss */
   #national_Network hgroup h2.lighter, #national_Network hgroup h2.underline_bold, #national_Network_2 hgroup h2.lighter, #national_Network_2 hgroup h2.underline_bold, #national_Network_3 hgroup h2.lighter, #national_Network_3 hgroup h2.underline_bold, #national_Network_4 hgroup h2.lighter, #national_Network_4 hgroup h2.underline_bold {
     font-size: 1.39rem;
   }
-  /* line 999, ../sass/formstyle.scss */
+  /* line 1039, ../sass/formstyle.scss */
   #national_Network hgroup h2.lighter, #national_Network_2 hgroup h2.lighter, #national_Network_3 hgroup h2.lighter, #national_Network_4 hgroup h2.lighter {
     line-height: 0.5rem;
     margin-top: 24px;
@@ -1544,7 +1588,7 @@ input[type="submit"]:hover {
     margin-bottom: 0px;
     margin-bottom: 0rem;
   }
-  /* line 1003, ../sass/formstyle.scss */
+  /* line 1043, ../sass/formstyle.scss */
   #national_Network hgroup h2.underline_bold, #national_Network_2 hgroup h2.underline_bold, #national_Network_3 hgroup h2.underline_bold, #national_Network_4 hgroup h2.underline_bold {
     line-height: 1.9rem;
     margin-top: 7px;
@@ -1553,89 +1597,56 @@ input[type="submit"]:hover {
     margin-bottom: 1.8rem;
   }
 
-  /* line 1012, ../sass/formstyle.scss */
+  /* line 1052, ../sass/formstyle.scss */
   #national_Network_4 .helf_left .columnForm {
     margin-left: 0;
     margin-right: 2.18em;
   }
-  /* line 1016, ../sass/formstyle.scss */
+  /* line 1056, ../sass/formstyle.scss */
   #national_Network_4 .helf_left .num_box {
     width: 7%;
     float: left;
   }
-  /* line 1020, ../sass/formstyle.scss */
+  /* line 1060, ../sass/formstyle.scss */
   #national_Network_4 .helf_left .main_box, #national_Network_4 .helf_left .main_box_headline {
     width: 93%;
     float: right;
   }
 }
 @media screen and (max-width: 559px) {
-  /* line 1029, ../sass/formstyle.scss */
+  /* line 1069, ../sass/formstyle.scss */
   #national_Network_4 .helf_left {
     /*        .small_yes_no {
                 width: 14%;
             }*/
   }
-  /* line 1031, ../sass/formstyle.scss */
+  /* line 1071, ../sass/formstyle.scss */
   #national_Network_4 .helf_left .num_box {
     width: 8%;
     float: left;
   }
-  /* line 1035, ../sass/formstyle.scss */
+  /* line 1075, ../sass/formstyle.scss */
   #national_Network_4 .helf_left .main_box, #national_Network_4 .helf_left .main_box_headline {
     width: 92%;
     float: right;
   }
-  /* line 1039, ../sass/formstyle.scss */
+  /* line 1079, ../sass/formstyle.scss */
   #national_Network_4 .helf_left .columnForm {
     margin-left: 2em;
     margin-right: 2em;
   }
 }
 @media screen and (max-width: 539px) {
-  /* line 1054, ../sass/formstyle.scss */
+  /* line 1094, ../sass/formstyle.scss */
   #national_Network_3 .small_yes_no {
     width: 13.5%;
   }
-  /* line 1057, ../sass/formstyle.scss */
+  /* line 1097, ../sass/formstyle.scss */
   #national_Network_3 .right-board_yes_not {
     width: 83.5%;
   }
 }
 @media screen and (max-width: 500px) {
-  /* line 1064, ../sass/formstyle.scss */
-  #national_Network_4 .helf_left {
-    /*        .small_yes_no {
-                width: 14%;
-            }*/
-  }
-  /* line 1066, ../sass/formstyle.scss */
-  #national_Network_4 .helf_left .num_box {
-    width: 7%;
-    float: left;
-  }
-  /* line 1070, ../sass/formstyle.scss */
-  #national_Network_4 .helf_left .main_box, #national_Network_4 .helf_left .main_box_headline {
-    width: 93%;
-    float: right;
-  }
-  /* line 1074, ../sass/formstyle.scss */
-  #national_Network_4 .helf_left .columnForm {
-    margin-left: 2em;
-    margin-right: 1.8em;
-  }
-
-  /* line 1088, ../sass/formstyle.scss */
-  #national_Network_3 .helf_left .main_box, #national_Network_3 .helf_left .main_box_headline {
-    width: 100%;
-    float: right;
-  }
-  /* line 1095, ../sass/formstyle.scss */
-  #national_Network_3 .helf_left .right-board_yes_not {
-    width: 86%;
-  }
-}
-@media screen and (max-width: 470px) {
   /* line 1104, ../sass/formstyle.scss */
   #national_Network_4 .helf_left {
     /*        .small_yes_no {
@@ -1644,160 +1655,193 @@ input[type="submit"]:hover {
   }
   /* line 1106, ../sass/formstyle.scss */
   #national_Network_4 .helf_left .num_box {
-    width: 8%;
+    width: 7%;
     float: left;
   }
   /* line 1110, ../sass/formstyle.scss */
   #national_Network_4 .helf_left .main_box, #national_Network_4 .helf_left .main_box_headline {
-    width: 92%;
+    width: 93%;
     float: right;
   }
   /* line 1114, ../sass/formstyle.scss */
+  #national_Network_4 .helf_left .columnForm {
+    margin-left: 2em;
+    margin-right: 1.8em;
+  }
+
+  /* line 1128, ../sass/formstyle.scss */
+  #national_Network_3 .helf_left .main_box, #national_Network_3 .helf_left .main_box_headline {
+    width: 100%;
+    float: right;
+  }
+  /* line 1135, ../sass/formstyle.scss */
+  #national_Network_3 .helf_left .right-board_yes_not {
+    width: 86%;
+  }
+}
+@media screen and (max-width: 470px) {
+  /* line 1144, ../sass/formstyle.scss */
+  #national_Network_4 .helf_left {
+    /*        .small_yes_no {
+                width: 14%;
+            }*/
+  }
+  /* line 1146, ../sass/formstyle.scss */
+  #national_Network_4 .helf_left .num_box {
+    width: 8%;
+    float: left;
+  }
+  /* line 1150, ../sass/formstyle.scss */
+  #national_Network_4 .helf_left .main_box, #national_Network_4 .helf_left .main_box_headline {
+    width: 92%;
+    float: right;
+  }
+  /* line 1154, ../sass/formstyle.scss */
   #national_Network_4 .helf_left .columnForm {
     margin-left: 1.6em;
     margin-right: 1.8em;
   }
 
-  /* line 1128, ../sass/formstyle.scss */
+  /* line 1168, ../sass/formstyle.scss */
   #national_Network_3 .helf_left .columnForm {
     margin-right: 0.2em;
   }
-  /* line 1131, ../sass/formstyle.scss */
+  /* line 1171, ../sass/formstyle.scss */
   #national_Network_3 .helf_left .small_yes_no {
     width: 14%;
   }
-  /* line 1134, ../sass/formstyle.scss */
+  /* line 1174, ../sass/formstyle.scss */
   #national_Network_3 .helf_left .right-board_yes_not {
     width: 87%;
   }
 }
 @media screen and (max-width: 441px) {
-  /* line 1143, ../sass/formstyle.scss */
+  /* line 1183, ../sass/formstyle.scss */
   form#patient_registration .left label {
     width: 100%;
   }
-  /* line 1147, ../sass/formstyle.scss */
+  /* line 1187, ../sass/formstyle.scss */
   form#patient_registration .right {
     width: 100%;
   }
 
-  /* line 1152, ../sass/formstyle.scss */
+  /* line 1192, ../sass/formstyle.scss */
   #national_Network_4 .helf_left {
     /*        .small_yes_no {
                 width: 14%;
             }*/
   }
-  /* line 1154, ../sass/formstyle.scss */
+  /* line 1194, ../sass/formstyle.scss */
   #national_Network_4 .helf_left .num_box {
     float: left;
   }
-  /* line 1158, ../sass/formstyle.scss */
+  /* line 1198, ../sass/formstyle.scss */
   #national_Network_4 .helf_left .main_box, #national_Network_4 .helf_left .main_box_headline {
     float: right;
   }
-  /* line 1162, ../sass/formstyle.scss */
+  /* line 1202, ../sass/formstyle.scss */
   #national_Network_4 .helf_left .columnForm {
     margin-left: 1.5em;
     margin-right: 1.5em;
   }
 
-  /* line 1175, ../sass/formstyle.scss */
+  /* line 1215, ../sass/formstyle.scss */
   #national_Network_3 .helf_left {
     /*            .columnForm {
                     margin-right: 0.2em;
                 }            */
   }
-  /* line 1179, ../sass/formstyle.scss */
+  /* line 1219, ../sass/formstyle.scss */
   #national_Network_3 .helf_left .right-board_yes_not {
     width: 86%;
   }
 }
 @media screen and (max-width: 417px) {
-  /* line 1187, ../sass/formstyle.scss */
+  /* line 1227, ../sass/formstyle.scss */
   #national_Network_4 .helf_left {
     /*        .small_yes_no {
                 width: 14%;
             }*/
   }
-  /* line 1189, ../sass/formstyle.scss */
+  /* line 1229, ../sass/formstyle.scss */
   #national_Network_4 .helf_left .num_box {
     float: left;
   }
-  /* line 1193, ../sass/formstyle.scss */
+  /* line 1233, ../sass/formstyle.scss */
   #national_Network_4 .helf_left .main_box, #national_Network_4 .helf_left .main_box_headline {
     float: right;
   }
-  /* line 1197, ../sass/formstyle.scss */
+  /* line 1237, ../sass/formstyle.scss */
   #national_Network_4 .helf_left .columnForm {
     margin-left: 0;
     margin-right: 3em;
   }
 
-  /* line 1211, ../sass/formstyle.scss */
+  /* line 1251, ../sass/formstyle.scss */
   #national_Network_3 .helf_left .right-board_yes_not {
     width: 85%;
   }
 }
 @media screen and (max-width: 383px) {
-  /* line 1219, ../sass/formstyle.scss */
+  /* line 1259, ../sass/formstyle.scss */
   #national_Network_3 .helf_left {
     /*            .small_yes_no {
                     width: 12%;
                 }*/
   }
-  /* line 1223, ../sass/formstyle.scss */
+  /* line 1263, ../sass/formstyle.scss */
   #national_Network_3 .helf_left .right-board_yes_not {
     width: 84%;
   }
 }
 @media screen and (max-width: 374px) {
-  /* line 1231, ../sass/formstyle.scss */
+  /* line 1271, ../sass/formstyle.scss */
   #national_Network_4 .helf_left {
     /*        .small_yes_no {
                 width: 14%;
             }*/
   }
-  /* line 1233, ../sass/formstyle.scss */
+  /* line 1273, ../sass/formstyle.scss */
   #national_Network_4 .helf_left .num_box {
     float: left;
   }
-  /* line 1237, ../sass/formstyle.scss */
+  /* line 1277, ../sass/formstyle.scss */
   #national_Network_4 .helf_left .main_box, #national_Network_4 .helf_left .main_box_headline {
     float: right;
   }
-  /* line 1241, ../sass/formstyle.scss */
+  /* line 1281, ../sass/formstyle.scss */
   #national_Network_4 .helf_left .columnForm {
     margin-left: 0;
     margin-right: 2.4em;
   }
 
-  /* line 1255, ../sass/formstyle.scss */
+  /* line 1295, ../sass/formstyle.scss */
   #national_Network_3 .helf_left .right-board_yes_not {
     width: 81%;
   }
 }
 @media screen and (max-width: 360px) {
-  /* line 1264, ../sass/formstyle.scss */
+  /* line 1304, ../sass/formstyle.scss */
   #national_Network_3 .helf_left .small_yes_no {
     width: 12%;
   }
-  /* line 1267, ../sass/formstyle.scss */
+  /* line 1307, ../sass/formstyle.scss */
   #national_Network_3 .helf_left .right-board_yes_not {
     width: 80%;
   }
 }
 @media screen and (max-width: 337px) {
-  /* line 1275, ../sass/formstyle.scss */
+  /* line 1315, ../sass/formstyle.scss */
   #national_Network_3 .helf_left {
     /*            .columnForm {
                     margin-right: 0.2em;
                 }*/
   }
-  /* line 1279, ../sass/formstyle.scss */
+  /* line 1319, ../sass/formstyle.scss */
   #national_Network_3 .helf_left .small_yes_no {
     width: 8%;
   }
-  /* line 1282, ../sass/formstyle.scss */
+  /* line 1322, ../sass/formstyle.scss */
   #national_Network_3 .helf_left .right-board_yes_not {
     width: 78%;
   }
