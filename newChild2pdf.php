@@ -250,9 +250,20 @@ $html .= '<br><br>Family Psychiatric History: ';
 $html .= '<br>Has any family member had any of the following? Please choose and indicate which family member. ';
 $html .= '<strong>';
 if (!empty($_POST['familyPsychiatricHistory'])) {
-    $html .= implode(", ", $_POST['familyPsychiatricHistory']);
+	foreach($_POST['familyPsychiatricHistory'] as $value) {
+		$html .= '<br>'.$value;
+		if(preg_match('/^([^:\s\/]*?)[:\s\/]/', $value, $matches)) {
+        //if(preg_match('/^(\w*?)\W/', $value, $matches)) {
+			//$html .= '  '.$matches[1];
+			$familyMember = 'family'.$matches[1].'Member';
+			//$html .= '  '.$familyMember;
+			$html .= ": " . $_POST[$familyMember];
+		}
+	}
+    /*$html .= implode(", ", $_POST['familyPsychiatricHistory']);
     if (in_array('Other:', $_POST['familyPsychiatricHistory']) && !empty($_POST['familyOtherMember']))
     $html .= " " . $_POST['familyOtherMember'];
+    */
 }
 $html .= '</strong>';
 $html .= '<br>Please elaborate on above as needed: ';
@@ -770,10 +781,13 @@ $html .= $_POST['shortPulling'];
 $html .= '</strong>';
 //echo $html;
 //$html .= var_dump($_POST);
-$mpdf->WriteHTML($html, 2);
-$mpdf->Output(); // into browser
-exit;
 
+$mpdf->WriteHTML($html, 2);
+
+// To output into browser - begin
+$mpdf->Output(); 
+exit;
+// To output into browser - end
 //Send via swiftmailer - begin
 $content = $mpdf->Output('', 'S');
 require_once 'swiftmailer-5.x/lib/swift_required.php';
