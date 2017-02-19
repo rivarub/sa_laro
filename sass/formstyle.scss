@@ -109,6 +109,12 @@ form#new-patient-child {
             width: 19.5em;
         }
     }
+    fieldset#includeDates {
+        input[type="text"] {
+            width: 7em;
+            float: right;
+        }
+    }
     fieldset#developmentalHistory {
         .columnForm {
             margin-right: 0;
