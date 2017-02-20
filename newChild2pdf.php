@@ -1,6 +1,6 @@
 <?php
 
-$debug = true;
+$debug = false;
 require_once 'mpdf60/mpdf.php';
 $mpdf = new mPDF();
 $url = $_POST['url'];
@@ -230,12 +230,20 @@ for ($i = 1; $i < 6; $i++) {
 $html .= '</table>';
 
 $html .= '<br><br>Please choose any that the patient has had and include dates as best you can: ';
+
+//    $html .= implode(", ", $_POST['childAnyInclude']);
+
 $html .= '<strong>';
 if (!empty($_POST['childAnyInclude'])) {
-    $html .= implode(", ", $_POST['childAnyInclude']);
+	foreach($_POST['childAnyInclude'] as $value) {
+		$html .= '<br>'.$value;
+		if(preg_match('/^([^:\s\/,]*?)[:\s\/,]/', $value, $matches)) {
+			$familyMember = $matches[1].'Text';
+			$html .= ": " . $_POST[$familyMember];
+		}
+	}
 }
 $html .= '</strong>';
-
 $html .= '<br><br>Family History: ';
 $html .= '<br>1. Please give the names, ages, and relationships of people living in the home: ';
 $html .= '<strong>';
@@ -783,11 +791,13 @@ $html .= '</strong>';
 //$html .= var_dump($_POST);
 
 $mpdf->WriteHTML($html, 2);
-
+/*
 // To output into browser - begin
 $mpdf->Output(); 
 exit;
 // To output into browser - end
+ 
+ */
 //Send via swiftmailer - begin
 $content = $mpdf->Output('', 'S');
 require_once 'swiftmailer-5.x/lib/swift_required.php';
