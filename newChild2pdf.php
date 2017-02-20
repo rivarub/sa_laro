@@ -179,52 +179,52 @@ $html .= $_POST['child_immunizations'];
 $html .= '</strong>';
 
 $html .= '<br><br>Past Medications: ';
-$html .= '<table border="1"><tr><th>Name of Medication</th>
-                                        <th>Dose Taken</th>
-                                        <th>Reason</th>
-                                        <th>Prescriber</th>
-                                        <th>Comments (helpfulness/side effects)</th></tr>';
+$html .= '<table border="1"><tr><td>Name of Medication</td>
+                                        <td>Dose Taken</td>
+                                        <td>Reason</td>
+                                        <td>Prescriber</td>
+                                        <td>Comments (helpfulness/side effects)</td></tr>';
 for ($i = 1; $i < 6; $i++) {
     $html .= '<tr>
-<td>' . $_POST["pastNameMedication_$i"] . '</td>
-<td>' . $_POST["pastDoseTaken_$i"] . '</td>
-<td>' . $_POST["pastReason_$i"] . '</td>
-<td>' . $_POST["pastPrescriber_$i"] . '</td>                                
-<td>' . $_POST["pastComments_$i"] . '</td>
+<th>' . $_POST["pastNameMedication_$i"] . '</th>
+<th>' . $_POST["pastDoseTaken_$i"] . '</th>
+<th>' . $_POST["pastReason_$i"] . '</th>
+<th>' . $_POST["pastPrescriber_$i"] . '</th>                                
+<th>' . $_POST["pastComments_$i"] . '</th>
 </tr>';
 }
 $html .= '</table>';
 
 $html .= '<br><br>Current Medications: ';
-$html .= '<table border="1"><tr><th>Name of Medication</th>
-                                        <th>Dose Taken</th>
-                                        <th>Reason</th>
-                                        <th>Prescriber</th>
-                                        <th>Comments (helpfulness/side effects)</th></tr>';
+$html .= '<table border="1"><tr><td>Name of Medication</td>
+                                        <td>Dose Taken</td>
+                                        <td>Reason</td>
+                                        <td>Prescriber</td>
+                                        <td>Comments (helpfulness/side effects)</td></tr>';
 for ($i = 1; $i < 6; $i++) {
     $html .= '<tr>
-<td>' . $_POST["currentNameMedication_$i"] . '</td>
-<td>' . $_POST["currentDoseTaken_$i"] . '</td>
-<td>' . $_POST["currentReason_$i"] . '</td>
-<td>' . $_POST["currentPrescriber_$i"] . '</td>                                
-<td>' . $_POST["currentComments_$i"] . '</td>
+<th>' . $_POST["currentNameMedication_$i"] . '</th>
+<th>' . $_POST["currentDoseTaken_$i"] . '</th>
+<th>' . $_POST["currentReason_$i"] . '</th>
+<th>' . $_POST["currentPrescriber_$i"] . '</th>                                
+<th>' . $_POST["currentComments_$i"] . '</th>
 </tr>';
 }
 $html .= '</table>';
 
 $html .= '<br><br>Please comment on any substance abuse (drugs/alcohol). ';
-$html .= '<table border="1"><tr><th>What?</th>
-                                        <th>When did you start?</th>
-                                        <th>How much did you use?</th>
-                                        <th>Last use?</th>
-                                        <th>What did it do for you?</th></tr>';
+$html .= '<table border="1"><tr><td>What?</td>
+                                        <td>When did you start?</td>
+                                        <td>How much did you use?</td>
+                                        <td>Last use?</td>
+                                        <td>What did it do for you?</td></tr>';
 for ($i = 1; $i < 6; $i++) {
     $html .= '<tr>
-<td>' . $_POST["substanceWhat$i"] . '</td>
-<td>' . $_POST["substanceWhen$i"] . '</td>
-<td>' . $_POST["substanceHowMuch$i"] . '</td>
-<td>' . $_POST["substanceLast$i"] . '</td>                                
-<td>' . $_POST["substanceWhatDid$i"] . '</td>
+<th>' . $_POST["substanceWhat$i"] . '</th>
+<th>' . $_POST["substanceWhen$i"] . '</th>
+<th>' . $_POST["substanceHowMuch$i"] . '</th>
+<th>' . $_POST["substanceLast$i"] . '</th>                              
+<th>' . $_POST["substanceWhatDid$i"] . '</th>
 </tr>';
 }
 $html .= '</table>';
@@ -796,8 +796,7 @@ $mpdf->WriteHTML($html, 2);
 $mpdf->Output(); 
 exit;
 // To output into browser - end
- 
- */
+*/ 
 //Send via swiftmailer - begin
 $content = $mpdf->Output('', 'S');
 require_once 'swiftmailer-5.x/lib/swift_required.php';
