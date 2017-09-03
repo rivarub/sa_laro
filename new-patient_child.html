@@ -20,7 +20,7 @@ and open the template in the editor.
     <body>
         <div class="container">
             <div class="content">
-                <form id="new-patient-child" method="post" action="#">                    
+                <form id="new-patient-child" method="post" action="newChild2pdf.php">                    
                     <!--                    <fieldset id="childInformation">-->
                     <hgroup>
                         <h3>Fusion Family Consulting<br>1700 Alma Drive, Suite 480<br>Plano, Texas. 75075<br>214-296-9365</h3>
@@ -32,9 +32,9 @@ and open the template in the editor.
                         <legend>Patient Demographic Information:</legend>
                         <div class="row">
                             <div class="full">
-<!--                                <div class="left">-->
-                                    <label class="small" for="child_name">Patient Name:</label>
-<!--                                </div>-->
+                                <!--                                <div class="left">-->
+                                <label class="small" for="child_name">Patient Name:</label>
+                                <!--                                </div>-->
                                 <div class="right-board">
                                     <div class="columnForm-name">
                                         <div class="pt">
@@ -56,9 +56,9 @@ and open the template in the editor.
                         </div>
                         <div class="row">
                             <div class="full">
-<!--                                <div class="left">-->
-                                    <label class="small" for="child_birth_date">Date of Birth</label>
-<!--                                </div>-->
+                                <!--                                <div class="left">-->
+                                <label class="small" for="child_birth_date">Date of Birth</label>
+                                <!--                                </div>-->
                                 <div class="right-board">
                                     <input type="text" name="child_birth_date" id="child_birth_date" placeholder="mm/dd/yyyy" required>
                                 </div>
@@ -66,81 +66,40 @@ and open the template in the editor.
                         </div>
                         <div class="row">
                             <div class="full">
-<!--                                <div class="left">-->
-                                    <label class="small" for="child_address">Address:</label>
-<!--                                </div>-->
+                                <!--                                <div class="left">-->
+                                <label class="small" for="child_address">Address:</label>
+                                <!--                                </div>-->
                                 <div class="right-board">
                                     <div class="row">
                                         <textarea class="flex"  name="child_address" rows="2" cols="45" id="child_address"></textarea>
                                     </div>
                                     <div class="columnForm-name">
                                         <div class="pt">
-                                            <input type="text" class="name" name="child_City" id="child_address" placeholder="City" required>
+                                            <input type="text" class="name" name="child_City" id="child_City" placeholder="City" >
                                         </div>
                                     </div>
                                     <div class="columnForm-name">
                                         <div class="pt">
-                                            <input class="name" type="text" name="child_State" id="child_address" placeholder="State">
+                                            <input class="name" type="text" name="child_State" id="child_State" placeholder="State">
                                         </div>
                                     </div>                                
                                     <div class="columnForm-name">
                                         <div class="pt">
-                                            <input class="name" type="text" name="child_Zip" id="child_address" placeholder="Zip" required>
+                                            <input class="name" type="text" name="child_Zip" id="child_Zip" placeholder="Zip">
                                         </div>
                                     </div>
-                                    <!--                                        <div class="columnForm-name">
-                                                                                <div class="pt">
-                                                                                    <label class="small" for="address">City:</label>                                            
-                                                                                    <input class="input_row" type="text" name="" id=""  required>                                            
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="columnForm-name">
-                                                                                <div class="pt">
-                                                                                    <label class="small" for="address">State:</label>                                            
-                                                                                    <input class="input_row" type="text" name="" id=""  required>                                            
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="columnForm-name">
-                                                                                <div class="pt">
-                                                                                    <label class="small" for="address">Zip:</label>                                            
-                                                                                    <input class="input_row" type="text" name="" id=""  required>                                            
-                                                                                </div>
-                                                                            </div>-->
                                 </div>
                             </div>
                         </div>
-                        <!--                            <div class="row">
-                                                        <label class="small">Preferred contact:</label>
-                                                        <div class="right-board">
-                                                            <div class="columnForm-name">
-                                                                <div class="pt">
-                                                                    <label class="small" for="address">home</label>                                            
-                                                                    <input class="input_row" type="text" name="" id=""  required>                                            
-                                                                </div>
-                                                            </div>
-                                                            <div class="columnForm-name">
-                                                                <div class="pt">
-                                                                    <label class="small" for="address">work</label>                                            
-                                                                    <input class="input_row" type="text" name="" id=""  required>                                            
-                                                                </div>
-                                                            </div>
-                                                            <div class="columnForm-name">
-                                                                <div class="pt">
-                                                                    <label class="small" for="address">cell</label>                                            
-                                                                    <input class="input_row" type="text" name="" id=""  required>                                            
-                                                                </div>
-                                                            </div>                                    
-                                                        </div>
-                                                    </div>-->
                         <div class="row">
                             <div class="full">
-<!--                                <div class="left">-->
-                                    <label class="small" for="preferred_contact">Preferred contact:</label>
-<!--                                </div>-->
+                                <!--                                <div class="left">-->
+                                <label class="small" for="preferred_contact">Preferred contact:</label>
+                                <!--                                </div>-->
                                 <div class="right-board">                                        
                                     <div class="columnForm-name">
                                         <div class="pt">
-                                            <input type="text" class="name" name="child_preferred_contact_home" id="preferred_contact" placeholder="home" required>
+                                            <input type="text" class="name" name="child_preferred_contact_home" id="preferred_contact" placeholder="home">
                                         </div>
                                     </div>
                                     <div class="columnForm-name">
@@ -150,7 +109,7 @@ and open the template in the editor.
                                     </div>                                
                                     <div class="columnForm-name">
                                         <div class="pt">
-                                            <input class="name" type="text" name="child_preferred_contact_cell" id="preferred_contact" placeholder="cell" required>
+                                            <input class="name" type="text" name="child_preferred_contact_cell" id="preferred_contact" placeholder="cell">
                                         </div>
                                     </div>
                                 </div>
@@ -158,60 +117,46 @@ and open the template in the editor.
                         </div>
                         <div class="row">
                             <div class="full">
-<!--                                <div class="left">-->
-                                    <label class="small" for="child_email">Email address:</label>
-<!--                                </div>-->
+                                <!--                                <div class="left">-->
+                                <label class="small" for="child_email">Email address:</label>
+                                <!--                                </div>-->
                                 <div class="right-board">
-                                    <input type="text" name="child_email" id="child_email" required>
+                                    <input type="text" name="child_email" id="child_email">
                                 </div>
                             </div>
                         </div>
-                        <!--                    <fieldset>-->
-                        <!--                        <legend>
-                                                    <label class="radio" for="reminders">Appointment reminders: Email or text Parent’s Name (if patient is a minor)<input class="input_row" type="text" name="reminders" id="reminders" required></label>
-                                                </legend>-->
                         <div class="row">
                             <div class="full">
-<!--                                <div class="left">-->
-                                    <label class="maxim" for="reminders">Appointment reminders: Email or text Parent’s Name (if patient is a minor)</label>
-<!--                                </div>-->
+                                <!--                                <div class="left">-->
+                                <label class="maxim" for="reminders">Appointment reminders: Email or text Parent’s Name (if patient is a minor)</label>
+                                <!--                                </div>-->
                                 <div class="right-minim">
-                                    <input type="text" name="reminders" id="reminders" required>
+                                    <input type="text" name="reminders" id="reminders">
                                 </div>
                             </div>
                         </div>
-                        <!--                            <div class="row">
-                                                        <div class="full_partial">
-                                                            <div class="columnForm_margin_trailer">
-                                                                <div class="pt">
-                                                                    <label class="radio" for="reminders">Appointment reminders: Email or text Parent’s Name (if patient is a minor)</label>
-                                                                    <input type="text" name="reminders" id="reminders">
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>-->
                         <div class="row">
                             <div class="full">
-<!--                                <div class="left">-->
-                                    <label class="small" for="reminders_address">Address:</label>
-<!--                                </div>-->
+                                <!--                                <div class="left">-->
+                                <label class="small" for="reminders_address">Address:</label>
+                                <!--                                </div>-->
                                 <div class="right-board">
                                     <div class="row">
                                         <textarea class="flex"  name="reminders_address" rows="2" cols="45" id="reminders_address"></textarea>
                                     </div>
                                     <div class="columnForm-name">
                                         <div class="pt">
-                                            <input type="text" class="name" name="reminders_City" id="reminders_address" placeholder="City" required>
+                                            <input type="text" class="name" name="reminders_City" id="reminders_City" placeholder="City">
                                         </div>
                                     </div>
                                     <div class="columnForm-name">
                                         <div class="pt">
-                                            <input class="name" type="text" name="reminders_State" id="reminders_address" placeholder="State">
+                                            <input class="name" type="text" name="reminders_State" id="reminders_State" placeholder="State">
                                         </div>
                                     </div>                                
                                     <div class="columnForm-name">
                                         <div class="pt">
-                                            <input class="name" type="text" name="reminders_Zip" id="reminders_address" placeholder="Zip" required>
+                                            <input class="name" type="text" name="reminders_Zip" id="reminders_Zip" placeholder="Zip">
                                         </div>
                                     </div>                                        
                                 </div>
@@ -219,76 +164,60 @@ and open the template in the editor.
                         </div>
                         <div class="row">
                             <div class="full">
-<!--                                <div class="left">-->
-                                    <label class="small" for="reminders_email">Occupation:</label>
-<!--                                </div>-->
+                                <!--                                <div class="left">-->
+                                <label class="small" for="Occupation">Occupation:</label>
+                                <!--                                </div>-->
                                 <div class="right-board">
-                                    <input type="text" name="reminders_email" id="reminders_email" required>
+                                    <input type="text" name="Occupation" id="Occupation" >
                                 </div>
                             </div>
                         </div>
                         <div class="row">
                             <div class="full">
-<!--                                <div class="left">-->
-                                    <label class="small" for="reminders_preferred_contact">Preferred contact:</label>
-<!--                                </div>-->
+                                <!--                                <div class="left">-->
+                                <label class="small" for="reminders_preferred_contact">Preferred contact:</label>
+                                <!--                                </div>-->
                                 <div class="right-board">                                        
                                     <div class="columnForm-name">
                                         <div class="pt">
-                                            <input type="text" class="name" name="reminders_preferred_contact" id="reminders_preferred_contact" required>
+                                            <input type="text" class="name" name="reminders_preferred_contact" id="reminders_preferred_contact" >
                                         </div>
                                     </div>                                        
                                 </div>
                             </div>
                         </div>
-                        <!--                    </fieldset>-->
-                        <!--                            <div></div>-->
-                        <!--                    <fieldset>-->
-                        <!--                        <legend>
-                                                    <label class="radio" for="reminders">Parent’s Name (if patient is a minor):<input class="input_row" type="text" name="reminders" id="reminders" required></label>
-                                                </legend>-->
                         <div class="row">
                             <div class="full">
-<!--                                <div class="left">-->
-                                    <label class="maxim" for="reminders">Parent’s Name (if patient is a minor):</label>
-<!--                                </div>-->
+                                <!--                                <div class="left">-->
+                                <label class="maxim" for="parent_name">Parent’s Name (if patient is a minor):</label>
+                                <!--                                </div>-->
                                 <div class="right-minim">
-                                    <input type="text" name="reminders" id="reminders" required>
+                                    <input type="text" name="parent_name" id="parent_name" >
                                 </div>
                             </div>
                         </div>
-                        <!--                            <div class="row">
-                                                        <div class="full_partial">
-                                                            <div class="columnForm_margin_trailer">
-                                                                <div class="pt">
-                                                                    <label class="radio" for="reminders">Appointment reminders: Email or text Parent’s Name (if patient is a minor)</label>
-                                                                    <input type="text" name="reminders" id="reminders">
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>-->
                         <div class="row">
                             <div class="full">
-<!--                                <div class="left">-->
-                                    <label class="small" for="reminders_address">Address:</label>
-<!--                                </div>-->
+                                <!--                                <div class="left">-->
+                                <label class="small" for="parent_address">Address:</label>
+                                <!--                                </div>-->
                                 <div class="right-board">
                                     <div class="row">
-                                        <textarea class="flex"  name="reminders_address" rows="2" cols="45" id="reminders_address"></textarea>
+                                        <textarea class="flex"  name="parent_address" rows="2" cols="45" id="parent_address"></textarea>
                                     </div>
                                     <div class="columnForm-name">
                                         <div class="pt">
-                                            <input type="text" class="name" name="reminders_City" id="reminders_address" placeholder="City" required>
+                                            <input type="text" class="name" name="parent_City" id="parent_City" placeholder="City" >
                                         </div>
                                     </div>
                                     <div class="columnForm-name">
                                         <div class="pt">
-                                            <input class="name" type="text" name="reminders_State" id="reminders_address" placeholder="State">
+                                            <input class="name" type="text" name="parent_State" id="parent_State" placeholder="State">
                                         </div>
                                     </div>                                
                                     <div class="columnForm-name">
                                         <div class="pt">
-                                            <input class="name" type="text" name="reminders_Zip" id="reminders_address" placeholder="Zip" required>
+                                            <input class="name" type="text" name="parent_Zip" id="parent_Zip" placeholder="Zip" >
                                         </div>
                                     </div>                                        
                                 </div>
@@ -296,23 +225,23 @@ and open the template in the editor.
                         </div>
                         <div class="row">
                             <div class="full">
-<!--                                <div class="left">-->
-                                    <label class="small" for="reminders_email">Highest Education:</label>
-<!--                                </div>-->
+                                <!--                                <div class="left">-->
+                                <label class="small" for="highest_education">Highest Education:</label>
+                                <!--                                </div>-->
                                 <div class="right-board">
-                                    <input type="text" name="reminders_email" id="reminders_email" required>
+                                    <input type="text" name="highest_education" id="highest_education" >
                                 </div>
                             </div>
                         </div>
                         <div class="row">
                             <div class="full">
-<!--                                <div class="left">-->
-                                    <label class="small" for="reminders_preferred_contact">Preferred contact:</label>
-<!--                                </div>-->
+                                <!--                                <div class="left">-->
+                                <label class="small" for="parent_preferred_contact">Preferred contact:</label>
+                                <!--                                </div>-->
                                 <div class="right-board">                                        
                                     <div class="columnForm-name">
                                         <div class="pt">
-                                            <input type="text" class="name" name="reminders_preferred_contact" id="reminders_preferred_contact" required>
+                                            <input type="text" class="name" name="parent_preferred_contact" id="parent_preferred_contact">
                                         </div>
                                     </div>                                        
                                 </div>
@@ -321,13 +250,13 @@ and open the template in the editor.
                         <!--                    </fieldset> -->
                         <div class="row">
                             <div class="full">
-<!--                                <div class="left">-->
-                                    <label class="small" for="child_referred_by">Referred By:</label>
-<!--                                </div>-->
+                                <!--                                <div class="left">-->
+                                <label class="small" for="child_referred_by">Referred By:</label>
+                                <!--                                </div>-->
                                 <div class="right-board">                                        
                                     <div class="columnForm-name">
                                         <div class="pt">
-                                            <input type="text" class="name" name="child_referred_by" id="child_referred_by" required>
+                                            <input type="text" class="name" name="child_referred_by" id="child_referred_by" >
                                         </div>
                                     </div>                                        
                                 </div>
@@ -338,7 +267,7 @@ and open the template in the editor.
                         <!--                            <div class="row">
                                                         <div class="full">-->
                         <legend class="radio">Chief Complaint: <span class="legend_light"> What is your primary reason for seeking psychiatric consultation?</span></legend>
-                        <textarea class="flex" name="cild_chief_Complaint" rows="4" cols=""></textarea>                                
+                        <textarea class="flex" name="chief_complaint" rows="4" cols=""></textarea>                                
                         <!--                                </div>
                                                     </div>-->
                     </fieldset>
@@ -351,31 +280,21 @@ and open the template in the editor.
                         <div class="row">
                             <div class="full">                                
                                 <label class="radio">When did these symptoms begin?</label>
-                                <textarea class="flex" name="cild_symptoms_begin" rows="4" cols=""></textarea>                                
+                                <textarea class="flex" name="symptoms_begin" rows="4" cols=""></textarea>                                
                             </div>
                         </div>
                         <div class="row">
                             <div class="full">                                
                                 <label class="radio">Did something occur to precipitate them?</label>
-                                <textarea class="flex" name="cild_something_occur" rows="1" cols=""></textarea>                                
+                                <textarea class="flex" name="something_occur" rows="1" cols=""></textarea>                                
                             </div>
                         </div>
                         <div class="row">
                             <div class="full">                                
                                 <label>Have there been symptom-free periods?</label>                                
-                                <textarea class="flex" name="cild_symptom_‐free" rows="1" cols=""></textarea>                                
+                                <textarea class="flex" name="symptom_free" rows="1" cols=""></textarea>                                
                             </div>
                         </div>
-                        <!--                        <div class="row">
-                                                    <div class="full_partial">
-                                                        <div class="left">
-                                                            <label>Have there been symptom-free periods?</label>
-                                                        </div>
-                                                        <div class="right">                         
-                                                                <textarea class="flex"  name="cild_symptom_‐free" rows="2" cols="45"></textarea>
-                                                        </div>
-                                                    </div>
-                                                </div>-->
                     </fieldset>
                     <fieldset class="psychiatric_history">
                         <!--                            <div class="row">
@@ -386,43 +305,43 @@ and open the template in the editor.
                         <div class="row">
                             <div class="full">                                
                                 <label class="radio">When did treatment first begin?</label>
-                                <textarea class="flex" name="cild_treatment_begin" rows="1" cols=""></textarea>                                
+                                <textarea class="flex" name="treatment_begin" rows="1" cols=""></textarea>                                
                             </div>
                         </div>
                         <div class="row">
                             <div class="full">                                
                                 <label class="radio">What kind of treatment has occurred?</label>
-                                <textarea class="flex" name="cild_treatment_kind" rows="1" cols=""></textarea>                                
+                                <textarea class="flex" name="treatment_kind" rows="1" cols=""></textarea>                                
                             </div>
                         </div>
                         <div class="row">
                             <div class="full">                                
                                 <label class="radio">1. Individual Psychotherapy? If yes, when and with whom?</label>
-                                <textarea class="flex" name="cild_individual_psychotherapy" rows="2" cols=""></textarea>                                
+                                <textarea class="flex" name="individual_psychotherapy" rows="2" cols=""></textarea>                                
                             </div>
                         </div>
                         <div class="row">
                             <div class="full">                                
                                 <label class="radio">2. Group or Family/Couples Psychotherapy? If yes, when and with whom?</label>
-                                <textarea class="flex" name="cild_group_psychotherapy" rows="2" cols=""></textarea>                                
+                                <textarea class="flex" name="group_psychotherapy" rows="2" cols=""></textarea>                                
                             </div>
                         </div>
                         <div class="row">
                             <div class="full">                                
                                 <label class="radio">Have you (your child) ever been psychiatrically hospitalized? If yes, when, where, and for what reason?</label>
-                                <textarea class="flex" name="cild_hospitalized" rows="3" cols=""></textarea>                                
+                                <textarea class="flex" name="child_hospitalized" rows="3" cols=""></textarea>                                
                             </div>
                         </div>
                         <div class="row">
                             <div class="full">                                
                                 <label class="radio">Have you (your child) ever thought of or attempted to commit suicide? If yes, when, how, and under what circumstances?</label>
-                                <textarea class="flex" name="cild_suicide" rows="3" cols=""></textarea>                                
+                                <textarea class="flex" name="child_suicide" rows="3" cols=""></textarea>                                
                             </div>
                         </div>
                         <div class="row">
                             <div class="full">                                
                                 <label class="radio">Have you (your child) ever hurt oneself in any way? For example, cutting or burning self. If yes, when, how, and under what circumstances?</label>
-                                <textarea class="flex" name="cild_hurt_oneself" rows="3" cols=""></textarea>                                
+                                <textarea class="flex" name="hurt_oneself" rows="3" cols=""></textarea>                                
                             </div>
                         </div>
                     </fieldset>
@@ -431,19 +350,19 @@ and open the template in the editor.
                         <div class="row">
                             <div class="full">                                
                                 <label class="radio">Current and Prior Medical Problems:</label>
-                                <textarea class="flex" name="cild_medical_problems" rows="3" cols=""></textarea>                                
+                                <textarea class="flex" name="medical_problems" rows="3" cols=""></textarea>                                
                             </div>
                         </div>                        
                         <div class="row">
                             <div class="full">                                
                                 <label class="radio">Medical Hospitalizations/Surgeries:</label>
-                                <textarea class="flex" name="cild_medical_hospitalizations" rows="1" cols=""></textarea>                                
+                                <textarea class="flex" name="medical_hospitalizations" rows="1" cols=""></textarea>                                
                             </div>
                         </div>
                         <div class="row">
                             <div class="full">                                
                                 <label class="radio">Known Drug Allergies:</label>
-                                <textarea class="flex" name="cild_allergies" rows="2" cols=""></textarea>                                
+                                <textarea class="flex" name="drug_allergies" rows="2" cols=""></textarea>                                
                             </div>
                         </div>
                         <div class="row">
@@ -509,7 +428,7 @@ and open the template in the editor.
                                         <td><input type="text" name="pastComments_1"></td>
                                     </tr>
                                     <tr>
-                                        <td><input type="text" name="pastNnameMedication_2"></td>
+                                        <td><input type="text" name="pastNameMedication_2"></td>
                                         <td>
                                             <table>
                                                 <tr>
@@ -551,7 +470,7 @@ and open the template in the editor.
                                         <td><input type="text" name="pastComments_4"></td>
                                     </tr>
                                     <tr>
-                                        <td><input type="text" name="pastNameMedication_4"></td>
+                                        <td><input type="text" name="pastNameMedication_5"></td>
                                         <td>
                                             <table>
                                                 <tr>
@@ -637,7 +556,7 @@ and open the template in the editor.
                                         <td><input type="text" name="currentComments_4"></td>
                                     </tr>
                                     <tr>
-                                        <td><input type="text" name="currentNameMedication_4"></td>
+                                        <td><input type="text" name="currentNameMedication_5"></td>
                                         <td>
                                             <table>
                                                 <tr>
@@ -688,10 +607,10 @@ and open the template in the editor.
                                         <td><input type="text" name="substanceWhatDid3"></td>
                                     </tr>
                                     <tr>
-                                        <td><input type="text" name="substanceWhat3"></td>
-                                        <td><input type="text" name="substanceWhen3"></td> 
-                                        <td><input type="text" name="substanceHowMuch3"></td>
-                                        <td><input type="text" name="substanceLast3"></td>
+                                        <td><input type="text" name="substanceWhat4"></td>
+                                        <td><input type="text" name="substanceWhen4"></td> 
+                                        <td><input type="text" name="substanceHowMuch4"></td>
+                                        <td><input type="text" name="substanceLast4"></td>
                                         <td><input type="text" name="substanceWhatDid4"></td>
                                     </tr>
                                     <tr>
@@ -705,87 +624,141 @@ and open the template in the editor.
                             </div>
                         </div>
                     </fieldset>
-                    <fieldset>
-                        <legend>Please circle any that the patient has had and include dates as best you can:</legend>
+                    <fieldset id="includeDates">
+                        <legend>Please choose any that the patient has had and include dates as best you can:</legend>
                         <div class="row">
                             <div class="full">
                                 <div class="helf_left">
                                     <div class="columnForm">
                                         <div class="pt">
-                                            <input type="checkbox" name="childAnyInclude[]" value="Head Injury/Loss of Consciousness" id="headInjury">
-                                            <label class="radio" for="headInjury">Head Injury/Loss of Consciousness</label> 
+                                            <div class="full">
+                                                <input type="checkbox" name="childAnyInclude[]" value="Head Injury/Loss of Consciousness" id="headInjury">
+                                                <label class="radio" for="headInjury">Head Injury/Loss of Consciousness</label>
+                                                <input class="input_row columnForm_margin_trailer" type="text" name="HeadText">
+                                            </div>
                                         </div>
                                         <div class="pt">
-                                            <input type="checkbox" name="childAnyInclude[]" value="Seizures/convulsions" id="convulsions">
-                                            <label class="radio" for="convulsions">Seizures/convulsions</label>
+                                            <div class="full">
+                                                <input type="checkbox" name="childAnyInclude[]" value="Seizures/convulsions" id="convulsions">
+                                                <label class="radio" for="convulsions">Seizures/convulsions</label>
+                                                <input class="input_row columnForm_margin_trailer" type="text" name="SeizuresText">
+                                            </div>
                                         </div>
                                         <div class="pt">
-                                            <input type="checkbox" name="childAnyInclude[]" value="Other neurological problems" id="neurologicalProblems">
-                                            <label class="radio" for="neurologicalProblems">Other neurological problems</label>
+                                            <div class="full">
+                                                <input type="checkbox" name="childAnyInclude[]" value="Other neurological problems" id="neurologicalProblems">
+                                                <label class="radio" for="neurologicalProblems">Other neurological problems</label>
+                                                <input class="input_row columnForm_margin_trailer" type="text" name="OtherText">
+                                            </div>
                                         </div>
                                         <div class="pt">
-                                            <input type="checkbox" name="childAnyInclude[]" value="Ear, nose or throat problems" id="throatProblems">
-                                            <label class="radio" for="throatProblems">Ear, nose or throat problems</label>
+                                            <div class="full">
+                                                <input type="checkbox" name="childAnyInclude[]" value="Ear, nose or throat problems" id="throatProblems">
+                                                <label class="radio" for="throatProblems">Ear, nose or throat problems</label>
+                                                <input class="input_row columnForm_margin_trailer" type="text" name="EarText">
+                                            </div>
                                         </div>
                                         <div class="pt">
-                                            <input type="checkbox" name="childAnyInclude[]" value="Dental problems" id="dentalProblems">
-                                            <label class="radio" for="dentalProblems">Dental problems</label>
+                                            <div class="full">
+                                                <input type="checkbox" name="childAnyInclude[]" value="Dental problems" id="dentalProblems">
+                                                <label class="radio" for="dentalProblems">Dental problems</label>
+                                                <input class="input_row columnForm_margin_trailer" type="text" name="DentalText">
+                                            </div>
                                         </div>
                                         <div class="pt">
-                                            <input type="checkbox" name="childAnyInclude[]" value="Asthma" id="asthma">
-                                            <label class="radio" for="asthma">Asthma</label>
+                                            <div class="full">
+                                                <input type="checkbox" name="childAnyInclude[]" value="Asthma " id="asthma">
+                                                <label class="radio" for="asthma">Asthma</label>
+                                                <input class="input_row columnForm_margin_trailer" type="text" name="AsthmaText">
+                                            </div>
                                         </div>
                                         <div class="pt">
-                                            <input class="input_row" type="checkbox" name="childAnyInclude[]" value="Chest problems" id="chestProblems">
-                                            <label class="radio" for="chestProblems">Chest problems</label>
+                                            <div class="full">
+                                                <input class="input_row" type="checkbox" name="childAnyInclude[]" value="Chest problems" id="chestProblems">
+                                                <label class="radio" for="chestProblems">Chest problems</label>
+                                                <input class="input_row columnForm_margin_trailer" type="text" name="ChestText">
+                                            </div>
                                         </div>
                                         <div class="pt">
-                                            <input type="checkbox" name="childAnyInclude[]" value="Stomach or bowel problems/soiling" id="stomach">
-                                            <label class="radio" for="stomach">Stomach or bowel problems/soiling</label>
+                                            <div class="full">
+                                                <input type="checkbox" name="childAnyInclude[]" value="Stomach or bowel problems/soiling" id="stomach">
+                                                <label class="radio" for="stomach">Stomach or bowel problems/soiling</label>
+                                                <input class="input_row columnForm_margin_trailer" type="text" name="StomachText">
+                                            </div>
                                         </div>
                                         <div class="pt">
-                                            <input type="checkbox" name="childAnyInclude[]" value="Urinary or bladder/wetting" id="urinary">
-                                            <label class="radio" for="urinary">Urinary or bladder/wetting</label>
+                                            <div class="full">
+                                                <input type="checkbox" name="childAnyInclude[]" value="Urinary or bladder/wetting" id="urinary">
+                                                <label class="radio" for="urinary">Urinary or bladder/wetting</label>
+                                                <input class="input_row columnForm_margin_trailer" type="text" name="UrinaryText">
+                                            </div>
                                         </div>                                    
                                     </div>
                                 </div>
                                 <div class="helf_left">
                                     <div class="columnForm">
                                         <div class="pt">
-                                            <input type="checkbox" name="childAnyInclude[]" value="Heart Problems" id="heartProblems">
-                                            <label class="radio" for="heartProblems">Heart Problems</label> 
+                                            <div class="full">
+                                                <input type="checkbox" name="childAnyInclude[]" value="Heart Problems" id="heartProblems">
+                                                <label class="radio" for="heartProblems">Heart Problems</label>
+                                                <input class="input_row columnForm_margin_trailer" type="text" name="HeartText">
+                                            </div>
                                         </div>
                                         <div class="pt">
-                                            <input class="input_row" type="checkbox" name="childAnyInclude[]" value="Rheumatic fever/strep infections" id="rheumatic">
-                                            <label class="radio" for="rheumatic">Rheumatic fever/strep infections</label>
+                                            <div class="full">
+                                                <input class="input_row" type="checkbox" name="childAnyInclude[]" value="Rheumatic fever/strep infections" id="rheumatic">
+                                                <label class="radio" for="rheumatic">Rheumatic fever/strep infections</label>
+                                                <input class="input_row columnForm_margin_trailer" type="text" name="RheumaticText">
+                                            </div>
                                         </div>
                                         <div class="pt">
-                                            <input type="checkbox" name="childAnyInclude[]" value="Liver/Kidney problems" id="liverProblems">
-                                            <label class="radio" for="liverProblems">Liver/Kidney problems</label>
+                                            <div class="full">
+                                                <input type="checkbox" name="childAnyInclude[]" value="Liver/Kidney problems" id="liverProblems">
+                                                <label class="radio" for="liverProblems">Liver/Kidney problems</label>
+                                                <input class="input_row columnForm_margin_trailer" type="text" name="LiverText">
+                                            </div>
                                         </div>
                                         <div class="pt">
-                                            <input type="checkbox" name="childAnyInclude[]" value="Skin problems" id="skinProblems">
-                                            <label class="radio" for="skinProblems">Skin problems</label>
+                                            <div class="full">
+                                                <input type="checkbox" name="childAnyInclude[]" value="Skin problems" id="skinProblems">
+                                                <label class="radio" for="skinProblems">Skin problems</label>
+                                                <input class="input_row columnForm_margin_trailer" type="text" name="SkinText">
+                                            </div>
                                         </div>
                                         <div class="pt">
-                                            <input type="checkbox" name="childAnyInclude[]" value="Joint/limb problems" id="limbProblems">
-                                            <label class="radio" for="limbProblems">Joint/limb problems</label>
+                                            <div class="full">
+                                                <input type="checkbox" name="childAnyInclude[]" value="Joint/limb problems" id="limbProblems">
+                                                <label class="radio" for="limbProblems">Joint/limb problems</label>
+                                                <input class="input_row columnForm_margin_trailer" type="text" name="JointText">
+                                            </div>
                                         </div>
                                         <div class="pt">
-                                            <input type="checkbox" name="childAnyInclude[]" value="Hearing/vision problems" id="visionProblems">
-                                            <label class="radio" for="visionProblems">Hearing/vision problems</label>
+                                            <div class="full">
+                                                <input type="checkbox" name="childAnyInclude[]" value="Hearing/vision problems" id="visionProblems">
+                                                <label class="radio" for="visionProblems">Hearing/vision problems</label>
+                                                <input class="input_row columnForm_margin_trailer" type="text" name="HearingText">
+                                            </div>
                                         </div>
                                         <div class="pt">
-                                            <input type="checkbox" name="childAnyInclude[]" value="Growth/endocrine problems" id="endocrineProblems">
-                                            <label class="radio" for="endocrineProblems">Growth/endocrine problems</label>
+                                            <div class="full">
+                                                <input type="checkbox" name="childAnyInclude[]" value="Growth/endocrine problems" id="endocrineProblems">
+                                                <label class="radio" for="endocrineProblems">Growth/endocrine problems</label>
+                                                <input class="input_row columnForm_margin_trailer" type="text" name="GrowthText">
+                                            </div>
                                         </div>
                                         <div class="pt">
-                                            <input type="checkbox" name="childAnyInclude[]" value="Gynecological/menstrual problems" id="menstrualProblems">
-                                            <label class="radio" for="menstrualProblems">Gynecological/menstrual problems</label>
+                                            <div class="full">
+                                                <input type="checkbox" name="childAnyInclude[]" value="Gynecological/menstrual problems" id="menstrualProblems">
+                                                <label class="radio" for="menstrualProblems">Gynecological/menstrual problems</label>
+                                                <input class="input_row columnForm_margin_trailer" type="text" name="GynecologicalText">
+                                            </div>
                                         </div>
                                         <div class="pt">
-                                            <input type="checkbox" name="childAnyInclude[]" value="Childhood measles/mumps" id="childhoodMeasles">
-                                            <label class="radio" for="childhoodMeasles">Childhood measles/mumps</label>
+                                            <div class="full">
+                                                <input type="checkbox" name="childAnyInclude[]" value="Childhood measles/mumps" id="childhoodMeasles">
+                                                <label class="radio" for="childhoodMeasles">Childhood measles/mumps</label>
+                                                <input class="input_row columnForm_margin_trailer" type="text" name="ChildhoodText">
+                                            </div>
                                         </div>                                    
                                     </div>
                                 </div>
@@ -809,14 +782,14 @@ and open the template in the editor.
                     </fieldset>
                     <fieldset id="familyPsychiatricHistory">                        
                         <legend class="radio">Family Psychiatric History:</legend>
-                        <label class="radio">Has any family member had any of the following? Please circle and indicate which family member.</label>
+                        <label class="radio">Has any family member had any of the following? Please choose and indicate which family member.</label>
                         <div class="row">
                             <div class="full_partial">
                                 <div class="helf_left">
                                     <div class="columnForm">
                                         <div class="pt">
                                             <div class="full">
-                                                <input type="checkbox" name="familyPsychiatricHistory[]" value="Depression" id="familyDepression">
+                                                <input type="checkbox" name="familyPsychiatricHistory[]" value="Depression " id="familyDepression">
                                                 <label class="radio" for="familyDepression">Depression</label>
                                                 <input class="input_row columnForm_margin_trailer" type="text" name="familyDepressionMember">
                                             </div>
@@ -839,7 +812,7 @@ and open the template in the editor.
                                             <div class="full">
                                                 <input class="input_row" type="checkbox" name="familyPsychiatricHistory[]" value="Anxiety Panic" id="familyPanic">
                                                 <label class="radio" for="familyPanic">Anxiety Panic</label>
-                                                <input class="input_row columnForm_margin_trailer" type="text" name="familyPanicMember">
+                                                <input class="input_row columnForm_margin_trailer" type="text" name="familyAnxietyMember">
                                             </div>
                                         </div>
                                         <div class="pt">
@@ -860,7 +833,7 @@ and open the template in the editor.
                                             <div class="full">
                                                 <input class="input_row" type="checkbox" name="familyPsychiatricHistory[]" value="Tics Unusual noises/vocalizations" id="familyVocalizations">
                                                 <label class="radio" for="familyVocalizations">Tics Unusual noises/vocalizations</label>
-                                                <input class="input_row columnForm_margin_trailer" type="text" name="familyVocalizationsMember">
+                                                <input class="input_row columnForm_margin_trailer" type="text" name="familyTicsMember">
                                             </div>
                                         </div>
                                         <div class="pt">
@@ -899,7 +872,7 @@ and open the template in the editor.
                                             <div class="full">
                                                 <input type="checkbox" name="familyPsychiatricHistory[]" value="Mental Retardation" id="familyRetardation">
                                                 <label class="radio" for="familyRetardation">Mental Retardation</label>
-                                                <input class="input_row columnForm_margin_trailer" type="text" name="familyRetardationMember">
+                                                <input class="input_row columnForm_margin_trailer" type="text" name="familyMentalMember">
                                             </div>
                                         </div>
                                         <div class="pt">
@@ -913,7 +886,7 @@ and open the template in the editor.
                                             <div class="full">
                                                 <input type="checkbox" name="familyPsychiatricHistory[]" value="Sleep Disorder" id="familySleepDisorder">
                                                 <label class="radio" for="familySleepDisorder">Sleep Disorder</label>
-                                                <input class="input_row columnForm_margin_trailer" type="text" name="familySleepDisorderMember">
+                                                <input class="input_row columnForm_margin_trailer" type="text" name="familySleepMember">
                                             </div>
                                         </div>
                                         <div class="pt">
@@ -932,7 +905,7 @@ and open the template in the editor.
                                         </div>
                                         <div class="pt">
                                             <div class="full">
-                                                <input class="input_row" type="checkbox" name="familyPsychiatricHistory[]" value="Psychosis" id="familyPsychosis">
+                                                <input class="input_row" type="checkbox" name="familyPsychiatricHistory[]" value="Psychosis " id="familyPsychosis">
                                                 <label class="radio" for="familyPsychosis">Psychosis</label>
                                                 <input class="input_row columnForm_margin_trailer" type="text" name="familyPsychosisMember">
                                             </div>
@@ -948,7 +921,7 @@ and open the template in the editor.
                                             <div class="full">
                                                 <input class="input_row" type="checkbox" name="familyPsychiatricHistory[]" value="Psychiatric Hospitalizations" id="familyHospitalizations">
                                                 <label class="radio" for="familyHospitalizations">Psychiatric Hospitalizations</label>
-                                                <input class="input_row columnForm_margin_trailer" type="text" name="familyHospitalizationsMember">
+                                                <input class="input_row columnForm_margin_trailer" type="text" name="familyPsychiatricMember">
                                             </div>
                                         </div>
                                         <div class="pt">
@@ -1346,18 +1319,6 @@ and open the template in the editor.
                                 </div>
                             </div>
                         </div>
-                        <!--                        <div class="row">
-                                                    <div class="full_partial">                                
-                                                        <div class="right-board">
-                                                            <div class="columnForm">
-                                                                <div class="pt">
-                                                                    <label class="radio_input_row" for="childDevelopmentalF_response">2. Describe current eating habits:</label>
-                                                                    <input class="input_row columnForm_margin_trailer" type="text" name="childDevelopmentalF_response">
-                                                                </div>
-                                                            </div>                                                                        
-                                                        </div>
-                                                    </div>
-                                                </div>-->
                         <div class="row">
                             <div class="full">
                                 <label class="radio" for="childDevelopmental2">2. Describe current eating habits:</label>
@@ -1390,7 +1351,7 @@ and open the template in the editor.
                                         <label class="radio_tab_input_row" for="childDevelopmentalB_other">Motor:</label>                                        
                                     </div>
                                     <div class="pt">
-                                        <input class="mini columnForm_margin_trailer" type="text" name="childDevelopmental4_rolled">                                        
+                                        <input class="mini columnForm_margin_trailer" type="text" name="childDevelopmental4_rolled">
                                         <label class="radio_tab_input_row" for="childDevelopmental4_rolled">rolled front/back (4 mo)</label>
                                     </div>
                                     <div class="pt">
@@ -1524,7 +1485,7 @@ and open the template in the editor.
                                     <div class="pt">
                                         <input type="radio" name="childSchoolRepeated" id="childSchoolRepeated_yes" value="Yes">
                                         <label class="radio_tab_input_row" for="childSchoolRepeated_yes">Yes</label>
-                                        <input type="radio" name="childPrenatalTerm" id="childSchoolRepeated_no" value="No">
+                                        <input type="radio" name="childSchoolRepeated" id="childSchoolRepeated_no" value="No">
                                         <label class="radio_tab_input_row" for="childSchoolRepeated_no">No</label>
                                     </div>
                                 </div>
@@ -1536,30 +1497,12 @@ and open the template in the editor.
                                 </div>
                             </div>
                         </div>
-                        <!--                        <div class="row">
-                                                    <div class="full">
-                                                        <label class="radio" for="childSchoolRepeated_which">If yes, which?</label>
-                                                        <input class="input_row wide columnForm_margin_trailer" type="text" name="childSchoolRepeated_which">
-                                                    </div>
-                                                </div>-->
                         <div class="row">
                             <div class="full">
                                 <label class="radio" for="childSchoolSpecial">Special/resource classes?</label>
                                 <input class="input_row wide columnForm_margin_trailer" type="text" name="childSchoolSpecial">
                             </div>
                         </div>
-                        <!--                        <div class="row">
-                                                    <div class="full">
-                                                        <label class="radio" for="childSchoolOtherSpecial">Other special services? (Speech/OT/PT)</label>
-                                                        <input class="input_row wide columnForm_margin_trailer" type="text" name="childSchoolOtherSpecial">
-                                                    </div>
-                                                </div>
-                                                <div class="row">
-                                                    <div class="full">
-                                                        <label class="radio_tab_input_row" for="childSchoolOtherSpecial">IEP?</label>
-                                                        <input class="input_row wide columnForm_margin_trailer" type="text" name="childSchoolOtherSpecial">
-                                                    </div>
-                                                </div>-->
                         <div class="row">
                             <div class="full">
                                 <div class="columnForm">
@@ -1598,7 +1541,7 @@ and open the template in the editor.
                                     <div class="columnForm">
                                         <div class="pt">
                                             <label class="radio" for="childSchoolEvaluations_date">Date</label>
-                                            <input  class="input_row columnForm_margin_trailer" type="text" name="childSchoolEvaluations_date" id="childSchoolEvaluations_date" placeholder="mm/dd/yyyy" required>
+                                            <input  class="input_row columnForm_margin_trailer" type="text" name="childSchoolEvaluations_date" id="childSchoolEvaluations_date" placeholder="mm/dd/yyyy" >
                                         </div>
                                     </div>
                                     <div class="columnForm">
@@ -1626,7 +1569,7 @@ and open the template in the editor.
                                     <div class="columnForm">
                                         <div class="pt">
                                             <label class="radio" for="childSchoolEvaluations1_date">Date</label>
-                                            <input  class="input_row columnForm_margin_trailer" type="text" name="childSchoolEvaluations1_date" id="childSchoolEvaluations1_date" placeholder="mm/dd/yyyy" required>
+                                            <input  class="input_row columnForm_margin_trailer" type="text" name="childSchoolEvaluations1_date" id="childSchoolEvaluations1_date" placeholder="mm/dd/yyyy" >
                                         </div>
                                     </div>
                                     <div class="columnForm">
