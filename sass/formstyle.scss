@@ -49,7 +49,7 @@ div#signature {
         input {
             float: left;
             height: 23px;
-/*            line-height: 1.2em;*/
+            /*            line-height: 1.2em;*/
         }
         label.radio {
             margin-left: 1em;
@@ -237,26 +237,26 @@ div.helf_left {
     float: left;
     .row {
         [class*="right-board"] {
-            width: 86%;
+            width: 85%;
         }
         @media screen and (max-width: 974px) {
-            .right-board_yes_not {
-                width: 85%;
-            }
-        }
-        @media screen and (max-width: 932px) {
-            .right-board_yes_not {
-                width: 85%;
-            }
-        }
-        @media screen and (max-width: 911px) {
             .right-board_yes_not {
                 width: 84%;
             }
         }
-        @media screen and (max-width: 856px) {
+        @media screen and (max-width: 932px) {
+            .right-board_yes_not {
+                width: 84%;
+            }
+        }
+        @media screen and (max-width: 911px) {
             .right-board_yes_not {
                 width: 83%;
+            }
+        }
+        @media screen and (max-width: 856px) {
+            .right-board_yes_not {
+                width: 82%;
             }
         }
         /*        @media screen and (max-width: 468px) {
@@ -310,7 +310,14 @@ div.helf_left {
                 width: 15%;
             }
             .right-board_yes_not {
-                width: 85%;
+                width: 84%;
+            }
+        }
+    }
+    #national_Network_3 {
+        .main_box, .main_box_headline {
+            .right-board_yes_not {
+                width: 83%;
             }
         }
     }
@@ -326,7 +333,7 @@ div.helf_left {
                 width: 12%;
             }
             div.right-board_yes_not {
-                width: 87%;
+                //width: 87%;
             }
         }
     }
@@ -345,7 +352,7 @@ div.helf_left {
                 width: 14%;
             }
             div.right-board_yes_not {
-                width: 86%;
+                width: 85%;
             }
         }
     }
@@ -369,7 +376,7 @@ div.helf_left {
                 width: 15%;
             }
             div.right-board_yes_not {
-                width: 85%;
+                width: 84%;
             }
         }
     }
@@ -385,7 +392,7 @@ div.helf_left {
                 width: 16%;
             }
             div.right-board_yes_not {
-                width: 84%;
+                width: 83%;
             }
         }
     }
@@ -424,7 +431,7 @@ div.helf_left {
                 width: 17%;
             }
             div.right-board_yes_not {
-                width: 82%;
+                width: 81%;
             }
         }
     }
@@ -531,7 +538,7 @@ div.helf_left {
     @media screen and (max-width: 560px) {
         .score_main {
             label {
-                width: 72.5%;
+                width: 71.5%;
             }
         }
         .total_score_main {
@@ -1018,7 +1025,7 @@ input[type="submit"] {
         .helf_left {
             .columnForm {
                 margin-left: 0;
-                margin-right: 3.5em;        
+                margin-right: 3em;        
             }
         }
     }    
@@ -1041,12 +1048,12 @@ input[type="submit"] {
                 float: left        
             }
             .main_box, .main_box_headline {
-                width: 94%;
+                width: 98%;
                 float: right;
             }
             .columnForm {
                 margin-left: 0;
-                margin-right: 3em;        
+                margin-right: 2.7em;        
             }
         }
     }    
@@ -1066,7 +1073,7 @@ input[type="submit"] {
         .helf_left {
             .columnForm {
                 margin-left: 0;
-                margin-right: 2.55em;        
+                margin-right: 2.5em;        
             }
         }
     }    
@@ -1139,7 +1146,7 @@ input[type="submit"] {
                 float: left        
             }
             .main_box, .main_box_headline {
-                width: 93%;
+                //width: 93%;
                 float: right;
             }
         }
@@ -1176,7 +1183,7 @@ input[type="submit"] {
             width: 13.5%;
         }
         .right-board_yes_not {
-            width: 83.5%;
+            width: 83%;
         }
     }    
 }
@@ -1214,7 +1221,7 @@ input[type="submit"] {
                 //width: 14%;
             }
             .right-board_yes_not {
-                width: 86%;
+               // width: 85%;
             }
         }
 
@@ -1253,7 +1260,7 @@ input[type="submit"] {
                 width: 14%;
             }
             .right-board_yes_not {
-                width: 87%;
+                //width: 87%;
             }
         }
     }    
@@ -1300,7 +1307,7 @@ input[type="submit"] {
                             margin-right: 0.2em;
                         }            */
             .right-board_yes_not {
-                width: 86%;
+                //width: 86%;
             }
         }
     }    
@@ -1332,7 +1339,7 @@ input[type="submit"] {
     #national_Network_3 {
         .helf_left {
             .right-board_yes_not {
-                width: 85%;
+                //width: 85%;
             }
         }
     }    
