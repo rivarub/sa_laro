@@ -36,12 +36,40 @@ body {
     /*        @media (min-width: 769px) {
                 @include rhythm-margins(2); //додає вказану кількість рядків знизу - тут не працює чомусь
             }  */
-    p {
+    p, label {
         text-align: justify;
         color: $color4;
     }
 
 }
+div#signature {
+    margin-top: 4.2em;
+    .pt {
+        margin-bottom: 1em;
+        input {
+            float: left;
+            height: 23px;
+/*            line-height: 1.2em;*/
+        }
+        label.radio {
+            margin-left: 1em;
+        }
+    }
+}
+form#patient_registration {        
+    .left {
+        label {
+            padding-right: 1em;
+            width: 36%;
+        }            
+    }
+    .right {
+        width: 59%;
+    }
+    textarea {
+        margin-right: 0.3em;
+    }
+}    
 form#new-patient-child {
     fieldset {
         margin-bottom: 1em;
@@ -301,6 +329,9 @@ div.helf_left {
                 width: 87%;
             }
         }
+    }
+    div#signature {
+        margin-top: 3.2em;
     }
 }
 @media screen and (max-width: 434px) {    
@@ -624,6 +655,19 @@ div.helf_left {
         //margin-right: 0.9em;
     }               
 }
+
+@media screen and (max-width: 980px) {
+    div#signature {        
+        .left {
+            label {
+                width: 60%;
+            }            
+        }
+        .right {
+            width: 40%;
+        }
+    }    
+}
 @media screen and (max-width: 848px) {
     div.full, div.full_partial {
         div.right-board_yes_not {
@@ -702,7 +746,7 @@ input::-webkit-calendar-picker-indicator {
 //color: rgba(0,0,0,0);
 display: none;
 }*/
-input[type="text"] {
+input[type="text"], input[type="tel"], input[type="email"] {
     //max-width: 12em;
     //width: 12em;
     padding: 0.2em 0.4em;
@@ -728,7 +772,7 @@ form#new-patient-child {
         padding: 0.2em 0.4em 0.2em 0.8em;
         letter-spacing: 1px;
     }
-    
+
 }
 
 textarea {
@@ -980,6 +1024,16 @@ input[type="submit"] {
     }    
 }
 @media screen and (max-width: 756px) {
+    div#signature {        
+        .left {
+            label {
+                width: 65%;
+            }            
+        }
+        .right {
+            width: 35%;
+        }
+    }    
     #national_Network_4 {
         .helf_left {
             .num_box {
@@ -1018,6 +1072,17 @@ input[type="submit"] {
     }    
 }
 @media screen and (max-width: 600px) {
+    div#signature {        
+        .left {
+            label {
+                width: 100%;
+                margin-bottom: 1rem;
+            }            
+        }
+        .right {
+            width: 100%;
+        }
+    }    
     .content {
         width: 92%;
     }
@@ -1197,13 +1262,15 @@ input[type="submit"] {
     form#patient_registration {        
         .left {
             label {
-                width: 100%;
+                width: 96%;
+                /*                padding-right: 1em;*/
             }            
         }
         .right {
             width: 100%;
+            /*            padding-right: 1em;*/
         }
-    }
+    }    
     #national_Network_4 {
         .helf_left {
             //width: 100%;

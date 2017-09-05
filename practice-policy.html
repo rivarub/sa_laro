@@ -20,11 +20,37 @@
                 <h2>Phone Calls</h2>
                 <p class="indent">Our phone hours are Monday to Friday 9am-5pm. After hours calls will be returned for emergencies only. If there is an immediate medical emergency, please go to the nearest emergency room or call 911, if necessary. For other non-urgent calls, please leave both daytime and after-hours phone numbers where you can be reached.</p>
                 <h2>Insurance</h2>
-                <p class="indent">At this time, Dr. Isa is only in network with Blue cross blue shield. Cristin Dooley is not in network with any insurances. If you are self pay or have an out of network insurance, payment for services Is due at the time of service. We will submit out of network claims for you and if your insurance pays we will reimburse you appropriately.</p>
+                <p class="indent">At this time, Dr. Isa is only in network with Blue Blue Cross/Blue Shield. Cristin Dooley is not in network with any insurances. If you are self pay or have an out of network insurance, payment for services is due at the time of service. We will submit out of network claims for you and if your insurance pays we will reimburse you appropriately.</p>
                 <h2>Financial</h2>
-                <p class="indent">Payment is due at the time of the service. Both of our providers current charge is S250 an hour. Cash, check, Visa, MasterCard and Discover are accepted. Accounts not paid by the next billing cycle are subject to a service charge of SI0.00 unless previous arrangements have been made with the provider. If payment is not provided at the time of a visit (such as a check is rejected or an appointment is not kept and payment is not sent in), then an authorized credit card will be required to be placed on file prior to future appointments. The card can serve as your preferred (primary) method of payment or simply filed as a back up method of payment. If significant collaboration is needed outside of sessions in form of phone calls with the patient or family members responsible for their care or other professionals, a charge will be incurred based on time allocated. Phone calls lasting longer than 15 minutes will be charged accordingly. If the provider Ls needed to travel to an out of office consultation, such as at a school, charges are billed at 150% of the in office fee and include travel time.</p>
+                <p class="indent">Payment is due at the time of the service. Both of our providers current charge is $250 an hour. Cash, check, Visa, MasterCard and Discover are accepted. Accounts not paid by the next billing cycle are subject to a service charge of $I0.00 unless previous arrangements have been made with the provider. If payment is not provided at the time of a visit (such as a check is rejected or an appointment is not kept and payment is not sent in), then an authorized credit card will be required to be placed on file prior to future appointments. The card can serve as your preferred (primary) method of payment or simply filed as a back up method of payment. If significant collaboration is needed outside of sessions in form of phone calls with the patient or family members responsible for their care or other professionals, a charge will be incurred based on time allocated. Phone calls lasting longer than 15 minutes will be charged accordingly. If the provider Ls needed to travel to an out of office consultation, such as at a school, charges are billed at 150% of the in office fee and include travel time.</p>
                 <h2>Missed or late cancelled appointments</h2>
                 <p class="indent">Cancellation or rescheduling is required 24 hours in advance to avoid being charged for reserved appointment time. You are financially liable for the full fee if you fail to cancel your appointment 24 hours in advance. It is the patient’s responsibility to know their appointment times.</p>
+                <div id="signature" class="row">
+                    <!--                    <div class="full">-->
+                    
+                        <div class="pt">
+                            <input type="checkbox" name="any_following[]" value="Chest pain/pressure/tightening" id="chest_pain">
+                            <label class="radio">I hereby certify that I have read and understand all the above policy statements.</label>
+                        </div>
+                    
+                    <div class="left">
+                        <label for="signature-space">Signature of Patient, Parent, or Legal Guardian</label>
+                    </div>
+                    <div class="right">
+                        <div class="columnForm-name">
+                            <div class="pt">
+                                <input class="signature" type="text" name="signature-space" id="signature-space" required>
+                            </div>
+                        </div>                            
+                    </div>
+                    <!--                    </div>-->
+                </div>
+                <div class="submit">
+                    <input type="hidden" name="url" value="consent_to_treat.html">
+                    <input type="hidden" id="html" name="html">
+                    <input type="submit" value="send" onclick="send();">
+                </div>
+                <!--                <p>&nbsp;</p>-->
             </div>
         </div>
     </body>
