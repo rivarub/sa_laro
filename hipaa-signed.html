@@ -12,8 +12,10 @@ and open the template in the editor.
         <link rel="stylesheet" type="text/css" href="css/formstyle.css">
         <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet"> 
         <link rel="stylesheet" type="text/css" href="css/mpdf.css" media="print">
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
         <script src="js/modernizr.2.6.2.min.js"></script>
+        <script src="js/jquery.maskedinput.js"></script>
+        <script type="text/javascript" src="js/js.js"></script>
     </head>
     <body>
         <div class="container">
@@ -44,19 +46,52 @@ and open the template in the editor.
                             </div>
                         </div>
                     </div>
-<!--                    <div class="row">
-                        <div class="left">
-                            <label for="first-name">Patient Name:</label>
+                    <!--                    <div class="row">
+                                            <div class="left">
+                                                <label for="first-name">Patient Name:</label>
+                                            </div>
+                                            <input class="name_columnForm_margin_trailer" type="text" name="name-first" id="name-first" placeholder="First" required>
+                                            <input class="name_columnForm_margin_trailer" type="text" name="name-middle" id="name-middle" placeholder="Middle">
+                                            <input class="name_columnForm_margin_trailer" type="text" name="name-last" id="name-last" placeholder="Last" required>
+                                        </div>                    -->
+                    <!--                    <div>                    
+                                            <p>Signature of Patient, Parent, or Legal Guardian</p>
+                                            <label for="date">Date</label>
+                                            <input type="date" name="date" placeholder="mm/dd/yyyy" required>                   
+                                        </div>-->
+                    <!--                    <div class="full">
+                                                                <p>Signature of Patient, Parent, or Legal Guardian</p>
+                                                            </div>-->
+                    <!--block signature-->
+                    <div id="signature" class="row">
+                        <div class="full">                    
+                            <!--                            <div class="pt">
+                                                            <input type="checkbox" name="certify[]" value="I hereby certify that I have read and understand all the above policy statements" id="hereby_certify">
+                                                            <label class="radio" id="hereby_certify">I hereby certify that I have read and understand all the above policy statements.</label>
+                                                        </div>-->
+
+                            <div class="left">
+                                <label for="signature-space">Signature of Patient, Parent, or Legal Guardian</label>
+                            </div>
+                            <div class="right">
+                                <div class="columnForm-name">
+                                    <div class="pt">
+                                        <input class="signature" type="text" name="signature-space" id="signature-space" required>
+                                    </div>
+                                </div>                            
+                            </div>
                         </div>
-                        <input class="name_columnForm_margin_trailer" type="text" name="name-first" id="name-first" placeholder="First" required>
-                        <input class="name_columnForm_margin_trailer" type="text" name="name-middle" id="name-middle" placeholder="Middle">
-                        <input class="name_columnForm_margin_trailer" type="text" name="name-last" id="name-last" placeholder="Last" required>
-                    </div>                    -->
-                    <div>                    
-                        <p>Signature of Patient, Parent, or Legal Guardian</p>
-                        <label for="date">Date</label>
-                        <input type="date" name="date" placeholder="mm/dd/yyyy" required>                   
                     </div>
+                    <div class="row">
+                        <div class="full">
+                            <div class="left">
+                                <label for="date">Date</label>
+                            </div>
+                            <div class="right">
+                                <input id="date" type="text" name="date" placeholder="mm/dd/yyyy" required><br>
+                            </div>
+                        </div>
+                    </div>      
                     <div class="submit">
                         <input type="hidden" name="url" value="hipaaSigned.html">
                         <input type="hidden" id="html" name="html">
