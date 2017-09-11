@@ -44,12 +44,19 @@ body {
 }
 div#signature {
     margin-top: 4.2em;
+    label {
+        //margin-top: 10px;
+    }
     .pt {
         margin-bottom: 1em;
         input {
             float: left;
             height: 23px;
             /*            line-height: 1.2em;*/
+            //width: 12em;
+        }
+        input[type="text"] {
+            width: 12em;
         }
         label.radio {
             margin-left: 1em;
@@ -666,11 +673,11 @@ div.helf_left {
 
 @media screen and (max-width: 980px) {
     div#signature {        
-        .left {
+        //.left {
             label {
                 width: 60%;
             }            
-        }
+        //}
         .right {
             width: 40%;
         }
@@ -1033,11 +1040,11 @@ input[type="submit"] {
 }
 @media screen and (max-width: 756px) {
     div#signature {        
-        .left {
+        //.left {
             label {
                 width: 65%;
             }            
-        }
+        //}
         .right {
             width: 35%;
         }
@@ -1081,12 +1088,12 @@ input[type="submit"] {
 }
 @media screen and (max-width: 600px) {
     div#signature {        
-        .left {
+        //.left {
             label {
                 width: 100%;
                 margin-bottom: 1rem;
             }            
-        }
+        //}
         .right {
             width: 100%;
         }
