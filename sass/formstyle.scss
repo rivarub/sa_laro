@@ -45,25 +45,34 @@ body {
 div#signature {
     margin-top: 4.2em;
     label {
+        margin-right: 2%;
+        width: 38%;
+        text-align: left;
         //margin-top: 10px;
     }
     .pt {
         margin-bottom: 1em;
-        input {
+        input#signature-space {
             float: left;
             height: 23px;
-            /*            line-height: 1.2em;*/
-            //width: 12em;
-        }
-        input[type="text"] {
-            width: 12em;
             font-style: italic;
-        }
+            width: 31em;
+            max-width: 31em;
+            /*            line-height: 1.2em;*/            
+        }        
         label.radio {
             margin-left: 1em;
         }
     }
 }
+/*input#signature-space {
+    float: left;
+    height: 23px;
+    //line-height: 1.2em;
+    width: 25em;
+    max-width: 25em;
+}*/
+
 form#patient_registration {        
     .left {
         label {
@@ -672,18 +681,29 @@ div.helf_left {
     }               
 }
 
-@media screen and (max-width: 980px) {
+/*@media screen and (max-width: 980px) {
     div#signature {        
         //.left {
-            label {
-                width: 60%;
-            }            
+        label {
+            width: 60%;
+        }            
         //}
         .right {
             width: 40%;
         }
     }    
+}*/
+@media screen and (max-width: 950px) {
+    div#signature {        
+        .pt {            
+            input#signature-space {                
+                width: 25em;
+                max-width: 25em;                        
+            }  
+        }
+    }    
 }
+
 @media screen and (max-width: 848px) {
     div.full, div.full_partial {
         div.right-board_yes_not {
@@ -1042,12 +1062,13 @@ input[type="submit"] {
 @media screen and (max-width: 756px) {
     div#signature {        
         //.left {
-            label {
-                width: 65%;
-            }            
+        label {
+            width: 100%;
+            margin-bottom: 1rem;
+        }            
         //}
         .right {
-            width: 35%;
+            width: 100%;
         }
     }    
     #national_Network_4 {
@@ -1088,17 +1109,17 @@ input[type="submit"] {
     }    
 }
 @media screen and (max-width: 600px) {
-    div#signature {        
+/*    div#signature {        
         //.left {
-            label {
-                width: 100%;
-                margin-bottom: 1rem;
-            }            
+        label {
+            width: 100%;
+            //margin-bottom: 1rem;
+        }            
         //}
         .right {
             width: 100%;
         }
-    }    
+    }    */
     .content {
         width: 92%;
     }
@@ -1230,11 +1251,19 @@ input[type="submit"] {
                 //width: 14%;
             }
             .right-board_yes_not {
-               // width: 85%;
+                // width: 85%;
             }
         }
 
-    }    
+    }
+  div#signature {        
+        .pt {            
+            input#signature-space {                
+                width: 21.3em;
+                max-width: 21.3em;                        
+            }  
+        }
+    }     
 }
 @media screen and (max-width: 470px) {
     #national_Network_4 {
@@ -1351,7 +1380,15 @@ input[type="submit"] {
                 //width: 85%;
             }
         }
-    }    
+    }
+div#signature {        
+        .pt {            
+            input#signature-space {                
+                width: 18em;
+                max-width: 18em;                        
+            }  
+        }
+    }     
 }
 @media screen and (max-width: 383px) {
     #national_Network_3 {
@@ -1424,3 +1461,4 @@ input[type="submit"] {
         }
     }    
 }
+
