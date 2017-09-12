@@ -539,8 +539,8 @@ div#signature .pt input#signature-space {
   float: left;
   height: 23px;
   font-style: italic;
-  width: 31em;
-  max-width: 31em;
+  width: 22.5em;
+  max-width: 22.5em;
   /*            line-height: 1.2em;*/
 }
 /* line 63, ../sass/formstyle.scss */
@@ -1203,13 +1203,16 @@ div.helf_left .right-board_yes_not {
         }
     }    
 }*/
-@media screen and (max-width: 950px) {
-  /* line 699, ../sass/formstyle.scss */
-  div#signature .pt input#signature-space {
-    width: 25em;
-    max-width: 25em;
-  }
-}
+/*@media screen and (max-width: 950px) {
+    div#signature {        
+        .pt {            
+            input#signature-space {                
+                width: 25em;
+                max-width: 25em;                        
+            }  
+        }
+    }    
+}*/
 @media screen and (max-width: 848px) {
   /* line 709, ../sass/formstyle.scss */
   div.full div.right-board_yes_not, div.full_partial div.right-board_yes_not {

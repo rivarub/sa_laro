@@ -56,8 +56,8 @@ div#signature {
             float: left;
             height: 23px;
             font-style: italic;
-            width: 31em;
-            max-width: 31em;
+            width: 22.5em;
+            max-width: 22.5em;
             /*            line-height: 1.2em;*/            
         }        
         label.radio {
@@ -693,7 +693,7 @@ div.helf_left {
         }
     }    
 }*/
-@media screen and (max-width: 950px) {
+/*@media screen and (max-width: 950px) {
     div#signature {        
         .pt {            
             input#signature-space {                
@@ -702,7 +702,7 @@ div.helf_left {
             }  
         }
     }    
-}
+}*/
 
 @media screen and (max-width: 848px) {
     div.full, div.full_partial {
