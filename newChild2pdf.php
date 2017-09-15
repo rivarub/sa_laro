@@ -787,16 +787,23 @@ $html .= '<br>Hair pulling ';
 $html .= '<strong>';
 $html .= $_POST['shortPulling'];
 $html .= '</strong>';
+
+$html .= '<br/><br/>Signature of Patient, Parent, or Legal Guardian ';
+$html .= '<em><strong>';
+$html .= $_POST['signature-space'];
+$html .= '</strong></em>';
+
+
 //echo $html;
 //$html .= var_dump($_POST);
-
-$mpdf->WriteHTML($html, 2);
 /*
+$mpdf->WriteHTML($html, 2);
+
 // To output into browser - begin
 $mpdf->Output(); 
 exit;
 // To output into browser - end
-*/ 
+*/
 //Send via swiftmailer - begin
 $content = $mpdf->Output('', 'S');
 require_once 'swiftmailer-5.x/lib/swift_required.php';
