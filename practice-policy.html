@@ -7,6 +7,7 @@
         <link rel="stylesheet" type="text/css" href="css/formstyle.css">
         <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet"> 
         <script src="js/modernizr.2.6.2.min.js"></script>
+        <script type="text/javascript" src="js/js.js"></script>
     </head>
     <body>
         <div class="container">
@@ -29,7 +30,7 @@
                 <div id="signature" class="row">
                     <div class="full">                    
                         <div class="pt">
-                            <input type="checkbox" name="certify[]" value="I hereby certify that I have read and understand all the above policy statements" id="hereby_certify">
+                            <input type="checkbox" name="certify" value="I hereby certify that I have read and understand all the above policy statements" id="hereby_certify">
                             <label class="radio" id="hereby_certify">I hereby certify that I have read and understand all the above policy statements.</label>
                         </div>
                         <div class="left">
@@ -47,7 +48,7 @@
                 <div class="submit">
                     <input type="hidden" name="url" value="consent_to_treat.html">
                     <input type="hidden" id="html" name="html">
-                    <input type="submit" value="send" onclick="send();">
+                    <input type="submit"  id="sendCertify" name="sendCertify" value="send" onclick="send();">
                 </div>
                 <!--End block signature-->
             </div>

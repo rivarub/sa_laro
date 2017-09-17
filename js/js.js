@@ -19,7 +19,7 @@
 //var d = new Date();
 //document.getElementById("today_date").innerHTML = d.toDateString();
 
-$(document).ready(function () {    
+$(document).ready(function () {
     var date = new Date();
 
     var day = date.getDate();
@@ -36,10 +36,23 @@ $(document).ready(function () {
     $("#today_date").attr("value", today);
     $("#DIAGNOSTIC_SCREENING_date").attr("value", today);
     $("#QUICK_date").attr("value", today);
-    
+
     jQuery(function ($) {
-       $('input[name*=date]').mask("99/99/9999", {placeholder: "mm/dd/yyyy"}); 
-       //$('input[type=date]').mask("99/99/9999", {placeholder: "mm/dd/yyyy"});
+        $('input[name*=date]').mask("99/99/9999", {placeholder: "mm/dd/yyyy"});
+        //$('input[type=date]').mask("99/99/9999", {placeholder: "mm/dd/yyyy"});
         //$("#today_date").mask("99/99/9999",{placeholder:"mm/dd/yyyy"});
     });
+
+    //checkbox
+    //activeSend = false;
+    $("input[name='sendCertify']").attr("disabled", true);
+//    $("input[name=’certify’]").click(function (event) {
+//        ("input['#sendCertify']").attr('disabled', false);
+//        activeSend = !activeSend;
+//        if (activeSend == true) {
+//            $("input['#sendCertify']").attr('disabled', false);
+//        } else {
+//            $("input['#sendCertify']").attr('disabled', true);
+//        }
+//    })
 });
