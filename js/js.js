@@ -1,6 +1,6 @@
 /*TELEPHONE-mask*/
 
-//$(document).ready(function () { 
+//$(document).ready(function () {
 //	jQuery(function($){
 //   		$(".telephone").mask("+38 (999) 999-99-99");
 //	});
@@ -9,7 +9,7 @@
 /*DATE*/
 
 //$(document).ready(function () {
-//    
+//
 //});
 
 //$(function () {
@@ -42,17 +42,4 @@ $(document).ready(function () {
         //$('input[type=date]').mask("99/99/9999", {placeholder: "mm/dd/yyyy"});
         //$("#today_date").mask("99/99/9999",{placeholder:"mm/dd/yyyy"});
     });
-
-    //checkbox
-    //activeSend = false;
-    $("input[name='sendCertify']").attr("disabled", true);
-//    $("input[name=’certify’]").click(function (event) {
-//        ("input['#sendCertify']").attr('disabled', false);
-//        activeSend = !activeSend;
-//        if (activeSend == true) {
-//            $("input['#sendCertify']").attr('disabled', false);
-//        } else {
-//            $("input['#sendCertify']").attr('disabled', true);
-//        }
-//    })
 });

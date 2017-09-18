@@ -5,9 +5,10 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="css/formstyle.css">
-        <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
         <script src="js/modernizr.2.6.2.min.js"></script>
-        <script type="text/javascript" src="js/js.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script type="text/javascript" src="js/practice_policy.js"></script>
     </head>
     <body>
         <div class="container">
@@ -26,12 +27,13 @@
                 <p class="indent">Payment is due at the time of the service. Both of our providers current charge is $250 an hour. Cash, check, Visa, MasterCard and Discover are accepted. Accounts not paid by the next billing cycle are subject to a service charge of $10 unless previous arrangements have been made with the provider. If payment is not provided at the time of a visit (such as a check is rejected or an appointment is not kept and payment is not sent in), then an authorized credit card will be required to be placed on file prior to future appointments. The card can serve as your preferred (primary) method of payment or simply filed as a back up method of payment. If significant collaboration is needed outside of sessions in form of phone calls with the patient or family members responsible for their care or other professionals, a charge will be incurred based on time allocated. Phone calls lasting longer than 15 minutes will be charged accordingly. If the provider Ls needed to travel to an out of office consultation, such as at a school, charges are billed at 150% of the in office fee and include travel time.</p>
                 <h2>Missed or late cancelled appointments</h2>
                 <p class="indent">Cancellation or rescheduling is required 24 hours in advance to avoid being charged for reserved appointment time. You are financially liable for the full fee if you fail to cancel your appointment 24 hours in advance. It is the patient’s responsibility to know their appointment times.</p>
+              <form id="practice_policy" method="post" action="practice_policy.php">
                 <!--block signature-->
                 <div id="signature" class="row">
-                    <div class="full">                    
+                    <div class="full">
                         <div class="pt">
-                            <input type="checkbox" name="certify" value="I hereby certify that I have read and understand all the above policy statements" id="hereby_certify">
-                            <label class="radio" id="hereby_certify">I hereby certify that I have read and understand all the above policy statements.</label>
+                            <input type="checkbox" id="certify" name="certify" value="I hereby certify that I have read and understand all the above policy statements">
+                            <label for="certify" class="radio">I hereby certify that I have read and understand all the above policy statements.</label>
                         </div>
                         <div class="left">
                             <label for="signature-space">Signature of Patient, Parent, or Legal Guardian</label>
@@ -41,7 +43,7 @@
                                 <div class="pt">
                                     <input class="signature" type="text" name="signature-space" id="signature-space" required>
                                 </div>
-                            </div>                            
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -50,7 +52,7 @@
                     <input type="hidden" id="html" name="html">
                     <input type="submit"  id="sendCertify" name="sendCertify" value="send" onclick="send();">
                 </div>
-                <!--End block signature-->
+              </form>
             </div>
         </div>
     </body>
