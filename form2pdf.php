@@ -1,5 +1,5 @@
 <?php
-$debug = true;
+$debug = false;
 require_once 'mpdf60/mpdf.php';
 $mpdf = new mPDF();
 $url = $_POST['url'];
@@ -32,8 +32,8 @@ $html = preg_replace('/<form[^>]*>.*<\/form>/si', $form, $html);
 //$html = var_dump($form);
 $mpdf->WriteHTML($html, 2);
 
-$mpdf->Output(); // into browser
-exit;
+//$mpdf->Output(); // into browser
+//exit;
 /*
   //Send via mail() - begin
   $content = $mpdf->Output('', 'S');
