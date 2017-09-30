@@ -1,4 +1,4 @@
-@font-face {
+/*@font-face {
   font-family: "myCursive";
   src: url('../mpdf60/ttfonts/SCRIPTIN.ttf') format("truetype");
 }
@@ -7,4 +7,19 @@
 
 .myCursive {
     font-family: 'Dancing Script' !important;
+}*/
+
+/*@import url('https://fonts.googleapis.com/css?family=Courgette');*/
+/*@import url('https://fonts.googleapis.com/css?family=Parisienne');*/
+@import url('https://fonts.googleapis.com/css?family=Ruthie');
+/*@import url('https://fonts.googleapis.com/css?family=Italianno');*/
+/*@import url('https://fonts.googleapis.com/css?family=Great+Vibes');*/
+
+.myCursive {
+/*    font-family: 'Courgette', cursive;*/
+/*font-family: 'Parisienne', cursive;*/
+font-family: 'Ruthie', cursive;
+font-size: 1.65em;
+/*font-family: 'Italianno', cursive;*/
+/*font-family: 'Great Vibes', cursive;*/
 }
