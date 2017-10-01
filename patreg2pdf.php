@@ -42,6 +42,8 @@ $html .= '<br>Please tell us very briefly what concerns bring you to our office:
 $html .= '<strong>'.$_POST['concerns_bring'].'</strong>';
 $html .= '<br>How did you hear about our program? ';
 $html .= '<strong>'.$_POST['about_our_program'].'</strong>';
+$html .= '<br><br>Signature: ';
+$html .= '<em>'.$_POST['signature-space'].'</em>';
 
 //echo $html;
 //$html .= var_dump($_POST);
@@ -74,7 +76,7 @@ $mpdf->WriteHTML($html, 2);
   //$html = var_dump($form);
   $mpdf->WriteHTML($html, 2);
  */
-  /*
+/*  
 $mpdf->Output(); // into browser
 exit;
 */
