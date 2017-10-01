@@ -43,7 +43,7 @@ $html .= '<strong>'.$_POST['concerns_bring'].'</strong>';
 $html .= '<br>How did you hear about our program? ';
 $html .= '<strong>'.$_POST['about_our_program'].'</strong>';
 $html .= '<br><br>Signature: ';
-$html .= '<em>'.$_POST['signature-space'].'</em>';
+$html .= '<em><strong>'.$_POST['signature-space'].'</strong></em>';
 
 //echo $html;
 //$html .= var_dump($_POST);
