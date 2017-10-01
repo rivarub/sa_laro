@@ -724,7 +724,10 @@ $html .= '<strong>'.$_POST['WSAS_5'].'&nbsp;</strong>';
 
 $html .= '<br><br>Mundt, J.C., Marks, I.M., Shear, M.K., & Greist, J.H. (2002). The Work and Social Adjustment Scale: a simple measure of impairment in functioning. Br J Psychiatry, 180, 461-464.';
 $html .= '<br><br>NNDC Common Assessment Package, Baseline: Self-Rated (February 14, 2011) ';
-//echo $html;
+
+$html .= '<br><br>Signature of Patient, Parent, or Legal Guardian: ';
+$html .= '<em><strong>'.$_POST['signature-space'].'&nbsp;</strong></em>';
+////echo $html;
 //$html .= var_dump($_POST);
 $mpdf->WriteHTML($html, 2);
 /*
@@ -755,8 +758,10 @@ $mpdf->WriteHTML($html, 2);
   //$html = var_dump($form);
   $mpdf->WriteHTML($html, 2);
  */
+/*
 $mpdf->Output(); // into browser
 exit;
+*/
 /*
   //Send via mail() - begin
   $content = $mpdf->Output('', 'S');
