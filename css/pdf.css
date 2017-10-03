@@ -1,0 +1,7 @@
+@font-face {
+  font-family: "myCursive";
+  src: url('../mpdf60/ttfonts/SCRIPTIN.ttf') format("truetype");
+}
+.myCursive {
+    font-family: "myCursive" !important;
+}
