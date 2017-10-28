@@ -792,7 +792,17 @@ input[type="text"], input[type="tel"], input[type="email"] {
 }
 form:not([id="new-patient-child"]) {
     input[type="text"] {
-        max-width: 12em;
+        max-width: 12em;        
+    }
+    table.fullScreen {
+        input[type="text"] {
+            max-width: 95%;
+        }
+    }
+    table.mobileTab {
+        input[type="text"] {
+            max-width: 95%;
+        }
     }
 }
 form#new-patient-child {
@@ -841,7 +851,7 @@ input:not([type="submit"]), textarea, select {
 }
 
 table {
-    wigth: 100%;
+    //width: 100%;
     //margin-left: 20px;
     //margin-right: 20px;
     //border: thin solid gray;
@@ -908,6 +918,53 @@ table {
         input[type="text"] {
             width: 90%;            
         }     */
+}
+table.fullScreen {
+    td {
+        width: 19%;
+        input {
+            width: 88%;
+        }
+    }
+    td:nth-child(1), td:nth-child(2) {
+        width: 26%;
+        input {
+            width: 92%;
+        }
+    }
+    td:last-child {
+        width: 10%;
+        input {
+            width: 80%; 
+        }
+    }
+
+}
+.mobileTab {
+    display: none;
+    //width: 100%;
+    tbody {
+        //width: 100%;
+    }
+    td:first-child {
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+        text-align: left;
+        //width: 40%;
+    }
+    td:last-child {
+        //max-width: 60%;
+        width: 70%;
+
+    }
+    input[type="text"] {
+        width: 93%;
+    }
+    input[type="button"] {
+        padding: 0.3em 0.5em 1.6em 0.5em;
+        float: right;
+        //margin-right: 0.3em;
+    }    
 }
 .flex {
     width: 95%;
@@ -1098,6 +1155,12 @@ input[type="submit"] {
                 //margin-right: 2.6em;        
             }
         }
+    }
+    table.fullScreen {
+        display: none;
+    }
+    .mobileTab {
+        display: block;
     }    
 }
 @media screen and (max-width: 674px) {
@@ -1111,17 +1174,17 @@ input[type="submit"] {
     }    
 }
 @media screen and (max-width: 600px) {
-/*    div#signature {        
-        //.left {
-        label {
-            width: 100%;
-            //margin-bottom: 1rem;
-        }            
-        //}
-        .right {
-            width: 100%;
-        }
-    }    */
+    /*    div#signature {        
+            //.left {
+            label {
+                width: 100%;
+                //margin-bottom: 1rem;
+            }            
+            //}
+            .right {
+                width: 100%;
+            }
+        }    */
     .content {
         width: 92%;
     }
@@ -1258,11 +1321,11 @@ input[type="submit"] {
         }
 
     }
-  div#signature {        
+    div#signature {        
         .pt {            
             input#signature-space {                
-/*                width: 21.3em;
-                max-width: 21.3em;                        */
+                /*                width: 21.3em;
+                                max-width: 21.3em;                        */
             }  
         }
     }     
@@ -1383,11 +1446,11 @@ input[type="submit"] {
             }
         }
     }
-div#signature {        
+    div#signature {        
         .pt {            
             input#signature-space {                
-/*                width: 18em;
-                max-width: 18em;                        */
+                /*                width: 18em;
+                                max-width: 18em;                        */
             }  
         }
     }     

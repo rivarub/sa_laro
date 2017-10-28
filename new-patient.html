@@ -810,7 +810,7 @@ and open the template in the editor.
                         <div class="row">
                             <!--                            <p><label class="radio_larger">Please list <strong>current or past </strong>medications you have taken for the treatment of any medical problem.</label></p>-->
                             <div class="full">
-                                <table>
+                                <table class="fullScreen">
                                     <tr>
                                         <td>Medical Problem</td>
                                         <td>Medication (name/dose)</td>
@@ -877,6 +877,36 @@ and open the template in the editor.
                                 </table>
                             </div>
                         </div>
+                        <!--mobile tab 1-->
+                        <div class="row mobileTab">
+                            <!--                            <p><label class="radio_larger">Please list <strong>current or past </strong>medications you have taken for the treatment of any medical problem.</label></p>-->
+                            <div class="full">
+                                <table class="mobileTab">
+                                    <tr>
+                                        <td>Medical Problem</td>
+                                        <td><input type="text" name="medical_problem_1" id="medical_problem_1"></td>                                        
+                                    </tr>
+                                    <tr>
+                                        <td>Medication (name/dose)</td>
+                                        <td><input type="text" name="medication_1" id="medication_1"></td>                                        
+                                    </tr>
+                                    <tr>
+                                        <td>Start Date</td>
+                                        <td><input type="text" name="start_date_2" id="start_date_1" placeholder="mm/dd/yyyy"></td>   
+                                    </tr>
+                                    <tr>
+                                        <td>Stop Date</td>                                        
+                                        <td><input type="text" name="stop_date_3" id="stop_date_1" placeholder="mm/dd/yyyy"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Currently Taking?</td>                                        
+                                        <td><input type="text" name="currently_taking_4" id="currently_taking_1"></td>
+                                    </tr>                                    
+                                </table>
+                            </div>
+                            <input type='button' value='Add more' id='add'>
+                        </div>                        
+                        <!--end mobile tab 1-->
                     </fieldset>                    
                     <fieldset>
                         <legend class="lager_legend">What kind of birth control are you using? <input class="input_row" type="text" name="birth_control" id="birth_control"></legend>                                                     
