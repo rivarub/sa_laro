@@ -1307,7 +1307,7 @@ form:not([id="new-patient-child"]) table.fullScreen input[type="text"] {
   max-width: 95%;
 }
 /* line 803, ../sass/formstyle.scss */
-form:not([id="new-patient-child"]) table.mobileTab input[type="text"] {
+form:not([id="new-patient-child"]) div.mobileTab input[type="text"] {
   max-width: 95%;
 }
 

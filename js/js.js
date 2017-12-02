@@ -58,7 +58,7 @@ $(document).ready(function () {
 //                .append("<td>Medication (name/dose)1</td>");
 //        $('div.mobileTab table.mobileTab').after(newElems);
         // end of 2 var
-        
+
         // 3 var
         var in1Elem = $('<td>')
                 .append('<input type="text" name="medical_problem_2" id="medical_problem_2"/>');
@@ -96,11 +96,21 @@ $(document).ready(function () {
                 .append(tr3Elems)
                 .append(tr4Elems)
                 .append(tr5Elems);
-
         $('div.mobileTab table.mobileTab').after(newElems);
-        
-        // end of 3 var
 
+        // end of 3 var
+        //вибір елементів
+//        $('input[name="medical_problem_]').parentsUntil('div.mobileTab').find('input[name^="medical_problem_]')
+//                .prev('input[name^="medical_problem_]')
+//                ;               
+//        $('img').attr("src", function (index, oldVal) {
+//            if (oldVal.indexOf("rose") > -1) {
+//                return  "lily.png";
+//            } else if ($(this).closest('#row2').length > 0) {
+//                return  "carnation.png";
+//            }
+//        });
+        //        
         newElems.each(function (index, elem) {
             console.log("New element: " + elem.tagName + " " + elem.className);
         });
