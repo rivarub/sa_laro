@@ -42,4 +42,72 @@ $(document).ready(function () {
         //$('input[type=date]').mask("99/99/9999", {placeholder: "mm/dd/yyyy"});
         //$("#today_date").mask("99/99/9999",{placeholder:"mm/dd/yyyy"});
     });
+
+    $('#add').click(function (event) {
+        // jast experiment
+//        $('table.mobileTab', 'div.mobileTab').css("color", "green").add("input[id='add']")
+//                .css("font-size", ".75em");
+        // 1 var clone
+//        var newElems = $('table.mobileTab').clone();
+//        $(newElems).insertAfter('table.mobileTab');
+        // end of 1 var
+
+        // 2 var - add
+//        var newElems = $("<table class='mobileTab1'/>")
+//                .append("<td>Medical Problem1</td>")
+//                .append("<td>Medication (name/dose)1</td>");
+//        $('div.mobileTab table.mobileTab').after(newElems);
+        // end of 2 var
+        
+        // 3 var
+        var in1Elem = $('<td>')
+                .append('<input type="text" name="medical_problem_2" id="medical_problem_2"/>');
+        var tr1Elems = $("<tr/>")
+                .append('<td>Medical Problem</td>')
+                .append(in1Elem);
+
+        var in2Elem = $('<td>')
+                .append('<input type="text" name="medication_2" id="medication_2"/>');
+        var tr2Elems = $("<tr/>")
+                .append('<td>Medication (name/dose)</td>')
+                .append(in2Elem);
+
+        var in3Elem = $('<td>')
+                .append('<input type="text" name="start_date_2" id="start_date_2" placeholder="mm/dd/yyyy"/>');
+        var tr3Elems = $("<tr/>")
+                .append('<td>Start Date</td>')
+                .append(in3Elem);
+
+        var in4Elem = $('<td>')
+                .append('<input type="text" name="stop_date_2" id="stop_date_2" placeholder="mm/dd/yyyy"/>');
+        var tr4Elems = $("<tr/>")
+                .append('<td>Stop Date</td>')
+                .append(in4Elem);
+
+        var in5Elem = $('<td>')
+                .append('<input type="text" name="currently_taking_2" id="currently_taking_2"/>');
+        var tr5Elems = $("<tr/>")
+                .append('<td>Currently Taking?</td>')
+                .append(in5Elem);
+
+        var newElems = $("<table/>")
+                .append(tr1Elems)
+                .append(tr2Elems)
+                .append(tr3Elems)
+                .append(tr4Elems)
+                .append(tr5Elems);
+
+        $('div.mobileTab table.mobileTab').after(newElems);
+        
+        // end of 3 var
+
+        newElems.each(function (index, elem) {
+            console.log("New element: " + elem.tagName + " " + elem.className);
+        });
+
+//            newElems.children('img').each(function(index, elem) {
+//                console.log("Child: " + elem.tagName + " " + elem.src);
+//            });
+    });
+
 });
