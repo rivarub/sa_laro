@@ -1422,27 +1422,31 @@ table td:not([class*="label_left"]), table th:not([class*="label_left"]) {
   text-align: center;
 }
 
-/*table.fullScreen {
-    td {
-        width: 19%;
-        input {
-            width: 88%;
-        }
-    }
-    td:nth-child(1), td:nth-child(2) {
-        width: 26%;
-        input {
-            width: 92%;
-        }
-    }
-    td:last-child {
-        width: 10%;
-        input {
-            width: 80%; 
-        }
-    }
+/* line 923, ../sass/formstyle.scss */
+table.fullScreen td {
+  width: 19%;
+}
+/* line 925, ../sass/formstyle.scss */
+table.fullScreen td input {
+  width: 88%;
+}
+/* line 929, ../sass/formstyle.scss */
+table.fullScreen td:nth-child(1), table.fullScreen td:nth-child(2) {
+  width: 26%;
+}
+/* line 931, ../sass/formstyle.scss */
+table.fullScreen td:nth-child(1) input, table.fullScreen td:nth-child(2) input {
+  width: 92%;
+}
+/* line 935, ../sass/formstyle.scss */
+table.fullScreen td:last-child {
+  width: 10%;
+}
+/* line 937, ../sass/formstyle.scss */
+table.fullScreen td:last-child input {
+  width: 80%;
+}
 
-}*/
 /* line 943, ../sass/formstyle.scss */
 .mobileTab {
   display: none;
