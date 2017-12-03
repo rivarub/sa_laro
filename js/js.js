@@ -43,6 +43,8 @@ $(document).ready(function () {
         //$("#today_date").mask("99/99/9999",{placeholder:"mm/dd/yyyy"});
     });
 
+    var blocks = 1;
+
     $('#add').click(function (event) {
         // jast experiment
 //        $('table.mobileTab', 'div.mobileTab').css("color", "green").add("input[id='add']")
@@ -60,8 +62,9 @@ $(document).ready(function () {
         // end of 2 var
 
         // 3 var
+        blocks++;
         var in1Elem = $('<td>')
-                .append('<input type="text" name="medical_problem_2" id="medical_problem_2"/>');
+                .append('<input type="text" name="medical_problem_'+blocks+'" id="medical_problem_2"/>');
         var tr1Elems = $("<tr/>")
                 .append('<td>Medical Problem</td>')
                 .append(in1Elem);
