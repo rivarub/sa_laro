@@ -55,13 +55,17 @@ $(document).ready(function () {
             var tr5Elems = $("<tr/>")
                     .append('<td>Currently Taking?</td>')
                     .append(in5Elem);
-
-            var newElems = $("<table/>")
+            
+            var tabElems = $("<table/>")
                     .append(tr1Elems)
                     .append(tr2Elems)
                     .append(tr3Elems)
                     .append(tr4Elems)
                     .append(tr5Elems);
+
+            var newElems = $("<div class='full'/>")
+                    .append(tabElems);
+            
             $('div.mobileTab input#add').before(newElems);
         } else {
             $(this).unbind("click");
