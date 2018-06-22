@@ -7,15 +7,16 @@
         <link rel="stylesheet" type="text/css" href="css/formstyle.css" />
         <link rel="stylesheet" type="text/css" href="css/pdf.css" />
         <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
-        <script src="js/modernizr.2.6.2.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-        <script type="text/javascript" src="js/practice_policy.js"></script>
-        <script src="js/catchHTML.js"></script>
+        <script src="js/modernizr.2.6.2.min.js"></script>        
+        <script src="js/jquery.maskedinput.js"></script>
+        <script type="text/javascript" src="js/js.js"></script>
+<!--        <script type="text/javascript" src="js/practice_policy.js"></script>-->
     </head>
     <body>
         <div class="container">
             <div class="content">
-                <form id="practice_policy" method="POST" action="form2pdf.php">
+                <form id="practice_policy" method="POST" action="practicePolicy2pdf.php">
                     <h1>Practice Policy</h1>
                     <p class="indent">Welcome to Fusion Family Consulting. Please read the following information carefully about our practice policies. Your understanding of these policies will help us work most effectively with you.</p>
                     <h2>Treatment Participation</h2>
@@ -25,17 +26,89 @@
                     <h2>Phone Calls</h2>
                     <p class="indent">Our phone hours are Monday to Friday 9am-5pm. After hours calls will be returned for emergencies only. If there is an immediate medical emergency, please go to the nearest emergency room or call 911, if necessary. For other non-urgent calls, please leave both daytime and after-hours phone numbers where you can be reached.</p>
                     <h2>Insurance</h2>
-                    <p class="indent">Our providers are in network with multiple insurance companies, please please call us to find out if we are accepting your insurance. If you are self pay or have an out of network insurance, payment for services is due at the time of service. We will submit out of network claims for you and if your insurance pays we will reimburse you appropriately.</p>
+                    <p class="indent">Our providers are in network with multiple insurance companies, please call us to find out if we are accepting your insurance. If you are self pay or have an out of network insurance, payment for services is due at the time of service. We will submit out of network claims for you and if your insurance pays we will reimburse you appropriately.</p>
                     <h2>Financial</h2>
-                    <p class="indent">Payment is due at the time of the service. Both of our providers' current charge is $250 an hour. Cash, check, Visa, MasterCard and Discover are accepted. If payment is not provided at the time of a visit (such as a check is rejected or an appointment is not kept and payment is not sent in), then an authorized credit card will be required to be placed on file prior to future appointments. The card can serve as your preferred (primary) method of payment or simply filed as a back up method of payment. If significant collaboration is needed outside of sessions in form of phone calls with the patient or family members responsible for their care or other professionals, a charge will be incurred based on time allocated. Phone calls lasting longer than 15 minutes will be charged accordingly. If the provider is needed to travel to an out of office consultation, such as at a school, charges are billed at 150% of the in office fee and include travel time.</p>
+                    <p class="indent">Payment is due at the time of the service. Both of our providers current charge is $250 an hour. Cash, check, Visa, MasterCard and Discover are accepted. If payment is not provided at the time of a visit (such as a check is rejected or an appointment is not kept and payment is not sent in), then an authorized credit card will be required to be placed on file prior to future appointments. The card can serve as your preferred (primary) method of payment or simply filed as a back up method of payment. If significant collaboration is needed outside of sessions in form of phone calls with the patient or family members responsible for their care or other professionals, a charge will be incurred based on time allocated. Phone calls lasting longer than 15 minutes will be charged accordingly. If the provider is needed to travel to an out of office consultation, such as at a school, charges are billed at 150% of the in office fee and include travel time.</p>
                     <h2>Missed or late cancelled appointments</h2>
                     <p class="indent">Cancellation or rescheduling is required 24 hours in advance to avoid being charged for reserved appointment time. You are financially liable for the full fee if you fail to cancel your appointment 24 hours in advance. It is the patient’s responsibility to know their appointment times.</p>
-                    <div id="signature" class="row">
+                    <h2>Medication Refills</h2>
+                    <p class="indent">Fusion family consulting will like to ensure that you have adequate medication until your next follow up visit. Please allow 48 hours for processing of medication refills. If you cancel or reschedule your appointment, it is your responsibility to contact Fusion Family consulting at least one week in advance if you need additional medication until your next visit. Medication refills will only be provided for patients in active treatment. For scheduled medications (CII) that require a monthly prescription, such as ADHD medications, it is the patient's responsibility to inform our offices at least one week in advance for the refill request. Prescriptions for scheduled medications may be picked up by the patient at the office or called into applicable pharmacies.</p>
+                    <h2>Additional Requests</h2>
+                    <p class="indent">Our providers do not testify in court, but if legal actions occur in which we are requested or subpoenaed to provide testimony (such as custody case) you will be responsible for providing the following even if the subpoena is sent from the opposing side of the case and even if your ongoing relationship with the provider has ended:</p>
+                    <ol>
+                        <li>Travel expenses.</li>
+                        <li>Hourly or per diem fees based on the provider's then current session rates, plus 50% of that fee from the time the provider leaves her office until her return.</li>
+                        <li>Fees at the provider's then current rates of $400/hour, plus 50% of that fee from the time expended in preparation and research. At least $1000,00 will be due prior to the court appearance.</li>
+                        <li>Record copying fees are $1,50 per page.</li>
+                    </ol>
+                    <p class="indent">Thank you for going through this important information. We look forward to working with you. The Practice policies was updated on 06/17/2018 and is subject to change at the discretion of Fusion Family Consulting.</p>
+                    <p class="indent"><b>Please read and initial:</b></p>
+                    <div class="row">
                         <div class="full">
                             <div class="pt">
-                                <input type="checkbox" id="certify" name="certify" value="checked">
-                                <label for="certify" class="radio">I hereby certify that I have read and understand all the above policy statements.</label>
+                              <input type="checkbox" id="certify" name="certify" value="checked" required>
+                                <label for="certify" class="radio">I understand and I am financially liable for the full fee if I fail to cancel my appointment 24 hours in advance.</label>
+                            </div>                            
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="full">
+                            <div class="pt">
+                              <input type="checkbox" id="certify1" name="certify" value="checked" required>
+                                <label for="certify1" class="radio">I understand that I am ultimately financially responsible for charges incurred regardless of insurance reimbursement policies.</label>
+                            </div>                            
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="full">
+                            <div class="pt">
+                              <input type="checkbox" id="certify2" name="certify" value="checked" required>
+                                <label for="certify2" class="radio">I authorize the release of any medical/health related information to prosess insurance claims.</label>
+                            </div>                            
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="full">
+                            <div class="pt">
+                              <input type="checkbox" id="certify3" name="certify" value="checked" required>
+                                <label for="certify3" class="radio">I have read and understand this Office Policy.</label>
+                            </div>                            
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="left">
+                            <label for="name-first">Patient Name:</label>
+                        </div>
+                        <div class="right">
+                            <div class="columnForm-name">
+                                <div class="pt">
+                                    <input class="name" type="text" name="name-first" id="name-first" placeholder="First" required>
+                                </div>
                             </div>
+                            <div class="columnForm-name">
+                                <div class="pt">
+                                    <input class="name" type="text" name="name-middle" id="name-middle" placeholder="Middle">
+                                </div>
+                            </div>                                
+                            <div class="columnForm-name">
+                                <div class="pt">
+                                    <input class="name" type="text" name="name-last" id="name-last" placeholder="Last" required>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="full">
+                            <div class="left">
+                                <label for="date">Date of Birth</label>
+                            </div>
+                            <div class="right">
+                                <input id="date" type="text" name="date" placeholder="mm/dd/yyyy" required><br>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="signature" class="row">
+                        <div class="full">
                             <div class="left">
                                 <label for="signature-space">Signature of Patient, Parent, or Legal Guardian</label>
                             </div>
@@ -44,17 +117,53 @@
                                     <div class="pt">
                                         <em><input class="signature myCursive" type="text" name="signature-space" id="signature-space" required></em>
                                     </div>
-                                </div>
+                                </div>                            
                             </div>
                         </div>
                     </div>
+                    <div class="row">
+                        <div class="full">
+                            <div class="left">
+                                <label for="today_date">Date</label>
+                            </div>
+                            <div class="right">
+                                <input id="today_date" type="text" name="date" placeholder="mm/dd/yyyy" required><br>
+                            </div>
+                        </div>
+                    </div>                    
                     <div class="submit">
-                        <input type="hidden" name="url" value="practice-policy.html">
-                        <input type="hidden" id="html" name="html">
-                        <input type="submit"  id="sendCertify" name="sendCertify" value="send" onclick="send();">
+                        <!--                        <input type="hidden" name="url" value="consent_to_treat.html">
+                                                <input type="hidden" id="html" name="html">-->
+                        <input type="submit" id="sendCertify" name="sendCertify" value="send">
                     </div>
+                    <!--                    <div class="row">
+                                            <div class="full">
+                                                <div class="pt">
+                                                    <input type="checkbox" id="certify" name="certify" value="checked">
+                                                    <label for="certify" class="radio">I hereby certify that I have read and understand all the above policy statements.</label>
+                                                </div>
+                                                <div id="signature" class="left">
+                                                    <label for="signature-space">Signature of Patient, Parent, or Legal Guardian</label>
+                                                </div>
+                                                <div class="right">
+                                                    <div class="columnForm-name">
+                                                        <div class="pt">
+                                                            <em><input class="signature myCursive" type="text" name="signature-space" id="signature-space" required></em>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="submit">
+                                            <input type="hidden" name="url" value="practice-policy.html">
+                                            <input type="hidden" id="html" name="html">
+                                            <input type="submit"  id="sendCertify" name="sendCertify" value="send" onclick="send();">
+                                        </div>-->
+                    <!--                    <div class="comment">
+                                            <p class="sans_serif">1700 ALMA DRIVE, SUITE 480<br>PLANO, TEXAS, 75075<br>PHONE: (214)296-9365<br>WWW.FUSIONFAMCONSULT.COM</p>
+                                        </div>-->
                 </form>
-            </div>
+            </div>            
         </div>
     </body>
 </html>
