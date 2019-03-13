@@ -6,30 +6,63 @@ $mpdf = new mPDF();
 $url = $_POST['url'];
 $title = 'Practice Policy';
 $html = '<h3>Practice Policy</h3>';
-$html .= 'Welcome to Fusion Family Consulting. Please read the following information carefully about our practice policies. Your understanding of these policies will help us work most effectively with you.';
+$html .= 'Thank you for choosing Fusion Family Consulting for your health care needs. We look forward to working alongside you for your medical care. As part of your relationship with Fusion Family Consulting, a clear comprehension of our office policies is important so you will understand office procedures, individual responsibilities, financial liability, and the extent and limits of various forms of communications. These polices may be updated over time for which you will be notified.
+<p>Please review these carefully and ask any questions you may have.  We are asking that you sign the bottom confirming that you have read them and understand.</p>';
+
 $html .= '<h4>Treatment Participation</h4>';
-$html .= 'Your treatment with us may involve taking medications, undergoing evaluation, and or engaging in various therapy treatments. If your treatment involves medication, your provider will explain the important risk benefits and side effects to you. If unexpected side effects are experienced upon taking medications, please call the office immediately.';
+$html .= 'Our treatment with us may involve undergoing evaluation, medications, and or engaging in various therapy treatments. If your treatment involves medication, your provider will explain the important risk benefits and side effects to you. If unexpected side effects are experienced upon taking medications, please call the office immediately.';
+
 $html .= '<h4>Confidentiality</h4>';
 $html .= 'Anything you reveal in your sessions is confidential and cannot be released to another person without your consent. Exceptions to this rule of confidentiality occur when the provider reasonably believes that there is imminent risk of harm to yourself or another person, or if a judge requests information as part of a trial. Also, if we are filing to your insurance company diagnosis codes are sent and insurance may request medical records to process your claims.';
-$html .= '<h4>Phone Calls</h4>';
-$html .= 'Our phone hours are Monday to Friday 9am-5pm. After hours calls will be returned for emergencies only. If there is an immediate medical emergency, please go to the nearest emergency room or call 911, if necessary. For other non-urgent calls, please leave both daytime and after-hours phone numbers where you can be reached.';
-$html .= '<h4>Insurance</h4>';
-$html .= 'Our providers are in network with multiple insurance companies, please call us to find out if we are accepting your insurance. If you are self pay or have an out of network insurance, payment for services is due at the time of service. We will submit out of network claims for you and if your insurance pays we will reimburse you appropriately.';
-$html .= '<h4>Financial</h4>';
-$html .= 'Payment is due at the time of the service. Both of our providers current charge is $250 an hour. Cash, check, Visa, MasterCard and Discover are accepted. If payment is not provided at the time of a visit (such as a check is rejected or an appointment is not kept and payment is not sent in), then an authorized credit card will be required to be placed on file prior to future appointments. The card can serve as your preferred (primary) method of payment or simply filed as a back up method of payment. If significant collaboration is needed outside of sessions in form of phone calls with the patient or family members responsible for their care or other professionals, a charge will be incurred based on time allocated. Phone calls lasting longer than 15 minutes will be charged accordingly. If the provider is needed to travel to an out of office consultation, such as at a school, charges are billed at 150% of the in office fee and include travel time.';
-$html .= '<h4>Missed or late cancelled appointments</h4>';
-$html .= 'Cancellation or rescheduling is required 24 hours in advance to avoid being charged for reserved appointment time. You are financially liable for the full fee if you fail to cancel your appointment 24 hours in advance. It is the patient’s responsibility to know their appointment times.';
-$html .= '<h4>Medication Refills</h4>';
-$html .= 'Fusion family consulting will like to ensure that you have adequate medication until your next follow up visit. Please allow 48 hours for processing of medication refills. If you cancel or reschedule your appointment, it is your responsibility to contact Fusion Family consulting at least one week in advance if you need additional medication until your next visit. Medication refills will only be provided for patients in active treatment. For scheduled medications (CII) that require a monthly prescription, such as ADHD medications, it is the patient\'s responsibility to inform our offices at least one week in advance for the refill request. Prescriptions for scheduled medications may be picked up by the patient at the office or called into applicable pharmacies.';
-$html .= '<h4>Additional Requests</h4>';
-$html .= 'Our providers do not testify in court, but if legal actions occur in which we are requested or subpoenaed to provide testimony (such as custody case) you will be responsible for providing the following even if the subpoena is sent from the opposing side of the case and even if your ongoing relationship with the provider has ended:';
-$html .= '<br><br>1. Travel expenses.';
-$html .= '<br>2. Fees at the provider\'s then current rates of $400/hour, plus 50% of that fee from the time expended in preparation and research. At least $1000,00 will be due prior to the court appearance.';
-$html .= '<br>3. Fees at the provider\'s then current rates, plus 50% of that fee from the time expended in preparation and research. At least $1000,00 will be due prior to the court appearance.';
-$html .= '<br>4. Record copying fees are $1,50 per page.';
-$html .= '<br><br>Thank you for going through this important information. We look forward to working with you. The Practice policies was updated on 06/17/2018 and is subject to change at the discretion of Fusion Family Consulting.';
-$html .= '<br><br><b>Please read and initial:</b>';
 
+$html .= '<h4>Phone Calls</h4>';
+$html .= 'Routine brief phone calls made between the hours of 8:30 a.m. and 3:00 p.m. on weekdays will be returned as quickly as possible; calls will typically be returned the same day. Routine calls received after 3:00 p.m. or on weekends will be returned the following business day. If the call involves an urgent matter, please convey this when leaving your message. If the reason for the call is an emergency, please do not hesitate to go to the nearest emergency room or call 911.';
+
+$html .= '<h4>Appointments</h4>';
+$html .='<p>Patients can request appointments by telephone or through the patient portal.  Appointments will be confirmed by phone ahead of time; however, it is the patient’s or guardian’s responsibility to keep track of the appointment to avoid charges for missed or cancelled appointments.</p>
+<p>If a patient arrives late to an appointment, it can be disruptive to other patients. The provider may cancel and reschedule the appointment if the patient is more than 20 minutes late to their appointment. The patient will be subject to the full charges of the appointment and these charges cannot be billed to insurance.</p>
+<p>All appointments are scheduled per hour. Please note that most insurance companies will only allow 1hr sessions per visit. <u>Should the visit go over the scheduled time and the insurance deems the prolonged service a non-covered service, the patient will be financially responsible for the remaining balance.</u></p>';
+
+$html .= '<h4>Appointment Changes/Cancellations</h4>';
+$html .='<p>Patients will be charged the full session rate of $250 when cancellations occur unless notice is given at least 24 hours prior to the appointment. This fee will need to be paid in full before future service is provided.</p>
+<p>If, for any reason, the doctor must cancel an appointment, the patient will be advised in advance. Providers are only allowed to cancel appointments for patients on the same day due to a clinical or personal, unforeseen emergency.</p>
+<p>After three consecutive missed appointments within one calendar year, the provider may dismiss a patient from FFC due to treatment noncompliance.</p>';
+
+$html .= '<h4>Telemedicine Policy</h4>';
+$html .='<p>For more extensive phone calls, please schedule a phone appointment with your physician. There will be a routine charge of $250 per hour for these phone sessions based on the time spent per call. Please note that most insurance companies will not reimburse for phone consultation/sessions fees.</p>';
+
+$html .= '<h4>Charges &amp; Payments</h4>';
+$html .='<p>Payment for services is due at the time of service.</p>';
+$html .='<p>CASH or CREDIT CARD (Visa, MasterCard, &amp; Discover) are the only acceptable forms of payment (please bring exact change as FFC does not carry cash).</p>';
+
+$html .= '<h4>Credit Card on File Policy</h4>';
+$html .='<p>For the convenience of the patient, FFC requires keeping your credit or debit card on file as a convenient method of payment for the portion of services that your insurance doesn’t cover, but for which you are liable.</p>';
+$html .='<p>Your credit card information is kept confidential and secure and payments to your card are processed only after the claim has been filed and processed by your insurer, and the insurance portion of the claim has paid and posted to the account.</p>';
+
+$html .= '<h4>Electronic Mail (Email) Policy</h4>';
+$html .= 'By agreeing to communicate via email, you are assuming a certain degree of risk of breach of privacy beyond that inherent in other modes of traditional communication (such as telephone, fax, written, or face-to-face). We cannot ensure the confidentiality of our electronic communications against purposeful or accidental network interception. Due to this inherent vulnerability, we would caution you against emailing anything of a very private nature or personal information. Additionally, your doctor will save your email correspondence and these communications should be considered part of your medical record, Therefore, you should consider that our electronic communications may not be confidential and will be included in your medical chart. Never send emails of an urgent or emergent nature. Your doctor will make an effort to check email regularly; however,  please call our office if you have not received a reply within 72 hours.';
+
+$html .= '<h4>Medication Refill Policy</h4>';
+$html .='<p>Refills should be requested through your pharmacy. They can fax a request to (469) 863-7088.  If a request is made by phone, you will be informed to contact your pharmacy. Please ensure that you contact your pharmacy at least 72 hours prior to your medication running out.</p>';
+$html .='<p>Prescriptions may only be refilled for patients who are current patients and who maintain their regularly scheduled appointments. For your safety, medication refills will not be called in over the weekend except in emergencies.</p>';
+$html .='<p>Medication refills will NOT be performed in the following cases:</p>';
+$html .='<ul><li>After office hours (including possibly late Friday afternoon requests) or over the weekend</li>';
+$html .='<li>During holidays</li>';
+$html .='<li>For patients who repeatedly miss appointments</li>';
+$html .='<li>If there is suspicion of abuse of medications or failure to comply with urine drug screen requirements</li>';
+$html .='</ul>';
+
+$html .= '<h4>Prior Authorizations</h4>';
+$html .='<p>Fusion Family Consulting will perform prior authorizations; however, it is important to understand that these authorizations do take several days to be approved.  Please contact your insurance as well if you know your services require prior authorization.</p>';
+
+$html .= '<h4>Additional Requests</h4>';
+$html .= 'Our providers do not testify in court, but if legal actions occur in which we are requested or subpoenaed to provide testimony (such as custody case) <u>you will be responsible</u> for providing the following even if the subpoena is sent from the opposing side of the case and even if your ongoing relationship with the provider has ended:';
+$html .= '<br>Travel expenses.';
+$html .= '<br>Hourly or per diem fees based on the provider\'s then current session rates, plus 50% of that fee from the time the provider leaves her office until her return.';
+
+$html .= '<br><br>Thank you for going through this important information. We look forward to working with you. The Practice policies was updated on 01/25/2019 and is subject to change at the discretion of Fusion Family Consulting.';
+//$html .= '<br><br><b>Please read and initial:</b>';
+/*
 if(isset($_POST['certify'])) {
   $html .= '<br><input type="checkbox" checked="checked" /> I understand and I am financially liable for the full fee if I fail to cancel my appointment 24 hours in advance.';
 }
@@ -42,13 +75,14 @@ if(isset($_POST['certify2'])) {
 if(isset($_POST['certify3'])) {
   $html .= '<br><input type="checkbox" checked="checked" /> I have read and understand this Office Policy.';
 }
-$html .= '<br><br>Patient Name: ';
-$html .= $_POST['name-first'].' '.$_POST['name-middle'].' '.$_POST['name-last'];
+*/
+//$html .= '<br><br>Patient Name: ';
+//$html .= $_POST['name-first'].' '.$_POST['name-middle'].' '.$_POST['name-last'];
 
-$html .= '<br><br>Date of Birth: ';
-$html .= $_POST['date'];
+//$html .= '<br><br>Date of Birth: ';
+//$html .= $_POST['date'];
 
-$html .= '<br><br>Signature of Patient, Parent, or Legal Guardian: ';
+$html .= '<br><br>Signature of Patient or Parent/Legal Guardian: ';
 $html .= $_POST['signature-space'];
 
 $html .= '<br><br>Date: ';
