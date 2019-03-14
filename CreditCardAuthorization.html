@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>New patient form</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/formstyle.css">
+        <link rel="stylesheet" type="text/css" href="css/pdf.css">
+        <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro:400,600,700&amp;subset=latin-ext" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script src="js/modernizr.2.6.2.min.js"></script>
+        <script src="js/jquery-1.7.js" type="text/javascript"></script>
+        <script src="js/jquery.maskedinput.js"></script>
+        <!-- <script type="text/javascript" src="js/js.js"></script> -->
+        <script>
+        function cc_format(value) {
+          var v = value.replace(/\s+/g, '').replace(/[^0-9]/gi, '')
+          var matches = v.match(/\d{4,16}/g);
+          var match = matches && matches[0] || ''
+          var parts = []
+          for (i=0, len=match.length; i<len; i+=4) {
+            parts.push(match.substring(i, i+4))
+          }
+          if (parts.length) {
+            return parts.join(' ')
+          } else {
+            return value
+          }
+        }
+
+        onload = function() {
+          document.getElementById('card_number').oninput = function() {
+            this.value = cc_format(this.value)
+          }
+        }
+        function checkDigit(event) {
+          var code = (event.which) ? event.which : event.keyCode;
+
+          if ((code < 48 || code > 57) && (code > 31)) {
+            return false;
+          }
+
+          return true;
+        }
+      </script>
+      <style>
+      div.pt {
+        padding-bottom: 10px;
+      }
+    </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="content">
+              <h1>Credit Card Authorization</h1>
+              <p>I authorize Fusion Family Consulting to charge the portion of my bill that is my financial responsibility to the following credit or debit card:</p>
+                <form id="new-patient" method="post" action="CreditCardAuthorization2pdf.php">
+                  <div class="columnForm">
+                        <div class="pt">
+                          <input type="radio"  id="card_type_amex" name="card_type" value="Amex" id="Amex" required>
+                          <label class="radio" for="card_type_amex">Amex</label>
+
+                          <input type="radio"  id="card_type_visa" name="card_type" value="Visa" id="Visa">
+                          <label class="radio" for="card_type_visa">Visa</label>
+
+                          <input type="radio"  id="card_type_mastercard" name="card_type" value="Mastercard" id="Mastercard">
+                          <label class="radio" for="card_type_mastercard">Mastercard</label>
+
+                          <input type="radio"  id="card_type_discover" name="card_type" value="Discover" id="Discover">
+                          <label class="radio" for="card_type_discover">Discover</label>
+                        </div>
+
+                          <div class="pt">
+                              <label class="radio_tab_input_row" for="card_number">Credit Card Number</label>
+                              <input type="text" name="card_number" id="card_number" onkeypress="return checkDigit(event)" required>
+                          </div>
+
+                          <div class="pt">
+                              <label class="radio_tab_input_row" for="card_expiration_date_month">Expiration Date</label>
+                              <input type="number" name="card_expiration_date_month" min="01" max="12" id="card_expiration_date_month" placeholder="mm" required>
+                               /
+                              <input type="number" name="card_expiration_date_year" min="19" id="card_expiration_date_year" placeholder="yy" required>
+                          </div>
+
+                          <div class="pt">
+                              <label class="radio_tab_input_row" for="card_holder_name">Cardholder Name</label>
+                              <input type="text" name="card_holder_name" id="card_holder_name" required>
+                          </div>
+
+                          <!-- <div id="signature" class="row">
+                              <div class="full">
+                                  <div class="left">
+                                      <label for="signature-space">Signature</label>
+                                      <div class="columnForm-name">
+                                          <div class="pt">
+                                              <em><input class="signature myCursive" type="text" name="signature-space" id="signature-space" required></em>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div> -->
+
+                          <div class="pt">
+                              <label class="radio_tab_input_row" for="billing_address">Billing Address</label>
+                              <input type="text" name="billing_address" id="billing_address">
+                          </div>
+
+                          <div class="pt">
+                              <label class="radio_tab_input_row" for="city">City</label>
+                              <input type="text" name="city" id="city">
+                              <label class="radio_tab_input_row" for="state">State</label>
+                              <input type="text" name="state" id="state">
+                              <label class="radio_tab_input_row" for="zip">Zip</label>
+                              <input type="text" name="zip" id="zip">
+                          </div>
+
+                          <div class="pt">
+                              <label for="signature-space">Signature</label>
+                                      <em><input class="signature myCursive" type="text" name="signature-space" id="signature-space" required></em>
+                          </div>
+                          <p>I, the undersigned, authorize and request Fusion Family Consulting to charge my credit card, indicated above, for balances due for services rendered that my insurance company identifies as my financial responsibility.</p>
+                          <p>This authorization relates to all payments not covered by my insurance company for services provided to me by Fusion Family Consulting. This authorization will remain in effect until I cancel this authorization. To cancel, I must give a 60 day notification to Fusion Family Consulting in writing and the account must be in good standing.</p>
+                          <div class="pt">
+                              <label class="radio_tab_input_row" for="patient_name">Patient Name (Print):</label>
+                              <input type="text" name="patient_name" id="patient_name" required>
+                          </div>
+                          <div class="pt">
+                              <label for="patient_signature">Patient Signature:</label>
+                                      <em><input class="signature myCursive" type="text" name="patient_signature" id="patient_signature" required></em>
+                          </div>
+                          <div class="pt">
+                              <div>
+                                  <label class="radio" for="today_date">Date:</label>
+                                  <input type="text" name="today_date" id="today_date" placeholder="mm/dd/yyyy">
+                              </div>
+                          </div>
+                          <div class="submit">
+                              <input type="submit" id="sendAuthorization" name="sendAuthorization" value="send">
+                          </div>
+                          <!-- <fieldset>
+                              <legend>Expiration Date</legend>
+                              <div class="row">
+                                  <div class="full">
+                                      <div class="columnForm">
+                                          <div class="pt">
+                                              <label class="radio_tab_input_row" for="card_expiration_date_month">Month</label>
+                                              <input type="number" name="card_expiration_date_month" min="01" max="12" id="card_expiration_date_month" placeholder="mm">     /
+                                          </div>
+                                      </div>
+
+                                      <div class="columnForm">
+                                          <div class="pt">
+                                              <label class="radio_tab_input_row" for="card_expiration_date_year">Year</label>
+                                              <input type="number" name="card_expiration_date_year" min="19" id="card_expiration_date_year" placeholder="yy">
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </fieldset> -->
+                  </div>
+                </form>
+              </div>
+            </div>
+          </body>
+          </html>
