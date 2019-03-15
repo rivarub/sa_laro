@@ -19,6 +19,21 @@ and open the template in the editor.
         <script src="js/jquery.maskedinput.js"></script>
         <!-- <script type="text/javascript" src="js/js.js"></script> -->
         <script>
+          $(document).ready(function () {
+            var date = new Date();
+
+            var day = date.getDate();
+            var month = date.getMonth() + 1;
+            var year = date.getFullYear();
+
+            if (month < 10)
+              month = "0" + month;
+            if (day < 10)
+              day = "0" + day;
+
+            var today = month + "/" + day + "/" + year;
+            $("#today_date").attr("value", today);
+          });
         function cc_format(value) {
           var v = value.replace(/\s+/g, '').replace(/[^0-9]/gi, '')
           var matches = v.match(/\d{4,16}/g);
