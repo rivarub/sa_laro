@@ -59,6 +59,7 @@ $html .= '<h4>Additional Requests</h4>';
 $html .= 'Our providers do not testify in court, but if legal actions occur in which we are requested or subpoenaed to provide testimony (such as custody case) <u>you will be responsible</u> for providing the following even if the subpoena is sent from the opposing side of the case and even if your ongoing relationship with the provider has ended:';
 $html .= '<br>Travel expenses.';
 $html .= '<br>Hourly or per diem fees based on the provider\'s then current session rates, plus 50% of that fee from the time the provider leaves her office until her return.';
+$html .= '<br><u>If the provider is needed to travel to an out of office consultation, such as a school, charges are billed at 150% of the in office fee and includes travel time.</u>';
 
 $html .= '<br><br>Thank you for going through this important information. We look forward to working with you. The Practice policies was updated on 01/25/2019 and is subject to change at the discretion of Fusion Family Consulting.';
 //$html .= '<br><br><b>Please read and initial:</b>';
